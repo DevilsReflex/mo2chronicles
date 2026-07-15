@@ -634,7 +634,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "Wolfpack vs Legion, Draco & Integrity — 30ish vs 30ish",
-       "url": "http://sandboxer.org/mortal-online-2-pvp-30ish-vs-30ish-wolfpack-vs-legion-draco-integrity/",
+       "url": "https://sandboxer.org/mortal-online-2-pvp-30ish-vs-30ish-wolfpack-vs-legion-draco-integrity/",
        "source": "SandBoxer"
       }
      ],
@@ -858,7 +858,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "Mo2Builds Hall of Fame",
-       "url": "https://www.mo2builds.com/hall-of-fame",
+       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
       }
      ],
@@ -892,7 +892,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "Mo2Builds Hall of Fame",
-       "url": "https://www.mo2builds.com/hall-of-fame",
+       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
       },
       {
@@ -936,7 +936,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "Mo2Builds Hall of Fame",
-       "url": "https://www.mo2builds.com/hall-of-fame",
+       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
       }
      ],
@@ -1378,7 +1378,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "How to Use Siege Machines — catapults and the craft of assault",
-       "url": "https://m.youtube.com/watch?v=YQTSAaGjzr0&pp=ygUKI2d3MnN0cmlrZQ%3D%3D",
+       "url": "https://www.youtube.com/watch?v=YQTSAaGjzr0",
        "source": "YouTube, siege-craft guide"
       }
      ],
@@ -1609,7 +1609,7 @@ window.CHRONICLE = {
       },
       {
        "text": "Mo2Builds Hall of Fame",
-       "url": "https://www.mo2builds.com/hall-of-fame",
+       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
       }
      ],
@@ -1626,7 +1626,7 @@ window.CHRONICLE = {
      "links": [
       {
        "text": "Mo2Builds Hall of Fame",
-       "url": "https://www.mo2builds.com/hall-of-fame",
+       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
       },
       {

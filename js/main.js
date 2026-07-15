@@ -26,8 +26,28 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
-  // typographic dress-up: keep quotes as-is, wrap "quoted speech" in em for tone
-  const dress = (s) => esc(s).replace(/[“”]([^“”]{2,220})[“”]|"([^"]{2,220})"/g, (m, a, b) => `<em>“${a || b}”</em>`);
+  // typographic dress-up: wrap "quoted speech" in em with proper curly quotes.
+  // Runs after esc(), so straight quotes arrive as &quot; entities.
+  const dress = (s) => esc(s).replace(/&quot;([\s\S]{2,220}?)&quot;/g, (m, a) => `<em>“${a}”</em>`);
+
+  // split long bodies into readable paragraphs at sentence boundaries,
+  // never splitting inside a quoted passage (even count of " so far)
+  function bodyHTML(body) {
+    if (body.length < 700) return `<p class="entry-body">${dress(body)}</p>`;
+    const sentences = body.match(/[^.!?]+[.!?]+["”')\]]*\s*/g) || [body];
+    const chunks = [];
+    let cur = "";
+    for (const s of sentences) {
+      cur += s;
+      const quotesBalanced = (cur.split('"').length - 1) % 2 === 0;
+      if (cur.length > 430 && quotesBalanced) {
+        chunks.push(cur.trim());
+        cur = "";
+      }
+    }
+    if (cur.trim()) chunks.push(cur.trim());
+    return chunks.map((c) => `<p class="entry-body">${dress(c)}</p>`).join("");
+  }
 
   function youtubeId(url) {
     try {
@@ -99,7 +119,9 @@
   })();
 
   /* ── watch media ─────────────────────────────────────── */
-  function renderWatch(links, tint) {
+  const SCROLL_ICON = `<svg class="ls-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M7.5 4.5h9.2a2 2 0 0 1 2 2v11.2a1.8 1.8 0 0 0 1.8 1.8H9.3a1.8 1.8 0 0 1-1.8-1.8V4.5z"/><path d="M7.5 4.5a2 2 0 0 0-2 2v1.2h3.6" /><path d="M10.5 9.4h5.2M10.5 12.4h5.2M10.5 15.4h3.4"/></svg>`;
+
+  function renderWatch(links) {
     if (!links || !links.length) return "";
     const vids = [];
     const scrolls = [];
@@ -134,9 +156,9 @@
         .map(
           (l) => `
         <a class="link-scroll" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">
-          <span class="ls-icon" aria-hidden="true">&#128220;</span>
+          ${SCROLL_ICON}
           <span><span class="ls-text">${esc(l.text)}</span><span class="ls-source">${esc(sourceLabel(l))}</span></span>
-          <span class="ls-arrow" aria-hidden="true">&#8599;</span>
+          <span class="ls-arrow" aria-hidden="true">&#8599;&#xFE0E;</span>
         </a>`
         )
         .join("");
@@ -172,9 +194,17 @@
       <div class="timeline" style="--age-tint:${tint}" data-age="${id}">
         <div class="spine" aria-hidden="true"><div class="spine-fill"></div></div>`;
 
+      let prevYear = null;
       age.entries.forEach((e) => {
         const isTale = e.kind === "tale";
-        const cls = ["entry", "reveal", isTale ? "tale" : "", e.odinseed ? "odinseed" : ""].filter(Boolean).join(" ");
+        const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+        // year milestone on the spine whenever the chronicle turns a year —
+        // only on dated entries (tales carry approximate era-years) and only forward
+        if (!isTale && e.year && (prevYear === null || e.year > prevYear)) {
+          html += `<div class="year-break reveal" aria-hidden="true"><span class="yb-text">Anno ${e.year}</span><span class="yb-line"></span></div>`;
+          prevYear = e.year;
+        }
+        const cls = ["entry", "reveal", isTale ? "tale" : "", e.odinseed ? "odinseed" : "", isLandmark ? "landmark" : ""].filter(Boolean).join(" ");
         const dateLine = e.date
           ? `<div class="entry-date">${esc(e.date)}${e.odinseed ? `<span class="thread-tag">&#10022; The thread of Odinseed</span>` : ""}</div>`
           : `<div class="tale-kicker">From the margins of the chronicle${e.era ? ` &mdash; ${esc(e.era)}` : ""}${e.odinseed ? ` &nbsp;&#10022;` : ""}</div>`;
@@ -184,9 +214,9 @@
           <div class="entry-card">
             ${dateLine}
             <h3 class="entry-title">${esc(e.title)}</h3>
-            <p class="entry-body">${dress(e.body)}</p>
+            ${bodyHTML(e.body)}
             ${e.marker ? `<div class="fate-seal">${esc(e.marker)}</div>` : ""}
-            ${renderWatch(e.links, tint)}
+            ${renderWatch(e.links)}
           </div>
         </article>`;
       });
@@ -308,12 +338,16 @@
     const canvas = document.getElementById(canvasId);
     if (!canvas || reducedMotion) return;
     const ctx = canvas.getContext("2d");
-    let w, h, parts, running = false, raf = null;
+    let w, h, parts, running = false, raf = null, resizeTimer = null;
 
     function resize() {
       const r = canvas.parentElement.getBoundingClientRect();
-      w = canvas.width = Math.floor(r.width);
-      h = canvas.height = Math.floor(r.height);
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = Math.floor(r.width);
+      h = Math.floor(r.height);
+      canvas.width = Math.floor(r.width * dpr);
+      canvas.height = Math.floor(r.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
     function spawn(init) {
       return {
@@ -363,7 +397,18 @@
       });
     });
     io.observe(canvas);
-    window.addEventListener("resize", reset);
+    // debounced resize that rescales existing particles instead of respawning
+    // (mobile URL-bar collapse fires resize mid-scroll)
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const ow = w, oh = h;
+        resize();
+        if (parts && ow && oh) {
+          for (const p of parts) { p.x *= w / ow; p.y *= h / oh; }
+        }
+      }, 150);
+    });
     reset();
   }
   embers("embers", 9000);

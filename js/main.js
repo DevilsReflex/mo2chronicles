@@ -116,6 +116,12 @@
         </div>`;
       })
       .join("");
+    if (window.matchMedia("(pointer: fine)").matches) {
+      el.insertAdjacentHTML(
+        "beforeend",
+        `<p class="kbd-hint reveal">Walk the chronicle with <kbd>J</kbd><kbd>K</kbd> &mdash; follow the thread with <kbd>T</kbd></p>`
+      );
+    }
   })();
 
   /* ── watch media ─────────────────────────────────────── */
@@ -256,6 +262,8 @@
       entries.forEach((en) => {
         if (en.isIntersecting) {
           en.target.classList.add("in");
+          if (en.target.classList.contains("age-title") || (en.target.tagName === "H2" && en.target.closest("#epilogue")))
+            scramble(en.target, 950);
           revealObs.unobserve(en.target);
         }
       });
@@ -263,6 +271,39 @@
     { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
   );
   document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
+
+  /* ── rune-forge text scramble (letters settle into place) ── */
+  const FORGE_CHARS = "ANVMERTOSIXLCDH";
+  const FORGE_NARROW = "ILTEISNC"; // late-stage churn: narrow glyphs, less shimmy
+  function scramble(el, duration) {
+    if (reducedMotion) return;
+    const nodes = [];
+    el.childNodes.forEach((n) => {
+      if (n.nodeType === 3 && n.textContent.trim()) nodes.push({ node: n, final: n.textContent });
+    });
+    if (!nodes.length) return;
+    el.setAttribute("aria-label", nodes.map((n) => n.final).join(" ").trim());
+    el.style.minHeight = el.offsetHeight + "px"; // lock line count against width churn
+    const t0 = performance.now();
+    (function frame(now) {
+      const p = Math.min((now - t0) / duration, 1);
+      const charset = p > 0.7 ? FORGE_NARROW : FORGE_CHARS;
+      for (const { node, final } of nodes) {
+        const settled = Math.floor(final.length * p);
+        let out = final.slice(0, settled);
+        for (let i = settled; i < final.length; i++) {
+          const c = final[i];
+          out += /\s/.test(c) ? c : charset[(Math.random() * charset.length) | 0];
+        }
+        node.textContent = out;
+      }
+      if (p < 1) requestAnimationFrame(frame);
+      else {
+        nodes.forEach(({ node, final }) => { node.textContent = final; });
+        el.style.minHeight = "";
+      }
+    })(t0);
+  }
 
   /* ── nav state + progress + anno + spine fill ────────── */
   const nav = document.getElementById("topnav");
@@ -306,10 +347,11 @@
         if (yr && yr !== currentYear) {
           currentYear = yr;
           annoYear.textContent = yr;
-          annoYear.animate(
-            [{ opacity: 0.2, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }],
-            { duration: 420, easing: "cubic-bezier(0.19,1,0.22,1)" }
-          );
+          if (!reducedMotion)
+            annoYear.animate(
+              [{ opacity: 0.2, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }],
+              { duration: 420, easing: "cubic-bezier(0.19,1,0.22,1)" }
+            );
         }
       }
 
@@ -321,24 +363,50 @@
         spineFill.style.height = visible + "px";
       }
 
-      // active age in nav
+      // active age in nav + era atmosphere
       let active = null;
       for (const d of dividers) {
         if (d.getBoundingClientRect().top < window.innerHeight * 0.55) active = d.id;
       }
       navLinks.forEach((a) => a.classList.toggle("active", a.dataset.age === active));
+      setEra(active ? parseInt(active.split("-")[1], 10) - 1 : -1);
+
+      // roman numerals swell as their divider crosses the viewport
+      if (!reducedMotion) {
+        for (const d of dividers) {
+          const r = d.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > window.innerHeight) continue;
+          const p = Math.min(Math.max((window.innerHeight - r.top) / (window.innerHeight + r.height), 0), 1);
+          const roman = d.querySelector(".age-roman-bg");
+          if (roman) roman.style.setProperty("--zoom", (0.92 + p * 0.18).toFixed(4));
+        }
+      }
+
+      // thread navigator counter
+      if (document.body.classList.contains("thread-mode")) updateThreadCount();
     });
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", onScroll);
-  onScroll();
+  // deferred: onScroll touches the era/atmosphere module declared below
+  setTimeout(onScroll, 0);
 
   /* ── embers (canvas particles) ───────────────────────── */
-  function embers(canvasId, density) {
+  function embers(canvasId, density, interactive) {
     const canvas = document.getElementById(canvasId);
     if (!canvas || reducedMotion) return;
     const ctx = canvas.getContext("2d");
     let w, h, parts, running = false, raf = null, resizeTimer = null;
+    const pointer = { x: -9999, y: -9999 };
+    if (interactive && window.matchMedia("(pointer: fine)").matches) {
+      const host = canvas.parentElement;
+      host.addEventListener("pointermove", (ev) => {
+        const r = canvas.getBoundingClientRect();
+        pointer.x = ev.clientX - r.left;
+        pointer.y = ev.clientY - r.top;
+      });
+      host.addEventListener("pointerleave", () => { pointer.x = -9999; pointer.y = -9999; });
+    }
 
     function resize() {
       const r = canvas.parentElement.getBoundingClientRect();
@@ -374,6 +442,15 @@
         p.drift += 0.012;
         p.x += p.vx + Math.sin(p.drift) * 0.18;
         p.y -= p.vy;
+        // embers shy away from the pointer, like sparks from a stirred fire
+        const pdx = p.x - pointer.x, pdy = p.y - pointer.y;
+        const pd2 = pdx * pdx + pdy * pdy;
+        if (pd2 < 16900 && pd2 > 0.01) {
+          const pd = Math.sqrt(pd2);
+          const push = ((130 - pd) / 130) * 1.35;
+          p.x += (pdx / pd) * push;
+          p.y += (pdy / pd) * push;
+        }
         if (p.y < -12 || p.x < -12 || p.x > w + 12) parts[i] = spawn(false);
         const flicker = 0.75 + Math.sin(p.drift * 3) * 0.25;
         ctx.beginPath();
@@ -411,6 +488,365 @@
     });
     reset();
   }
-  embers("embers", 9000);
-  embers("embers-end", 14000);
+  embers("embers", 9000, true);
+  embers("embers-end", 14000, false);
+
+  /* ═══════════════════════════════════════════════════════
+     IMMERSION SYSTEMS
+     ═══════════════════════════════════════════════════════ */
+  const finePointer = window.matchMedia("(pointer: fine)").matches;
+
+  const hexRGB = (hex) => {
+    const n = parseInt(hex.slice(1), 16);
+    return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+  };
+  const DEFAULT_TINT = "#c9a86a";
+
+  /* ── era atmosphere: aura crossfade + tinted dust + chrome ── */
+  let auraEl = null;
+  let currentEra = null;
+  const dust = (function () {
+    const canvas = document.getElementById("atmosphere");
+    if (!canvas || reducedMotion) return { setTint() {} };
+    const ctx = canvas.getContext("2d");
+    let w, h, parts = [], raf = null;
+    const cur = hexRGB(DEFAULT_TINT);
+    const target = hexRGB(DEFAULT_TINT);
+    function resize() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = Math.floor(w * dpr);
+      canvas.height = Math.floor(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function spawn(init) {
+      return {
+        x: Math.random() * w,
+        y: init ? Math.random() * h : h + 8,
+        r: 0.5 + Math.random() * 1.5,
+        vy: 0.05 + Math.random() * 0.3,
+        vx: (Math.random() - 0.5) * 0.12,
+        drift: Math.random() * Math.PI * 2,
+        a: 0.05 + Math.random() * 0.22,
+      };
+    }
+    function reset() {
+      resize();
+      parts = Array.from({ length: Math.min(Math.floor((w * h) / 22000), 72) }, () => spawn(true));
+    }
+    function tick() {
+      cur.r += (target.r - cur.r) * 0.02;
+      cur.g += (target.g - cur.g) * 0.02;
+      cur.b += (target.b - cur.b) * 0.02;
+      ctx.clearRect(0, 0, w, h);
+      for (let i = 0; i < parts.length; i++) {
+        const p = parts[i];
+        p.drift += 0.008;
+        p.x += p.vx + Math.sin(p.drift) * 0.12;
+        p.y -= p.vy;
+        if (p.y < -8 || p.x < -8 || p.x > w + 8) parts[i] = spawn(false);
+        const flicker = 0.8 + Math.sin(p.drift * 2.6) * 0.2;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${cur.r | 0},${cur.g | 0},${cur.b | 0},${(p.a * flicker).toFixed(3)})`;
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    let rt = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        const ow = w, oh = h;
+        resize();
+        if (ow && oh) for (const p of parts) { p.x *= w / ow; p.y *= h / oh; }
+      }, 150);
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) { if (raf) cancelAnimationFrame(raf); raf = null; }
+      else if (!raf) tick();
+    });
+    reset();
+    tick();
+    return {
+      setTint(hex) {
+        const t = hexRGB(hex);
+        target.r = t.r; target.g = t.g; target.b = t.b;
+      },
+    };
+  })();
+
+  function auraCSS(hex) {
+    const { r, g, b } = hexRGB(hex);
+    return (
+      `radial-gradient(ellipse 75% 55% at 50% -10%, rgba(${r},${g},${b},0.10), transparent 65%),` +
+      `radial-gradient(ellipse 85% 55% at 50% 110%, rgba(${r},${g},${b},0.08), transparent 65%)`
+    );
+  }
+  function setEra(idx) {
+    if (idx === currentEra) return;
+    currentEra = idx;
+    const tint = idx >= 0 ? AGE_TINTS[idx] || DEFAULT_TINT : DEFAULT_TINT;
+    dust.setTint(tint);
+    document.documentElement.style.setProperty("--chrome-tint", tint);
+    // fresh layer per era so rapid scrolling never repaints a layer mid-fade
+    const prev = auraEl;
+    const el = document.createElement("div");
+    el.className = "aura-layer";
+    el.setAttribute("aria-hidden", "true");
+    el.style.background = auraCSS(tint);
+    document.body.insertBefore(el, document.getElementById("atmosphere"));
+    requestAnimationFrame(() => requestAnimationFrame(() => { el.style.opacity = "1"; }));
+    auraEl = el;
+    if (prev) {
+      prev.style.opacity = "0";
+      setTimeout(() => prev.remove(), 2700);
+    }
+  }
+  setEra(-1);
+
+  /* ── torchlight cursor ── */
+  if (finePointer && !reducedMotion) {
+    const torch = document.getElementById("torch");
+    let tx = 0, ty = 0, torchRaf = null;
+    document.addEventListener("pointermove", (ev) => {
+      tx = ev.clientX;
+      ty = ev.clientY;
+      if (!document.body.classList.contains("torch-on")) document.body.classList.add("torch-on");
+      if (!torchRaf) {
+        torchRaf = requestAnimationFrame(() => {
+          torchRaf = null;
+          torch.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
+        });
+      }
+    });
+    document.documentElement.addEventListener("pointerleave", () => document.body.classList.remove("torch-on"));
+  }
+
+  /* ── hero parallax ── */
+  if (finePointer && !reducedMotion) {
+    const hero = document.getElementById("hero");
+    const inner = hero.querySelector(".hero-inner");
+    hero.addEventListener("pointermove", (ev) => {
+      const r = hero.getBoundingClientRect();
+      const px = (ev.clientX - r.left) / r.width - 0.5;
+      const py = (ev.clientY - r.top) / r.height - 0.5;
+      inner.style.setProperty("--px", (px * -14).toFixed(1) + "px");
+      inner.style.setProperty("--py", (py * -9).toFixed(1) + "px");
+    });
+    hero.addEventListener("pointerleave", () => {
+      inner.style.setProperty("--px", "0px");
+      inner.style.setProperty("--py", "0px");
+    });
+  }
+
+  /* ── hero title forges itself once the veil lifts ── */
+  const heroTitle = document.getElementById("hero-title");
+  if (heroTitle) setTimeout(() => scramble(heroTitle, 1100), 1000);
+
+  /* ── card tilt + pointer sheen ── */
+  if (finePointer && !reducedMotion) {
+    let tiltEv = null, tiltRaf = null, tiltCard = null;
+    const untilt = () => {
+      if (tiltCard) {
+        tiltCard.style.setProperty("--rx", "0deg");
+        tiltCard.style.setProperty("--ry", "0deg");
+        tiltCard = null;
+      }
+    };
+    document.addEventListener("pointermove", (ev) => {
+      tiltEv = ev;
+      if (tiltRaf) return;
+      tiltRaf = requestAnimationFrame(() => {
+        tiltRaf = null;
+        const t = tiltEv.target;
+        const card = t instanceof Element ? t.closest(".entry-card") : null;
+        if (tiltCard && tiltCard !== card) {
+          tiltCard.style.setProperty("--rx", "0deg");
+          tiltCard.style.setProperty("--ry", "0deg");
+        }
+        tiltCard = card;
+        if (!card) return;
+        const r = card.getBoundingClientRect();
+        const px = (tiltEv.clientX - r.left) / r.width;
+        const py = (tiltEv.clientY - r.top) / r.height;
+        card.style.setProperty("--mx", (px * 100).toFixed(1) + "%");
+        card.style.setProperty("--my", (py * 100).toFixed(1) + "%");
+        card.style.setProperty("--rx", ((py - 0.5) * -2.4).toFixed(2) + "deg");
+        card.style.setProperty("--ry", ((px - 0.5) * 2.4).toFixed(2) + "deg");
+      });
+    });
+    // pointer over an iframe or out of the window stops delivering moves — untilt
+    document.documentElement.addEventListener("pointerleave", untilt);
+    window.addEventListener("blur", untilt);
+    window.addEventListener("scroll", untilt, { passive: true });
+  }
+
+  /* ── the thread of odinseed ── */
+  const threadBtn = document.getElementById("thread-toggle");
+  const threadCount = document.getElementById("thread-count");
+  const odinseedEntries = Array.from(document.querySelectorAll(".entry.odinseed"));
+  function threadOn() { return document.body.classList.contains("thread-mode"); }
+  function setThread(on) {
+    document.body.classList.toggle("thread-mode", on);
+    threadBtn.setAttribute("aria-pressed", String(on));
+    if (on) {
+      updateThreadCount();
+      history.replaceState(null, "", "#thread");
+    } else if (location.hash === "#thread") {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+  function updateThreadCount() {
+    let idx = 0;
+    const mid = window.innerHeight * 0.55;
+    for (let i = 0; i < odinseedEntries.length; i++) {
+      if (odinseedEntries[i].getBoundingClientRect().top < mid) idx = i + 1;
+    }
+    const txt = `✦ ${idx || "–"} / ${odinseedEntries.length}`;
+    if (threadCount.textContent !== txt) threadCount.textContent = txt;
+  }
+  function jumpList(list, dir) {
+    const mid = window.innerHeight / 2;
+    let targetEl = null;
+    if (dir > 0) {
+      targetEl = list.find((el) => el.getBoundingClientRect().top > mid + 30);
+    } else {
+      // previous = last entry that ends above the midline, so the entry
+      // currently spanning the center is never re-targeted
+      for (const el of list) {
+        const r = el.getBoundingClientRect();
+        if (r.bottom < mid - 30) targetEl = el;
+        else break;
+      }
+    }
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+      const node = targetEl.querySelector(".entry-node");
+      if (node && !reducedMotion)
+        node.animate(
+          [
+            { boxShadow: "0 0 0 rgba(236,208,150,0)" },
+            { boxShadow: "0 0 26px rgba(236,208,150,0.9)" },
+            { boxShadow: "0 0 0 rgba(236,208,150,0)" },
+          ],
+          { duration: 1100, easing: "ease-out", delay: 350 }
+        );
+    }
+  }
+  threadBtn.addEventListener("click", () => setThread(!threadOn()));
+  document.getElementById("thread-exit").addEventListener("click", () => setThread(false));
+  document.getElementById("thread-prev").addEventListener("click", () => jumpList(odinseedEntries, -1));
+  document.getElementById("thread-next").addEventListener("click", () => jumpList(odinseedEntries, 1));
+  if (location.hash === "#thread") setThread(true);
+
+  /* ── keyboard walking ── */
+  const allEntries = Array.from(document.querySelectorAll(".entry"));
+  document.addEventListener("keydown", (ev) => {
+    if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+    const t = ev.target;
+    if (t instanceof Element && t.matches("input, textarea, select, [contenteditable]")) return;
+    const k = ev.key.toLowerCase();
+    if (k === "j" || k === "k") {
+      ev.preventDefault();
+      jumpList(threadOn() ? odinseedEntries : allEntries, k === "j" ? 1 : -1);
+    } else if (k === "t") {
+      setThread(!threadOn());
+    }
+  });
+
+  /* ── ambience: wind, deep drone, distant ember-crackle ── */
+  (function ambience() {
+    const btn = document.getElementById("ambience-toggle");
+    let ac = null, master = null, on = false, crackleTimer = null, suspendTimer = null;
+    function build() {
+      ac = new (window.AudioContext || window.webkitAudioContext)();
+      master = ac.createGain();
+      master.gain.value = 0;
+      master.connect(ac.destination);
+
+      // wind: looped brown noise through a slowly wobbling lowpass
+      const len = ac.sampleRate * 4;
+      const buf = ac.createBuffer(1, len, ac.sampleRate);
+      const data = buf.getChannelData(0);
+      let last = 0;
+      for (let i = 0; i < len; i++) {
+        last = (last + 0.02 * (Math.random() * 2 - 1)) / 1.02;
+        data[i] = last * 3.2;
+      }
+      const wind = ac.createBufferSource();
+      wind.buffer = buf;
+      wind.loop = true;
+      const lp = ac.createBiquadFilter();
+      lp.type = "lowpass";
+      lp.frequency.value = 330;
+      lp.Q.value = 0.4;
+      const windGain = ac.createGain();
+      windGain.gain.value = 0.055;
+      wind.connect(lp).connect(windGain).connect(master);
+      const lfo = ac.createOscillator();
+      lfo.frequency.value = 0.06;
+      const lfoAmp = ac.createGain();
+      lfoAmp.gain.value = 110;
+      lfo.connect(lfoAmp).connect(lp.frequency);
+      const lfo2 = ac.createOscillator();
+      lfo2.frequency.value = 0.11;
+      const lfo2Amp = ac.createGain();
+      lfo2Amp.gain.value = 0.02;
+      lfo2.connect(lfo2Amp).connect(windGain.gain);
+      wind.start();
+      lfo.start();
+      lfo2.start();
+
+      // drone: two barely-detuned triangles, very low
+      const droneGain = ac.createGain();
+      droneGain.gain.value = 0.016;
+      const dlp = ac.createBiquadFilter();
+      dlp.type = "lowpass";
+      dlp.frequency.value = 190;
+      [55, 55.4].forEach((f) => {
+        const o = ac.createOscillator();
+        o.type = "triangle";
+        o.frequency.value = f;
+        o.connect(dlp);
+        o.start();
+      });
+      dlp.connect(droneGain).connect(master);
+    }
+    function crackle() {
+      if (!on || !ac) return;
+      const dur = 0.025 + Math.random() * 0.06;
+      const buf = ac.createBuffer(1, Math.ceil(ac.sampleRate * dur), ac.sampleRate);
+      const d = buf.getChannelData(0);
+      for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / d.length);
+      const src = ac.createBufferSource();
+      src.buffer = buf;
+      const hp = ac.createBiquadFilter();
+      hp.type = "highpass";
+      hp.frequency.value = 1400 + Math.random() * 1400;
+      const g = ac.createGain();
+      g.gain.value = 0.01 + Math.random() * 0.022;
+      src.connect(hp).connect(g).connect(master);
+      src.start();
+      crackleTimer = setTimeout(crackle, 700 + Math.random() * 2800);
+    }
+    btn.addEventListener("click", () => {
+      on = !on;
+      btn.setAttribute("aria-pressed", String(on));
+      clearTimeout(suspendTimer);
+      if (on) {
+        if (!ac) build();
+        ac.resume();
+        master.gain.cancelScheduledValues(ac.currentTime);
+        master.gain.setTargetAtTime(1.0, ac.currentTime, 0.8);
+        crackle();
+      } else if (ac) {
+        clearTimeout(crackleTimer);
+        master.gain.cancelScheduledValues(ac.currentTime);
+        master.gain.setTargetAtTime(0, ac.currentTime, 0.4);
+        suspendTimer = setTimeout(() => { if (!on && ac) ac.suspend(); }, 1800);
+      }
+    });
+  })();
 })();

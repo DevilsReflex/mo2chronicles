@@ -60,6 +60,59 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
 
+/* ─────────────── atmosphere: aura, dust, torchlight ───────────────
+   Stack: aura (0) < dust canvas (1) < content (2) < grain (3) < torch (4) */
+@property --chrome-tint {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #c9a86a;
+}
+.aura-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 2.4s ease;
+}
+#atmosphere {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+main, footer { position: relative; z-index: 2; }
+#torch {
+  position: fixed;
+  left: 0; top: 0;
+  width: 760px; height: 760px;
+  margin: -380px 0 0 -380px;
+  pointer-events: none;
+  z-index: 4;
+  mix-blend-mode: screen;
+  background: radial-gradient(circle,
+    rgba(216, 178, 112, 0.075) 0%,
+    rgba(216, 178, 112, 0.032) 32%,
+    transparent 62%);
+  /* era-tinted flame where color-mix is supported; the line above is the fallback */
+  background: radial-gradient(circle,
+    color-mix(in srgb, var(--chrome-tint) 8%, transparent) 0%,
+    color-mix(in srgb, var(--chrome-tint) 3.4%, transparent) 32%,
+    transparent 62%);
+  opacity: 0;
+  transition: opacity 1.2s ease, --chrome-tint 1.8s ease;
+  will-change: transform;
+  animation: torch-breathe 3.4s ease-in-out infinite;
+}
+body.torch-on #torch { opacity: 1; }
+@keyframes torch-breathe {
+  0%, 100% { filter: brightness(1); }
+  47% { filter: brightness(0.86); }
+  73% { filter: brightness(1.07); }
+}
+
 /* ─────────────── veil (first paint) ─────────────── */
 #veil {
   position: fixed;
@@ -125,6 +178,31 @@ body::after {
   .age-nav .nav-name { display: inline; margin-left: 6px; font-size: 12px; letter-spacing: 0.16em; opacity: 0.75; }
 }
 
+/* nav action buttons (thread / ambience) */
+.nav-actions { display: flex; align-items: center; gap: 4px; }
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--bone-dim);
+  padding: 7px 11px;
+  transition: color 0.3s, border-color 0.3s, background 0.3s;
+}
+.nav-btn:hover { color: var(--gold-bright); }
+.nav-btn[aria-pressed="true"] {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+  background: rgba(201, 168, 106, 0.07);
+}
+.nav-btn-text { display: none; }
+@media (min-width: 900px) { .nav-btn-text { display: inline; } }
+
 .scroll-progress {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -135,8 +213,87 @@ body::after {
   height: 100%;
   width: 0%;
   background: linear-gradient(90deg, #7d6337, var(--gold), var(--gold-bright));
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--chrome-tint) 60%, #201a10),
+    var(--chrome-tint),
+    color-mix(in srgb, var(--chrome-tint) 65%, #fff));
   box-shadow: 0 0 8px rgba(201, 168, 106, 0.55);
-  transition: width 0.1s linear;
+  transition: width 0.1s linear, --chrome-tint 1.8s ease;
+}
+
+/* ─────────────── thread of odinseed mode ─────────────── */
+body.thread-mode .entry {
+  transition:
+    opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1),
+    filter 0.7s ease,
+    transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* dim only entries that have already revealed, so the reveal choreography survives */
+body.thread-mode .entry.in:not(.odinseed) { opacity: 0.13; filter: saturate(0.25); }
+body.thread-mode .entry.in:not(.odinseed):hover { opacity: 0.55; filter: saturate(0.7); }
+body.thread-mode .year-break { opacity: 0.35; }
+body.thread-mode .entry.odinseed .entry-card {
+  border-color: rgba(201, 168, 106, 0.5);
+  box-shadow: 0 0 60px -18px rgba(201, 168, 106, 0.25);
+}
+
+#thread-nav {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 96;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 8px;
+  background: rgba(8, 8, 11, 0.88);
+  border: 1px solid var(--gold-dim);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 14px 40px -12px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto; }
+#thread-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--bone-dim);
+  line-height: 1;
+  padding: 8px 10px;
+  transition: color 0.25s;
+}
+#thread-nav button:hover { color: var(--gold-bright); }
+.t-chev {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+.t-chev.up { transform: rotate(-135deg) translate(-2px, -2px); }
+.t-chev.down { transform: rotate(45deg) translate(-2px, -2px); }
+#thread-exit {
+  font-family: var(--display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+#thread-count {
+  font-family: var(--display);
+  font-size: 12.5px;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  padding: 0 10px;
+  white-space: nowrap;
+}
+#thread-exit { border-left: 1px solid rgba(201, 168, 106, 0.18) !important; }
+@media (max-width: 700px) {
+  #thread-nav { right: 50%; transform: translate(50%, 16px); }
+  body.thread-mode #thread-nav { transform: translate(50%, 0); }
 }
 
 /* ─────────────── anno (year) indicator ─────────────── */
@@ -165,9 +322,10 @@ body::after {
 .anno-year {
   font-family: var(--display);
   font-size: 26px;
-  color: var(--gold);
+  color: var(--chrome-tint, var(--gold));
   text-shadow: 0 0 18px rgba(201, 168, 106, 0.35);
   font-variant-numeric: tabular-nums;
+  transition: color 1.4s ease;
 }
 @media (max-width: 900px) { #anno { display: none; } }
 
@@ -201,7 +359,33 @@ body::after {
   pointer-events: none;
   background: radial-gradient(ellipse 100% 90% at 50% 45%, transparent 55%, rgba(3, 3, 4, 0.85) 100%);
 }
-.hero-inner { position: relative; z-index: 2; max-width: 1050px; }
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1050px;
+  transform: translate3d(var(--px, 0px), var(--py, 0px), 0);
+  transition: transform 0.35s cubic-bezier(0.15, 0.6, 0.3, 1);
+}
+
+/* keyboard hint under the prefaces */
+.kbd-hint {
+  margin-top: 2.4em;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+}
+.kbd-hint kbd {
+  font-family: var(--display);
+  font-size: 12px;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  padding: 2px 7px;
+  margin: 0 3px;
+  background: rgba(201, 168, 106, 0.05);
+}
 
 .hero-eyebrow {
   font-family: var(--sans);
@@ -435,7 +619,7 @@ body::after {
 .age-roman-bg {
   position: absolute;
   top: 50%; left: 50%;
-  transform: translate(-50%, -52%);
+  transform: translate(-50%, -52%) scale(var(--zoom, 1));
   font-family: var(--display);
   font-size: clamp(210px, 44vw, 560px);
   line-height: 1;
@@ -443,6 +627,7 @@ body::after {
   -webkit-text-stroke: 1px rgba(201, 168, 106, 0.13);
   pointer-events: none;
   user-select: none;
+  will-change: transform;
 }
 .age-inner { position: relative; max-width: 880px; }
 .age-kicker {
@@ -557,12 +742,50 @@ body::after {
   border: 1px solid rgba(201, 168, 106, 0.14);
   padding: clamp(22px, 3.4vw, 38px) clamp(22px, 3.6vw, 42px);
   position: relative;
-  transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 0.18s ease-out;
 }
 .entry-card:hover {
   border-color: rgba(201, 168, 106, 0.32);
   box-shadow: 0 18px 50px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(201, 168, 106, 0.06);
-  transform: translateY(-2px);
+}
+/* pointer-tracked sheen + 3D tilt (fine pointers only; JS sets the vars).
+   The sheen answers in the ERA's color, not the torch's — the parchment
+   replies cold-blue in Age I, blood-red in Age II, desert gold in Age V. */
+.entry-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(236, 208, 150, 0.065), transparent 62%);
+  background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--age-tint, #c9a86a) 8%, transparent), transparent 62%);
+}
+.entry-card:hover::after { opacity: 1; }
+@media (pointer: fine) {
+  .entry-card {
+    transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px));
+  }
+  .entry-card:hover { --lift: -2px; }
+}
+/* coarse pointers get a one-shot light pass as each card arrives —
+   the torch walks the page even where no cursor exists */
+@media (pointer: coarse) {
+  .entry-card::after {
+    background: linear-gradient(115deg, transparent 30%, rgba(236, 208, 150, 0.055) 48%, transparent 66%);
+    background: linear-gradient(115deg, transparent 30%,
+      color-mix(in srgb, var(--age-tint, #c9a86a) 7%, transparent) 48%, transparent 66%);
+    background-size: 100% 340%;
+    background-position: 50% 130%;
+  }
+  .entry.in .entry-card::after { animation: card-pass 1.6s ease 0.35s 1; }
+  @keyframes card-pass {
+    0% { opacity: 0; background-position: 50% 130%; }
+    35% { opacity: 1; }
+    100% { opacity: 0; background-position: 50% -30%; }
+  }
 }
 .entry.odinseed .entry-card {
   border-color: rgba(201, 168, 106, 0.3);
@@ -634,6 +857,20 @@ body::after {
   background: var(--gold);
   box-shadow: 0 0 18px rgba(201, 168, 106, 0.7);
 }
+/* landmark forging rule: a gold line drawn across the card top on arrival */
+.entry.landmark .entry-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+  box-shadow: 0 0 14px rgba(236, 208, 150, 0.5);
+  transform: scaleX(0);
+  transition: transform 1.6s cubic-bezier(0.19, 1, 0.22, 1) 0.55s;
+}
+.entry.landmark.in .entry-card::before { transform: scaleX(1); }
 
 /* ── year milestones on the spine ── */
 .year-break {
@@ -933,4 +1170,9 @@ footer p {
   .reveal, .reveal-hero { opacity: 1 !important; transform: none !important; filter: none !important; animation: none !important; transition: none !important; }
   .cue-chevron { animation: none; }
   #veil { animation-duration: 0.2s; }
+  #atmosphere, #torch { display: none; }
+  .entry-card, .hero-inner, .age-roman-bg { transform: none !important; }
+  .entry.odinseed.reveal.in .entry-card { animation: none; }
+  .entry.landmark .entry-card::before { transition: none; transform: scaleX(1); }
+  .entry.in .entry-card::after { animation: none; }
 }

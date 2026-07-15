@@ -20,6 +20,10 @@
 <!-- Veil: first-visit fade -->
 <div id="veil" aria-hidden="true"></div>
 
+<!-- Atmosphere: era-tinted aura layers (injected by JS) + global ember dust + torchlight -->
+<canvas id="atmosphere" aria-hidden="true"></canvas>
+<div id="torch" aria-hidden="true"></div>
+
 <!-- Fixed navigation -->
 <header id="topnav" aria-label="Chronicle navigation">
   <a class="wordmark" href="#top">
@@ -27,8 +31,24 @@
     <span class="wordmark-text">The Chronicle of Nave</span>
   </a>
   <nav class="age-nav" id="age-nav" aria-label="Ages"></nav>
+  <div class="nav-actions">
+    <button class="nav-btn" id="thread-toggle" aria-pressed="false" title="Follow the thread of Odinseed (T)">
+      <span aria-hidden="true">&#10022;</span><span class="nav-btn-text">Thread</span>
+    </button>
+    <button class="nav-btn" id="ambience-toggle" aria-pressed="false" title="Toggle ambience">
+      <svg width="16" height="13" viewBox="0 0 20 15" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M4 3.2 Q 6.5 0.8, 9 3.2 T 14 3.2"/><path d="M1 7.5 Q 3.5 5.1, 6 7.5 T 11 7.5 Q 13.5 5.1, 16 7.5"/><path d="M6 11.8 Q 8.5 9.4, 11 11.8 T 16 11.8"/></svg><span class="nav-btn-text">Ambience</span>
+    </button>
+  </div>
   <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-fill" id="progress-fill"></div></div>
 </header>
+
+<!-- Thread of Odinseed navigator -->
+<div id="thread-nav" role="group" aria-label="Thread of Odinseed navigation">
+  <button id="thread-prev" aria-label="Previous thread entry"><span class="t-chev up" aria-hidden="true"></span></button>
+  <span id="thread-count" aria-live="polite">&#10022;</span>
+  <button id="thread-next" aria-label="Next thread entry"><span class="t-chev down" aria-hidden="true"></span></button>
+  <button id="thread-exit" aria-label="Leave the thread">Leave</button>
+</div>
 
 <!-- Fixed year indicator -->
 <div id="anno" aria-hidden="true">

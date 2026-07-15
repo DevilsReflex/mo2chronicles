@@ -1,0 +1,2182 @@
+// The Chronicle of Nave — structured data extracted from the source document.
+window.CHRONICLE = {
+ "title": "The Chronicle of Nave",
+ "subtitle": "Being a True and Epic History of the Guilds of Mortal Online 2 — of the Five Years in which a World was Won, and Lost, and Won Again · 2021 – 2026 · set down in the manner of the old chronicles, from the accounts of those who fought its wars and filmed its sieges",
+ "invocation": [
+  "Of wars beyond number upon the plains of a world but newly made; of the guilds that rose like towers and fell like towers; of the sixteen thrones, and the multitude who broke themselves upon them; of kings anointed in the sewers and empires drowned beneath the union of all against them — of these I sing.",
+  "For in the land of Nave there is no peace, nor was there ever, nor shall there be while two souls yet live to draw a blade. Here nothing is given and nothing is safe; here a man may lose in a single hour all that he gathered in a year, and a great house may lose in a single night the throne it bled a whole season to raise. Yet out of that cruelty — out of that unbroken hazard — the dwellers of Nave wrought a history as grand and as terrible as any sung of the elder kingdoms of the earth: five years of siege and of betrayal, of brotherhood and of butchery, of banners lifted into the sun and banners burned into the mud.",
+  "Hear it now, and remember them — the mighty and the fallen, the honoured and the infamous alike — for they carved their names into a world that keeps no scribe but memory; and memory forgets nothing, and forgives less."
+ ],
+ "sections": [
+  {
+   "heading": "Preface of the Chronicler",
+   "paragraphs": [
+    "Hear now the history of the guilds of Nave, and of the five years in which the sandbox world of Mortal Online 2 was won, and lost, and won again — a tale of empires raised upon an empty plain and cast down into the dust, of the same magnificent and exhausting war fought over and over again beneath an ever-changing sky.",
+    "Understand first how this history is known. Nave keeps no official annal of its heroes; it has no royal scribe. What is remembered was remembered by the fighters themselves — by the chroniclers who carried their cameras into the press of battle. Chief among them stands Speznat of Wolfszeit, the old archivist, whose channel has preserved the great sieges in clear 4K for years. Beside him ride BruceLeeRob, bard of the Odin-worshippers; Azog the Defiler, warlord of the host called Content, who filmed the wars he himself commanded; and Lordus the General, whose voice rode over the footage of the largest battles the world has known. Where their record fails, the keepers of the Hall of Fame at Mo2Builds preserved the names, and the official annals of Star Vault preserved the dates.",
+    "A note upon the names herein. Let the reader mark well the names that recur through this history, for they are the men and women whose deeds and words the chroniclers thought worthy to preserve. Among the chroniclers and heralds stand Speznat of Wolfszeit, the archivist of sieges; BruceLeeRob, the streamer who is King Barados of Odinseed himself; Azog the Defiler, warlord of the host Content, who filmed the wars he led; General Lordus, whose voice rode over the greatest battles; Tasu, who set down \"A Game of Keeps\"; and the community's tongue — Vellek the podcaster, Gab the songmaker, Axe of the movie-announcer voice, Rivers the constant streamer, and Diphrael, keeper of the unofficial hall. Among the war-captains and champions are Kuthara of KotO, Abbadon of Nightmare, Slasher the duelist, Cixx of the Headless, Danny of MKRG, Killox of the Dreadlords, PoisonArrows and Pandah Sykes of the BeastMasters, Emdash of Eternal, Putzin and TheMasterStick of Acolytes, and Slyy (called Pockets), who drew the first maps. And among the rogues and legends whose infamy outlived their deeds: RunKarni, Tats, Buda, Oghmir the scammer, Thievery and Cruel of Overt, and the brothers Stinkeye and Pinkeye. Over all of them presided Henrik Nyström, lord of Star Vault, whose word shaped the very ground they fought upon. These names, and more, shall recur — watch for them as for old friends and old foes.",
+    "Be warned, as any honest chronicler must warn: the victors set down what they wished remembered, and the footage of the defeated was allowed to fade. Political maps of Nave were drawn and redrawn \"like one a week,\" and rarely showed who truly held the land. Guilds changed their names and their banners; captains changed their allegiances between one season and the next. Treat what follows, therefore, as the living memory of an age — not a ledger of certainties. Where the trail runs thin, it will be said plainly."
+   ]
+  },
+  {
+   "heading": "How to Read This Chronicle",
+   "paragraphs": [
+    "This history is arranged as a timeline of events: descend through the years as you would descend through the reigns of kings. Each Age opens with a few words on its temper, and then unfolds as a roll of dated deeds.",
+    "One thread runs through all of it, and is marked wherever it appears with the sign ✦. That thread is the tale of a single house — Odinseed — and its king, Barados, together with the warlord Azog, whose channels the reader has been bidden to follow. Trace the ✦ from first year to last and you will have followed one clean human story straight through the chaos of five years of war."
+   ]
+  }
+ ],
+ "ages": [
+  {
+   "age": "The First Age",
+   "name": "The Gathering at the Gates",
+   "range": "2020 – 2021",
+   "temper": [
+    "Before the world was opened, the great houses had already gathered at its gates, bringing with them the grudges of an elder world (the first Mortal Online) and of games older still."
+   ],
+   "entries": [
+    {
+     "date": "September 2020",
+     "title": "The Debates of the Deeds",
+     "body": "Before ever the gates opened, the veterans were already at war — on the forums. When Star Vault published its designs for houses, deeds, and keeps, the old hands fell upon them: Phen, who would later lend his voice to Tasu's reckoning, foresaw the whole shape of the wars to come — \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" The world's first battles were fought in theory, by men who had lost keeps before.",
+     "links": [
+      {
+       "text": "Houses, Deeds and Keeps — the veterans debate the design, Phen among them",
+       "url": "https://mortalonline2.com/forums/threads/houses-deeds-and-keeps-website-update.454/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2020
+    },
+    {
+     "date": "October 2020",
+     "title": "The Acolytes are sworn",
+     "body": "More than a year before the gates opened, the host of Acolytes was founded expressly for the world to come, vowing to hold \"one of the sixteen\" thrones and disdaining the \"zerg\" hordes of lesser games. In their number rode TheMasterStick, who would become the great cartographer of the age.",
+     "links": [
+      {
+       "text": "Mortal Online 2 Announced — New Trailer Released",
+       "url": "https://www.mmorpg.com/mortal-online/news/mortal-online-2-announced-new-trailer-released-2000102433",
+       "source": "MMORPG.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2020
+    },
+    {
+     "date": "November 2020",
+     "title": "The First World-Record Muster",
+     "body": "Star Vault called the world to a weekend stress test and reached for a record: the most players ever on a single un-instanced server. Forty thousand keys went out; the record was not broken, but the servers held, and Henrik owned the shortfall plainly — \"the bad part is, we still don't know our cap.\" It was the first of the great musters, and the pattern of all of them: the whole community summoned as one host, to break the world on purpose before the world could break itself.",
+     "links": [
+      {
+       "text": "Going for World Record! — the official call",
+       "url": "https://www.youtube.com/watch?v=qOB-dQyGet0",
+       "source": "Star Vault"
+      },
+      {
+       "text": "The Weekend Stress Test Didn't Break Records, But Was a Success",
+       "url": "https://mmos.com/news/mortal-online-2s-weekend-stress-test-didnt-break-world-records-but-was-still-a-success",
+       "source": "MMOs.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2020
+    },
+    {
+     "date": "",
+     "title": "Of the elder houses",
+     "body": "So too came Wolfszeit, forged in the first Mortal Online in the year 2009; Requiem, whose blood ran back to a band called Dogma out of Darkfall, and whose herald Hayasa called the old veterans to the new war; Mors Omnibus, sworn since 2012; and Keepers of the Oath (KotO), established in 2004 and marching under the captain Kuthara — in the elder world the only guild ever to hold four towns and a third of the map. These were no strangers meeting on empty ground — they were old rivals who already knew whom they hated.",
+     "links": [
+      {
+       "text": "The Guild List of the elder world",
+       "url": "https://mowiki.fandom.com/wiki/Guild_List",
+       "source": "Mortal Online Wiki"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2020
+    },
+    {
+     "date": "December 2020",
+     "title": "The Alpha Proving",
+     "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers, and the elder houses came to prove their blades against its raw servers — combat-tests and stress-tests in which the feel of the coming war was first taken. Nothing yet was permanent; every death and every duel was but a rehearsal for the age to come.",
+     "links": [
+      {
+       "text": "Mortal Online 2 Begins Its Closed Combat Alpha",
+       "url": "https://massivelyop.com/2020/04/28/mortal-online-2-begins-its-closed-combat-alpha/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2020
+    },
+    {
+     "date": "February 2021",
+     "title": "The Closed Beta Deepens",
+     "body": "As the closed beta widened its gates, more of the faithful were let through, and the shape of the world's factions began to harden — the old rivalries of the elder world finding fresh ground to be fought over, though no blood yet counted toward a keep.",
+     "links": [
+      {
+       "text": "Mortal Online 2 Writes an FAQ and Lays Out a Development Roadmap",
+       "url": "https://massivelyop.com/2020/05/18/mortal-online-2-writes-an-faq-and-lays-out-an-alpha-development-roadmap/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "26 March 2021",
+     "title": "The Contests of the Stress Test",
+     "body": "The March muster came with prizes: graphics cards, gift cards, and a two-hundred-dollar bounty upon a world boss — first blade to land the killing blow to take the purse, PvP allowed, \"win by any means necessary.\" It was the developers teaching the world its own nature: even the gifts of Nave had to be fought over.",
+     "links": [
+      {
+       "text": "How to Join the Free Stress Test — the competitions and the world-boss bounty",
+       "url": "https://worthplaying.com/article/2021/3/25/news/124945-how-to-join-the-free-mortal-online-2-stress-test/",
+       "source": "Worthplaying"
+      },
+      {
+       "text": "Stress Test Live Today — four events and one mega event",
+       "url": "https://www.mmorpg.com/news/mortal-online-2-stress-test-live-today-2000121443",
+       "source": "MMORPG.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "30 March 2021",
+     "title": "The Thief Question",
+     "body": "On the forums the community fought one of its oldest wars: should thievery return? The old pickpockets testified — \"I always had pilfering, snooping and lockpicking on my fighter... I actually stole the one and only dagger of a hybrid before the fight began\" — while others begged it stay buried as \"a gimmicky troll skill.\" One voice answered for the master thieves: that thievery \"is much more about psychology and understanding the world than snatching purses.\" The question would not be answered for five years — until the Locks of 2026.",
+     "links": [
+      {
+       "text": "No Thief in Mortal II — the great thievery debate",
+       "url": "https://mortalonline2.com/forums/threads/no-thief-in-mortal-ii.1455/page-2",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "31 March 2021",
+     "title": "The First Great Guild Battle",
+     "body": "In the closed beta was fought one of the first large-scale clashes of the new world — KotO and Legion upon the field — filmed by an archer as a foretaste of the wars to come.",
+     "links": [
+      {
+       "text": "MMO Stress Test and First Look",
+       "url": "https://www.youtube.com/watch?v=8exEBYRtTUU",
+       "source": "YouTube, stress-test first look"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "April 2021",
+     "title": "The World Draws Eyes",
+     "body": "As the beta wore on, the wandering critics of the wider world came to look upon Nave: TheLazyPeon and Josh Strife Hayes each brought their great audiences to the gates with a verdict of \"is it worth playing?\", and the curious began to gather for the launch to come.",
+     "links": [
+      {
+       "text": "A Sandbox PVP MMO Reviewed by Someone Who Hates Sandbox PVP MMOs",
+       "url": "https://www.youtube.com/watch?v=5dsKm_Dcwoo",
+       "source": "Josh Strife Hayes"
+      },
+      {
+       "text": "Mortal Online 2 First Impressions — Is It Worth Playing?",
+       "url": "https://www.youtube.com/watch?v=6V7DMvBOYFM",
+       "source": "YouTube, first impressions"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "17 April 2021",
+     "title": "The Field Guides Begin",
+     "body": "A teacher set down the first chapter of a Field Guide to the young world — beginning, fittingly, with the Risars: what they are, what they drop, where they camp. It was the start of a tradition that would still be running years later, chapter by chapter — the schoolbooks of a world with no tutorial worth the name.",
+     "links": [
+      {
+       "text": "Field Guide — Risar Camps, the first chapter",
+       "url": "https://www.youtube.com/watch?v=ABgvBXbCFhA",
+       "source": "YouTube, the Field Guide"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "8 May 2021",
+     "title": "The Bakti Bowl",
+     "body": "In the beta was founded the realm's first great tournament series, the Bakti Bowl — raised by the house of Requiem and held by the jungle-city of Bakti every fortnight or so, with the Bakti Trading Company fattening the victors' purse. It was a proving-ground of duels and group-fights (five-against-five, Legion against Levia and the Krankids among them) where the young world's finest blades were first measured against one another — and the chronicler-guild Wolfszeit set the first Bowl down on film, the beginning of its long keeping of the realm's memory. Beside it ran the games of the Ragnarök Festival — shield-bashes, one-on-ones, and a Veela race. So the sport of arms was born even before the war.",
+     "links": [
+      {
+       "text": "Bakti Dueling Tournament, 08/05/2021 — the first ever Requiem Bakti Bowl",
+       "url": "https://www.mortalonline2.com/forums/threads/bakti-dueling-tournament-08-05-2021.2262/",
+       "source": "Requiem, official forums"
+      },
+      {
+       "text": "Bakti Bowl #1 Tournament",
+       "url": "https://www.youtube.com/watch?v=C3FoVXtA72g",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "REQ Bakti Bowl 5v5 — Legion vs Levia (Krankids) and VII",
+       "url": "https://www.youtube.com/watch?v=haXiobCms2o",
+       "source": "YouTube, tournament footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "July 2021",
+     "title": "The Festivals of the Beta",
+     "body": "Through the beta summer the young community made its own revels: the Festival of Nave, with its shield-bashes, its fashion-shows, and its laggy duels, and the Open Air Festival of group-fights — the Bakti Bowls still turning every fortnight all the while. The world was not yet permanent, but its people were already a people.",
+     "links": [
+      {
+       "text": "Stress Test Day 1 Report — Henrik among the crowds of Bakti",
+       "url": "https://www.mortalonline2.com/stress-test-day-1-report/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "August 2021",
+     "title": "The Third Flame Festival",
+     "body": "In the waning of the beta the people gathered for games and a horse-race, and the chroniclers filmed it — the first great gathering of the tribes.",
+     "links": [
+      {
+       "text": "End of Stress Test — the Boss Hunt Event",
+       "url": "https://www.youtube.com/watch?v=PCF-QLBAp4k",
+       "source": "YouTube, beta-event footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "12 September 2021",
+     "title": "The Muster at Meduli",
+     "body": "Lord Henrik Nyström summoned near four hundred souls to do battle upon the open field outside Meduli — banners against no-banners — in what was hailed as the biggest brawl ever seen upon one server, that the world might be tested against the weight of the wars to come.",
+     "links": [
+      {
+       "text": "Final Stress Test — World Record & Fun",
+       "url": "https://www.youtube.com/watch?v=AXkZtrGdpiI",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Mortal Online 2 — Final Stress Test, the official trailer",
+       "url": "https://www.youtube.com/watch?v=emM89blKBvk",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "15 September 2021",
+     "title": "The Nitre Queen",
+     "body": "Days after the muster, the world met its first true instanced boss: the Nitre Queen, deep in her nest, with special loot for those who dared her. The boss-hunters' craft — the guides, the group-compositions, the loot-tables passed hand to hand — begins here.",
+     "links": [
+      {
+       "text": "So You Want to Kill the New Boss? — the Nitre Queen",
+       "url": "https://www.youtube.com/watch?v=qwR6jBoweB0",
+       "source": "YouTube, boss-hunter's guide"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "16 September 2021",
+     "title": "The Tyranny of the White Bears",
+     "body": "And in the same season the beta found its first broken meta: the white bears of the north — \"incredibly powerful, incredibly tanky and incredibly fast,\" tameable solo and levelled while their masters slept — until half the realm seemed to fight with one button, and it was in the pet menu. Every age of Nave has its tyrant-build; the white bear was the first, and the tamers (Pepper's whole gracious trade) never quite lived the reputation down.",
+     "links": [
+      {
+       "text": "Using ONE Button to Beat Mortal Online 2 — the white-bear meta",
+       "url": "https://www.youtube.com/watch?v=PAsRo4tepAc",
+       "source": "YouTube, meta-breaker"
+      },
+      {
+       "text": "Taming Quirks — the tamers compare notes",
+       "url": "https://mortalonline2.com/forums/threads/taming-quirks.1631/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "7 November 2021",
+     "title": "The Siege of Tindrem",
+     "body": "At the shining city, Henrik Nyström, lord of Star Vault, summoned a host of over four hundred souls to do mock battle so that the world's launch-banner might be forged in real war. It was proof, before the true war began, of how many blades Nave could gather in one place.",
+     "links": [
+      {
+       "text": "World Event — Siege of Tindrem, Massive PvP Battle, 400+ soldiers",
+       "url": "https://www.youtube.com/watch?v=VRmVLu9QuQk",
+       "source": "YouTube, world-event footage"
+      },
+      {
+       "text": "Siege of Tindrem — the official call to battle",
+       "url": "https://www.mortalonline2.com/siege-of-tindrem/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "18 November 2021",
+     "title": "The Book of Everything",
+     "body": "On the eve of the gates, a scholar published upon Steam a guide the newcomers would pass around like scripture — Everything You Need to Know — with Diphrael's own dagger-craft cited for the light hybrid, warnings that Vadda is the town of Legion (\"ask them, or you will get into trouble\"), and a prophecy for launch week: the great guilds would besiege even the bandit camps in their race for keep-spots, and might treat the newborn as obstacles. Every word of it came true.",
+     "links": [
+      {
+       "text": "Everything You Need to Know About Mortal Online 2 — the Steam guide",
+       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2657843514",
+       "source": "Steam community"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "23 November 2021",
+     "title": "The Gates Open",
+     "body": "The world was released into Early Access, and the land of Myrland lay waiting.",
+     "links": [
+      {
+       "text": "Mortal Online 2 — Official Gameplay Trailer",
+       "url": "https://www.youtube.com/watch?v=xmQttxpTIJM",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Release Phase Info — the road to launch",
+       "url": "https://www.mortalonline2.com/release-phase-info/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "",
+     "title": "Of Malturn the Demon King, and the Heads at the Notice Board",
+     "body": "The elder world's lords did not only watch; sometimes they played god. Its game-masters staged living legends — chief among them Malturn the Demon King, bearer of the Sword of Tears, and a battle against three Risar chieftains whose severed heads were mounted beside the Fabernum notice board and hang there yet in Nave, an Easter egg only the old veterans can read. So the elder world left monuments inside the new one, for those who know where to look.",
+     "links": [
+      {
+       "text": "Expanding Questing — the veterans recall Malturn and the three Risar heads",
+       "url": "https://mortalonline2.com/forums/threads/expanding-questing.6617/",
+       "source": "official forums"
+      },
+      {
+       "text": "Fabernum Risar Spawn Event — elder-world event footage",
+       "url": "https://www.youtube.com/watch?v=bEEKl2r9wFY",
+       "source": "YouTube, elder-world event footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2021
+    },
+    {
+     "date": "4 December 2021",
+     "title": "Housing Comes to Nave",
+     "body": "Patch 0.1.11.13 gave the world its ground: houses could be built, and the ruined keeps claimed and raised. Within the month the Bakti Council would bind itself around one such keep — for the moment a thing could be owned, the politics of owning it began.",
+     "links": [
+      {
+       "text": "Mortal Online II Finally Gets Housing",
+       "url": "https://www.mmobomb.com/news/mortal-online-ii-finally-gets-housing",
+       "source": "MMOBomb"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "19 December 2021",
+     "title": "The Artisans Ride Out",
+     "body": "When a guildsman called Brat lost his goods in the wilds, Bratwire and the Artisans — the realm's great crafting-house, sworn to prove a guild might matter without a keep — rode out on stream to recover them, taming and killing bears along the way. It is the smallest war in this chronicle, and one of the truest: most of Nave's history is not sieges, but friends going back for what was lost.",
+     "links": [
+      {
+       "text": "Recovery of Lost Items and Bear Taming — Bratwire and the Artisans in action",
+       "url": "https://www.youtube.com/watch?v=Oe5qt07KYlk",
+       "source": "the Artisans, livestream"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "",
+     "title": "The Jungle Wars of Old Bakti",
+     "body": "Even the jungle-gate city fought in the elder world: its guilds met in the green shade of the Bakti jungle in running battles whose footage survives from 2015 — proof that when the Bakti Council convened in the new world, it convened upon ground that had known war for a decade.",
+     "links": [
+      {
+       "text": "Mortal Online — Bakti Jungle Fight (2015)",
+       "url": "https://www.youtube.com/watch?v=MDlLfE3U47I",
+       "source": "YouTube, elder-world footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2021
+    },
+    {
+     "date": "December 2021",
+     "title": "The Bakti Council and the Keep of Bakti",
+     "body": "In the jungle-gate city of Bakti — a neutral trade-hub since the elder world — eleven guilds bound themselves into the Bakti Council to secure the Bakti Keep and keep the peace. But peace bred its own war: when the Council voted to manage the keep in common, Azaad, leader of the Darkblood Coven, cried that \"democracy is dead,\" deleted the city's council-hall, and led his guild out — the first great political schism of the new world, and a lesson that even a keep held for peace could sunder its holders.",
+     "links": [
+      {
+       "text": "Bakti — a tour of the jungle-gate city",
+       "url": "https://www.youtube.com/watch?v=sPL0zMGAgnQ",
+       "source": "YouTube, city tour"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "23 December 2021",
+     "title": "The Catalogue of Guilds",
+     "body": "In the second month of the living world, a chronicler styling himself Backyard Employee set himself a census: to record every guild in Nave — \"guilds which no longer exist, guilds which exist, guilds which yet exist\" — with its captain, its city, and its morality set down in colours, from yellow pacifists through blue lawmen, gray neutrals, purple and orange killers, to red, who hold no allies and are hostile to all. Above fourscore banners were listed. Here, preserved as in amber, is the young world's whole society: Viknuss and Tekk holding Vadda with The Legion; Hayasa's RPK!, warned of as \"extremely hated,\" whose members were promised a place on every kill-list in Nave; Putzin's Acolytes at Morin Khur, who wrote in to insist they be coloured purple, for they had no allies; PoisonArrows writing in himself to demand the BeastMasters be marked most evil of all — boasting of thousands slain and of the Reputation Protest — with Pandah Sykes his officer; MolagAmur and Kelzyr of Mors Omnibus, foot-fighters since 2012; Avonis of Requiem; Raknor of the Northern Bank at Hyllspeia; DaChieftain of BEAR in Gaul'Kor; Phillywob of the Harbingers of Judgment, who would play the good guys and take in the brave newborn; Ferrus and Davis of the Knights of Myrland, sworn to chivalry in a world of backstabbers; Serverus of The Noble Ones with Aquagenix, Qaiten, and Amarria; Malyck and Bratwire of the Artisans, the realm's great crafting-house; Suttner of Events, who existed only to make festivals for others; The Patron of the Shadow Consortium, a network of spies; Apsalar of the Polish SLAV; Luconuti of LaFrance; Vecna of Onikumazoku; Svaar and Hauron of the Russian hosts; Zaras Himotep of the Brazilian Black Panthers, sworn against toxicity itself; Ghanburi of the Woses, who wished only to live as wild men far from the cities; Turel, Volos, Mistmaker, ProfessorOh, CoxyMate, Cedarnut, AtruinAugustus, Mahone, and the Chimera captains Waffle Stomper, Papaturro, and Tunalion; and — best of all — bigsb43 of Gordox the Knee Cappers, a guild of righteous midgets whose recorded location was, by their leader's own word, a bush. Favonius Cornelius wrote in to enrol his own household. Others quarrelled with the thing: LordMega noted the great houses missing from it, and Nefnate warned that no such list is official and there is no true definition of a guild's colour. And that is the truest thing in it: Nave has never agreed on what any guild is. But here, for one December, someone tried to write them all down — and this chronicle is the same impulse, five years on.",
+     "links": [
+      {
+       "text": "Unofficial Guild List Catalogue",
+       "url": "https://mortalonline2.com/forums/threads/unofficial-guild-list-catalogue.3766/",
+       "source": "Backyard Employee, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    },
+    {
+     "date": "December 2021",
+     "title": "The First Siege",
+     "body": "In the very first weeks of the living world, before ever a keep could be formally owned, was fought the first siege in the history of Mortal Online 2 — a stronghold thrown down with the sledgehammers of those early days, its destruction and defense captured by the player bomex and set down by Wolfszeit. It was the crude forerunner of all the great sieges to come; the first true keep to fall under the Law of Territory would not follow until October 2023.",
+     "links": [
+      {
+       "text": "First Keep Siege 4K Destruction — with hammers",
+       "url": "https://www.youtube.com/watch?v=yWsymP_XDVU",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2021
+    }
+   ]
+  },
+  {
+   "age": "The Second Age",
+   "name": "The Lawless Years",
+   "range": "January 2022 – Summer 2023",
+   "temper": [
+    "Now the world proper began, and for a year and a half there was no law of Territory upon the land — no owned regions, no fixed thrones. Power was a thing of reputation and terror, held by whoever could hold a road, a graveyard, or a lawless town. It was the age of the murderer-guilds and the empire-builders, and out of it rose the first legends."
+   ],
+   "entries": [
+    {
+     "date": "25 January 2022",
+     "title": "The Full Launch",
+     "body": "The world was made permanent. What a guild took now, it kept. And behind the ground itself stood its makers — Henrik Nyström, lord of Star Vault, and his lead developer Sebastian, whose hands shaped the very systems the guilds would spend the next five years contesting, cursing, and exploiting.",
+     "links": [
+      {
+       "text": "Mortal Online 2 on Steam",
+       "url": "https://store.steampowered.com/app/1170950/Mortal_Online_2/",
+       "source": "Steam"
+      },
+      {
+       "text": "Mortal Online 2 — Gameplay Trailer",
+       "url": "https://www.youtube.com/watch?v=klzDoyhJgTY",
+       "source": "YouTube, launch coverage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "Late January 2022",
+     "title": "The Great Queue",
+     "body": "No sooner was the world made permanent than it near drowned in its own success: the population surged past nine thousand souls — a two-fifths leap in a single month — and Myrland choked on login-queues and crashes. In the heated halls of the forum some cried for a wipe of the whole continent, others begged the newcomers to bide in Haven; the world's very popularity became its first crisis, and the Steam-scrolls filled with warnings.",
+     "links": [
+      {
+       "text": "Mortal Online 2 Final Review — the launch, the queue, and Odin's blessing",
+       "url": "https://www.mmorpg.com/reviews/mortal-online-2-final-review-2000124571",
+       "source": "MMORPG.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "February 2022",
+     "title": "The First Maps",
+     "body": "The cartographers, working from the base-map of Slyy (called Pockets), drew the first political maps. Legion, it was said, held Vadda in a stranglehold — though wiser heads noted Legion was but one blade of a greater alliance, The Collective, and that a map of keeps is not a map of power. In time that same forest ground would pass to Viknuss, a war-captain of old infamy who held Vadda by naked force and became its dominating power. The Free Tribes contested the wilds.",
+     "links": [
+      {
+       "text": "The living map of Nave",
+       "url": "https://www.mortalonlinemap.info/",
+       "source": "MortalOnlineMap.info"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "20 February 2022",
+     "title": "The Mainland Saga",
+     "body": "The launch generation began writing its own diaries: one newcomer's running chronicle of the mainland — hauling parcels for coin, stumbling into Tagmatons, ambushed at a Sator camp — the ordinary epic of every soul who ever left Haven with nothing.",
+     "links": [
+      {
+       "text": "Mainland Saga — Parcels, Tagmatons, and Ambushed at Sator Camp",
+       "url": "https://www.youtube.com/watch?v=BaM517CXi5U",
+       "source": "YouTube, a newcomer's saga"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "23 February 2022",
+     "title": "The Homesteaders",
+     "body": "And with housing came the homesteaders' eternal war — not against guilds, but against geography. \"The biggest pain,\" the settlers counselled one another, \"is trying to find a flat piece of ground.\" Fifty-five thousand wood, sixty thousand stone, and a level patch of Nave: the modest empire of the small householder.",
+     "links": [
+      {
+       "text": "Player Housing Guide — the settlers compare notes",
+       "url": "https://mortalonline2.com/forums/threads/player-housing-guide.5334/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "March 2022",
+     "title": "Odinseed rises in the North",
+     "body": "From Fabernum came the Odin-worshippers of Odinseed, led by the mighty King Barados. From their first days they warred upon the \"heathens\" of the lawless city of Kranesh — the chronicle \"Kranesh Heathens Return the SEED to ODIN\" marks the 25th of that month. Their rite of joining, the SEED, was already infamous: a recruit clad in full armor is summoned \"to the stage,\" and King Barados hews at him with a sword until he falls — \"You must accept the SEED!\" — the blood-price of the blessing of Odin.",
+     "links": [
+      {
+       "text": "Odinseed Official Recruiting Video",
+       "url": "https://www.youtube.com/watch?v=QYaKqnuMF_k",
+       "source": "Odinseed / tordaddy"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "4 March 2022",
+     "title": "The Wolfpack Descends",
+     "body": "In the same season there ran a warband that hunted as its name promised — in a body, and at the throat. The Wolfpack threw itself upon a coalition of three houses at once: some thirty of its own against thirty of Legion (Viknuss's Vadda host), the crafters of DracoSilvam, and the disciplined Integrity — the empire-builders whose logistics supplied half the realm's wars. That a single roving pack would take on three settled powers together, and that the fight was thought worth the filming, tells the temper of the lawless years better than any treaty: in that age a warband needed no keep, no throne, and no cause — only the appetite.",
+     "links": [
+      {
+       "text": "Wolfpack vs Legion, Draco & Integrity — 30ish vs 30ish",
+       "url": "http://sandboxer.org/mortal-online-2-pvp-30ish-vs-30ish-wolfpack-vs-legion-draco-integrity/",
+       "source": "SandBoxer"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "19 March 2022",
+     "title": "The Quiet Fishermen",
+     "body": "Beneath all the wars ran the off series — the fishermen of Nave, who took their rods into the Sheevra cave and fished its still waters among the golden ruins. No chronicle of a murder-world is honest without them: the people who logged in to be left alone, and mostly were.",
+     "links": [
+      {
+       "text": "Sheevra Cave Fishing — the off series",
+       "url": "https://www.youtube.com/watch?v=JNohV7xz3-o",
+       "source": "YouTube, the off-series"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Saltpack",
+     "body": "And beside the Wolfpack in the world's memory runs the Saltpack, a warband of the same roving kind, spoken of by the veterans in the same breath — the two packs standing together for that whole restless species of guild that owned nothing, held nothing, and was feared everywhere.",
+     "links": [
+      {
+       "text": "PVP — Murder of Bakti",
+       "url": "https://www.youtube.com/watch?v=k-uEhpQc6XY",
+       "source": "YouTube, roaming-warband footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "May 2022",
+     "title": "The Bounty Edict and the Reputation Protest",
+     "body": "The lords of Star Vault decreed the Bounty Hunter and reworked the counting of murders and the declaring of wars. The murderer-host of BeastMasters, under PoisonArrows and his officer Pandah Sykes, a noted blade of the age — with their evil allies the Miscreants — answered with defiance, slaying as many souls as they could in a \"Reputation PvP Protest\" to force the decree's makers to heed them — guild-war spilling over into the very making of the world.",
+     "links": [
+      {
+       "text": "Mortal Online 2 Adds Bounty Hunting System and a Three-Strike Rule",
+       "url": "https://massivelyop.com/2022/05/09/mortal-online-2-adds-bounty-hunting-system-adds-three-strike-rule-for-bans/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "Of the many tongues and the roleplayers",
+     "body": "The realm was no single people. The German host Wolfszeit, the Polish SLAV, the French houses of Guardians of Gabaria, Saint Sépulcre, and L'Empire, and the war-bands of the Russian night each kept their own courts and their own hours; and among those who came not to conquer but to dwell, the Tindremic patrician Favonius Cornelius kept his household — proof that the world held not only killers but citizens.",
+     "links": [
+      {
+       "text": "Roleplaying! — the community discussion",
+       "url": "https://steamcommunity.com/app/1170950/discussions/0/3278066986678542539/",
+       "source": "Steam community"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "July 2022",
+     "title": "The Coming of Necromancy",
+     "body": "In the largest patch the young world had yet seen (1.0.4), Star Vault loosed the dark art of Necromancy upon Nave — rituals to raise undead minions, the grisly Tupilak, and a new deep with its own world-boss. It was the seed of the Necromancers' dungeon where, two years on, BlackPriest would claim its world-first across the invisible bridge.",
+     "links": [
+      {
+       "text": "Patch Notes 1.0.4 — the Necromancy patch",
+       "url": "https://www.mortalonline2.com/patch-notes-1-0-4",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Mortal Online 2 Update #9 — Necromancy",
+       "url": "https://www.youtube.com/watch?v=bLh7fWXXFAY",
+       "source": "YouTube, update reel"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "13 July 2022",
+     "title": "The Sheevra Cave",
+     "body": "The explorers mapped one of the world's strangest places: the Sheevra cave, a drowned complex of golden pyramids and dark water — the ruin of the Alvarin's elder kin, standing exactly as the lore had promised. In Nave the deepest history is not written; it is visited.",
+     "links": [
+      {
+       "text": "Sheevra Cave — Location and What's In There",
+       "url": "https://www.youtube.com/watch?v=yXRT7KI48gA",
+       "source": "YouTube, explorer's tour"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "September 2022",
+     "title": "The Tournament of Wolfszeit and Death Jester",
+     "body": "In the early peace between wars, the chronicler-guild Wolfszeit and the guild Death Jester held a great tournament of single combat, its finest bouts preserved on film; among the champions fought Montradamus. It was one of many such contests — kin to the Talus PVP Tournament in the mountains and the darkly-named Red Wedding Tournament, which Loud Ziggy would set among the very \"greatness of Mortal Online 2\" — the peacetime sport of the war-guilds that kept the blades of Nave sharp between its wars.",
+     "links": [
+      {
+       "text": "Greatness of Mortal Online 2 & the Red Wedding",
+       "url": "https://www.youtube.com/watch?v=Pc-4hu7JP64",
+       "source": "Loud Ziggy"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "28 September 2022",
+     "title": "Ultumeki, the Ancient",
+     "body": "The Odin-host went hunting older prey than men: Ultumeki, one of the great bosses of the deep world, brought down by an Odinseed expedition — the PvE face of the same brotherhood that fought the KarniMata war, and proof the SEED's fellowship was forged as much in the monster-dark as on the battlefield.",
+     "links": [
+      {
+       "text": "Ultumeki Boss Fight — an Odinseed expedition",
+       "url": "https://www.youtube.com/watch?v=Tdx5TjM7iiw",
+       "source": "YouTube, Odinseed hunt footage"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "November 2022",
+     "title": "Triumphalis Imperialis et Bestia",
+     "body": "In the imperial fashion of Tindrem, the realm's roleplayers staged a grand arena-spectacle — gladiatorial games and beast-fights in the old Tindremic manner, announced on the Guild-Politics board like a decree of the Empire. It was proof that Nave's story was never only war but pageantry too, and that the shining city kept its courtly traditions amid the chaos.",
+     "links": [
+      {
+       "text": "Event Announcement — Triumphalis Imperialis et Bestia II, November 20th",
+       "url": "https://mortalonline2.com/forums/threads/event-announcement-triumphalis-imperialis-et-bestia-ii-november-20th.10138/",
+       "source": "Favonius Cornelius, official forums"
+      },
+      {
+       "text": "The original Triumphalis of the elder world — festival footage",
+       "url": "https://www.youtube.com/watch?v=KGVsJxfQ83Y",
+       "source": "YouTube, MO1 festival footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Torch Bearers",
+     "body": "Nor was the pageantry the work of the great houses. There rose in these years a guild sworn not to conquest but to roleplay itself — the Torch Bearers, who carried a name that is also a creed: to bear a light through a dark world. In a realm where the surest way to matter was to take a keep, they chose instead to be somebody — to speak in character, to keep the fiction of Nave alive in a place that mostly treated it as a battlefield with lore attached. Every chronicle of this world is written about the men who won the sieges; but the world the sieges were fought over was kept habitable by guilds like this one, who insisted it was a place and not merely a map.",
+     "links": [
+      {
+       "text": "Looking for a Roleplay Guild — the roleplay-guild world of Nave",
+       "url": "https://mortalonline2.com/forums/threads/looking-for-a-roleplay-guild.4463/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Bard of Nave — Thommberry",
+     "body": "And of all the ways to live in a murder-world, none was stranger or more admirable than the one Thommberry chose: he went about it as a bard. In a land where every stranger on the road is a threat and every silence a prelude to an ambush, he made his part music and performance — playing where he was not asked, appearing where no fighter would think to go, and making of the sandbox a stage. It is easy to record the men who killed the most; it is worth recording that somebody thought to bring a song to a world of full loot, and that the world let him. The chroniclers keep his name for the same reason they keep the tournaments and the festivals: because a history of Nave that held only its wars would be a lie about what people actually did there.",
+     "links": [
+      {
+       "text": "Roleplay — the Bard Profession, and busking on a Toxai street corner",
+       "url": "https://mortalonline2.com/forums/threads/roleplay-bard-profession.6356/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Baggening — The Great Purge",
+     "body": "In these years came the infamy of the bag exploit, by which cunning players multiplied their wealth through a glitch of the inventory — until the lords of Star Vault, without public warning, fell upon the offenders in a mass banning the community named \"the Baggening.\" Among those cast out forever was Putzin, once master of Acolytes and lord of the Central Steppe Castle, who keeps his podcast to this day though he may never log in again. It sowed a lasting distrust between the ruled and their rulers, for none could say with certainty thereafter what was lawful in Nave and what was not.",
+     "links": [
+      {
+       "text": "Hundreds of Accounts Banned for an Exploit That Avoided Full Loot",
+       "url": "https://massivelyop.com/2022/11/23/mortal-online-2-bans-hundreds-of-accounts-for-an-exploit-that-avoided-full-loot-on-death/",
+       "source": "Massively Overpowered"
+      },
+      {
+       "text": "Regarding the Recent Ban Wave — the community reacts",
+       "url": "https://mortalonline2.com/forums/threads/regarding-the-recent-ban-wave-for-exploits.10326/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2023",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Cheat of the Minotaur King",
+     "body": "In the same uncertain years fell the most cinematic cheat the world ever saw. The Minotaur King was a boss reckoned to need thirty men; Buda slew him alone, by a portal-trick of spiritism that let him strike what could not strike back. It was, all agreed, a magnificent piece of theatre — and plainly an abuse. Buda did what few would: he confessed it openly. The lords of Star Vault gave him mixed and muddled word, some praising the ingenuity, some condemning the deed; and in the end he was cast out all the same. His tale is the Baggening's lesson told as comedy: in a world whose law was never written down, a man could not know whether his cleverness would make him famous or exile him — and it might do both.",
+     "links": [
+      {
+       "text": "Mo2Builds Hall of Fame",
+       "url": "https://www.mo2builds.com/hall-of-fame",
+       "source": "Mo2Builds"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2023",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "Fookie the Cheater",
+     "body": "And where Buda's cheating was theatre and Nightfall's was hidden, the name Fookie the community kept for the plain thing itself: a cheat, remembered as a cheat, and remembered still. That is the whole of his monument, and the whole of the point. Nave forgives the murderer, the thief, the traitor, and the scammer — it has honoured all four in this history — but the man who breaks the code beneath the game keeps his name only as a warning. A guild-lord's deeds fade in a season; a cheater's name outlives him.",
+     "links": [
+      {
+       "text": "Ban Report — July 2022",
+       "url": "https://www.mortalonline2.com/ban-report-july-2022/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2023",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Wages of the Exploit — the Fall of Nightfall",
+     "body": "Beyond the bag-glitch lay a darker cheating: the forbidden third-party arts — the stamina-tricks that let a fighter never tire, the speed-hacks — by which some broke the game's very laws, drawing down the great ban-waves (chief among them the reckoning of November 2022, when Star Vault cast out a host of accounts for bypassing a core mechanic of the game). The elite fighting-guild Nightfall harbored such cheats in its ranks; and when the mage-sage Diphrael, famed above all for his integrity, learned that his own guild-brothers cheated — Wicked foremost among them — he named them aloud and was cast out of Nightfall for the crime of honesty itself. As the ban-waves fell and fell again, Nightfall — its cheats exposed, its honest man gone, its name a byword for the thing the community hates most — passed into the long roll of the dead guilds. So stands the realm's plainest teaching: that in a world with no law but its own unwritten code, the one truly unforgivable sin is to break that code, and Nave will remember a cheater long after it has forgotten a champion. (Yet the guild's true and final end would come not by the ban-hammer but by the sword — at the Siege of Nightfall, where General Lordus made his last stand; see the year 2024.)",
+     "links": [
+      {
+       "text": "Mo2Builds Hall of Fame",
+       "url": "https://www.mo2builds.com/hall-of-fame",
+       "source": "Mo2Builds"
+      },
+      {
+       "text": "Regarding the Recent Ban Wave for Exploits",
+       "url": "https://www.mortalonline2.com/announcement-recent-ban-wave-for-exploits/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2024",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Trinket Market and the Big Two",
+     "body": "In the age of exploits there rose a shadow-economy in trinkets, and two men all but owned it: Bank and John Oldman, the \"big two\" of trinket-rerolling across the server. Bank was at once the most trusted and the most hated man in Nave, for by a secret alt named Covfefe he ganked players in the very streets as they recharged their unequipped trinkets, then dragged their bags to the wild by necromancy to plunder them — a debauchery he confessed only after the spell that served him was nerfed. Among the richest and canniest souls ever to walk the plains, he wore an \"infinity gauntlet\" of Adamants to prove it.",
+     "links": [
+      {
+       "text": "JohnOldman's ID & Reroll Services — the shop itself",
+       "url": "https://mortalonline2.com/forums/threads/johnoldmans-id-reroll-services.8493/",
+       "source": "John Oldman, official forums"
+      },
+      {
+       "text": "JohnOldman's Trinket Research",
+       "url": "https://mortalonline2.com/forums/threads/johnoldmans-trinket-research.8466/",
+       "source": "John Oldman, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2023",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "Oghmir the Scammer, and the Long Arm of Discord",
+     "body": "Where there is a market there is a swindler, and the age's most notorious was the man called Oghmir, who went far beyond the honest swindle: he built a fake overlay in Photoshop and used it to trick prolific traders into handing over great sums of gold while he streamed. The community understood the distinction exactly — scamming is permitted in Nave, but using third-party tools to do it is not — and it took a literal riot from the players before the lead game-master acted. Nave permits much — the gank, the betrayal, the honest theft — and for a long while the swindler prospered under that permission. But at the last he overreached, and the lead game-master, Discord, reined him in — punishing Oghmir and refunding his victims, though only after the uproar had made it impossible to ignore; the chroniclers set it down as another black stain on the game-masters' record. Oghmir threw a tantrum on stream and swore he would never play Mortal again — a promise he has broken several times. It was a rare and telling moment: proof that even in a world that boasts of having no law, there is a line, and that behind the sandbox's cruelty there sat, in the end, a man with the power to say enough.",
+     "links": [
+      {
+       "text": "Mo2Builds Hall of Fame",
+       "url": "https://www.mo2builds.com/hall-of-fame",
+       "source": "Mo2Builds"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2022–2023",
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "Of the empire-builders",
+     "body": "Not all houses were murderers or zergs. The structured empire-guilds Integrity and DracoSilvam built and crafted and held their ground by logistics and discipline, arming their members from the guild's own stores — the quiet backbone of the realm's economy of war, without which no siege could ever be supplied.",
+     "links": [
+      {
+       "text": "Getting Started with Territory Control & Sieging — the craft of empire",
+       "url": "https://www.mortalonline2.com/help-center/gameplay-help/getting-started-with-territory-control-and-sieging-manual/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Merry Men of the Greenwood — Talut's band",
+     "body": "In the forests and upon the roads there rode a band apart: the Merry Men, led by Talut, outlaws in the old greenwood fashion who made the highways their hunting-ground and the wilds their hall. Where the BeastMasters killed for infamy and the villains of Hyllspeia for dominion, Talut's Merry Men played the highwayman with a certain style — waylaying the rich upon the trade-roads between the cities, a thorn in the side of every caravan and a legend among those who love a rogue. Theirs is the truest expression of the game's own promise, that any soul might take up the role of highwayman and write a chapter of Nave in stolen gold.",
+     "links": [
+      {
+       "text": "The bandit-country of the living map — Two Lakes",
+       "url": "https://www.mortalonlinemap.info/300/two-lakes/bandit-camp",
+       "source": "MortalOnlineMap.info"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Jungle Alliance — Venomous and the South",
+     "body": "While the great coalitions warred in the north, the steaming southern jungle about Bakti was bound together under its own banner: the Jungle Alliance, led by Venomous. Heir to the old dream of the Bakti Council — that the jungle-gate should be a living hub of trade and new blood — the Jungle Alliance grew into the settled power of the south, guarding the Sator-haunted trade-roads to Toxai and Morin Khur and giving the jungle a voice to set against the northern hosts. Where the north was a place of sieges and thrones, the south under Venomous was a place of trade, ambush, and green shadow — the two poles of the world's map, and its politics.",
+     "links": [
+      {
+       "text": "The jungle roads of Bakti — PVP at the bandit camp",
+       "url": "https://www.youtube.com/watch?v=DxAtBivepj0",
+       "source": "YouTube, jungle-country footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2022
+    },
+    {
+     "date": "25 January 2023",
+     "title": "The March of the ACT Pickaxe Host",
+     "body": "Greatest of the war-hosts of this age was the alliance remembered as ACT — the vast mingled columns bearing pickaxes to break their enemies' walls. On this day the chroniclers filmed the ACT host marching straight from a siege upon the Oldguard onward to storm the keep of the guild Nameless — two foes broken back-to-back in a single day's march. This host was marshaled by General Lordus, and among its chief shot-callers rode Azog, \"a primary shot caller in the victorious fights against the Coalition.\" In the wider war these same pickaxe-columns turned against the great zerg-empire of the age — Kuthara's KotO — and among the coalition's banners rode King Barados's Odinseed; thus the ACT wars became the Rebellion of Barados and his allies against the Empire of Kuthara, the defining struggle of the lawless years. So vast were the hosts that met in these years that the chroniclers reckoned them among the largest in the whole genre: RobberDob preserved the great \"ACT vs KotO\" epic fight; Albu's Corner filmed the \"Crushing of the Coalition,\" named the biggest fight of its day; and Tatsuya set down a clash he hailed as the \"biggest battle ever seen in an MMORPG,\" with Kidney among the many who bore witness. Here, if anywhere, Nave earned its boast of four-hundred-strong war.",
+     "links": [
+      {
+       "text": "BIGGEST BATTLE EVER IN AN MMORPG",
+       "url": "https://www.youtube.com/watch?v=KbxVytv2icY",
+       "source": "Tatsuya"
+      },
+      {
+       "text": "ACT vs KoTo — The Epic Fight",
+       "url": "https://www.youtube.com/watch?v=8_WpGWzF_iE",
+       "source": "RobberDob"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "21 February 2023",
+     "title": "The Company Declares upon KoTo",
+     "body": "War was formally declared by the guild The Company against KoTo — the old power that, in both this world and the elder one, was ever the great enemy against whom the rest of the realm united.",
+     "links": [
+      {
+       "text": "Declaration of War — The Company declare war on KoTo",
+       "url": "https://mortalonline2.com/forums/threads/declaration-of-war-the-company-declare-war-on-koto.10737/",
+       "source": "The Company, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "23 February 2023",
+     "title": "The Eternal Wars",
+     "body": "The captain Emdash set down the beginning of a long feud he named the \"Eternal Wars\"; in later days he would raise an openly anti-zerg banner, the guild Eternal.",
+     "links": [
+      {
+       "text": "Eternal Wars — Emdash's declaration thread, opened this very day",
+       "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/",
+       "source": "Emdash, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "13 April 2023",
+     "title": "The Content vs Levia War",
+     "body": "By these years the host called Content — founded and led by Gbunny together with Azog the Defiler, the age's most celebrated field-commander — had become a power in its own right. In the war against the elite guild Levia, the chronicles catch Azog trading an \"ego duel\" with the champion Smasher, with General Lordus speaking over the footage — the same Lordus who would marshal the greatest hosts of the age. Among Content's own blades rode Jonttre, terror of the Meduli shallows, who turned numbered fights in his favour by luring his foes into the water, where none could match him. In time Azog would leave this banner to take arms with Barados's Odinseed, binding the two great houses together; but Content was Gbunny's from the first.",
+     "links": [
+      {
+       "text": "Smasher vs Azog — Ego Duel, Content v Levia War",
+       "url": "https://www.youtube.com/watch?v=qvw6FHnZjDI",
+       "source": "Azog the Defiler"
+      },
+      {
+       "text": "Crushing Coalition — Biggest Fight in Mortal Online 2",
+       "url": "https://www.youtube.com/watch?v=jUA9dhNnvvI",
+       "source": "Albu's Corner"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "May 2023",
+     "title": "Elementalism and the Riding of Beasts (Patch 1.0.16)",
+     "body": "That spring the sorcerers gained a new art, Elementalism — weather-magic that could call the very storms of a region, some spells demanding a certain sky to be cast at all. In the same season the wilds were tamed to the saddle: wolves, direwolves, terrorbirds, and even swine could now be ridden, and for the first time two riders might share a single beast — the double-rider mounts — so that a warband might move as fast as it was fierce.",
+     "links": [
+      {
+       "text": "Mortal Online 2 in 2023 and Beyond — Recent + Upcoming Changes",
+       "url": "https://www.youtube.com/watch?v=wrdcq_q6FEc",
+       "source": "YouTube, state-of-the-game"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "13 June 2023",
+     "title": "Odinseed Betrayed",
+     "body": "Treachery found even the Odin-host: a betrayal caught live on stream, preserved in a clip the community passed around for days. In a world where the only law is the unwritten code, the SEED learned what every great house learns — the blade you must watch for is the one sworn to your own banner.",
+     "links": [
+      {
+       "text": "OdinSeed Betrayed Live",
+       "url": "https://m.youtube.com/shorts/-CEmGIYdOnk",
+       "source": "YouTube, live clip"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "Summer 2023",
+     "title": "The Team-Fight Tournament",
+     "body": "In the last peace before Territory Control, Wolfszeit held a four-versus-four team tournament — the war-guilds meeting in ordered combat one final time before the coming of keeps would turn every fight into a war for land.",
+     "links": [
+      {
+       "text": "The Tournament of Tindrem — the official team contests",
+       "url": "https://www.mortalonline2.com/second-tournament-of-tindrem/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "",
+     "title": "The Great Server War",
+     "body": "So the chroniclers came to name this whole age when they looked back upon it (in the retrospective of 19 January 2024): the Great Server War, the Zerg Empire, and the Rise of the Rebellion. It was the eternal shape of Nave made plain — a great power swells until the whole world bands together to break it, and then that band shatters, and a new power swells. It had happened in the elder world; it happened here; it would happen again.",
+     "links": [
+      {
+       "text": "Mortal Online 2 — Official Trailer, the world as it stood in 2022",
+       "url": "https://www.youtube.com/watch?v=Tv3IJEO3QPY",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "age": "The Third Age",
+   "name": "The Coming of Territory and the First Keep to Fall",
+   "range": "August 2023 – 2024",
+   "temper": [
+    "Then came the great change that split the age in two. War ceased to be a thing of terror only — a matter of roads held and graveyards camped — and became a thing of conquest and of permanent loss, of thrones that could be seized and keeps that could be thrown down forever. Now, for the first time, a guild might win the very earth beneath its feet; and now, for the first time, it might lose all it had built upon that earth in a single dawn."
+   ],
+   "entries": [
+    {
+     "date": "15 August 2023",
+     "title": "The Law of Territory",
+     "body": "By the decree called Patch 1.0.17, the lords of Star Vault gave the world Territory Control and siege-war: guilds might now claim the land itself, raise keeps and settlements, and break them with the engines of siege, the Manganon and the Ballista. Yet the decree bore a flaw that would shadow the whole age — meaningful land was bound to guild keeps, and of keeps there were but sixteen thrones. The top table of the world was sealed to sixteen houses, and all others shut out.",
+     "links": [
+      {
+       "text": "Territory Control, implemented 15 August 2023 — feature overview",
+       "url": "https://www.mmorpg.com/mortal-online-2",
+       "source": "MMORPG.com"
+      },
+      {
+       "text": "Sieging Keeps and Houses — the CEO explains the mechanics",
+       "url": "https://www.youtube.com/watch?v=uJeJz8CumZw",
+       "source": "YouTube, siege-mechanics summary"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "23 August 2023",
+     "title": "Odinseed Raids MKRG",
+     "body": "King Barados led his Odin-host against the keep of MKRG (the Morin Khur Royal Guards), whose lord was the much-mocked streamer Danny. The chronicle of BruceLeeRob names it \"Odinseed War Season 2.\" MKRG now stood caught between Odinseed in the north and the great northern alliance to come.",
+     "links": [
+      {
+       "text": "ODINSEED RAIDS MKRG KEEP — Odinseed War Season 2",
+       "url": "https://www.youtube.com/watch?v=a4DdtpgcoUA",
+       "source": "BruceLeeRob"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "6 October 2023",
+     "title": "THE FIRST KEEP FALLS",
+     "body": "On this day was written the most historic deed of the age. The Rat Alliance — the northern host in which Wolfszeit rode — stormed and utterly destroyed the keep of MKRG (the Morin Khur Royal Guards, who bore the name of the old conquered Khurite capital — Royal Guards of a throne their namesake had lost four centuries before), and it was the first time in the history of the living world that a keep was brought down by siege. Speznat's camera preserved it under the title that says all: First Siege in MO2 History where a keep was destroyed. The stakes of war were changed forever; henceforth a guild might lose everything.",
+     "links": [
+      {
+       "text": "First Keep Siege on Live Server — Written History",
+       "url": "https://youtu.be/OlblO025K64",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "A Game of Keeps — guild history since release",
+       "url": "https://www.youtube.com/watch?v=loUGVq7KTug",
+       "source": "Tasu"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "30 October 2023",
+     "title": "The Battle of Kranesh Keep",
+     "body": "Barely three weeks later, far in the north, near three hundred souls met in a titanic clash — 150 against 150 — over Kranesh Keep, reckoned by the chroniclers one of the most epic battles in the whole history of the game.",
+     "links": [
+      {
+       "text": "Epic Big Fight 150 vs 150 — Massive PVP and Siege Try",
+       "url": "https://youtu.be/ETtoLkAr5_Q",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "28 November 2023",
+     "title": "The Coming of Unreal Engine 5",
+     "body": "On the eve of the world's arrival upon the Epic Games Store, the lords of Star Vault moved all of Nave onto Unreal Engine 5 — proclaiming it, in their own trailer, the eve of a new era. It was the greatest single act of world-smithing since the launch; the deeper re-forging to UE 5.4 would follow within the year.",
+     "links": [
+      {
+       "text": "Mortal Online 2 — Unreal Engine 5 Launch Trailer",
+       "url": "https://www.youtube.com/watch?v=W4E6UVSU4Vc",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "29 December 2023",
+     "title": "The Battle for Minotaur Mountain",
+     "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the very height of its power.",
+     "links": [
+      {
+       "text": "OdinSeed — Battle for Minotaur Mountain",
+       "url": "https://www.youtube.com/watch?v=ID1dRkM7DmE",
+       "source": "BruceLeeRob"
+      },
+      {
+       "text": "Mino Village Defense — Odinseed/Nightfall vs Rat Alliance",
+       "url": "https://www.youtube.com/watch?v=Ox5CI8cDMZk",
+       "source": "Pox"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "25 January 2024",
+     "title": "A New Terror in the Deeps",
+     "body": "The lords of the world loosed a new boss upon Nave so savage that the first hunters came back with warnings instead of loot — \"the newest boss is deadly\" — and the boss-hunting guilds began the old dance again: scout, die, learn, return.",
+     "links": [
+      {
+       "text": "New Boss Is Deadly",
+       "url": "https://www.youtube.com/watch?v=oPu6vhUoQUs",
+       "source": "BruceLeeRob"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The War in the North",
+     "body": "Through this age the Rat Alliance waged long war upon a rival northern power, the Nightmare Alliance — a dread host of the Gaul'Kor marches, keeping the hours of the Russian night, whose champion Abbadon brought \"a wall of steel\" behind him wherever he rode.",
+     "links": [
+      {
+       "text": "Rat Alliance vs Nightmare Alliance",
+       "url": "https://www.youtube.com/watch?v=hZ381NZOhrA",
+       "source": "YouTube, northern-war footage"
+      },
+      {
+       "text": "Rat Alliance PVP — Nightmare Siege, with performance issues from hell",
+       "url": "https://youtu.be/l3vGk7wI7_Q",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Griefers of Gaul'Kor — Killox and Nerion",
+     "body": "In the same lawless marches of Gaul'Kor kept the Dreadlords, the griefer-guild that had run since the elder world, led by the silver-tongued Killox with Nerion at his side. Sharing the outlaw-country with the Nightmare host, the Dreadlords made a sport of misery and a fortress of their stronghold — until the Rat Alliance brought its siege-engines against them, an assault Wolfszeit's camera preserved. Yet like the humanoid Dreadlords whose name they bore, Killox and Nerion proved near impossible to drive from the world, and outlasted every effort to unmake them.",
+     "links": [
+      {
+       "text": "Stronghold Siege — WZ and Rat Alliance vs the Dreadlords",
+       "url": "https://www.youtube.com/watch?v=DPZljKnSrFg",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "tale",
+     "year": 2024
+    },
+    {
+     "date": "2 February 2024",
+     "title": "Odinseed against Mythic",
+     "body": "King Barados led the militia of Fabernum down into the UnderCroft Dungeon to face the guild Mythic and its lord Chip Chip — one of the many foes the Odin-host met in the deeps in the year its wars multiplied (BruceLeeRob's chronicle). Mark the name: Chip Chip's Mythic would not stay a dungeon rival, but would take its turn at the walls of Odinpost itself and stand among the houses that at last brought the Odin-throne down.",
+     "links": [
+      {
+       "text": "OdinSeed Siege Battle",
+       "url": "https://www.youtube.com/watch?v=19uBYF44m18",
+       "source": "BruceLeeRob"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Companions, and the Keeps They Lost",
+     "body": "Among the houses that took the field in the age of Territory were the Companions, led by Hillary — and theirs is the story the chronicles most often decline to tell, because it is the commonest one. They fought their wars, they held their ground, and they lost their keeps. For every MKRG whose fall is filmed and remembered, and every Odinseed whose unthroning is an epic, there were houses like the Companions who raised their walls, paid for them in ore and hours, defended them, and watched them come down all the same — and then did it again. The Law of Territory made losers of nearly everyone; that is arithmetic, for there were sixteen thrones and hundreds of guilds. Let Hillary's Companions stand in this record for all of them: the guilds who wagered everything the game offered, lost, and stayed anyway.",
+     "links": [
+      {
+       "text": "Guild Politics — the board where the wars of the ordinary houses were declared and mourned",
+       "url": "https://mortalonline2.com/forums/forums/guild-politics.8/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2023–2024",
+     "kind": "tale",
+     "year": 2023
+    },
+    {
+     "date": "27 February 2024",
+     "title": "The Liberation of Tephra",
+     "body": "The northern war ended. Rather than yield their keep to their conquerors, the Nightmare host deleted their own stronghold — denying the victors the loot and the glory of the breaking. The chronicle names the day \"Tephra Liberation Day.\"",
+     "links": [
+      {
+       "text": "Tephra Liberation Day — both sides fought honorable and hard",
+       "url": "https://www.youtube.com/watch?v=QR5hExGD6tM",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "March 2024",
+     "title": "Of Bears, Dismemberment, and Melisar's Vault (Patch 2.0.2.6)",
+     "body": "One of the most impactful patches of the age reshaped both the road and the battlefield. The great bears of the wild could now be ridden, and a mighty overhaul of mount-stamina made the crossing of the whole world seamless. War itself grew more terrible: humanoids now lost their limbs when they died — true dismemberment come to Nave — with remade blood, the violent execution of the fallen, and corpses that lingered longer upon the field. A warrior might now bear a second weapon-set to quick-swap in the thick of the fight, a new light armor was forged, and a new deep — Melisar's Vault — opened somewhere in Myrland for the bold to plunder.",
+     "links": [
+      {
+       "text": "ODINSEED in the New Melisar's Vault",
+       "url": "https://www.youtube.com/watch?v=6BFXaysQ4Fo",
+       "source": "BruceLeeRob"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "April 2024",
+     "title": "The Decree of the Siege Challenge",
+     "body": "Seeing that few would fight the sieges as they stood, the lords of Star Vault decreed the Siege Challenge: no more the thief's-siege struck at the sleeping hours, but a formal summons, a window of vulnerability, and safety outside it. In the same season came a second character-slot, a new deep place (the Sylvan Sanctum), and new beasts to ride.",
+     "links": [
+      {
+       "text": "How to Use Siege Machines — catapults and the craft of assault",
+       "url": "https://m.youtube.com/watch?v=YQTSAaGjzr0&pp=ygUKI2d3MnN0cmlrZQ%3D%3D",
+       "source": "YouTube, siege-craft guide"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "May 2024",
+     "title": "The Guild Finder and the Newcomer's Welcome (Patch 2.0.5)",
+     "body": "A great re-forging of a newcomer's first days: a Guild Finder to help the lost find a banner to follow — a quiet admission of how hard it had become to join a fellowship — together with a gentler passage through the tutorial-isle, the peaceable crafts of fishing and foraging for those weary of war, build-presets for the bewildered, and a new mount, the Lykiator, to carry them out into the world.",
+     "links": [
+      {
+       "text": "Beginners Guide 2024 — How to Progress",
+       "url": "https://m.youtube.com/watch?v=u5tjTvPl694",
+       "source": "YouTube, newcomer's guide"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "12 May 2024",
+     "title": "The Field Guide to a Living",
+     "body": "The Field Guide tradition, begun with the Risars of 2021, was still teaching three years on — now a chapter on construction, \"a different way to earn your living\": the guide-writers quietly insisting, through every age of war, that there was more than one way to matter in Nave.",
+     "links": [
+      {
+       "text": "Field Guide — Construction",
+       "url": "https://www.youtube.com/watch?v=toXMenABNvc",
+       "source": "YouTube, the Field Guide"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "6 May 2024",
+     "title": "The KarniMata War Ignites",
+     "body": "Now began Odinseed's defining feud of the later age, against the vast host of KarniMata. By this time the two were the great \"zergs\" of the world — it was said one could run the deep places only by marching thirty-strong \"as Odinseed or KarniMata,\" else die in the sewers. Odinseed's chronicle cried the feud aloud: \"Odinseed Losing It… Reveal Truth About KarniMata.\" Nor did the Odin-host march alone: the southern Jungle Alliance of Venomous came north to make common cause with it, and the two together fell upon KarniMata — a joint assault (\"OS and JA attack Karni\") that Bayard preserved, binding the jungle-south to the northern war.",
+     "links": [
+      {
+       "text": "ODINSEED LOSING IT… REVEAL TRUTH ABOUT KARNIMATA",
+       "url": "https://www.youtube.com/watch?v=rCatEXtBW8E",
+       "source": "BruceLeeRob"
+      },
+      {
+       "text": "OS and JA Attack Karni",
+       "url": "https://www.youtube.com/watch?v=AR4mGCPmwjw",
+       "source": "Bayard"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "20 June 2024",
+     "title": "The Siege of Granum Pass",
+     "body": "The chronicles of the Odin-host preserve this battle — the Odinseed Alliance against the Mercenaries at Granum Pass — the kind of frontline record kept by the warriors of the alliance, Pox the Oghmir among them, who fought these wars from within the shield-wall. It stands as one of the clearest windows the age has left us into how the Odin-host went to war.",
+     "links": [
+      {
+       "text": "Siege of Granum Pass — Odin Seed Alliance vs Mercenaries, Mage PoV",
+       "url": "https://www.youtube.com/watch?v=cfF8yZsAp-4",
+       "source": "Pox"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "July 2024",
+     "title": "The Mastery Tree",
+     "body": "Star Vault loosed a great re-forging of the arts of war: the Mastery system, by which every fighter and crafter might specialize anew, alongside a new wilderness dungeon and fresh craft — reshaping the builds of the whole realm.",
+     "links": [
+      {
+       "text": "Patch Notes 2.0.6 — the Mastery System",
+       "url": "https://www.mortalonline2.com/patch-notes-2-0-6",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Mortal Online 2 Releases Its Mastery Tree System",
+       "url": "https://massivelyop.com/2024/07/03/mortal-online-2-releases-its-mastery-tree-system-adds-a-new-dungeon-and-introduces-more-items/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "September 2024",
+     "title": "The Siege of Nightfall",
+     "body": "The rotted house met its end not by the ban-hammer alone, but by the sword. When the whole server came at last against the keep of Nightfall — the guild already hollowed by the shame of its cheating scandal and the exile of the honest mage Diphrael — its defenders made a doomed and famous stand. Foremost among them stood General Lordus, the old marshal of the ACT pickaxe-host, who in the twilight of his long war planted himself in the breach and fought to the very end — a last stand the chroniclers would not forget, worthy of the greatest general the Rebellion ever had. Among the attackers rode Pox the Oghmir of the Odinseed Alliance, whose camera preserved the whole assault from the front of the shield-line. So the fall of Nightfall, begun in the quiet shame of the exploit, was sealed at last in fire and siege — and filmed for all time.",
+     "links": [
+      {
+       "text": "Fall of Nightfall — Server vs Nightfall, an epic history moment",
+       "url": "https://www.youtube.com/watch?v=ZghMVpfXrkE",
+       "source": "Pox"
+      },
+      {
+       "text": "The Siege of Nightfall — battle footage",
+       "url": "https://www.youtube.com/watch?v=0ZRSMhJX6lM",
+       "source": "YouTube, Nightfall-siege footage"
+      }
+     ],
+     "odinseed": true,
+     "marker": "Keep destroyed",
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "2024",
+     "title": "The Battle for Sausage Lake Keep",
+     "body": "In the heart of Myrland, by the great central lake the players had long ago named Sausage Lake, the castle upon its shore was fought over in a siege that Ruthless G preserved — one of the many keeps contested across the map in the years of Territory war, when scarcely a stronghold in the land went un-besieged.",
+     "links": [
+      {
+       "text": "Battle for Sausage Lake Keep",
+       "url": "https://www.youtube.com/watch?v=iF3ZXADsfKI",
+       "source": "Ruthless G"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "2024",
+     "title": "The Eastern Civil War",
+     "body": "Far in the eastern steppes, about Morin Khur and Toxai, the guilds of the east fell upon one another in a war the chroniclers named the Eastern Civil War — the guild Unbroken among its combatants, its story set down by Noobert and Torggaddon. It was proof that the wars of Nave were never one war but many, each region breeding its own feuds beneath the shadow of the great alliances.",
+     "links": [
+      {
+       "text": "Eastern Civil War — Unbroken",
+       "url": "https://www.youtube.com/watch?v=5NU8G1vN-3c",
+       "source": "Noobert / Torggaddon"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Villains of Hyllspeia",
+     "body": "In the snowbound town of Hyllspeia — where, in the old lore, the whole Blainn people had vanished without trace in the Irruption, leaving not even ruins — there rose the guild Overt, once the lawful, blue-bannered Clandestine, under the captains Thievery and Cruel. With the coming of Territory they turned from blue to cruel, made Hyllspeia their exclusionary fief, and earned the realm's lasting resentment — the antagonists that every full-loot world requires. Nearby, the neutral Northern Bank kept its counting-house, seeking \"friendly trade with all groups and entangling alliances with none\" — the realm's lone Switzerland amid the wars.",
+     "links": [
+      {
+       "text": "New Community Standards to Combat Toxic Behavior — the realm answers its villains",
+       "url": "https://forums.mmorpg.com/discussion/498473/mortal-online-2-has-new-community-standards-to-combat-toxic-behavior-including-scary-dev-harassment",
+       "source": "MMORPG.com forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2023–2024",
+     "kind": "tale",
+     "year": 2023
+    },
+    {
+     "date": "",
+     "title": "The Invisible Bridge and the World-First of BlackPriest",
+     "body": "When a new decree opened the deep of the Necromancers, a cruel flaw rendered its bridge invisible, and for near two days the pit below claimed hundreds of lives. Yet Ganandorn, a Death Knight of the guild BlackPriest — the self-styled \"Terrorists of Nave,\" co-founded by the greasy dagger-man Schnoz — fell into the pit a hundred times but at last led a band of six across the deadly span; and BlackPriest claimed the world-first slaying of the Necro Boss, farming the deep for eight hours and selling a single spell-lexicon for seventy thousand gold. Thus even a game's broken bridge became a field of glory.",
+     "links": [
+      {
+       "text": "Necro Dungeon Bridge Disaster — Ritualist Zoo and Experimentation",
+       "url": "https://www.youtube.com/watch?v=IDro63sPHHU",
+       "source": "YouTube, necro-dungeon footage"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2024",
+     "kind": "tale",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Rollback and the Hack, and the Fallen",
+     "body": "Not all the age's disasters were wrought by guilds. A great rollback once cast the world backward, and many of the Nightmare host lost their very characters; and in a darker hour a game master's own account was seized by hackers amid DDOS assaults — a matter grave enough that the FBI was said to be drawn in. Through every trial the chroniclers kept faith — Otto of the Rat Alliance with his battle-compilations, Clee with her gentle roleplay at Henrik's side, Forgiven the portrait-maker and photographer of Nave, whose images preserved the world's beauty as the others preserved its wars, and Vellek the herald, tireless hopper of banners, who kept the community's podcast of deeds and quarrels with a short temper and a soft heart for his friends — and the community mourned its dead: the game master Ahmose and the player Highlurder, both remembered with honour.",
+     "links": [
+      {
+       "text": "Patch Notes 2.0 — the great UE5 patch of that troubled season",
+       "url": "https://www.mortalonline2.com/patch-notes-2-0-ue5-update/",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2023–2024",
+     "kind": "tale",
+     "year": 2023
+    },
+    {
+     "date": "2023–2024",
+     "title": "The War Against the Gold-Sellers",
+     "body": "A darker shadow than any exploit lay across the world: RMT, the buying of gold and goods for real coin, which the honest held to be the deepest corruption of Nave — for no skill could beat a mediocre foe who simply outspent you in the world outside the game, and the cursed trinkets were the one prize most worth buying gold to obtain. The chronicler Tasu became the loudest voice against it, mapping the \"toxic east\" of the playerbase and leveling the gravest charge of all: that the very game-masters were corrupt — banning the whistleblowers, spiriting gold-buyers to safety, and (he swore) deleting whole guilds such as MANA and even KotO \"for the right price.\" The game-master Robmo answered him hotly, pointing to the monthly ban-reports and calling it cope. Whatever the truth of it, a true crusade took the field: the guilds Integrity and TEA made open war upon the notorious gold-selling guild Tianming, and documentarians such as HardDriveDump filmed its humbling. The demand to abolish the trinkets echoed down all the years that followed — and was never answered.",
+     "links": [
+      {
+       "text": "A Game of Keeps — Tasu's forum thread",
+       "url": "https://mortalonline2.com/forums/threads/guild-history-and-politics-since-release-vid-a-game-of-keeps-prepare-for-sarducaa.14959/",
+       "source": "Tasu, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2023
+    },
+    {
+     "date": "",
+     "title": "The Faces of the Middle Years",
+     "body": "As the game's fame grew even while its wars ground on, the community teemed with characters the chroniclers set down. There was Krank (Krankone Hsler), the mad dual-boxer who rode two terrorbirds at once, alt-tabbing between them to set both pets on one foe, and who banned from his stream any soul who dared join his chat after he had died. There was Pepper, among the most prolific beast-tamers Nave had seen, who kept a pet-emporium selling every manner of creature and, gracious even in defeat, hit her killers with a \"GG.\" There were the roamers and recruiters of the war-guilds, Blitz and Bigbadwolff, ever calling the wandering blades to a banner. There were the hunters of men: Cixx, captain of the bounty-host Headless, an \"Expert Bounty Hunter\" of two hundred contracts and more, who was famed for outwitting his quarry before ever he drew steel; and Axe, among the most charismatic blades of Nave, known to all by his \"movie-announcer\" voice, whose deeds — the Bounty Hunt Gone Wrong chief among them — were preserved upon the LowTierContent annal. There were the con-men: AnthonyHD, deviser of the notorious \"Easy Money\" swindle, and the newcomer CeeJ, whom that con fattened on Blood Kua. There were the brothers Stinkeye and Pinkeye, reckoned the \"Dumb and Dumber\" of Nave and beloved for it. And there came late but lasting Rivers (called Riley), sewer-born like every soul in Nave, who rose to be among the most constant chroniclers of the modern age and a mainstay of it. And over the growing world watched the community-keeper Nebulous, shepherd of the creators who kept the chronicle alive. These were the faces of Nave in its middle years.",
+     "links": [
+      {
+       "text": "Mortal Online 2 In 2024",
+       "url": "https://www.youtube.com/watch?v=ugRR3g8EzeY",
+       "source": "TheLazyPeon"
+      },
+      {
+       "text": "Mo2Builds Hall of Fame",
+       "url": "https://www.mo2builds.com/hall-of-fame",
+       "source": "Mo2Builds"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2024–2025",
+     "kind": "tale",
+     "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Lawman of Tephra — RunKarni",
+     "body": "Chief among the solo-legends of these years rode RunKarni, the naked-shortbow terror of the Tephra Crater, and one of the truest folk-heroes the sandbox ever made. His very name was a taunt hurled at the mega-host KarniMata — \"Run, Karni!\" — for he made a career of harrying that great zerg across the volcanic wastes, a single gadfly tormenting an empire. And he did it all but naked: no armor, no fortune on his back, trusting to a humble shortbow and his own cunning alone — the purest living proof of the game's deepest promise, that skill and knowledge, not gear and gold, are what truly rule in Nave. He styled himself the very law of his lands under the banner of the \"Tephra PD\" — the self-appointed police of the crater — patrolling his territory and dealing rough justice to trespassers, and, in the detail that made him immortal, broadcasting it all from the front seat of his car between the shifts of his real-world work as a night-watchman: a security guard in life, and a security guard in Nave. He turns up in the dungeon-wars too, down in the UnderCroft in the summer of 2024, lending his bow. His deeds were legend and his commentary endless — until, as the chroniclers gently record, \"his tongue undid him,\" and the same fearless mouth that made him such a joy to watch at last talked him into trouble he could not shoot his way out of.",
+     "links": [
+      {
+       "text": "Mo2Builds Hall of Fame",
+       "url": "https://www.mo2builds.com/hall-of-fame",
+       "source": "Mo2Builds"
+      },
+      {
+       "text": "Tephra Crater — Endless Cycle of Conflict, the Northern Wars",
+       "url": "https://www.youtube.com/watch?v=9Pgwkc-iexI",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "era": "2024–2025",
+     "kind": "tale",
+     "year": 2024
+    },
+    {
+     "date": "14 September 2024",
+     "title": "The Reproach of the Chickens",
+     "body": "A great grievance was aired in the halls of the forum, \"The Biggest Guilds Are All Chickens,\" naming Odinseed foremost — accusing the mighty keep-lords of camping their thrones and clasping hands in cowardice rather than making war. The elders answered with the wisdom of the age: that thrones bought no true reward, that a ten-month war \"burns everyone out,\" and that should any house reach for the whole map, \"the people would rally against them, for Mortal has always been a political diaspora.\" Even a great foreign host, it was recalled, had tried to master the world and been broken by the union of all against it.",
+     "links": [
+      {
+       "text": "The Biggest Guilds are all Chickens — the thread itself, posted this very day",
+       "url": "https://mortalonline2.com/forums/threads/the-biggest-guilds-are-all-chickens.12497/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "Autumn 2024",
+     "title": "The Engine Reforged",
+     "body": "The whole world was migrated to a new engine, Unreal Engine 5.4 — a labor unseen by the eye but felt in every frame, laying the ground for all that would come after. With it, the beasts of the tamers were overhauled to earn their strength through battle as their masters did; a Fledgling Flag was raised over every newcomer, that the veterans might know and aid them; and the deep places were warded against the crashes that had cost so many their hard-won characters.",
+     "links": [
+      {
+       "text": "Patch Notes 2.1.0.32 — the beasts re-forged to earn their strength",
+       "url": "https://www.mortalonline2.com/patch-notes-2-1-0-32",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "November 2024",
+     "title": "The Ranked Duel",
+     "body": "Amid the grumbling over sieges, the lords gave the world a new arena: a ranked dueling ladder with seasons and standings, where champions such as Slasher might prove their blades one against one, apart from the politics of keeps.",
+     "links": [
+      {
+       "text": "Hacks, Macros and Bans — Free Razer/Slasher Compilation",
+       "url": "https://www.youtube.com/watch?v=wDNfv2H7Meo",
+       "source": "Slasher (Razer)"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "November 2024",
+     "title": "Odinseed and Koto",
+     "body": "Speznat's camera caught a keep-siege between Odinseed and Koto, over a lament that the lords of the world had made keeps too hard to break — that the pendulum had swung from the elder world's cruelty all the way to a world where nothing could be taken.",
+     "links": [
+      {
+       "text": "Odinseed Surrender — War vs Bad Company, and Koto Next",
+       "url": "https://www.youtube.com/watch?v=M-AqXdEo5CA",
+       "source": "YouTube, war-declaration footage"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "Late 2024",
+     "title": "The First Siege of Odinpost",
+     "body": "As the KarniMata war deepened, the great host at last brought its engines against Odinpost itself — the first assault upon Odinseed's own keep, raised in the far north hard by the Minotaur Dungeon at the Mouth of Gal Barag, a name out of the world's deepest lore. To hold it was to hold the gate of the north's greatest deep. Barados's men — Azog the Defiler now standing among them, the old Content warlord turned Odinseed's shield — threw the attackers back, and the keep held; but the peace of the north was broken for good. From this first siege sprang the long Odinpost wars that would consume the whole of 2025: the March clash the chroniclers filmed, siege after siege as KarniMata, Kuthara's KotO, and Mythic took their turns at the walls, and — at the very last — the keep's fall in the summer. What began here would not end until Odinpost was rubble and the Reckoning had swept the whole board clean.",
+     "links": [
+      {
+       "text": "BruceLeeRob on Twitch — where the Odinpost wars were streamed live",
+       "url": "https://www.twitch.tv/BRUCELEEROB",
+       "source": "Twitch"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    }
+   ]
+  },
+  {
+   "age": "The Fourth Age",
+   "name": "The Reckoning",
+   "range": "2025",
+   "temper": [
+    "Then the lords of the world looked upon the flaw of the sixteen thrones — that the whole earth lay shut to all but sixteen houses — and resolved to shatter it utterly, and to remake the very law of Territory from its foundations. It was to be the greatest unmaking and remaking the world had yet endured; and they named it, fittingly, the Reckoning."
+   ],
+   "entries": [
+    {
+     "date": "January 2025",
+     "title": "The Free Weekend and the Daily Tasks",
+     "body": "With the new year, Star Vault threw open the gates for a free-to-play weekend, that new blood might pour in and taste the hard world, and gave the faithful daily tasks to reward their labors — small hooks to hold a restless playerbase in the long lull between the great wars.",
+     "links": [
+      {
+       "text": "Mortal Online 2's First 2025 Roadmap",
+       "url": "https://massivelyop.com/2025/01/23/mortal-online-2s-first-2025-roadmap-promises-optimization-combat-updates-and-overhauled-chat/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "10 March 2025",
+     "title": "Odinpost",
+     "body": "The war of Odinseed and KarniMata raged on at Odinpost — Odinseed's own keep, raised beside the Minotaur Dungeon at the Mouth of Gal Barag — and again the chroniclers of the Odin-host preserved the day (\"Odinseed vs KarniMata at Odinpost\"). Among the greatest of these clashes was a 150-against-170 battle for the keep, filmed by none other than Azog the Defiler himself — the old Content warlord now fighting under the Odin-banner — the largest single record we have of the whole Odinpost war.",
+     "links": [
+      {
+       "text": "The Battle for Odinpost 150v170",
+       "url": "https://www.youtube.com/watch?v=ZYJLzvGMX2g",
+       "source": "Azog the Defiler"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "2025",
+     "title": "The Elder World Ends",
+     "body": "In this year the servers of the first Mortal Online were shut down forever; its veterans, many now lords of Nave, mourned the world that had made them even as they carried its banners on.",
+     "links": [
+      {
+       "text": "The Official Mortal Online Channel — the elder world's monument",
+       "url": "https://www.youtube.com/mortalonline",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "12 May 2025",
+     "title": "The Tournament at Risar Forest",
+     "body": "And here is the paradox of Odinseed made flesh: the very house accused of camping, and locked all year in war, threw open the Risar Forest Keep for a tournament of single combat with a prize of ten thousand gold — Barados hosting his enemies as honored guests. Speznat filmed it.",
+     "links": [
+      {
+       "text": "150+ Player Siege Battle — a hired blade among the Odin-host",
+       "url": "https://www.youtube.com/watch?v=KowWOcEKa08",
+       "source": "YouTube, mercenary's point of view"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "15 May 2025",
+     "title": "The Reckoning Proclaimed",
+     "body": "The great remaking was announced.",
+     "links": [
+      {
+       "text": "Into the Vault #147 — Territory Control Overhaul",
+       "url": "https://www.mortalonline2.com/into-the-vault-147-reckoning-tc-overhaul-information",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Development Stream — TC Overhaul Information",
+       "url": "https://www.youtube.com/watch?v=PKZTOEhpmlI",
+       "source": "YouTube, development stream"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "2024–2025",
+     "title": "The Relic Wars",
+     "body": "Beside the war for keeps ran a quieter and greedier war: the war for relics. These were the prizes that could not be crafted, only held — and so, unlike ore or gold, a relic was pure standing: proof of who had taken and kept what others wanted. The houses hunted them, hoarded them, and raided each other for them; and when the reckoning of that long scramble was counted, Bad Company stood above all others, holding more relics than any guild in Nave. It was a strange sort of crown. They took no throne to earn it and won no siege that the chroniclers filmed; they simply out-held everyone, and the whole server knew it. Bad Company were an odd power to sit atop such a hoard — a roving, jungle-fighting house famous for going to war in Hawaiian shirts, contesting the southern jungle against Venomous's Jungle Alliance, and drawing the ire of Emdash's Eternal, who once looted nineteen hundred gold from their stronghold and destroyed all their pitch for good measure. Yet the relics were theirs, and holding is the only argument Nave has ever recognized.",
+     "links": [
+      {
+       "text": "Eternal Wars — guild-politics thread",
+       "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/page-2",
+       "source": "Emdash, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "22 May 2025",
+     "title": "The Siege of Ursa Stronghold",
+     "body": "Wolfszeit and dozens of Rat-Alliance allies stormed the Ursa Stronghold of Bad Company upon the Tephra Crater — the northern wars grinding on into the age of the Reckoning, and the relic-lords learning that a hoard makes a target.",
+     "links": [
+      {
+       "text": "URSA / BC Stronghold and Village Siege — Summary in 4K",
+       "url": "https://www.youtube.com/watch?v=ftLFJgOHHdc",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": "Stronghold assaulted",
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "29 June 2025",
+     "title": "The War over a Small House",
+     "body": "A single small house kindled a server-wide war and a great siege-defense — proof that in Nave, any spark could set the whole world ablaze.",
+     "links": [
+      {
+       "text": "Massive Fight Over Small House — Server War, Siege Defense",
+       "url": "https://www.youtube.com/watch?v=-KIrXJEqTds",
+       "source": "Wolfszeit"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "Summer 2025",
+     "title": "The Fall of Odinpost",
+     "body": "At the last the long war beside the Minotaur's mouth turned against the Odin-host, and Odinpost — Odinseed's own keep — fell. The stage of a hundred battles, held so long against the massed foes of the north — KarniMata, Kuthara's KotO, and Mythic among them — passed at last from King Barados's hands. The mightiest role-playing house of the north was unthroned, though never broken in spirit; and soon the Reckoning would sweep away every remaining keep in the world alike.",
+     "links": [
+      {
+       "text": "Odinseed vs KarniMata at Odinpost, the Mouth of Gal Barag — the war that felled it",
+       "url": "https://www.youtube.com/watch?v=94SmQ1UzgCM",
+       "source": "YouTube, Odinpost-war footage"
+      }
+     ],
+     "odinseed": true,
+     "marker": "Keep lost",
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "16 July 2025",
+     "title": "The Reckoning Comes",
+     "body": "By the expansion called Reckoning the sixteen thrones were shattered. Myrland was carved into five-and-thirty named Regions, each with its wooden Outpost, and now any host of twenty souls might contest any region through the staged Outpost Siege — break the outer gate, raise the inner, and hold the flag of conquest. At last the land bore true reward: buffs of the mine and the sea, taxes, and hourly bounty. With it came new arts of war (the Combat Abilities and the fury of Adrenaline), the stylish deaths called Fatalities, and a plague of insect-horrors, the Tagmaton, loosed upon all — the world's own founding cataclysm, the Irruption of four centuries past, come again as a torment for the guilds. The world was thrown open to every guild at last. In this age of new sorcery the mages rose to mastery, and none was more feared than Demra, reckoned the finest mage in all Nave — who knew every dungeon by heart, roamed as the \"ultimate rat,\" and made the foot-fighters curse the \"Harry Potter world\" the game had become.",
+     "links": [
+      {
+       "text": "The Reckoning Update Is Live",
+       "url": "https://massivelyop.com/2025/07/16/mortal-online-2s-reckoning-update-is-live-with-territory-control-and-combat-ability-overhauls/",
+       "source": "Massively Overpowered"
+      },
+      {
+       "text": "Reckoning Expansion Brings Major Changes",
+       "url": "https://mmos.com/news/reckoning-expansion-brings-major-changes-to-mortal-online-2",
+       "source": "MMOs.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "16 July 2025",
+     "title": "Dread Og Radio",
+     "body": "On the very day of the Reckoning, the drama-court of the community convened — \"Dread Og Radio\" — and among its voices sat Azog and Kuthara, with Clarence and Nalyd beside them, old warlords and heralds holding forth upon the age.",
+     "links": [
+      {
+       "text": "The realm's live airwaves — Mortal Online 2 on Twitch",
+       "url": "https://www.twitch.tv/directory/category/mortal-online-2",
+       "source": "Twitch"
+      }
+     ],
+     "odinseed": true,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "July 2025",
+     "title": "The Terror Dungeon of Krankone",
+     "body": "The realm's maddest explorer earned his monument: the Sheevra Terror Dungeon, discovered by Krankone — the same dual-boxing Krank who rode two terrorbirds at once — his find set down in the community's own records by the old chronicler Embuscade. Discovery, too, is a deed in Nave; the map itself remembers its finders.",
+     "links": [
+      {
+       "text": "\"Sheevra Terror Dungeon — Discovered by KRANKONE\" — Embuscade's testimony",
+       "url": "https://www.mortalonline2.com/forums/whats-new/",
+       "source": "official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "18 August 2025",
+     "title": "The Loremasters of the Alvarin",
+     "body": "The lore-keepers turned chroniclers of the deep past: a study of the Alvarin clade — the swift Veela and the shadowed Sheevra of Urmothâr — told in the manner of a history, for a community that had begun to treat its world's mythology as seriously as its wars. This chronicle is kin to their work.",
+     "links": [
+      {
+       "text": "Alvarin Culture Explained — Veela and Sheevra and Their Secrets",
+       "url": "https://www.youtube.com/watch?v=g-1qqDLfK0c",
+       "source": "YouTube, lore chronicle"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "22 August 2025",
+     "title": "The Lament of the Hollow Sieges",
+     "body": "Yet the new war brought new sorrows: the chroniclers recorded the \"Fake Outpost Sieges,\" where hosts declared war and then did not come — the \"no-show,\" the emptiness of a summons unanswered.",
+     "links": [
+      {
+       "text": "The outpost-siege design the hollow sieges abused",
+       "url": "https://massivelyop.com/2025/05/15/mortal-online-2-discusses-territory-control-overhauls-coming-in-the-reckoning-update/",
+       "source": "Massively Overpowered"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "September 2025",
+     "title": "The New Regions Contested, and the Next Overhaul Foretold",
+     "body": "In the months after the Reckoning, the five-and-thirty open regions were fought over by hosts great and small, the new Outpost-sieges testing every guild's mettle upon fresh ground. And Star Vault, in its \"Into the Vault\" annals, foretold the next great remaking — the coming banking, travel, and war overhauls that would land before the year was out.",
+     "links": [
+      {
+       "text": "Reckoning PTR Patch Notes — the 35 Regions and Outpost Sieges",
+       "url": "https://www.mortalonline2.com/patch-notes-reckoning-ptr",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "30 October 2025",
+     "title": "The Hundred Days",
+     "body": "The many tongues of Nave kept their own epics: a Spanish-speaking creator survived one hundred days in hardcore with his community at his back — \"esto fue una locura total\" — the challenge-saga tradition arriving in Nave, and proof the realm's story was being told in every language its people spoke.",
+     "links": [
+      {
+       "text": "Sobreviví 100 Días en Modo Hardcore con la Comunidad",
+       "url": "https://www.youtube.com/watch?v=eqdFbFtklfI",
+       "source": "YouTube, Spanish-language community"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "November 2025",
+     "title": "The Ether Wayshrines and the Banking Overhaul (Patch 2.2.2.58)",
+     "body": "The last great patch of the year eased the long tedium of the dead and the merchant alike. The Ether Wayshrines were raised across the land — spirit-gates by which a slain soul might travel the Etherworld swiftly from shrine to shrine, or teleport at once to the nearest, rather than wander the grey roads for an age. The Banking Overhaul made the vaults of the world orderly at last, with auto-sorting and search where before was only clutter. Caravan Campsites rose outside the dungeons, staging-grounds where soloers and small bands might gather, resurrect, and ready their delving. And the war itself was re-lawed: a guild must now stand at open war to lay a siege, and war was made costly and finite, ending of itself after fourteen days — one more turn of Star Vault's endless labor to make the fighting for land worthy and true.",
+     "links": [
+      {
+       "text": "Patch Notes 2.2.2.58 — Wayshrines and the Banking Overhaul",
+       "url": "https://www.mortalonline2.com/patch-notes-2-2-2-58",
+       "source": "Star Vault"
+      },
+      {
+       "text": "PTR Soon! Banking Overhaul, Wayshrines & Caravan Campsites",
+       "url": "https://www.youtube.com/watch?v=aoB58gBJ7RI",
+       "source": "YouTube, update summary"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "December 2025",
+     "title": "The Year's Reckoning",
+     "body": "Star Vault looked back upon ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known.",
+     "links": [
+      {
+       "text": "End of Year Recap — 2025",
+       "url": "https://www.mortalonline2.com/2025-comes-to-a-close",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "age": "The Fifth Age",
+   "name": "The New World",
+   "range": "2026",
+   "temper": [
+    "At the last, the oldest and deepest magic of Nave was invoked once more — the very same that had opened Myrland to its first colonists five years before: the making of a wholly new and empty land, that upon virgin ground the whole great cycle of rise and ruin might begin again."
+   ],
+   "entries": [
+    {
+     "date": "February 2026",
+     "title": "Sarducaa Revealed",
+     "body": "The lords of the world unveiled a new continent, the desert land of Sarducaa — the ancient realm of the immortal Empress Labbah Madar and the Magi of Yesil, known until now only from the old lore — to be raised upon a far server across the western sea. Star Vault heralded it with a \"New Lands Reveal\" teaser, and the whole realm turned its eyes south to the coming frontier.",
+     "links": [
+      {
+       "text": "Mortal Online 2 — New Lands Reveal Teaser",
+       "url": "https://www.youtube.com/watch?v=jwfL3xPJPAI",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "3 March 2026",
+     "title": "The New Eyes",
+     "body": "On the eve of the new continent a fresh wave of reviewers found the old world — \"I found the most hardcore MMO ever\" — and the cycle that began with Josh Strife Hayes in 2021 turned again: every few years, Nave is discovered, and the veterans watch the newborn learn what the sewers teach.",
+     "links": [
+      {
+       "text": "I Found the Most Hardcore MMO EVER — a 2026 review",
+       "url": "https://www.youtube.com/watch?v=icHAeEAhUc8",
+       "source": "YouTube review"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "Spring 2026",
+     "title": "The Bridge to Sarducaa, and the Old Grievance Rekindled",
+     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the world's founding cataclysm four centuries past — was raised anew to link Myrland to the southern land. And in the halls of the forum the oldest grievance flared once more: the cry to abolish the trinkets that fed the gold-sellers, with some now naming the very \"realizing of the extent of RMT\" a reason to lay the game down. So even on the eve of a new world, Nave argued its most ancient argument.",
+     "links": [
+      {
+       "text": "Into the Vault #153 — the Bridge of Tekton",
+       "url": "https://www.mortalonline2.com/into-the-vault-153-new-lands-revealed-and-next-patch-details",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "17 June 2026",
+     "title": "The Testing and the Locks",
+     "body": "The new land was opened to trial, and with it the cunning new art of Lockpicking.",
+     "links": [
+      {
+       "text": "Sarducaa Heads to PTR June 17",
+       "url": "https://massivelyop.com/2026/06/07/mortal-online-2-grants-a-look-at-the-desert-realm-of-sarducaa-as-it-heads-to-ptr-june-17/",
+       "source": "Massively Overpowered"
+      },
+      {
+       "text": "Sarducaa Goes Live on PTR — and Lockpicking, Too",
+       "url": "https://www.mmorpg.com/news/mortal-online-2s-new-sarducaa-region-goes-live-on-ptr-and-lockpicking-too-2000138316",
+       "source": "MMORPG.com"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "2026",
+     "title": "Of the Vessel and the Fatalities",
+     "body": "And the world kept growing stranger and richer beneath the headlines: a new boss called The Vessel behind its portal of orbs; Fatalities, with titles for those who mastered them; Tagmaton brood-eggs hatched into Fallowborn pets by the patient; and a chat reforged so a man might at last link his wares and whisper his enemies by name. The chronicle of patches is the chronicle of daily life — and daily life in Nave was never once dull.",
+     "links": [
+      {
+       "text": "The living patch-record of 2026 — the Vessel, Fatalities, and Fallowborn",
+       "url": "https://mo2info.com/index.php?newsCat=All",
+       "source": "MO2Info"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "19 June 2026",
+     "title": "A Game of Keeps",
+     "body": "The chronicler Tasu — the same who years before had led the great crusade against the gold-sellers — set down \"A Game of Keeps,\" a history of the guilds since the founding, timed to the coming of the new world; the community's own looking-back upon five years of war, it drew the old voices — Phen, Tiglie, and Embuscade — into the reckoning of what those years had wrought.",
+     "links": [
+      {
+       "text": "A Game of Keeps — guild history and politics since release",
+       "url": "https://www.youtube.com/watch?v=loUGVq7KTug",
+       "source": "Tasu"
+      },
+      {
+       "text": "A Game of Keeps — Tasu's forum thread",
+       "url": "https://mortalonline2.com/forums/threads/guild-history-and-politics-since-release-vid-a-game-of-keeps-prepare-for-sarducaa.14959/",
+       "source": "Tasu, official forums"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    },
+    {
+     "date": "1 July 2026",
+     "title": "Sarducaa Opens",
+     "body": "The new continent was thrown open — and, by a deep law, only the newborn might enter it, bearing nothing of their old power. Thus five years after the elder houses first colonized an empty Myrland, an empty land was made once more, that the whole great cycle might begin again upon level ground.",
+     "links": [
+      {
+       "text": "Mortal Online 2 — Sarducaa Launch Trailer",
+       "url": "https://www.youtube.com/watch?v=_TDD0AGYMjo",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Sarducaa is live — the official word",
+       "url": "https://www.mortalonline2.com/",
+       "source": "Star Vault"
+      },
+      {
+       "text": "Patch Notes — Sarducaa Expansion",
+       "url": "https://www.mortalonline2.com/patch-notes-sarducaa-expansion",
+       "source": "Star Vault"
+      }
+     ],
+     "odinseed": false,
+     "marker": null,
+     "kind": "event",
+     "year": 2026
+    }
+   ]
+  }
+ ]
+};

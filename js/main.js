@@ -293,19 +293,21 @@
 
       const flyoutHtml = `
       <div class="age-flyout" id="${flyoutId}" role="menu" aria-label="${esc(age.name)} at a glance">
-        <div class="fy-header">
-          <span class="fy-age">${ROMANS[ai]} &mdash; ${esc(age.name)}</span>
-          <span class="fy-range">${esc(age.range)}</span>
-        </div>
-        <div class="fy-list">
-          ${flyoutItems
-            .map(
-              (it) => `<a href="#${it.id}" class="fy-item${it.isLandmark ? " fy-landmark" : ""}" role="menuitem">
-                <span class="fy-date">${esc(it.dateLabel)}</span>
-                <span class="fy-title">${esc(it.title)}</span>
-              </a>`
-            )
-            .join("")}
+        <div class="fy-panel">
+          <div class="fy-header">
+            <span class="fy-age">${ROMANS[ai]} &mdash; ${esc(age.name)}</span>
+            <span class="fy-range">${esc(age.range)}</span>
+          </div>
+          <div class="fy-list">
+            ${flyoutItems
+              .map(
+                (it) => `<a href="#${it.id}" class="fy-item${it.isLandmark ? " fy-landmark" : ""}" role="menuitem">
+                  <span class="fy-date">${esc(it.dateLabel)}</span>
+                  <span class="fy-title">${esc(it.title)}</span>
+                </a>`
+              )
+              .join("")}
+          </div>
         </div>
       </div>`;
 

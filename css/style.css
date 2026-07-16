@@ -381,8 +381,7 @@ main, footer { position: relative; z-index: 2; }
 
 /* the timeline is a real strip built into the header, not a decorative
    underline — a banded track (tinted per Age, so it reads as a map of
-   the whole chronicle at a glance) with its own top edge and shadow to
-   ground it against the nav row above */
+   the whole chronicle at a glance) */
 .scroll-progress {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -390,8 +389,6 @@ main, footer { position: relative; z-index: 2; }
   display: flex;
   align-items: flex-end;
   padding-top: 6px;
-  border-top: 1px solid rgba(201, 168, 106, 0.1);
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 .scroll-progress-track {
   position: relative;

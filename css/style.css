@@ -149,22 +149,134 @@ main, footer { position: relative; z-index: 2; }
 }
 
 .age-nav { display: flex; gap: 4px; }
-.age-nav a {
+.age-nav-item { position: relative; display: flex; align-items: center; }
+.age-nav-link {
   font-family: var(--display);
   font-size: 14px;
   letter-spacing: 0.12em;
   color: var(--bone-dim);
-  padding: 8px 12px;
+  padding: 8px 4px 8px 12px;
   border-bottom: 1px solid transparent;
   transition: color 0.3s, border-color 0.3s;
 }
-.age-nav a:hover { color: var(--gold-bright); }
-.age-nav a.active { color: var(--gold); border-bottom-color: var(--gold-dim); }
+.age-nav-link:hover { color: var(--gold-bright); }
+.age-nav-link.active { color: var(--gold); border-bottom-color: var(--gold-dim); }
 .age-nav .nav-roman { font-size: 15px; }
 .age-nav .nav-name { display: none; }
 @media (min-width: 1100px) {
   .age-nav .nav-name { display: inline; margin-left: 6px; font-size: 12px; letter-spacing: 0.16em; opacity: 0.75; }
 }
+
+/* the caret: a small always-present affordance that the age names are
+   expandable — click/tap to pin, hover to preview */
+.age-nav-caret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--bone-dim);
+  transition: color 0.3s, transform 0.3s;
+}
+.age-nav-caret:hover, .age-nav-item.open .age-nav-caret { color: var(--gold-bright); }
+.caret-chevron {
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-top: -3px;
+}
+.age-nav-item.open .caret-chevron, .age-nav-item:hover .caret-chevron { transform: rotate(225deg); margin-top: 3px; }
+
+/* the flyout: the age's whole roll of dated deeds, at a glance */
+.age-flyout {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  width: min(380px, 92vw);
+  max-height: min(64vh, 560px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(160deg, var(--card), var(--card-2));
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(201, 168, 106, 0.06);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.25s;
+  z-index: 5;
+}
+.age-nav-item:hover .age-flyout,
+.age-nav-item:focus-within .age-flyout,
+.age-nav-item.open .age-flyout {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.fy-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 18px 12px;
+  border-bottom: 1px solid rgba(201, 168, 106, 0.16);
+  flex: 0 0 auto;
+}
+.fy-age {
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--gold-bright);
+  white-space: nowrap;
+}
+.fy-range {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  white-space: nowrap;
+}
+.fy-list {
+  overflow-y: auto;
+  padding: 6px 0;
+}
+.fy-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 18px;
+  border-left: 2px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.fy-item:hover { background: rgba(201, 168, 106, 0.07); border-left-color: var(--gold); }
+.fy-date {
+  flex: 0 0 auto;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--age-tint, var(--gold));
+  white-space: nowrap;
+  min-width: 78px;
+}
+.fy-title {
+  font-family: var(--serif);
+  font-size: 13.5px;
+  line-height: 1.35;
+  color: var(--bone);
+}
+.fy-item.fy-landmark .fy-title { color: var(--gold-bright); font-weight: 600; }
+.fy-item.fy-landmark .fy-date { color: var(--gold-bright); }
 
 /* nav action buttons (ambience) */
 .nav-actions { display: flex; align-items: center; gap: 4px; }
@@ -578,6 +690,7 @@ main, footer { position: relative; z-index: 2; }
   position: relative;
   margin: 0 0 clamp(36px, 6vh, 64px);
   max-width: 780px;
+  scroll-margin-top: 84px; /* clears the fixed header when jumped to from the nav flyout */
 }
 
 .entry::before {
@@ -991,7 +1104,12 @@ footer p {
   .wordmark-text { display: none; }
   .wordmark { opacity: 1; transform: none; }
   .age-nav { gap: 0; }
-  .age-nav a { padding: 8px 7px; }
+  .age-nav-link { padding: 8px 4px; }
+  .age-nav-caret { width: 16px; margin-right: 2px; }
+  .age-flyout { width: min(320px, 88vw); left: 0; transform: translateX(0) translateY(-6px); }
+  .age-nav-item:hover .age-flyout,
+  .age-nav-item:focus-within .age-flyout,
+  .age-nav-item.open .age-flyout { transform: translateX(0) translateY(0); }
   .timeline { padding-left: calc(var(--spine-x) + 18px); padding-right: 16px; }
   .entry::before { left: -18px; width: 18px; }
   .entry-node { left: -18px; }
@@ -1007,4 +1125,6 @@ footer p {
   #atmosphere { display: none; }
   .age-roman-bg { transform: none !important; }
   .entry.landmark .entry-card::before { transition: none; transform: scaleX(1); }
+  .age-flyout { transition: opacity 0.15s ease, visibility 0.15s; }
+  .caret-chevron { transition: none; }
 }

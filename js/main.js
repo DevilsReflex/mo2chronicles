@@ -235,7 +235,8 @@
       const tint = AGE_TINTS[ai] || AGE_TINTS[2];
       const glow = AGE_GLOWS[ai] || AGE_GLOWS[2];
       const id = `age-${ai + 1}`;
-      nav += `<a href="#${id}" data-age="${id}"><span class="nav-roman">${ROMANS[ai]}</span><span class="nav-name">${esc(age.name)}</span></a>`;
+      const flyoutId = `flyout-${id}`;
+      const flyoutItems = []; // collected while walking this age's entries below
 
       html += `
       <section class="age-divider" id="${id}" style="--age-tint:${tint};--age-glow:${glow}" aria-label="${esc(age.age)}">
@@ -252,9 +253,10 @@
         <div class="spine" aria-hidden="true"><div class="spine-fill"></div></div>`;
 
       let prevYear = null;
-      age.entries.forEach((e) => {
+      age.entries.forEach((e, ei) => {
         const isTale = e.kind === "tale";
         const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+        const entryId = `entry-${ai}-${ei}`;
         // year milestone on the spine whenever the chronicle turns a year —
         // only on dated entries (tales carry approximate era-years) and only forward
         if (!isTale && e.year && (prevYear === null || e.year > prevYear)) {
@@ -266,7 +268,7 @@
           ? `<div class="entry-date">${esc(e.date)}</div>`
           : `<div class="tale-kicker">From the margins of the chronicle${e.era ? ` &mdash; ${esc(e.era)}` : ""}</div>`;
         html += `
-        <article class="${cls}" data-year="${e.year}">
+        <article class="${cls}" id="${entryId}" data-year="${e.year}">
           <span class="entry-node" aria-hidden="true"></span>
           <div class="entry-card">
             ${dateLine}
@@ -276,13 +278,80 @@
             ${renderWatch(e.links)}
           </div>
         </article>`;
+
+        // the nav flyout mirrors the timeline at a glance: date + title,
+        // clickable straight to the entry, landmarks picked out in gold
+        flyoutItems.push({
+          id: entryId,
+          dateLabel: e.date || e.era || "Undated",
+          title: e.title,
+          isLandmark,
+        });
       });
 
       html += `</div>`;
+
+      const flyoutHtml = `
+      <div class="age-flyout" id="${flyoutId}" role="menu" aria-label="${esc(age.name)} at a glance">
+        <div class="fy-header">
+          <span class="fy-age">${ROMANS[ai]} &mdash; ${esc(age.name)}</span>
+          <span class="fy-range">${esc(age.range)}</span>
+        </div>
+        <div class="fy-list">
+          ${flyoutItems
+            .map(
+              (it) => `<a href="#${it.id}" class="fy-item${it.isLandmark ? " fy-landmark" : ""}" role="menuitem">
+                <span class="fy-date">${esc(it.dateLabel)}</span>
+                <span class="fy-title">${esc(it.title)}</span>
+              </a>`
+            )
+            .join("")}
+        </div>
+      </div>`;
+
+      nav += `
+      <div class="age-nav-item">
+        <a href="#${id}" data-age="${id}" class="age-nav-link"><span class="nav-roman">${ROMANS[ai]}</span><span class="nav-name">${esc(age.name)}</span></a>
+        <button class="age-nav-caret" type="button" aria-expanded="false" aria-controls="${flyoutId}" aria-label="Preview ${esc(age.name)} at a glance">
+          <span class="caret-chevron" aria-hidden="true"></span>
+        </button>
+        ${flyoutHtml}
+      </div>`;
     });
 
     root.innerHTML = html;
     navEl.innerHTML = nav;
+
+    // ── flyout open/close: hover works via CSS; the caret makes it
+    // reachable by click/tap/keyboard, and pins it open on touch ──
+    const navItems = Array.from(navEl.querySelectorAll(".age-nav-item"));
+    function closeAllFlyouts(except) {
+      navItems.forEach((item) => {
+        if (item === except) return;
+        item.classList.remove("open");
+        item.querySelector(".age-nav-caret")?.setAttribute("aria-expanded", "false");
+      });
+    }
+    navEl.addEventListener("click", (ev) => {
+      const caret = ev.target.closest(".age-nav-caret");
+      if (!caret) return;
+      ev.preventDefault();
+      const item = caret.closest(".age-nav-item");
+      const willOpen = !item.classList.contains("open");
+      closeAllFlyouts(willOpen ? item : null);
+      item.classList.toggle("open", willOpen);
+      caret.setAttribute("aria-expanded", String(willOpen));
+    });
+    // a click on a flyout entry navigates, then tidy up the pinned-open state
+    navEl.addEventListener("click", (ev) => {
+      if (ev.target.closest(".fy-item")) closeAllFlyouts(null);
+    });
+    document.addEventListener("click", (ev) => {
+      if (!ev.target.closest(".age-nav-item")) closeAllFlyouts(null);
+    });
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key === "Escape") closeAllFlyouts(null);
+    });
   })();
 
   /* ── video click-to-play ─────────────────────────────── */
@@ -326,7 +395,7 @@
   const fill = document.getElementById("progress-fill");
   const anno = document.getElementById("anno");
   const annoYear = document.getElementById("anno-year");
-  const navLinks = Array.from(document.querySelectorAll(".age-nav a"));
+  const navLinks = Array.from(document.querySelectorAll(".age-nav-link"));
   const timelines = Array.from(document.querySelectorAll(".timeline"));
   const dividers = Array.from(document.querySelectorAll(".age-divider"));
   const entries = Array.from(document.querySelectorAll(".entry[data-year]"));

@@ -406,6 +406,7 @@
   const nav = document.getElementById("topnav");
   const fill = document.getElementById("progress-fill");
   const scrollProgressEl = document.getElementById("scroll-progress");
+  const progressTrack = document.querySelector(".scroll-progress-track");
   const progressMarker = document.getElementById("progress-marker");
   const progressTicks = document.getElementById("progress-ticks");
   const progressPopover = document.getElementById("progress-popover");
@@ -471,6 +472,19 @@
       });
     });
   });
+  // paint the track itself as a banded map of the whole chronicle — a
+  // hard-stopped gradient, one low-opacity band per Age — so the bar
+  // reads as a real timeline of the site rather than a generic loader
+  if (progressTrack && flatEntries.length > 1) {
+    const stops = [];
+    ageStartIdx.forEach((startI, ai) => {
+      const from = (startI / (flatEntries.length - 1)) * 100;
+      const to = ai + 1 < ageStartIdx.length ? (ageStartIdx[ai + 1] / (flatEntries.length - 1)) * 100 : 100;
+      const band = `color-mix(in srgb, ${AGE_TINTS[ai] || AGE_TINTS[2]} 22%, transparent)`;
+      stops.push(`${band} ${from.toFixed(3)}%`, `${band} ${to.toFixed(3)}%`);
+    });
+    progressTrack.style.background = `linear-gradient(90deg, ${stops.join(", ")})`;
+  }
   if (progressTicks && flatEntries.length > 1) {
     progressTicks.innerHTML = flatEntries
       .map((fe, i) => {

@@ -73,29 +73,13 @@ body::before {
     linear-gradient(rgba(2, 2, 3, 0.4), transparent 14%, transparent 86%, rgba(2, 2, 3, 0.5));
 }
 
-/* ─────────────── atmosphere: backdrop, aura, dust ───────────────
-   Stack: backdrop (0) < aura (0) < dust canvas (1) < content (2)
-          < grain (3) < vignette (4) */
+/* ─────────────── atmosphere: aura, dust ───────────────
+   Stack: aura (0) < dust canvas (1) < content (2) < grain (3) < vignette (4) */
 @property --chrome-tint {
   syntax: "<color>";
   inherits: true;
   initial-value: #c9a86a;
 }
-/* the far horizon: two static silhouette layers, fixed to the viewport
-   so they never scroll — the content passes in front of them, which is
-   the actual depth cue (nothing here moves or glows) */
-#backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.bd-layer { position: absolute; bottom: 0; left: 0; width: 100%; display: block; }
-.bd-far { height: 22vh; opacity: 0.5; }
-.bd-far path { fill: color-mix(in srgb, var(--chrome-tint, #c9a86a) 20%, #050507); transition: fill 1.8s ease; }
-.bd-near { height: 30vh; opacity: 0.7; }
-.bd-near path { fill: color-mix(in srgb, var(--chrome-tint, #c9a86a) 36%, #050507); transition: fill 1.8s ease; }
 .aura-layer {
   position: fixed;
   inset: 0;
@@ -900,20 +884,6 @@ main, footer { position: relative; z-index: 2; }
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse 72% 58% at 50% 46%, var(--age-glow, rgba(201,168,106,0.10)), transparent 72%);
-}
-/* a low silhouette of ruined heights specific to this age, tinted to
-   its own era colour — sits behind the roman numeral, ahead of the glow */
-.age-motif {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 32%;
-  opacity: 0.6;
-  pointer-events: none;
-}
-.age-motif path {
-  fill: color-mix(in srgb, var(--age-tint, #c9a86a) 32%, #050507);
 }
 .age-roman-bg {
   position: absolute;

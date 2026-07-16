@@ -17,12 +17,6 @@
     "rgba(214, 186, 120, 0.12)",
   ];
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // two ridge-silhouette variants, alternated per age, for the faint
-  // background motif behind each Age divider
-  const RIDGE_PATHS = [
-    "M0,260 L0,190 L100,160 L200,185 L320,140 L440,175 L560,120 L680,160 L800,110 L920,150 L1040,100 L1160,140 L1280,95 L1400,145 L1520,115 L1600,150 L1600,260 Z",
-    "M0,260 L0,210 L120,175 L220,220 L340,160 L420,145 L455,215 L470,145 L485,215 L560,170 L680,205 L800,150 L920,195 L1040,140 L1160,185 L1280,130 L1400,175 L1520,140 L1600,165 L1600,260 Z",
-  ];
 
   /* ── helpers ─────────────────────────────────────────── */
   const esc = (s) =>
@@ -246,7 +240,6 @@
 
       html += `
       <section class="age-divider" id="${id}" style="--age-tint:${tint};--age-glow:${glow}" aria-label="${esc(age.age)}">
-        <svg class="age-motif" viewBox="0 0 1600 260" preserveAspectRatio="none" aria-hidden="true"><path d="${RIDGE_PATHS[ai % RIDGE_PATHS.length]}"/></svg>
         <div class="age-roman-bg" aria-hidden="true">${ROMANS[ai]}</div>
         <div class="age-inner">
           <p class="age-kicker reveal">${esc(age.age)}</p>

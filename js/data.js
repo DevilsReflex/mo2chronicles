@@ -67,6 +67,11 @@ window.CHRONICLE = {
        "text": "The Acolytes raise their keep — the vow made good",
        "url": "https://www.youtube.com/watch?v=dhoek9469n0",
        "source": "Deftspider"
+      },
+      {
+       "text": "The guild interview — Acolytes speak for themselves",
+       "url": "https://www.youtube.com/watch?v=ecbEsbF92go",
+       "source": "Bratwire"
       }
      ],
      "marker": null,
@@ -132,6 +137,11 @@ window.CHRONICLE = {
        "text": "Blades tested against the raw alpha world",
        "url": "https://www.youtube.com/watch?v=DMRpH9Vh11U",
        "source": "Lupus"
+      },
+      {
+       "text": "A compilation of blades crossed in the combat alpha",
+       "url": "https://www.youtube.com/watch?v=dvfeX8GvbpY",
+       "source": "DalariusPVP"
       }
      ],
      "marker": null,
@@ -384,6 +394,11 @@ window.CHRONICLE = {
        "text": "What is Mortal Online 2? — the hardcore full-loot MMO explained",
        "url": "https://www.youtube.com/watch?v=xUqk8irQ38U",
        "source": "BullCashish"
+      },
+      {
+       "text": "How to get over gear fear — a newcomer's tip guide",
+       "url": "https://www.youtube.com/watch?v=GFwbDDR7bpo",
+       "source": "BasedBellagio Gaming"
       }
      ]
     },
@@ -491,6 +506,11 @@ window.CHRONICLE = {
        "text": "The hunters compare notes — how to bring the Queen down",
        "url": "https://www.youtube.com/watch?v=DyAvyRYFJSc",
        "source": "Nazori"
+      },
+      {
+       "text": "To kill a Nitre Queen in three minutes",
+       "url": "https://www.youtube.com/watch?v=6ud1zhyY2G8",
+       "source": "Arinna"
       }
      ],
      "marker": null,
@@ -621,6 +641,11 @@ window.CHRONICLE = {
        "text": "The official herald of the patch that gave the world its ground",
        "url": "https://www.youtube.com/watch?v=GoSFIm-WeU4",
        "source": "Mortal Online"
+      },
+      {
+       "text": "The housing patch, played live as it landed",
+       "url": "https://www.youtube.com/watch?v=I9-dyi1vmD4",
+       "source": "Vandevious Twitch"
       }
      ],
      "marker": null,
@@ -650,7 +675,7 @@ window.CHRONICLE = {
     {
      "date": "December 2021",
      "title": "The Bakti Council and the Keep of Bakti",
-     "body": "In the jungle-gate city of Bakti — a neutral trade-hub since the elder world — eleven guilds bound themselves into the Bakti Council, to secure the Bakti Keep and keep the peace. But peace bred its own war. When the Council voted to manage the keep in common, Azaad of the Darkblood Coven cried that \"democracy is dead,\" deleted the city's council-hall, and led his guild out — the new world's first great political schism, and proof that even a keep held for peace could sunder its holders.",
+     "body": "In the jungle-gate city of Bakti — a neutral trade-hub since the elder world — eleven guilds bound themselves into the Bakti Council, to secure the Bakti Keep and keep the peace. But peace bred its own war. When the Council voted to strip him of control over its own Discord server, Azaad of the Darkblood Coven cried that \"democracy is dead,\" deleted the server outright, and led his guild out — the new world's first great political schism, and proof that even a keep held for peace could sunder its holders.",
      "links": [
       {
        "text": "Bakti — a tour of the jungle-gate city",
@@ -749,6 +774,26 @@ window.CHRONICLE = {
     },
     {
      "date": "Late January 2022",
+     "title": "The Elder World Ends",
+     "body": "That same week, the servers of the first Mortal Online were shut down forever; its veterans, many now lords of Nave, mourned the world that had made them even as they carried its banners into the new one.",
+     "links": [
+      {
+       "text": "The Official Mortal Online Channel — the elder world's monument",
+       "url": "https://www.youtube.com/mortalonline",
+       "source": "Star Vault"
+      },
+      {
+       "text": "The last login — twelve years of the elder world, said goodbye",
+       "url": "https://www.youtube.com/watch?v=xpzUsRReqqA",
+       "source": "Wolfszeit"
+      }
+     ],
+     "marker": null,
+     "kind": "event",
+     "year": 2022
+    },
+    {
+     "date": "Late January 2022",
      "title": "The Great Queue",
      "body": "No sooner was the world permanent than it near drowned in its own success: the population surged past nine thousand souls — a two-fifths leap in one month — and Myrland choked on login-queues and crashes. On the forums some cried for a wipe of the whole continent; others begged the newcomers to bide in Haven. The world's very popularity became its first crisis, and the Steam-scrolls filled with warnings.",
      "links": [
@@ -761,6 +806,11 @@ window.CHRONICLE = {
        "text": "The queue itself — a witness at the drowned gates",
        "url": "https://www.youtube.com/watch?v=-_m-8ZeE6Rs",
        "source": "Pwnstarr"
+      },
+      {
+       "text": "The CEO explains the launch problems and the queue system",
+       "url": "https://www.youtube.com/watch?v=ZL33C5FGQxA",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -863,6 +913,11 @@ window.CHRONICLE = {
        "text": "Odin's Seed rising — the host at war, seen from the ranks",
        "url": "https://www.youtube.com/watch?v=FM21gbTCCN8",
        "source": "Dire Lykaios"
+      },
+      {
+       "text": "Kranesh Heathens Return the SEED to ODIN — the chronicle named in the entry itself",
+       "url": "https://www.youtube.com/watch?v=GQcWQyCCJ9Y",
+       "source": "ShadowOfaManTV"
       }
      ],
      "marker": null,
@@ -1428,6 +1483,11 @@ window.CHRONICLE = {
        "text": "The storms unveiled — the official showcase",
        "url": "https://www.youtube.com/watch?v=1zbBT20YeGc",
        "source": "Mortal Online"
+      },
+      {
+       "text": "Patch 1.0.16 — Elementalism unveiled in full",
+       "url": "https://www.youtube.com/watch?v=c_RQfUOYYvA",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2321,7 +2381,7 @@ window.CHRONICLE = {
     {
      "date": "January 2025",
      "title": "The Free Weekend and the Daily Tasks",
-     "body": "With the new year, Star Vault threw open the gates for a free-to-play weekend, that new blood might pour in and taste the hard world, and gave the faithful daily tasks to reward their labors — small hooks to hold a restless playerbase in the long lull between the great wars.",
+     "body": "With the new year, Star Vault threw open the gates for a free-to-play weekend, that new blood might pour in and taste the hard world — even as the daily tasks it had lately given the faithful kept holding a restless playerbase through the long lull between the great wars.",
      "links": [
       {
        "text": "Mortal Online 2's First 2025 Roadmap",
@@ -2352,26 +2412,6 @@ window.CHRONICLE = {
        "text": "Odinseed against Scorn, another day at the Minotaur Dungeon",
        "url": "https://www.youtube.com/watch?v=_p0dVpBFkUg",
        "source": "nizwald"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
-     "date": "2025",
-     "title": "The Elder World Ends",
-     "body": "In this year the servers of the first Mortal Online were shut down forever; its veterans, many now lords of Nave, mourned the world that had made them even as they carried its banners on.",
-     "links": [
-      {
-       "text": "The Official Mortal Online Channel — the elder world's monument",
-       "url": "https://www.youtube.com/mortalonline",
-       "source": "Star Vault"
-      },
-      {
-       "text": "The last login — twelve years of the elder world, said goodbye",
-       "url": "https://www.youtube.com/watch?v=xpzUsRReqqA",
-       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2617,6 +2657,11 @@ window.CHRONICLE = {
        "text": "The outpost-wars begin across the new regions",
        "url": "https://www.youtube.com/watch?v=BvkaR7ygz4w",
        "source": "CrashGaming247"
+      },
+      {
+       "text": "Capturing an Outpost — the new region system explained",
+       "url": "https://www.youtube.com/watch?v=luZOcf4cT_4",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2736,7 +2781,7 @@ window.CHRONICLE = {
     {
      "date": "March 2026",
      "title": "The Fall of Odinpost",
-     "body": "At the last, the long war beside the Minotaur's mouth turned against the Odin-host. In two great sieges in the spring of 2026, the rebellion of half the server came against Odinpost, and the stage of a hundred battles was broken at last. The chroniclers filmed Adolyn of Odinseed bidding farewell to the stronghold he had built while the cities of Nave rejoiced. The mightiest role-playing house of the north was unthroned — though never broken in spirit — and it had taken the massed strength of the world two years to do it.",
+     "body": "At the last, the long war beside the Minotaur's mouth turned against the Odin-host. In two great sieges in the spring of 2026, the rebellion of half the server came against Odinpost, and the stage of a hundred battles was broken at last. The chroniclers filmed Barados of Odinseed bidding farewell to the stronghold he had built while the cities of Nave rejoiced. The mightiest role-playing house of the north was unthroned — though never broken in spirit — and it had taken the massed strength of the world two years to do it.",
      "links": [
       {
        "text": "The Fall of Odinpost",
@@ -2752,6 +2797,11 @@ window.CHRONICLE = {
        "text": "Ragnarok at the walls — a third camera at the siege",
        "url": "https://www.youtube.com/watch?v=3OLGM3L5l7Y",
        "source": "Wadimus"
+      },
+      {
+       "text": "Odinseed and the Fabernum host against the Coalition, in the war's last turn",
+       "url": "https://www.youtube.com/watch?v=GL3aT8auoXY",
+       "source": "BruceLeeRob"
       }
      ],
      "marker": "Keep lost",
@@ -2761,7 +2811,7 @@ window.CHRONICLE = {
     {
      "date": "Spring 2026",
      "title": "The Bridge to Sarducaa, and the Old Grievance Rekindled",
-     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the founding cataclysm four centuries past — was raised anew to link Myrland to the southern land. And on the forums the oldest grievance flared again: the cry to abolish the trinkets that fed the gold-sellers, some naming the very \"realizing of the extent of RMT\" a reason to lay the game down. Even on the eve of a new world, Nave argued its most ancient argument.",
+     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the founding cataclysm four centuries past — was declared raised anew — a work of months yet in the building — to link Myrland to the southern land. And on the forums the oldest grievance flared again: the cry to abolish the trinkets that fed the gold-sellers, some naming the very \"realizing of the extent of RMT\" a reason to lay the game down. Even on the eve of a new world, Nave argued its most ancient argument.",
      "links": [
       {
        "text": "Into the Vault #153 — the Bridge of Tekton",

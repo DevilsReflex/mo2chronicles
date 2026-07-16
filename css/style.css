@@ -411,7 +411,7 @@ main, footer { position: relative; z-index: 2; }
   position: relative;
   width: 100%;
   height: 2px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.07);
   cursor: pointer;
   transition: height 0.2s ease;
 }
@@ -432,8 +432,8 @@ main, footer { position: relative; z-index: 2; }
   position: absolute;
   top: 50%;
   left: 0;
-  width: 9px;
-  height: 18px;
+  width: 12px;
+  height: 20px;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
@@ -445,7 +445,7 @@ main, footer { position: relative; z-index: 2; }
   width: 2px; height: 2px;
   border-radius: 50%;
   background: var(--tick-tint, var(--bone-dim));
-  opacity: 0.45;
+  opacity: 0.55;
   transition: opacity 0.15s ease, width 0.15s ease, height 0.15s ease;
 }
 .sp-tick.sp-landmark {
@@ -1432,6 +1432,11 @@ footer p {
   .age-nav-item:hover .age-flyout,
   .age-nav-item:focus-within .age-flyout,
   .age-nav-item.open .age-flyout { transform: translateX(0) translateY(0); }
+  /* every tick packed into a phone-width bar is too small a target to
+     tap accurately — thin to an evenly-sampled subset plus every
+     landmark, so mobile keeps real coverage instead of 4 sparse points */
+  .sp-tick-hit { display: none; }
+  .sp-tick-hit:nth-of-type(6n), .sp-tick-hit-landmark { display: flex; width: 16px; height: 22px; }
   .timeline { padding-left: calc(var(--spine-x) + 18px); padding-right: 16px; }
   .entry::before { left: -18px; width: 18px; }
   .entry-node { left: -18px; }

@@ -455,7 +455,7 @@
       .map((fe, i) => {
         const pct = (i / (flatEntries.length - 1)) * 100;
         const edgeCls = i < 3 ? " sp-edge-start" : i > flatEntries.length - 4 ? " sp-edge-end" : "";
-        return `<a href="#${fe.id}" class="sp-tick-hit" role="menuitem" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}">
+        return `<a href="#${fe.id}" class="sp-tick-hit${fe.isLandmark ? " sp-tick-hit-landmark" : ""}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}">
           <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
           <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
             ${fe.thumbId ? `<img class="sp-tick-tip-thumb" loading="lazy" src="https://i.ytimg.com/vi/${esc(fe.thumbId)}/mqdefault.jpg" alt="">` : ""}
@@ -466,6 +466,23 @@
         </a>`;
       })
       .join("");
+    // roving arrow-key navigation — 120 individual tab stops is tedious,
+    // so within the tick strip Left/Right/Home/End move focus directly
+    progressTicks.addEventListener("keydown", (ev) => {
+      const hit = ev.target.closest(".sp-tick-hit");
+      if (!hit) return;
+      const hits = Array.from(progressTicks.querySelectorAll(".sp-tick-hit"));
+      const i = hits.indexOf(hit);
+      let next = -1;
+      if (ev.key === "ArrowRight") next = Math.min(i + 1, hits.length - 1);
+      else if (ev.key === "ArrowLeft") next = Math.max(i - 1, 0);
+      else if (ev.key === "Home") next = 0;
+      else if (ev.key === "End") next = hits.length - 1;
+      if (next >= 0) {
+        ev.preventDefault();
+        hits[next].focus();
+      }
+    });
   }
 
   let activePopoverIdx = -1;

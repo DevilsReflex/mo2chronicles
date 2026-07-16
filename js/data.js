@@ -1590,14 +1590,14 @@ window.CHRONICLE = {
        "source": "BruceLeeRob"
       },
       {
-       "text": "Mino Village Defense — Odinseed/Nightfall vs Rat Alliance",
-       "url": "https://www.youtube.com/watch?v=Ox5CI8cDMZk",
-       "source": "Pox"
-      },
-      {
        "text": "The Odin-host and allies fight for the Minotaur's deeps",
        "url": "https://www.youtube.com/watch?v=yb_omleUL_0",
        "source": "Regicide"
+      },
+      {
+       "text": "The Mino Mountain gang war — Odinseed against Winx and Grimside",
+       "url": "https://www.youtube.com/watch?v=py-KtVq-q_Q",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -1708,11 +1708,6 @@ window.CHRONICLE = {
        "text": "BruceLeeRob on Twitch — where the Odinpost wars were streamed live",
        "url": "https://www.twitch.tv/BRUCELEEROB",
        "source": "Twitch"
-      },
-      {
-       "text": "The Mino Mountain gang war — Odinseed against Winx and Grimside",
-       "url": "https://www.youtube.com/watch?v=py-KtVq-q_Q",
-       "source": "Pox"
       }
      ],
      "marker": null,

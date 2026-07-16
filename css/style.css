@@ -118,8 +118,8 @@ main, footer { position: relative; z-index: 2; }
 }
 .wordmark {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 11px;
   font-family: var(--display);
   font-size: 17px;
   letter-spacing: 0.14em;
@@ -131,7 +131,22 @@ main, footer { position: relative; z-index: 2; }
 }
 #topnav.scrolled .wordmark { opacity: 1; transform: none; }
 .wordmark:hover { color: var(--gold-bright); }
-.wordmark-star { color: var(--gold); font-size: 14px; }
+.wordmark-crest {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 auto;
+  color: var(--gold);
+  filter: drop-shadow(0 0 5px rgba(201, 168, 106, 0.35));
+  transition: color 0.3s ease;
+}
+.wordmark:hover .wordmark-crest { color: var(--gold-bright); }
+/* carved-stone letterforms: a faint dark groove below, a hairline
+   highlight above — the engraved look of the site's own name */
+.wordmark-text {
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.65),
+    0 -1px 0 rgba(255, 255, 255, 0.1);
+}
 
 .age-nav { display: flex; gap: 4px; }
 .age-nav a {
@@ -285,6 +300,10 @@ main, footer { position: relative; z-index: 2; }
   background-clip: text;
   color: transparent;
   filter: drop-shadow(0 0 34px rgba(201, 168, 106, 0.18));
+  /* a carved-stone bevel beneath the gradient: dark groove, faint highlight */
+  text-shadow:
+    0 3px 2px rgba(0, 0, 0, 0.5),
+    0 -1px 0 rgba(255, 255, 255, 0.14);
 }
 
 .ornament {
@@ -948,6 +967,13 @@ footer {
   border-top: 1px solid rgba(201, 168, 106, 0.1);
   padding: 44px 24px 54px;
   text-align: center;
+}
+.footer-crest {
+  width: 26px;
+  height: 26px;
+  color: var(--gold-dim);
+  margin: 0 auto 22px;
+  display: block;
 }
 footer p {
   font-family: var(--sans);

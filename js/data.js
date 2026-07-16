@@ -522,11 +522,6 @@ window.CHRONICLE = {
        "text": "Mortal Online — Bakti Jungle Fight (2015)",
        "url": "https://www.youtube.com/watch?v=MDlLfE3U47I",
        "source": "BJJMTF"
-      },
-      {
-       "text": "Bakti at war two years earlier still — the ground remembers",
-       "url": "https://www.youtube.com/watch?v=z8o3f4xw7m8",
-       "source": "RelicVideosMO"
       }
      ],
      "marker": null,

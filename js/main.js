@@ -171,12 +171,6 @@
         </div>`;
       })
       .join("");
-    if (window.matchMedia("(pointer: fine)").matches) {
-      el.insertAdjacentHTML(
-        "beforeend",
-        `<p class="kbd-hint reveal">Walk the chronicle with <kbd>J</kbd><kbd>K</kbd></p>`
-      );
-    }
   })();
 
   /* ── watch media ─────────────────────────────────────── */

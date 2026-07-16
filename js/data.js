@@ -623,26 +623,6 @@ window.CHRONICLE = {
      "year": 2021
     },
     {
-     "date": "",
-     "title": "Of Malturn the Demon King, and the Heads at the Notice Board",
-     "body": "The elder world's game-masters sometimes played god, staging living legends — chief among them Malturn the Demon King, bearer of the Sword of Tears, and a battle against three Risar chieftains whose severed heads were mounted beside the Fabernum notice board. They hang there yet in Nave, an Easter egg only the old veterans can read: monuments the elder world left inside the new one, for those who know where to look.",
-     "links": [
-      {
-       "text": "Expanding Questing — the veterans recall Malturn and the three Risar heads",
-       "url": "https://mortalonline2.com/forums/threads/expanding-questing.6617/",
-       "source": "official forums"
-      },
-      {
-       "text": "Fabernum Risar Spawn Event — elder-world event footage",
-       "url": "https://www.youtube.com/watch?v=bEEKl2r9wFY",
-       "source": "Wolfszeit"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2021
-    },
-    {
      "date": "4 December 2021",
      "title": "Housing Comes to Nave",
      "body": "Patch 0.1.11.13 gave the world its ground: houses could be built, and the ruined keeps claimed and raised. Within the month the Bakti Council would bind itself around one such keep — for the moment a thing could be owned, the politics of owning it began.",
@@ -680,21 +660,6 @@ window.CHRONICLE = {
      ],
      "marker": null,
      "kind": "event",
-     "year": 2021
-    },
-    {
-     "date": "",
-     "title": "The Jungle Wars of Old Bakti",
-     "body": "Even the jungle-gate city fought in the elder world: its guilds met in the green shade of the Bakti jungle in running battles whose footage survives from 2015 — proof that when the Bakti Council convened in the new world, it convened upon ground that had known war for a decade.",
-     "links": [
-      {
-       "text": "Mortal Online — Bakti Jungle Fight (2015)",
-       "url": "https://www.youtube.com/watch?v=MDlLfE3U47I",
-       "source": "BJJMTF"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
      "year": 2021
     },
     {

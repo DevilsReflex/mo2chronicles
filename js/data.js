@@ -59,6 +59,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Announced — New Trailer Released",
        "url": "https://www.mmorpg.com/mortal-online/news/mortal-online-2-announced-new-trailer-released-2000102433",
        "source": "MMORPG.com"
+      },
+      {
+       "text": "The Acolytes raise their keep — the vow made good",
+       "url": "https://www.youtube.com/watch?v=dhoek9469n0",
+       "source": "Deftspider"
       }
      ],
      "odinseed": false,
@@ -74,12 +79,17 @@ window.CHRONICLE = {
       {
        "text": "Going for World Record! — the official call",
        "url": "https://www.youtube.com/watch?v=qOB-dQyGet0",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
       },
       {
        "text": "The Weekend Stress Test Didn't Break Records, But Was a Success",
        "url": "https://mmos.com/news/mortal-online-2s-weekend-stress-test-didnt-break-world-records-but-was-still-a-success",
        "source": "MMOs.com"
+      },
+      {
+       "text": "A tester's first peek at the record-run weekend",
+       "url": "https://www.youtube.com/watch?v=d1_QOBqZ3E0",
+       "source": "Zaxtor99"
       }
      ],
      "odinseed": false,
@@ -112,6 +122,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Begins Its Closed Combat Alpha",
        "url": "https://massivelyop.com/2020/04/28/mortal-online-2-begins-its-closed-combat-alpha/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "Blades tested against the raw alpha world",
+       "url": "https://www.youtube.com/watch?v=DMRpH9Vh11U",
+       "source": "Lupus"
       }
      ],
      "odinseed": false,
@@ -128,6 +143,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Writes an FAQ and Lays Out a Development Roadmap",
        "url": "https://massivelyop.com/2020/05/18/mortal-online-2-writes-an-faq-and-lays-out-an-alpha-development-roadmap/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "Meduli against Legion — the factions harden in the beta",
+       "url": "https://www.youtube.com/watch?v=6F1F-7sFD7U",
+       "source": "Diphrael"
       }
      ],
      "odinseed": false,
@@ -149,6 +169,11 @@ window.CHRONICLE = {
        "text": "Stress Test Live Today — four events and one mega event",
        "url": "https://www.mmorpg.com/news/mortal-online-2-stress-test-live-today-2000121443",
        "source": "MMORPG.com"
+      },
+      {
+       "text": "First impressions from the March muster",
+       "url": "https://www.youtube.com/watch?v=xFL0FYh9Gxg",
+       "source": "Jungo Whey"
       }
      ],
      "odinseed": false,
@@ -165,6 +190,11 @@ window.CHRONICLE = {
        "text": "No Thief in Mortal II — the great thievery debate",
        "url": "https://mortalonline2.com/forums/threads/no-thief-in-mortal-ii.1455/page-2",
        "source": "official forums"
+      },
+      {
+       "text": "The old craft itself — thieving in the elder world",
+       "url": "https://www.youtube.com/watch?v=qX_OIuJ-cAE",
+       "source": "Lashaniqua Jackson"
       }
      ],
      "odinseed": false,
@@ -180,7 +210,7 @@ window.CHRONICLE = {
       {
        "text": "MMO Stress Test and First Look",
        "url": "https://www.youtube.com/watch?v=8exEBYRtTUU",
-       "source": "YouTube, stress-test first look"
+       "source": "My Usual Me"
       }
      ],
      "odinseed": false,
@@ -201,7 +231,7 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 First Impressions — Is It Worth Playing?",
        "url": "https://www.youtube.com/watch?v=6V7DMvBOYFM",
-       "source": "YouTube, first impressions"
+       "source": "TheLazyPeon"
       }
      ],
      "odinseed": false,
@@ -217,7 +247,12 @@ window.CHRONICLE = {
       {
        "text": "Field Guide — Risar Camps, the first chapter",
        "url": "https://www.youtube.com/watch?v=ABgvBXbCFhA",
-       "source": "YouTube, the Field Guide"
+       "source": "JustKyle"
+      },
+      {
+       "text": "Another schoolmaster of Nave takes up the chalk",
+       "url": "https://www.youtube.com/watch?v=-PAg6J7SXfs",
+       "source": "finegamingconnoisseur"
       }
      ],
      "odinseed": false,
@@ -243,7 +278,7 @@ window.CHRONICLE = {
       {
        "text": "REQ Bakti Bowl 5v5 — Legion vs Levia (Krankids) and VII",
        "url": "https://www.youtube.com/watch?v=haXiobCms2o",
-       "source": "YouTube, tournament footage"
+       "source": "r4NGe"
       }
      ],
      "odinseed": false,
@@ -260,6 +295,11 @@ window.CHRONICLE = {
        "text": "Stress Test Day 1 Report — Henrik among the crowds of Bakti",
        "url": "https://www.mortalonline2.com/stress-test-day-1-report/",
        "source": "Star Vault"
+      },
+      {
+       "text": "A beta festival bracket, hosted by the crafters",
+       "url": "https://www.youtube.com/watch?v=YXrLLx6yEDQ",
+       "source": "Bratwire"
       }
      ],
      "odinseed": false,
@@ -275,7 +315,12 @@ window.CHRONICLE = {
       {
        "text": "End of Stress Test — the Boss Hunt Event",
        "url": "https://www.youtube.com/watch?v=PCF-QLBAp4k",
-       "source": "YouTube, beta-event footage"
+       "source": "TheWiseDwarf"
+      },
+      {
+       "text": "The guild-fights and the horse-race, kept in 4K",
+       "url": "https://www.youtube.com/watch?v=_4V5Vn_PtK8",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -296,7 +341,7 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Final Stress Test, the official trailer",
        "url": "https://www.youtube.com/watch?v=emM89blKBvk",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
       }
      ],
      "odinseed": false,
@@ -312,7 +357,12 @@ window.CHRONICLE = {
       {
        "text": "So You Want to Kill the New Boss? — the Nitre Queen",
        "url": "https://www.youtube.com/watch?v=qwR6jBoweB0",
-       "source": "YouTube, boss-hunter's guide"
+       "source": "ShadowOfaManTV"
+      },
+      {
+       "text": "The hunters compare notes — how to bring the Queen down",
+       "url": "https://www.youtube.com/watch?v=DyAvyRYFJSc",
+       "source": "Nazori"
       }
      ],
      "odinseed": false,
@@ -328,12 +378,17 @@ window.CHRONICLE = {
       {
        "text": "Using ONE Button to Beat Mortal Online 2 — the white-bear meta",
        "url": "https://www.youtube.com/watch?v=PAsRo4tepAc",
-       "source": "YouTube, meta-breaker"
+       "source": "ShadowOfaManTV"
       },
       {
        "text": "Taming Quirks — the tamers compare notes",
        "url": "https://mortalonline2.com/forums/threads/taming-quirks.1631/",
        "source": "official forums"
+      },
+      {
+       "text": "Where the tyrants slept — the white-bear cave at Fabernum",
+       "url": "https://www.youtube.com/watch?v=BeWevz1pqvM",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -349,12 +404,17 @@ window.CHRONICLE = {
       {
        "text": "World Event — Siege of Tindrem, Massive PvP Battle, 400+ soldiers",
        "url": "https://www.youtube.com/watch?v=VRmVLu9QuQk",
-       "source": "YouTube, world-event footage"
+       "source": "Vandevious Twitch"
       },
       {
        "text": "Siege of Tindrem — the official call to battle",
        "url": "https://www.mortalonline2.com/siege-of-tindrem/",
        "source": "Star Vault"
+      },
+      {
+       "text": "The mock war for the King's trailer, from inside the host",
+       "url": "https://www.youtube.com/watch?v=tXRMtIE4Db4",
+       "source": "Kytar"
       }
      ],
      "odinseed": false,
@@ -371,6 +431,11 @@ window.CHRONICLE = {
        "text": "Everything You Need to Know About Mortal Online 2 — the Steam guide",
        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2657843514",
        "source": "Steam community"
+      },
+      {
+       "text": "A guide-maker schools the newcomers before the gates open",
+       "url": "https://www.youtube.com/watch?v=N6jpyxxL4Gg",
+       "source": "finegamingconnoisseur"
       }
      ],
      "odinseed": false,
@@ -386,12 +451,17 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Official Gameplay Trailer",
        "url": "https://www.youtube.com/watch?v=xmQttxpTIJM",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
       },
       {
        "text": "Release Phase Info — the road to launch",
        "url": "https://www.mortalonline2.com/release-phase-info/",
        "source": "Star Vault"
+      },
+      {
+       "text": "A wanderer walks through the gates on the very first day",
+       "url": "https://www.youtube.com/watch?v=MlS3sHbU3lg",
+       "source": "Vandevious Twitch"
       }
      ],
      "odinseed": false,
@@ -412,7 +482,12 @@ window.CHRONICLE = {
       {
        "text": "Fabernum Risar Spawn Event — elder-world event footage",
        "url": "https://www.youtube.com/watch?v=bEEKl2r9wFY",
-       "source": "YouTube, elder-world event footage"
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Malturn himself, caught on film in the elder world",
+       "url": "https://www.youtube.com/watch?v=31i_1pDZMig",
+       "source": "Novareconify"
       }
      ],
      "odinseed": false,
@@ -429,6 +504,11 @@ window.CHRONICLE = {
        "text": "Mortal Online II Finally Gets Housing",
        "url": "https://www.mmobomb.com/news/mortal-online-ii-finally-gets-housing",
        "source": "MMOBomb"
+      },
+      {
+       "text": "The official herald of the patch that gave the world its ground",
+       "url": "https://www.youtube.com/watch?v=GoSFIm-WeU4",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -444,7 +524,12 @@ window.CHRONICLE = {
       {
        "text": "Recovery of Lost Items and Bear Taming — Bratwire and the Artisans in action",
        "url": "https://www.youtube.com/watch?v=Oe5qt07KYlk",
-       "source": "the Artisans, livestream"
+       "source": "Bratwire"
+      },
+      {
+       "text": "Another hunter tries his luck with the bears of that winter",
+       "url": "https://www.youtube.com/watch?v=2V2dp6wSmVo",
+       "source": "DorrianX"
       }
      ],
      "odinseed": false,
@@ -460,7 +545,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online — Bakti Jungle Fight (2015)",
        "url": "https://www.youtube.com/watch?v=MDlLfE3U47I",
-       "source": "YouTube, elder-world footage"
+       "source": "BJJMTF"
+      },
+      {
+       "text": "Bakti at war two years earlier still — the ground remembers",
+       "url": "https://www.youtube.com/watch?v=z8o3f4xw7m8",
+       "source": "RelicVideosMO"
       }
      ],
      "odinseed": false,
@@ -476,7 +566,12 @@ window.CHRONICLE = {
       {
        "text": "Bakti — a tour of the jungle-gate city",
        "url": "https://www.youtube.com/watch?v=sPL0zMGAgnQ",
-       "source": "YouTube, city tour"
+       "source": "BasedBellagio Gaming"
+      },
+      {
+       "text": "The keep itself, walked before the Council claimed it",
+       "url": "https://www.youtube.com/watch?v=2mV7qM1KIew",
+       "source": "M. T. Clark Jr."
       }
      ],
      "odinseed": false,
@@ -493,6 +588,11 @@ window.CHRONICLE = {
        "text": "Unofficial Guild List Catalogue",
        "url": "https://mortalonline2.com/forums/threads/unofficial-guild-list-catalogue.3766/",
        "source": "Backyard Employee, official forums"
+      },
+      {
+       "text": "Another chronicler sits the guilds down to speak for themselves",
+       "url": "https://www.youtube.com/watch?v=0crcjnN__F8",
+       "source": "Bratwire"
       }
      ],
      "odinseed": false,
@@ -539,7 +639,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Gameplay Trailer",
        "url": "https://www.youtube.com/watch?v=klzDoyhJgTY",
-       "source": "YouTube, launch coverage"
+       "source": "IGN"
+      },
+      {
+       "text": "The gates thrown open — launch day itself",
+       "url": "https://www.youtube.com/watch?v=BqiklYuNphA",
+       "source": "Casual_Belligerency"
       }
      ],
      "odinseed": false,
@@ -556,6 +661,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Final Review — the launch, the queue, and Odin's blessing",
        "url": "https://www.mmorpg.com/reviews/mortal-online-2-final-review-2000124571",
        "source": "MMORPG.com"
+      },
+      {
+       "text": "The queue itself — a witness at the drowned gates",
+       "url": "https://www.youtube.com/watch?v=-_m-8ZeE6Rs",
+       "source": "Pwnstarr"
       }
      ],
      "odinseed": false,
@@ -572,6 +682,11 @@ window.CHRONICLE = {
        "text": "The living map of Nave",
        "url": "https://www.mortalonlinemap.info/",
        "source": "MortalOnlineMap.info"
+      },
+      {
+       "text": "The cartographer's craft — reading the maps of Nave",
+       "url": "https://www.youtube.com/watch?v=q2s8wdM95ao",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -587,7 +702,12 @@ window.CHRONICLE = {
       {
        "text": "Mainland Saga — Parcels, Tagmatons, and Ambushed at Sator Camp",
        "url": "https://www.youtube.com/watch?v=BaM517CXi5U",
-       "source": "YouTube, a newcomer's saga"
+       "source": "BasedBellagio Gaming"
+      },
+      {
+       "text": "Leaving Haven for the mainland — every newcomer's crossing",
+       "url": "https://www.youtube.com/watch?v=55Gk7AmPOYA",
+       "source": "WalksOnWater"
       }
      ],
      "odinseed": false,
@@ -604,6 +724,11 @@ window.CHRONICLE = {
        "text": "Player Housing Guide — the settlers compare notes",
        "url": "https://mortalonline2.com/forums/threads/player-housing-guide.5334/",
        "source": "official forums"
+      },
+      {
+       "text": "Raising a small house — the homesteader's craft",
+       "url": "https://www.youtube.com/watch?v=LUlcbGYBE6M",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -620,6 +745,11 @@ window.CHRONICLE = {
        "text": "Odin's Seed Graveyard Battle — the King's earliest surviving chronicle, 22 March 2022",
        "url": "https://www.youtube.com/watch?v=Mx_08sDfTyg",
        "source": "BruceleeRob (Barados)"
+      },
+      {
+       "text": "Odin's Seed rising — the host at war, seen from the ranks",
+       "url": "https://www.youtube.com/watch?v=FM21gbTCCN8",
+       "source": "Dire Lykaios"
       }
      ],
      "odinseed": true,
@@ -636,6 +766,11 @@ window.CHRONICLE = {
        "text": "Wolfpack vs Legion, Draco & Integrity — 30ish vs 30ish",
        "url": "https://sandboxer.org/mortal-online-2-pvp-30ish-vs-30ish-wolfpack-vs-legion-draco-integrity/",
        "source": "SandBoxer"
+      },
+      {
+       "text": "The Wolfpack at Legion's throat again, ten days on",
+       "url": "https://www.youtube.com/watch?v=GsGDVHgkg2Q",
+       "source": "Nausk"
       }
      ],
      "odinseed": false,
@@ -651,7 +786,12 @@ window.CHRONICLE = {
       {
        "text": "Sheevra Cave Fishing — the off series",
        "url": "https://www.youtube.com/watch?v=JNohV7xz3-o",
-       "source": "YouTube, the off-series"
+       "source": "Roo"
+      },
+      {
+       "text": "The angler's art, taught in full",
+       "url": "https://www.youtube.com/watch?v=DFmnKDlz4ys",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -667,7 +807,12 @@ window.CHRONICLE = {
       {
        "text": "PVP — Murder of Bakti",
        "url": "https://www.youtube.com/watch?v=k-uEhpQc6XY",
-       "source": "YouTube, roaming-warband footage"
+       "source": "Mr. AmazingXD"
+      },
+      {
+       "text": "Blades crossed with the Saltpack",
+       "url": "https://www.youtube.com/watch?v=T1wsfbTeY-A",
+       "source": "Göjo"
       }
      ],
      "odinseed": false,
@@ -684,6 +829,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Adds Bounty Hunting System and a Three-Strike Rule",
        "url": "https://massivelyop.com/2022/05/09/mortal-online-2-adds-bounty-hunting-system-adds-three-strike-rule-for-bans/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "Henrik explains the bounty decree",
+       "url": "https://www.youtube.com/watch?v=sAjslohw7s4",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -700,6 +850,11 @@ window.CHRONICLE = {
        "text": "Roleplaying! — the community discussion",
        "url": "https://steamcommunity.com/app/1170950/discussions/0/3278066986678542539/",
        "source": "Steam community"
+      },
+      {
+       "text": "A roleplay story, lived in the young world",
+       "url": "https://www.youtube.com/watch?v=9__c45OfiBE",
+       "source": "Battlex"
       }
      ],
      "odinseed": false,
@@ -720,7 +875,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 Update #9 — Necromancy",
        "url": "https://www.youtube.com/watch?v=bLh7fWXXFAY",
-       "source": "YouTube, update reel"
+       "source": "Mortal Online 2 Experiences"
+      },
+      {
+       "text": "Every dark spell, shown at the unveiling",
+       "url": "https://www.youtube.com/watch?v=qmQ7VmHPYkg",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -736,7 +896,7 @@ window.CHRONICLE = {
       {
        "text": "Sheevra Cave — Location and What's In There",
        "url": "https://www.youtube.com/watch?v=yXRT7KI48gA",
-       "source": "YouTube, explorer's tour"
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -752,7 +912,12 @@ window.CHRONICLE = {
       {
        "text": "Greatness of Mortal Online 2 & the Red Wedding",
        "url": "https://www.youtube.com/watch?v=Pc-4hu7JP64",
-       "source": "Loud Ziggy"
+       "source": "Loud_Ziggy"
+      },
+      {
+       "text": "The finals, kept by the hosts themselves",
+       "url": "https://www.youtube.com/watch?v=pjahk-XXA-8",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -768,7 +933,12 @@ window.CHRONICLE = {
       {
        "text": "Ultumeki Boss Fight — an Odinseed expedition",
        "url": "https://www.youtube.com/watch?v=Tdx5TjM7iiw",
-       "source": "YouTube, Odinseed hunt footage"
+       "source": "Regicide"
+      },
+      {
+       "text": "Another host braves Ultumeki the same week",
+       "url": "https://www.youtube.com/watch?v=RiMIhLhImD0",
+       "source": "NastraMoonlight"
       }
      ],
      "odinseed": true,
@@ -789,7 +959,12 @@ window.CHRONICLE = {
       {
        "text": "The original Triumphalis of the elder world — festival footage",
        "url": "https://www.youtube.com/watch?v=KGVsJxfQ83Y",
-       "source": "YouTube, MO1 festival footage"
+       "source": "TheWiseDwarf"
+      },
+      {
+       "text": "The games themselves — Triumphalis II, part the first",
+       "url": "https://www.youtube.com/watch?v=l1Kop7EjhZI",
+       "source": "Slarti Bartfast"
       }
      ],
      "odinseed": false,
@@ -806,6 +981,11 @@ window.CHRONICLE = {
        "text": "Looking for a Roleplay Guild — the roleplay-guild world of Nave",
        "url": "https://mortalonline2.com/forums/threads/looking-for-a-roleplay-guild.4463/",
        "source": "official forums"
+      },
+      {
+       "text": "The Torch Bearers cross the land by torchlight, in their own words",
+       "url": "https://www.youtube.com/watch?v=unZODLQLeLI",
+       "source": "TheTorchBearers"
       }
      ],
      "odinseed": false,
@@ -822,6 +1002,11 @@ window.CHRONICLE = {
        "text": "Roleplay — the Bard Profession, and busking on a Toxai street corner",
        "url": "https://mortalonline2.com/forums/threads/roleplay-bard-profession.6356/",
        "source": "official forums"
+      },
+      {
+       "text": "A bard's tour of Tindrem, in the Thommberry manner",
+       "url": "https://www.youtube.com/watch?v=g3gmPkJJdh0",
+       "source": "Oldgreg859"
       }
      ],
      "odinseed": false,
@@ -843,6 +1028,11 @@ window.CHRONICLE = {
        "text": "Regarding the Recent Ban Wave — the community reacts",
        "url": "https://mortalonline2.com/forums/threads/regarding-the-recent-ban-wave-for-exploits.10326/",
        "source": "official forums"
+      },
+      {
+       "text": "The community reads the charges aloud",
+       "url": "https://www.youtube.com/watch?v=eBwuETNZQ9M",
+       "source": "BasedBellagio Gaming"
       }
      ],
      "odinseed": false,
@@ -860,6 +1050,11 @@ window.CHRONICLE = {
        "text": "Mo2Builds Hall of Fame",
        "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
+      },
+      {
+       "text": "The King brought down honestly — a world-first by a full band",
+       "url": "https://www.youtube.com/watch?v=EWS808_DY2g",
+       "source": "turbojet43"
       }
      ],
      "odinseed": false,
@@ -882,6 +1077,11 @@ window.CHRONICLE = {
        "text": "Regarding the Recent Ban Wave for Exploits",
        "url": "https://www.mortalonline2.com/announcement-recent-ban-wave-for-exploits/",
        "source": "Star Vault"
+      },
+      {
+       "text": "The evidence itself — a Nightfall blade casting through a block",
+       "url": "https://www.youtube.com/watch?v=o-X5peCyxMs",
+       "source": "Inhuman Perfection"
       }
      ],
      "odinseed": false,
@@ -904,6 +1104,11 @@ window.CHRONICLE = {
        "text": "JohnOldman's Trinket Research",
        "url": "https://mortalonline2.com/forums/threads/johnoldmans-trinket-research.8466/",
        "source": "John Oldman, official forums"
+      },
+      {
+       "text": "The trinkets arrive — the shadow-market's raw material",
+       "url": "https://www.youtube.com/watch?v=VQOq0tczJMo",
+       "source": "Mortal Online 2 Experiences"
       }
      ],
      "odinseed": false,
@@ -921,6 +1126,11 @@ window.CHRONICLE = {
        "text": "Mo2Builds Hall of Fame",
        "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
+      },
+      {
+       "text": "The honest swindle, caught in the act",
+       "url": "https://www.youtube.com/watch?v=K7Ti1xPRJx4",
+       "source": "Splinter"
       }
      ],
      "odinseed": false,
@@ -954,6 +1164,11 @@ window.CHRONICLE = {
        "text": "The bandit-country of the living map — Two Lakes",
        "url": "https://www.mortalonlinemap.info/300/two-lakes/bandit-camp",
        "source": "MortalOnlineMap.info"
+      },
+      {
+       "text": "The Merry Men met in the field",
+       "url": "https://www.youtube.com/watch?v=IUhwYngiQ7c",
+       "source": "Gooch"
       }
      ],
      "odinseed": false,
@@ -969,7 +1184,12 @@ window.CHRONICLE = {
       {
        "text": "The jungle roads of Bakti — PVP at the bandit camp",
        "url": "https://www.youtube.com/watch?v=DxAtBivepj0",
-       "source": "YouTube, jungle-country footage"
+       "source": "Rimanah The Commander"
+      },
+      {
+       "text": "The south grown so strong the world made a pact against it",
+       "url": "https://www.youtube.com/watch?v=qX7LDL5vGhY",
+       "source": "Tasu"
       }
      ],
      "odinseed": false,
@@ -985,12 +1205,17 @@ window.CHRONICLE = {
       {
        "text": "BIGGEST BATTLE EVER IN AN MMORPG",
        "url": "https://www.youtube.com/watch?v=KbxVytv2icY",
-       "source": "Tatsuya"
+       "source": "j45k"
       },
       {
        "text": "ACT vs KoTo — The Epic Fight",
        "url": "https://www.youtube.com/watch?v=8_WpGWzF_iE",
        "source": "RobberDob"
+      },
+      {
+       "text": "The pickaxe host united at the walls of Nameless",
+       "url": "https://www.youtube.com/watch?v=K1Rg-JeNmrk",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": true,
@@ -1007,6 +1232,11 @@ window.CHRONICLE = {
        "text": "Declaration of War — The Company declare war on KoTo",
        "url": "https://mortalonline2.com/forums/threads/declaration-of-war-the-company-declare-war-on-koto.10737/",
        "source": "The Company, official forums"
+      },
+      {
+       "text": "The realm united against KotO — the war the declaration joined",
+       "url": "https://www.youtube.com/watch?v=Azo5VBgzBIg",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1038,12 +1268,17 @@ window.CHRONICLE = {
       {
        "text": "Smasher vs Azog — Ego Duel, Content v Levia War",
        "url": "https://www.youtube.com/watch?v=qvw6FHnZjDI",
-       "source": "Azog the Defiler"
+       "source": "AZOGTHEDEFILER"
       },
       {
        "text": "Crushing Coalition — Biggest Fight in Mortal Online 2",
        "url": "https://www.youtube.com/watch?v=jUA9dhNnvvI",
        "source": "Albu's Corner"
+      },
+      {
+       "text": "The Meduli war of Content and Levia, from the field",
+       "url": "https://www.youtube.com/watch?v=0p_zI8cKUbg",
+       "source": "Kai Ser"
       }
      ],
      "odinseed": true,
@@ -1059,7 +1294,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 in 2023 and Beyond — Recent + Upcoming Changes",
        "url": "https://www.youtube.com/watch?v=wrdcq_q6FEc",
-       "source": "YouTube, state-of-the-game"
+       "source": "BullCashish"
+      },
+      {
+       "text": "The storms unveiled — the official showcase",
+       "url": "https://www.youtube.com/watch?v=1zbBT20YeGc",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -1076,6 +1316,11 @@ window.CHRONICLE = {
        "text": "The Tournament of Tindrem — the official team contests",
        "url": "https://www.mortalonline2.com/second-tournament-of-tindrem/",
        "source": "Star Vault"
+      },
+      {
+       "text": "The four-against-four, filmed by the hosts",
+       "url": "https://www.youtube.com/watch?v=_wXV-H61HEo",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1091,7 +1336,7 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Official Trailer, the world as it stood in 2022",
        "url": "https://www.youtube.com/watch?v=Tv3IJEO3QPY",
-       "source": "Star Vault"
+       "source": "IGN"
       }
      ],
      "odinseed": false,
@@ -1122,7 +1367,12 @@ window.CHRONICLE = {
       {
        "text": "Sieging Keeps and Houses — the CEO explains the mechanics",
        "url": "https://www.youtube.com/watch?v=uJeJz8CumZw",
-       "source": "YouTube, siege-mechanics summary"
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The decree itself — the Territory Control trailer",
+       "url": "https://www.youtube.com/watch?v=kiFvruIULBk",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -1139,6 +1389,11 @@ window.CHRONICLE = {
        "text": "ODINSEED RAIDS MKRG KEEP — Odinseed War Season 2",
        "url": "https://www.youtube.com/watch?v=a4DdtpgcoUA",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "The Royal Guards' own chronicle of the war in the east",
+       "url": "https://www.youtube.com/watch?v=1kXZl900bto",
+       "source": "ZoomiesTV"
       }
      ],
      "odinseed": true,
@@ -1160,6 +1415,11 @@ window.CHRONICLE = {
        "text": "A Game of Keeps — guild history since release",
        "url": "https://www.youtube.com/watch?v=loUGVq7KTug",
        "source": "Tasu"
+      },
+      {
+       "text": "The fall of MKRG from a second camera",
+       "url": "https://www.youtube.com/watch?v=CMMqR4QzguE",
+       "source": "Lucas"
       }
      ],
      "odinseed": true,
@@ -1176,6 +1436,11 @@ window.CHRONICLE = {
        "text": "Epic Big Fight 150 vs 150 — Massive PVP and Siege Try",
        "url": "https://youtu.be/ETtoLkAr5_Q",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The war for Kranesh, from the Odin-host's saddle",
+       "url": "https://www.youtube.com/watch?v=u6-m6DLgYGk",
+       "source": "Dire Lykaios"
       }
      ],
      "odinseed": false,
@@ -1191,7 +1456,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Unreal Engine 5 Launch Trailer",
        "url": "https://www.youtube.com/watch?v=W4E6UVSU4Vc",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
+      },
+      {
+       "text": "The King beholds the reforged world",
+       "url": "https://www.youtube.com/watch?v=d5iyHqZb5dg",
+       "source": "BruceleeRob"
       }
      ],
      "odinseed": false,
@@ -1213,6 +1483,11 @@ window.CHRONICLE = {
        "text": "Mino Village Defense — Odinseed/Nightfall vs Rat Alliance",
        "url": "https://www.youtube.com/watch?v=Ox5CI8cDMZk",
        "source": "Pox"
+      },
+      {
+       "text": "The Odin-host and allies fight for the Minotaur's deeps",
+       "url": "https://www.youtube.com/watch?v=yb_omleUL_0",
+       "source": "Regicide"
       }
      ],
      "odinseed": true,
@@ -1244,7 +1519,7 @@ window.CHRONICLE = {
       {
        "text": "Rat Alliance vs Nightmare Alliance",
        "url": "https://www.youtube.com/watch?v=hZ381NZOhrA",
-       "source": "YouTube, northern-war footage"
+       "source": "Badgerblad3"
       },
       {
        "text": "Rat Alliance PVP — Nightmare Siege, with performance issues from hell",
@@ -1266,6 +1541,11 @@ window.CHRONICLE = {
        "text": "Stronghold Siege — WZ and Rat Alliance vs the Dreadlords",
        "url": "https://www.youtube.com/watch?v=DPZljKnSrFg",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The Dreadlords' arts, exposed by their victims",
+       "url": "https://www.youtube.com/watch?v=cGso8zfFcu4",
+       "source": "iwi"
       }
      ],
      "odinseed": false,
@@ -1282,6 +1562,11 @@ window.CHRONICLE = {
        "text": "OdinSeed Siege Battle",
        "url": "https://www.youtube.com/watch?v=19uBYF44m18",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "The northern rivals meet in open battle",
+       "url": "https://www.youtube.com/watch?v=Ugu__BM4Aic",
+       "source": "Alumneye"
       }
      ],
      "odinseed": true,
@@ -1297,7 +1582,7 @@ window.CHRONICLE = {
       {
        "text": "The Battle for Odinpost 150v170",
        "url": "https://www.youtube.com/watch?v=ZYJLzvGMX2g",
-       "source": "Azog the Defiler"
+       "source": "AZOGTHEDEFILER"
       },
       {
        "text": "BruceLeeRob on Twitch — where the Odinpost wars were streamed live",
@@ -1319,6 +1604,11 @@ window.CHRONICLE = {
        "text": "Guild Politics — the board where the wars of the ordinary houses were declared and mourned",
        "url": "https://mortalonline2.com/forums/forums/guild-politics.8/",
        "source": "official forums"
+      },
+      {
+       "text": "The Companions at Icecrown — one of the wars they lost",
+       "url": "https://www.youtube.com/watch?v=u6E2WIZGMEk",
+       "source": "Lost Chapters"
       }
      ],
      "odinseed": false,
@@ -1352,6 +1642,11 @@ window.CHRONICLE = {
        "text": "ODINSEED in the New Melisar's Vault",
        "url": "https://www.youtube.com/watch?v=6BFXaysQ4Fo",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "Into Melisar's Vault — the new deep, plundered",
+       "url": "https://www.youtube.com/watch?v=Jldd7RxMRKI",
+       "source": "SharkWolf"
       }
      ],
      "odinseed": false,
@@ -1367,7 +1662,12 @@ window.CHRONICLE = {
       {
        "text": "How to Use Siege Machines — catapults and the craft of assault",
        "url": "https://www.youtube.com/watch?v=YQTSAaGjzr0",
-       "source": "YouTube, siege-craft guide"
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The formal siege in practice — a kingdom in flames",
+       "url": "https://www.youtube.com/watch?v=elfobq52K_8",
+       "source": "Disrupter"
       }
      ],
      "odinseed": false,
@@ -1383,7 +1683,12 @@ window.CHRONICLE = {
       {
        "text": "Beginners Guide 2024 — How to Progress",
        "url": "https://m.youtube.com/watch?v=u5tjTvPl694",
-       "source": "YouTube, newcomer's guide"
+       "source": "Medieval Marty"
+      },
+      {
+       "text": "The recruiters' craft the Finder was built to ease",
+       "url": "https://www.youtube.com/watch?v=Sq0ANC1lxhw",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1399,7 +1704,13 @@ window.CHRONICLE = {
       {
        "text": "Field Guide — Construction",
        "url": "https://www.youtube.com/watch?v=toXMenABNvc",
-       "source": "YouTube, the Field Guide"
+       "source": "JustKyle",
+       "noembed": true
+      },
+      {
+       "text": "Establishing your resource ecosystem — another teacher's chapter on making a living",
+       "url": "https://www.youtube.com/watch?v=4xpXfhWc6Yg",
+       "source": "finegamingconnoisseur"
       }
      ],
      "odinseed": false,
@@ -1421,6 +1732,11 @@ window.CHRONICLE = {
        "text": "OS and JA Attack Karni",
        "url": "https://www.youtube.com/watch?v=AR4mGCPmwjw",
        "source": "Bayard"
+      },
+      {
+       "text": "KarniMata's columns turned on every neighbour",
+       "url": "https://www.youtube.com/watch?v=xQk7zx2EjzY",
+       "source": "iMP"
       }
      ],
      "odinseed": true,
@@ -1437,6 +1753,11 @@ window.CHRONICLE = {
        "text": "Siege of Granum Pass — Odin Seed Alliance vs Mercenaries, Mage PoV",
        "url": "https://www.youtube.com/watch?v=cfF8yZsAp-4",
        "source": "Aesir"
+      },
+      {
+       "text": "The same pass, seen from the mercenaries' line",
+       "url": "https://www.youtube.com/watch?v=itBU6B1iC1I",
+       "source": "Vetian"
       }
      ],
      "odinseed": true,
@@ -1458,6 +1779,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 Releases Its Mastery Tree System",
        "url": "https://massivelyop.com/2024/07/03/mortal-online-2-releases-its-mastery-tree-system-adds-a-new-dungeon-and-introduces-more-items/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "The official herald of the Mastery decree",
+       "url": "https://www.youtube.com/watch?v=R4ogF2oQF4Q",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -1479,6 +1805,11 @@ window.CHRONICLE = {
        "text": "The Siege of Nightfall — battle footage",
        "url": "https://www.youtube.com/watch?v=0ZRSMhJX6lM",
        "source": "Pox"
+      },
+      {
+       "text": "An earlier storm weathered — Nightfall's walls held, once",
+       "url": "https://www.youtube.com/watch?v=y3teYmfBnmE",
+       "source": "Longballoon"
       }
      ],
      "odinseed": true,
@@ -1495,6 +1826,11 @@ window.CHRONICLE = {
        "text": "Battle for Sausage Lake Keep",
        "url": "https://www.youtube.com/watch?v=iF3ZXADsfKI",
        "source": "Ruthless G"
+      },
+      {
+       "text": "The same battle, from Tasu's line",
+       "url": "https://www.youtube.com/watch?v=j1xoaK8zO-g",
+       "source": "Tasu"
       }
      ],
      "odinseed": false,
@@ -1510,7 +1846,7 @@ window.CHRONICLE = {
       {
        "text": "Eastern Civil War — Unbroken",
        "url": "https://www.youtube.com/watch?v=5NU8G1vN-3c",
-       "source": "Noobert / Torggaddon"
+       "source": "Noob3rt"
       }
      ],
      "odinseed": false,
@@ -1527,6 +1863,11 @@ window.CHRONICLE = {
        "text": "New Community Standards to Combat Toxic Behavior — the realm answers its villains",
        "url": "https://forums.mmorpg.com/discussion/498473/mortal-online-2-has-new-community-standards-to-combat-toxic-behavior-including-scary-dev-harassment",
        "source": "MMORPG.com forums"
+      },
+      {
+       "text": "An exiled king of the snowbound fief tells his tale",
+       "url": "https://www.youtube.com/watch?v=KWS2FrWEUUA",
+       "source": "Bunup"
       }
      ],
      "odinseed": false,
@@ -1543,7 +1884,12 @@ window.CHRONICLE = {
       {
        "text": "Necro Dungeon Bridge Disaster — Ritualist Zoo and Experimentation",
        "url": "https://www.youtube.com/watch?v=IDro63sPHHU",
-       "source": "YouTube, necro-dungeon footage"
+       "source": "Oldgreg859"
+      },
+      {
+       "text": "Ten minutes beneath the deadly span",
+       "url": "https://www.youtube.com/watch?v=CrkO5eRXB1o",
+       "source": "Serukka"
       }
      ],
      "odinseed": false,
@@ -1578,6 +1924,11 @@ window.CHRONICLE = {
        "text": "A Game of Keeps — Tasu's forum thread",
        "url": "https://mortalonline2.com/forums/threads/guild-history-and-politics-since-release-vid-a-game-of-keeps-prepare-for-sarducaa.14959/",
        "source": "Tasu, official forums"
+      },
+      {
+       "text": "The realm votes on what counts as buying power",
+       "url": "https://www.youtube.com/watch?v=Sh1Kq4Io8Hg",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1658,7 +2009,12 @@ window.CHRONICLE = {
       {
        "text": "Hacks, Macros and Bans — Free Razer/Slasher Compilation",
        "url": "https://www.youtube.com/watch?v=wDNfv2H7Meo",
-       "source": "Slasher (Razer)"
+       "source": "RazerMortalOnline"
+      },
+      {
+       "text": "The ladder finds its hall — ranked duels open",
+       "url": "https://www.youtube.com/watch?v=Jid5szUuDRg",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1685,6 +2041,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2's First 2025 Roadmap",
        "url": "https://massivelyop.com/2025/01/23/mortal-online-2s-first-2025-roadmap-promises-optimization-combat-updates-and-overhauled-chat/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "The free weekend weighed by the old archivist",
+       "url": "https://www.youtube.com/watch?v=MjL5MQjMuNY",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1753,7 +2114,12 @@ window.CHRONICLE = {
       {
        "text": "Development Stream — TC Overhaul Information",
        "url": "https://www.youtube.com/watch?v=PKZTOEhpmlI",
-       "source": "YouTube, development stream"
+       "source": "Mortal Online (Star Vault)"
+      },
+      {
+       "text": "The realm reads the proclamation — biggest patch in its history",
+       "url": "https://www.youtube.com/watch?v=u27Pfv3ywro",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1838,6 +2204,11 @@ window.CHRONICLE = {
        "text": "Reckoning Expansion Brings Major Changes",
        "url": "https://mmos.com/news/reckoning-expansion-brings-major-changes-to-mortal-online-2",
        "source": "MMOs.com"
+      },
+      {
+       "text": "The official teaser on the day the thrones shattered",
+       "url": "https://www.youtube.com/watch?v=t0ogYqrhKzA",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -1854,6 +2225,11 @@ window.CHRONICLE = {
        "text": "The realm's live airwaves — Mortal Online 2 on Twitch",
        "url": "https://www.twitch.tv/directory/category/mortal-online-2",
        "source": "Twitch"
+      },
+      {
+       "text": "From the court's own archive — the King's ride to Vadda",
+       "url": "https://www.youtube.com/watch?v=ZtTuemZ6pAo",
+       "source": "Dread Og"
       }
      ],
      "odinseed": true,
@@ -1870,6 +2246,11 @@ window.CHRONICLE = {
        "text": "\"Sheevra Terror Dungeon — Discovered by KRANKONE\" — Embuscade's testimony",
        "url": "https://www.mortalonline2.com/forums/whats-new/",
        "source": "official forums"
+      },
+      {
+       "text": "The Terror King himself, in his own annal",
+       "url": "https://www.youtube.com/watch?v=bRayftlyPQA",
+       "source": "HSLER TV"
       }
      ],
      "odinseed": false,
@@ -1885,7 +2266,12 @@ window.CHRONICLE = {
       {
        "text": "Alvarin Culture Explained — Veela and Sheevra and Their Secrets",
        "url": "https://www.youtube.com/watch?v=g-1qqDLfK0c",
-       "source": "YouTube, lore chronicle"
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Many Alvarins died to bring us this information",
+       "url": "https://www.youtube.com/watch?v=g703NBA53vE",
+       "source": "Longballoon"
       }
      ],
      "odinseed": false,
@@ -1918,6 +2304,11 @@ window.CHRONICLE = {
        "text": "Reckoning PTR Patch Notes — the 35 Regions and Outpost Sieges",
        "url": "https://www.mortalonline2.com/patch-notes-reckoning-ptr",
        "source": "Star Vault"
+      },
+      {
+       "text": "The outpost-wars begin across the new regions",
+       "url": "https://www.youtube.com/watch?v=BvkaR7ygz4w",
+       "source": "CrashGaming247"
       }
      ],
      "odinseed": false,
@@ -1933,7 +2324,12 @@ window.CHRONICLE = {
       {
        "text": "Sobreviví 100 Días en Modo Hardcore con la Comunidad",
        "url": "https://www.youtube.com/watch?v=eqdFbFtklfI",
-       "source": "YouTube, Spanish-language community"
+       "source": "G-SAM"
+      },
+      {
+       "text": "Another zero-to-hero saga of the same season",
+       "url": "https://www.youtube.com/watch?v=7MxjnKQZxLM",
+       "source": "Deep Cheek Dweller"
       }
      ],
      "odinseed": false,
@@ -1954,7 +2350,7 @@ window.CHRONICLE = {
       {
        "text": "PTR Soon! Banking Overhaul, Wayshrines & Caravan Campsites",
        "url": "https://www.youtube.com/watch?v=aoB58gBJ7RI",
-       "source": "YouTube, update summary"
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1971,6 +2367,11 @@ window.CHRONICLE = {
        "text": "End of Year Recap — 2025",
        "url": "https://www.mortalonline2.com/2025-comes-to-a-close",
        "source": "Star Vault"
+      },
+      {
+       "text": "The archivist's own year-end reckoning",
+       "url": "https://www.youtube.com/watch?v=86uAon1m3Co",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -1996,7 +2397,12 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — New Lands Reveal Teaser",
        "url": "https://www.youtube.com/watch?v=jwfL3xPJPAI",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
+      },
+      {
+       "text": "The desert's deep lore, told before the ships sailed",
+       "url": "https://www.youtube.com/watch?v=nHlGt-yPqio",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -2012,7 +2418,12 @@ window.CHRONICLE = {
       {
        "text": "I Found the Most Hardcore MMO EVER — a 2026 review",
        "url": "https://www.youtube.com/watch?v=icHAeEAhUc8",
-       "source": "YouTube review"
+       "source": "Nyce Gaming"
+      },
+      {
+       "text": "Another fresh pair of eyes, this very season",
+       "url": "https://www.youtube.com/watch?v=iKCToDA9vDY",
+       "source": "xGooselordx"
       }
      ],
      "odinseed": false,
@@ -2034,6 +2445,11 @@ window.CHRONICLE = {
        "text": "Siege of Odinpost 2 — the final assault",
        "url": "https://www.youtube.com/watch?v=Jc0FU4pXh_U",
        "source": "Tasu"
+      },
+      {
+       "text": "Ragnarok at the walls — a third camera at the siege",
+       "url": "https://www.youtube.com/watch?v=3OLGM3L5l7Y",
+       "source": "Wadimus"
       }
      ],
      "odinseed": true,
@@ -2050,6 +2466,11 @@ window.CHRONICLE = {
        "text": "Into the Vault #153 — the Bridge of Tekton",
        "url": "https://www.mortalonline2.com/into-the-vault-153-new-lands-revealed-and-next-patch-details",
        "source": "Star Vault"
+      },
+      {
+       "text": "The realm debates the bridge and the colonists' terms",
+       "url": "https://www.youtube.com/watch?v=eYTugSq7LzY",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,
@@ -2071,6 +2492,11 @@ window.CHRONICLE = {
        "text": "Sarducaa Goes Live on PTR — and Lockpicking, Too",
        "url": "https://www.mmorpg.com/news/mortal-online-2s-new-sarducaa-region-goes-live-on-ptr-and-lockpicking-too-2000138316",
        "source": "MMORPG.com"
+      },
+      {
+       "text": "The Locks shown by their makers",
+       "url": "https://www.youtube.com/watch?v=mya6FC17J60",
+       "source": "Mortal Online"
       }
      ],
      "odinseed": false,
@@ -2087,6 +2513,11 @@ window.CHRONICLE = {
        "text": "The living patch-record of 2026 — the Vessel, Fatalities, and Fallowborn",
        "url": "https://mo2info.com/index.php?newsCat=All",
        "source": "MO2Info"
+      },
+      {
+       "text": "The Vessel brought low by a single blade",
+       "url": "https://www.youtube.com/watch?v=ektuJ2p9NFA",
+       "source": "SesArses"
       }
      ],
      "odinseed": false,
@@ -2108,6 +2539,11 @@ window.CHRONICLE = {
        "text": "A Game of Keeps — Tasu's forum thread",
        "url": "https://mortalonline2.com/forums/threads/guild-history-and-politics-since-release-vid-a-game-of-keeps-prepare-for-sarducaa.14959/",
        "source": "Tasu, official forums"
+      },
+      {
+       "text": "A veteran of three thousand hours looks back",
+       "url": "https://www.youtube.com/watch?v=bXxD5X8lNU8",
+       "source": "Lordus"
       }
      ],
      "odinseed": false,
@@ -2123,7 +2559,7 @@ window.CHRONICLE = {
       {
        "text": "Mortal Online 2 — Sarducaa Launch Trailer",
        "url": "https://www.youtube.com/watch?v=_TDD0AGYMjo",
-       "source": "Star Vault"
+       "source": "Mortal Online (Star Vault)"
       },
       {
        "text": "Sarducaa is live — the official word",
@@ -2134,6 +2570,11 @@ window.CHRONICLE = {
        "text": "Patch Notes — Sarducaa Expansion",
        "url": "https://www.mortalonline2.com/patch-notes-sarducaa-expansion",
        "source": "Star Vault"
+      },
+      {
+       "text": "The archivist reads the terms of the new world",
+       "url": "https://www.youtube.com/watch?v=ETNW9WH66aM",
+       "source": "Wolfszeit"
       }
      ],
      "odinseed": false,

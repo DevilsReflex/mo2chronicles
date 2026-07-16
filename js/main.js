@@ -133,7 +133,8 @@
     const scrolls = [];
     links.forEach((l) => {
       const id = youtubeId(l.url);
-      if (id) vids.push({ ...l, id });
+      // noembed: the uploader disabled embedding — render as a link instead
+      if (id && !l.noembed) vids.push({ ...l, id });
       else scrolls.push(l);
     });
     let html = `<div class="watch"><div class="watch-label">From the chroniclers</div>`;

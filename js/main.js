@@ -101,13 +101,7 @@
     el.innerHTML = C.sections
       .map((sec) => {
         const paras = sec.paragraphs
-          .map((p, i) => {
-            // highlight the ✦-thread explainer as a callout
-            if (p.indexOf("✦") !== -1 || /marked wherever it appears/.test(p)) {
-              return `<div class="thread-callout reveal" style="--d:${i * 0.05}s"><p>${dress(p)}</p></div>`;
-            }
-            return `<p class="reveal" style="--d:${i * 0.05}s">${dress(p)}</p>`;
-          })
+          .map((p, i) => `<p class="reveal" style="--d:${i * 0.05}s">${dress(p)}</p>`)
           .join("");
         return `<div class="preface-block">
           <h2 class="reveal">${esc(sec.heading)}</h2>
@@ -119,7 +113,7 @@
     if (window.matchMedia("(pointer: fine)").matches) {
       el.insertAdjacentHTML(
         "beforeend",
-        `<p class="kbd-hint reveal">Walk the chronicle with <kbd>J</kbd><kbd>K</kbd> &mdash; follow the thread with <kbd>T</kbd></p>`
+        `<p class="kbd-hint reveal">Walk the chronicle with <kbd>J</kbd><kbd>K</kbd></p>`
       );
     }
   })();
@@ -211,13 +205,13 @@
           html += `<div class="year-break reveal" aria-hidden="true"><span class="yb-text">Anno ${e.year}</span><span class="yb-line"></span></div>`;
           prevYear = e.year;
         }
-        const cls = ["entry", "reveal", isTale ? "tale" : "", e.odinseed ? "odinseed" : "", isLandmark ? "landmark" : ""].filter(Boolean).join(" ");
+        const cls = ["entry", "reveal", isTale ? "tale" : "", isLandmark ? "landmark" : ""].filter(Boolean).join(" ");
         const dateLine = e.date
-          ? `<div class="entry-date">${esc(e.date)}${e.odinseed ? `<span class="thread-tag">&#10022; The thread of Odinseed</span>` : ""}</div>`
-          : `<div class="tale-kicker">From the margins of the chronicle${e.era ? ` &mdash; ${esc(e.era)}` : ""}${e.odinseed ? ` &nbsp;&#10022;` : ""}</div>`;
+          ? `<div class="entry-date">${esc(e.date)}</div>`
+          : `<div class="tale-kicker">From the margins of the chronicle${e.era ? ` &mdash; ${esc(e.era)}` : ""}</div>`;
         html += `
         <article class="${cls}" data-year="${e.year}">
-          <span class="entry-node" aria-hidden="true">${e.odinseed ? '<span class="node-star">&#10022;</span>' : ""}</span>
+          <span class="entry-node" aria-hidden="true"></span>
           <div class="entry-card">
             ${dateLine}
             <h3 class="entry-title">${esc(e.title)}</h3>
@@ -348,8 +342,6 @@
         }
       }
 
-      // thread navigator counter
-      if (document.body.classList.contains("thread-mode")) updateThreadCount();
     });
   }
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -627,30 +619,7 @@
     window.addEventListener("scroll", untilt, { passive: true });
   }
 
-  /* ── the thread of odinseed ── */
-  const threadBtn = document.getElementById("thread-toggle");
-  const threadCount = document.getElementById("thread-count");
-  const odinseedEntries = Array.from(document.querySelectorAll(".entry.odinseed"));
-  function threadOn() { return document.body.classList.contains("thread-mode"); }
-  function setThread(on) {
-    document.body.classList.toggle("thread-mode", on);
-    threadBtn.setAttribute("aria-pressed", String(on));
-    if (on) {
-      updateThreadCount();
-      history.replaceState(null, "", "#thread");
-    } else if (location.hash === "#thread") {
-      history.replaceState(null, "", location.pathname + location.search);
-    }
-  }
-  function updateThreadCount() {
-    let idx = 0;
-    const mid = window.innerHeight * 0.55;
-    for (let i = 0; i < odinseedEntries.length; i++) {
-      if (odinseedEntries[i].getBoundingClientRect().top < mid) idx = i + 1;
-    }
-    const txt = `✦ ${idx || "–"} / ${odinseedEntries.length}`;
-    if (threadCount.textContent !== txt) threadCount.textContent = txt;
-  }
+  /* ── keyboard walking ── */
   function jumpList(list, dir) {
     const mid = window.innerHeight / 2;
     let targetEl = null;
@@ -679,13 +648,6 @@
         );
     }
   }
-  threadBtn.addEventListener("click", () => setThread(!threadOn()));
-  document.getElementById("thread-exit").addEventListener("click", () => setThread(false));
-  document.getElementById("thread-prev").addEventListener("click", () => jumpList(odinseedEntries, -1));
-  document.getElementById("thread-next").addEventListener("click", () => jumpList(odinseedEntries, 1));
-  if (location.hash === "#thread") setThread(true);
-
-  /* ── keyboard walking ── */
   const allEntries = Array.from(document.querySelectorAll(".entry"));
   document.addEventListener("keydown", (ev) => {
     if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
@@ -694,9 +656,7 @@
     const k = ev.key.toLowerCase();
     if (k === "j" || k === "k") {
       ev.preventDefault();
-      jumpList(threadOn() ? odinseedEntries : allEntries, k === "j" ? 1 : -1);
-    } else if (k === "t") {
-      setThread(!threadOn());
+      jumpList(allEntries, k === "j" ? 1 : -1);
     }
   });
 

@@ -20,8 +20,7 @@ window.CHRONICLE = {
   {
    "heading": "How to Read This Chronicle",
    "paragraphs": [
-    "This history is arranged as a timeline of events: descend through the years as you would descend through the reigns of kings. Each Age opens with a few words on its temper, and then unfolds as a roll of dated deeds.",
-    "One thread runs through all of it, and is marked wherever it appears with the sign ✦. That thread is the tale of a single house — Odinseed — and its king, Barados, together with the warlord Azog, whose channels the reader has been bidden to follow. Trace the ✦ from first year to last and you will have followed one clean human story straight through the chaos of five years of war."
+    "This history is arranged as a timeline of events: descend through the years as you would descend through the reigns of kings. Each Age opens with a few words on its temper, and then unfolds as a roll of dated deeds."
    ]
   }
  ],
@@ -45,7 +44,6 @@ window.CHRONICLE = {
        "source": "official forums"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2020
@@ -66,7 +64,6 @@ window.CHRONICLE = {
        "source": "Deftspider"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2020
@@ -92,7 +89,6 @@ window.CHRONICLE = {
        "source": "Zaxtor99"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2020
@@ -108,7 +104,6 @@ window.CHRONICLE = {
        "source": "Mortal Online Wiki"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2020
@@ -129,7 +124,6 @@ window.CHRONICLE = {
        "source": "Lupus"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2020
@@ -150,7 +144,6 @@ window.CHRONICLE = {
        "source": "Diphrael"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -176,7 +169,6 @@ window.CHRONICLE = {
        "source": "Jungo Whey"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -197,7 +189,6 @@ window.CHRONICLE = {
        "source": "Lashaniqua Jackson"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -213,7 +204,6 @@ window.CHRONICLE = {
        "source": "My Usual Me"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -234,7 +224,6 @@ window.CHRONICLE = {
        "source": "TheLazyPeon"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -255,7 +244,6 @@ window.CHRONICLE = {
        "source": "finegamingconnoisseur"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -281,7 +269,6 @@ window.CHRONICLE = {
        "source": "r4NGe"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -302,7 +289,6 @@ window.CHRONICLE = {
        "source": "Bratwire"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -323,7 +309,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -344,7 +329,6 @@ window.CHRONICLE = {
        "source": "Mortal Online (Star Vault)"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -365,7 +349,6 @@ window.CHRONICLE = {
        "source": "Nazori"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -391,7 +374,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -417,7 +399,6 @@ window.CHRONICLE = {
        "source": "Kytar"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -438,7 +419,6 @@ window.CHRONICLE = {
        "source": "finegamingconnoisseur"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -464,7 +444,6 @@ window.CHRONICLE = {
        "source": "Vandevious Twitch"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -490,7 +469,6 @@ window.CHRONICLE = {
        "source": "Novareconify"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2021
@@ -511,7 +489,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -532,7 +509,6 @@ window.CHRONICLE = {
        "source": "DorrianX"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -553,7 +529,6 @@ window.CHRONICLE = {
        "source": "RelicVideosMO"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2021
@@ -574,7 +549,6 @@ window.CHRONICLE = {
        "source": "M. T. Clark Jr."
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -595,7 +569,6 @@ window.CHRONICLE = {
        "source": "Bratwire"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -611,7 +584,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2021
@@ -647,7 +619,6 @@ window.CHRONICLE = {
        "source": "Casual_Belligerency"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -668,7 +639,6 @@ window.CHRONICLE = {
        "source": "Pwnstarr"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -689,7 +659,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -710,7 +679,6 @@ window.CHRONICLE = {
        "source": "WalksOnWater"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -731,7 +699,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -752,7 +719,6 @@ window.CHRONICLE = {
        "source": "Dire Lykaios"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -773,7 +739,6 @@ window.CHRONICLE = {
        "source": "Nausk"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -794,7 +759,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -815,7 +779,6 @@ window.CHRONICLE = {
        "source": "Göjo"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -836,7 +799,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -857,7 +819,6 @@ window.CHRONICLE = {
        "source": "Battlex"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -883,7 +844,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -899,7 +859,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -920,7 +879,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -941,7 +899,6 @@ window.CHRONICLE = {
        "source": "NastraMoonlight"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -967,7 +924,6 @@ window.CHRONICLE = {
        "source": "Slarti Bartfast"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2022
@@ -988,7 +944,6 @@ window.CHRONICLE = {
        "source": "TheTorchBearers"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -1009,7 +964,6 @@ window.CHRONICLE = {
        "source": "Oldgreg859"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -1035,7 +989,6 @@ window.CHRONICLE = {
        "source": "BasedBellagio Gaming"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2022–2023",
      "kind": "tale",
@@ -1057,7 +1010,6 @@ window.CHRONICLE = {
        "source": "turbojet43"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2022–2023",
      "kind": "tale",
@@ -1084,7 +1036,6 @@ window.CHRONICLE = {
        "source": "Inhuman Perfection"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2022–2024",
      "kind": "tale",
@@ -1111,7 +1062,6 @@ window.CHRONICLE = {
        "source": "Mortal Online 2 Experiences"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2022–2023",
      "kind": "tale",
@@ -1133,7 +1083,6 @@ window.CHRONICLE = {
        "source": "Splinter"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2022–2023",
      "kind": "tale",
@@ -1150,7 +1099,6 @@ window.CHRONICLE = {
        "source": "Star Vault"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -1171,7 +1119,6 @@ window.CHRONICLE = {
        "source": "Gooch"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -1192,7 +1139,6 @@ window.CHRONICLE = {
        "source": "Tasu"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2022
@@ -1218,7 +1164,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1239,7 +1184,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1255,7 +1199,6 @@ window.CHRONICLE = {
        "source": "Emdash, official forums"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1281,7 +1224,6 @@ window.CHRONICLE = {
        "source": "Kai Ser"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1302,7 +1244,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1323,7 +1264,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1339,7 +1279,6 @@ window.CHRONICLE = {
        "source": "IGN"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2023
@@ -1375,7 +1314,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1396,7 +1334,6 @@ window.CHRONICLE = {
        "source": "ZoomiesTV"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1422,7 +1359,6 @@ window.CHRONICLE = {
        "source": "Lucas"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1443,7 +1379,6 @@ window.CHRONICLE = {
        "source": "Dire Lykaios"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1464,7 +1399,6 @@ window.CHRONICLE = {
        "source": "BruceleeRob"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1490,7 +1424,6 @@ window.CHRONICLE = {
        "source": "Regicide"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1506,7 +1439,6 @@ window.CHRONICLE = {
        "source": "BruceLeeRob"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1527,7 +1459,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2024
@@ -1548,7 +1479,6 @@ window.CHRONICLE = {
        "source": "iwi"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "tale",
      "year": 2024
@@ -1569,7 +1499,6 @@ window.CHRONICLE = {
        "source": "Alumneye"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1590,7 +1519,6 @@ window.CHRONICLE = {
        "source": "Twitch"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1611,7 +1539,6 @@ window.CHRONICLE = {
        "source": "Lost Chapters"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2023–2024",
      "kind": "tale",
@@ -1628,7 +1555,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1649,7 +1575,6 @@ window.CHRONICLE = {
        "source": "SharkWolf"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1670,7 +1595,6 @@ window.CHRONICLE = {
        "source": "Disrupter"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1691,7 +1615,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1713,7 +1636,6 @@ window.CHRONICLE = {
        "source": "finegamingconnoisseur"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1739,7 +1661,6 @@ window.CHRONICLE = {
        "source": "iMP"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1760,7 +1681,6 @@ window.CHRONICLE = {
        "source": "Vetian"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1786,7 +1706,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1812,7 +1731,6 @@ window.CHRONICLE = {
        "source": "Longballoon"
       }
      ],
-     "odinseed": true,
      "marker": "Keep destroyed",
      "kind": "event",
      "year": 2024
@@ -1833,7 +1751,6 @@ window.CHRONICLE = {
        "source": "Tasu"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1849,7 +1766,6 @@ window.CHRONICLE = {
        "source": "Noob3rt"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -1870,7 +1786,6 @@ window.CHRONICLE = {
        "source": "Bunup"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2023–2024",
      "kind": "tale",
@@ -1892,7 +1807,6 @@ window.CHRONICLE = {
        "source": "Serukka"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2024",
      "kind": "tale",
@@ -1909,7 +1823,6 @@ window.CHRONICLE = {
        "source": "Star Vault"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2023–2024",
      "kind": "tale",
@@ -1931,7 +1844,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2023
@@ -1952,7 +1864,6 @@ window.CHRONICLE = {
        "source": "Mo2Builds"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2024–2025",
      "kind": "tale",
@@ -1979,7 +1890,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "era": "2024–2025",
      "kind": "tale",
@@ -1996,7 +1906,6 @@ window.CHRONICLE = {
        "source": "Star Vault"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -2017,7 +1926,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -2048,7 +1956,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2064,7 +1971,6 @@ window.CHRONICLE = {
        "source": "Nausk"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2080,7 +1986,6 @@ window.CHRONICLE = {
        "source": "Star Vault"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2096,7 +2001,6 @@ window.CHRONICLE = {
        "source": "Venomous War Gaming"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2122,7 +2026,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2153,7 +2056,6 @@ window.CHRONICLE = {
        "source": "Emdash, official forums"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -2169,7 +2071,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": "Stronghold assaulted",
      "kind": "event",
      "year": 2025
@@ -2185,7 +2086,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2211,7 +2111,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2232,7 +2131,6 @@ window.CHRONICLE = {
        "source": "Dread Og"
       }
      ],
-     "odinseed": true,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2253,7 +2151,6 @@ window.CHRONICLE = {
        "source": "HSLER TV"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2274,7 +2171,6 @@ window.CHRONICLE = {
        "source": "Longballoon"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2290,7 +2186,6 @@ window.CHRONICLE = {
        "source": "Massively Overpowered"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2311,7 +2206,6 @@ window.CHRONICLE = {
        "source": "CrashGaming247"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2332,7 +2226,6 @@ window.CHRONICLE = {
        "source": "Deep Cheek Dweller"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2353,7 +2246,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2374,7 +2266,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2025
@@ -2405,7 +2296,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2426,7 +2316,6 @@ window.CHRONICLE = {
        "source": "xGooselordx"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2452,7 +2341,6 @@ window.CHRONICLE = {
        "source": "Wadimus"
       }
      ],
-     "odinseed": true,
      "marker": "Keep lost",
      "kind": "event",
      "year": 2026
@@ -2473,7 +2361,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2499,7 +2386,6 @@ window.CHRONICLE = {
        "source": "Mortal Online"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2520,7 +2406,6 @@ window.CHRONICLE = {
        "source": "SesArses"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2546,7 +2431,6 @@ window.CHRONICLE = {
        "source": "Lordus"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026
@@ -2577,7 +2461,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       }
      ],
-     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2026

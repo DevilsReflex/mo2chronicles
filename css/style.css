@@ -150,7 +150,7 @@ main, footer { position: relative; z-index: 2; }
   .age-nav .nav-name { display: inline; margin-left: 6px; font-size: 12px; letter-spacing: 0.16em; opacity: 0.75; }
 }
 
-/* nav action buttons (thread / ambience) */
+/* nav action buttons (ambience) */
 .nav-actions { display: flex; align-items: center; gap: 4px; }
 .nav-btn {
   display: inline-flex;
@@ -191,81 +191,6 @@ main, footer { position: relative; z-index: 2; }
     color-mix(in srgb, var(--chrome-tint) 65%, #fff));
   box-shadow: 0 0 8px rgba(201, 168, 106, 0.55);
   transition: width 0.1s linear, --chrome-tint 1.8s ease;
-}
-
-/* ─────────────── thread of odinseed mode ─────────────── */
-body.thread-mode .entry {
-  transition:
-    opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1),
-    filter 0.7s ease,
-    transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-}
-/* dim only entries that have already revealed, so the reveal choreography survives */
-body.thread-mode .entry.in:not(.odinseed) { opacity: 0.13; filter: saturate(0.25); }
-body.thread-mode .entry.in:not(.odinseed):hover { opacity: 0.55; filter: saturate(0.7); }
-body.thread-mode .year-break { opacity: 0.35; }
-body.thread-mode .entry.odinseed .entry-card {
-  border-color: rgba(201, 168, 106, 0.5);
-  box-shadow: 0 0 60px -18px rgba(201, 168, 106, 0.25);
-}
-
-#thread-nav {
-  position: fixed;
-  bottom: 22px;
-  right: 22px;
-  z-index: 96;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  padding: 6px 8px;
-  background: rgba(8, 8, 11, 0.88);
-  border: 1px solid var(--gold-dim);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 14px 40px -12px rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transform: translateY(16px);
-  pointer-events: none;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto; }
-#thread-nav button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--bone-dim);
-  line-height: 1;
-  padding: 8px 10px;
-  transition: color 0.25s;
-}
-#thread-nav button:hover { color: var(--gold-bright); }
-.t-chev {
-  display: block;
-  width: 9px;
-  height: 9px;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-}
-.t-chev.up { transform: rotate(-135deg) translate(-2px, -2px); }
-.t-chev.down { transform: rotate(45deg) translate(-2px, -2px); }
-#thread-exit {
-  font-family: var(--display);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-#thread-count {
-  font-family: var(--display);
-  font-size: 12.5px;
-  letter-spacing: 0.16em;
-  color: var(--gold);
-  padding: 0 10px;
-  white-space: nowrap;
-}
-#thread-exit { border-left: 1px solid rgba(201, 168, 106, 0.18) !important; }
-@media (max-width: 700px) {
-  #thread-nav { right: 50%; transform: translate(50%, 16px); }
-  body.thread-mode #thread-nav { transform: translate(50%, 0); }
 }
 
 /* ─────────────── anno (year) indicator ─────────────── */
@@ -480,17 +405,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
 /* tales drift out of the spine sideways */
 .entry.tale.reveal:not(.in) { transform: translate(-24px, 12px); }
 
-/* odinseed entries flare gold once as they arrive */
-.entry.odinseed.reveal.in .entry-card { animation: odin-flare 1.7s ease 0.25s 1; }
-@keyframes odin-flare {
-  0% { box-shadow: none; }
-  35% {
-    box-shadow: 0 0 44px -6px rgba(201, 168, 106, 0.4), inset 0 0 34px rgba(201, 168, 106, 0.09);
-    border-color: rgba(236, 208, 150, 0.65);
-  }
-  100% { box-shadow: none; }
-}
-
 /* landmarks alone keep the long cinematic blur-rise */
 .entry.landmark.reveal { transition-duration: 1.4s; }
 .entry.landmark.reveal:not(.in) { transform: translateY(46px); filter: blur(6px); }
@@ -548,28 +462,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   float: left;
   padding: 7px 10px 0 0;
 }
-
-/* the ✦ thread callout */
-.thread-callout {
-  border: 1px solid var(--gold-dim);
-  background: linear-gradient(135deg, rgba(201, 168, 106, 0.07), rgba(201, 168, 106, 0.02));
-  padding: 26px 30px;
-  margin-top: 2em;
-  position: relative;
-}
-.thread-callout::before {
-  content: "\2726";
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--ink);
-  padding: 0 14px;
-  color: var(--gold);
-  font-size: 17px;
-}
-.thread-callout p { margin: 0; }
-.thread-callout p::first-letter { all: unset; }
 
 /* ─────────────── age dividers ─────────────── */
 .age-divider {
@@ -694,18 +586,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   border-color: var(--gold);
   box-shadow: 0 0 12px rgba(201, 168, 106, 0.5);
 }
-.entry.odinseed .entry-node { background: var(--gold); }
-.entry-node .node-star {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(-45deg);
-  color: #14100a;
-  font-size: 8px;
-  line-height: 1;
-}
 
 /* card */
 .entry-card {
@@ -758,13 +638,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
     100% { opacity: 0; background-position: 50% -30%; }
   }
 }
-.entry.odinseed .entry-card {
-  border-color: rgba(201, 168, 106, 0.3);
-  background:
-    linear-gradient(160deg, rgba(201, 168, 106, 0.05), transparent 40%),
-    linear-gradient(160deg, var(--card), var(--card-2));
-}
-.entry.odinseed .entry-card:hover { border-color: rgba(201, 168, 106, 0.5); }
 
 .entry-date {
   font-family: var(--sans);
@@ -779,17 +652,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   gap: 12px;
   flex-wrap: wrap;
 }
-.thread-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  color: var(--gold-bright);
-  border: 1px solid var(--gold-dim);
-  padding: 3px 9px;
-  background: rgba(201, 168, 106, 0.06);
-}
 .entry-title {
   font-family: var(--display-lc);
   font-weight: 400;
@@ -799,7 +661,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   margin-bottom: 14px;
   letter-spacing: 0.015em;
 }
-.entry.odinseed .entry-title { color: var(--gold-bright); }
 .entry-body { color: rgba(217, 210, 194, 0.87); max-width: 66ch; }
 .entry-body + .entry-body { margin-top: 0.9em; }
 .entry-body em { color: var(--bone); }
@@ -1142,7 +1003,6 @@ footer p {
   #veil { animation-duration: 0.2s; }
   #atmosphere { display: none; }
   .entry-card, .hero-inner, .age-roman-bg { transform: none !important; }
-  .entry.odinseed.reveal.in .entry-card { animation: none; }
   .entry.landmark .entry-card::before { transition: none; transform: scaleX(1); }
   .entry.in .entry-card::after { animation: none; }
 }

@@ -442,7 +442,14 @@
     progressTicks.innerHTML = flatEntries
       .map((fe, i) => {
         const pct = (i / (flatEntries.length - 1)) * 100;
-        return `<span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="left:${pct.toFixed(3)}%;--tick-tint:${fe.tint}"></span>`;
+        const edgeCls = i < 3 ? " sp-edge-start" : i > flatEntries.length - 4 ? " sp-edge-end" : "";
+        return `<a href="#${fe.id}" class="sp-tick-hit" role="menuitem" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}">
+          <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
+          <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
+            <span class="sp-tick-tip-date">${esc(fe.dateLabel)}</span>
+            <span class="sp-tick-tip-title">${esc(fe.title)}</span>
+          </span>
+        </a>`;
       })
       .join("");
   }

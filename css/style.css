@@ -178,17 +178,14 @@ main, footer { position: relative; z-index: 2; }
   color: var(--age-tint, var(--bone-dim));
   padding: 8px 4px 8px 12px;
   border-bottom: 1px solid transparent;
-  text-shadow: 0 0 18px color-mix(in srgb, var(--age-tint, transparent) 35%, transparent);
-  transition: color 0.3s, border-color 0.3s, text-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s;
 }
 .age-nav-link:hover {
   color: color-mix(in srgb, var(--age-tint, var(--gold)) 70%, white);
-  text-shadow: 0 0 22px color-mix(in srgb, var(--age-tint, transparent) 55%, transparent);
 }
 .age-nav-link.active {
   color: color-mix(in srgb, var(--age-tint, var(--gold)) 80%, white);
   border-bottom-color: var(--age-tint, var(--gold-dim));
-  text-shadow: 0 0 24px color-mix(in srgb, var(--age-tint, transparent) 60%, transparent);
 }
 .age-nav .nav-roman { font-size: 15px; }
 .age-nav .nav-name { display: none; }
@@ -381,20 +378,95 @@ main, footer { position: relative; z-index: 2; }
   inset: 0;
   pointer-events: none;
 }
-.sp-tick {
+/* each dot gets its own hit target, much wider AND taller than the
+   dot itself so it's actually hoverable — sized in px and centered via
+   transform rather than height:100%, since the ticks live inside the
+   1-4px track and 100% of that is far too thin to reliably hit */
+.sp-tick-hit {
   position: absolute;
-  top: 50%; left: 0;
+  top: 50%;
+  left: 0;
+  width: 9px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 2;
+}
+.sp-tick {
   width: 2px; height: 2px;
   border-radius: 50%;
   background: var(--tick-tint, var(--bone-dim));
   opacity: 0.45;
-  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease, width 0.15s ease, height 0.15s ease;
 }
 .sp-tick.sp-landmark {
   width: 3px; height: 6px;
   border-radius: 1px;
   opacity: 0.8;
 }
+.sp-tick-hit:hover .sp-tick,
+.sp-tick-hit:focus-visible .sp-tick {
+  opacity: 1;
+  width: 5px; height: 5px;
+}
+.sp-tick-hit:hover .sp-tick.sp-landmark,
+.sp-tick-hit:focus-visible .sp-tick.sp-landmark {
+  width: 4px; height: 8px;
+}
+.sp-tick-tip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 9px;
+  transform: translateX(-50%) translateY(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 7px 12px;
+  width: max-content;
+  max-width: 220px;
+  background: linear-gradient(160deg, var(--card), var(--card-2));
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 6;
+}
+.sp-tick-hit:hover .sp-tick-tip,
+.sp-tick-hit:focus-visible .sp-tick-tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.sp-tick-tip.sp-edge-start { left: 0; transform: translateX(0) translateY(4px); }
+.sp-tick-hit:hover .sp-tick-tip.sp-edge-start,
+.sp-tick-hit:focus-visible .sp-tick-tip.sp-edge-start { transform: translateX(0) translateY(0); }
+.sp-tick-tip.sp-edge-end { left: auto; right: 0; transform: translateX(0) translateY(4px); }
+.sp-tick-hit:hover .sp-tick-tip.sp-edge-end,
+.sp-tick-hit:focus-visible .sp-tick-tip.sp-edge-end { transform: translateX(0) translateY(0); }
+.sp-tick-tip-date {
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.sp-tick-tip-title {
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.3;
+  color: var(--bone);
+}
+.sp-tick-tip.sp-landmark .sp-tick-tip-date,
+.sp-tick-tip.sp-landmark .sp-tick-tip-title {
+  color: var(--gold-bright);
+}
+.sp-tick-tip.sp-landmark .sp-tick-tip-title { font-weight: 600; }
 .scroll-progress-fill {
   position: absolute;
   inset: 0;

@@ -30,10 +30,71 @@
   // Runs after esc(), so straight quotes arrive as &quot; entities.
   const dress = (s) => esc(s).replace(/&quot;([\s\S]{2,220}?)&quot;/g, (m, a) => `<em>“${a}”</em>`);
 
+  /* ── the names of Nave ──────────────────────────────────────────
+     Player names take the bold gold treatment; guild/house/alliance
+     names take the bold crimson treatment. Multi-word names are
+     matched as whole phrases (longest first). Deliberately excluded:
+     places (Bakti, Vadda…), lore/NPCs (Malturn, Ultumeki…), game
+     systems (Reckoning, SEED…), the studio (Star Vault), and a few
+     genuinely ambiguous words (Oghmir the race, Discord the app). */
+  const PLAYERS = [
+    "BruceLeeRob", "Barados", "Azog", "Speznat", "General Lordus", "Lordus", "Tasu",
+    "Vellek", "Gab", "Axe", "Rivers", "Riley", "Diphrael", "Kuthara", "Abbadon",
+    "Slasher", "Cixx", "Danny", "Killox", "Nerion", "PoisonArrows", "Pandah Sykes",
+    "Pandah", "Sykes", "Emdash", "Putzin", "TheMasterStick", "Slyy", "Pockets",
+    "RunKarni", "Tats", "Buda", "Thievery", "Cruel", "Stinkeye", "Pinkeye",
+    "Henrik Nyström", "Henrik", "Nyström", "Sebastian", "Robmo", "Ahmose", "Highlurder",
+    "Phen", "Hayasa", "Viknuss", "Tekk", "MolagAmur", "Kelzyr", "Avonis", "Raknor",
+    "DaChieftain", "Phillywob", "Ferrus", "Davis", "Serverus", "Aquagenix", "Qaiten",
+    "Amarria", "Malyck", "Bratwire", "Brat", "Suttner", "Apsalar", "Luconuti", "Vecna",
+    "Svaar", "Hauron", "Zaras Himotep", "Zaras", "Himotep", "Ghanburi", "Turel", "Volos",
+    "Mistmaker", "ProfessorOh", "CoxyMate", "Cedarnut", "AtruinAugustus", "Mahone",
+    "Waffle Stomper", "Papaturro", "Tunalion", "Favonius Cornelius", "Favonius", "Cornelius",
+    "LordMega", "Nefnate", "Backyard Employee", "Azaad", "Montradamus", "Gbunny", "Jonttre",
+    "Smasher", "Ganandorn", "Schnoz", "Bank", "Covfefe", "John Oldman", "Oldman", "Talut",
+    "Venomous", "Hillary", "Otto", "Clee", "Forgiven", "Krankone Hsler", "Krankone", "Krank",
+    "Pepper", "Blitz", "Bigbadwolff", "AnthonyHD", "CeeJ", "Nebulous", "Demra", "Adolyn",
+    "Nausk", "Aesir", "Pox", "Bayard", "Noobert", "Torggaddon", "Tatsuya", "RobberDob",
+    "Kidney", "Loud Ziggy", "Ziggy", "HardDriveDump", "Ruthless G", "Wicked", "Clarence",
+    "Nalyd", "Embuscade", "Tiglie", "Chip Chip", "TheLazyPeon", "Josh Strife Hayes",
+  ];
+  const GUILDS = [
+    "Odinseed", "Wolfszeit", "KarniMata", "Nightmare Alliance", "Nightmare", "Rat Alliance",
+    "KotO", "KoTo", "Legion", "Nightfall", "Content", "Acolytes", "BeastMasters", "Eternal",
+    "Requiem", "Integrity", "DracoSilvam", "Mythic", "Companions", "Dreadlords", "Overt",
+    "Clandestine", "BlackPriest", "Miscreants", "Tianming", "MANA", "TEA", "Artisans",
+    "SLAV", "LaFrance", "Onikumazoku", "Woses", "Chimera", "Gordox", "Unbroken", "MKRG",
+    "ACT", "Levia", "Krankids", "Oldguard", "Nameless", "RPK", "BEAR", "Wolfpack", "Saltpack",
+    "Headless", "Jungle Alliance", "Bad Company", "Company", "Merry Men", "Northern Bank",
+    "Death Jester", "Mors Omnibus", "Black Panthers", "Darkblood Coven", "Torch Bearers",
+    "Knights of Myrland", "Shadow Consortium", "Noble Ones", "Free Tribes", "Collective",
+    "Harbingers of Judgment", "Guardians of Gabaria", "Saint Sépulcre", "L'Empire",
+    "Keepers of the Oath",
+  ];
+  const NAME_CLASS = {};
+  PLAYERS.forEach((n) => (NAME_CLASS[n] = "n-p"));
+  GUILDS.forEach((n) => (NAME_CLASS[n] = "n-g"));
+  const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const NAME_RE = new RegExp(
+    "(?<![A-Za-z0-9])(" +
+      Object.keys(NAME_CLASS)
+        .sort((a, b) => b.length - a.length)
+        .map(escRe)
+        .join("|") +
+      ")(?![A-Za-z0-9])",
+    "g"
+  );
+  // wrap known names; skips any text already inside an HTML tag
+  function markNames(html) {
+    return html.replace(NAME_RE, (m) => `<span class="${NAME_CLASS[m]}">${m}</span>`);
+  }
+  // full prose pipeline: escape → curly-quote → name-highlight
+  const prose = (s) => markNames(dress(s));
+
   // split long bodies into readable paragraphs at sentence boundaries,
   // never splitting inside a quoted passage (even count of " so far)
   function bodyHTML(body) {
-    if (body.length < 700) return `<p class="entry-body">${dress(body)}</p>`;
+    if (body.length < 700) return `<p class="entry-body">${prose(body)}</p>`;
     const sentences = body.match(/[^.!?]+[.!?]+["”')\]]*\s*/g) || [body];
     const chunks = [];
     let cur = "";
@@ -46,7 +107,7 @@
       }
     }
     if (cur.trim()) chunks.push(cur.trim());
-    return chunks.map((c) => `<p class="entry-body">${dress(c)}</p>`).join("");
+    return chunks.map((c) => `<p class="entry-body">${prose(c)}</p>`).join("");
   }
 
   function youtubeId(url) {
@@ -91,7 +152,7 @@
   (function renderInvocation() {
     const el = document.getElementById("invocation");
     el.innerHTML = C.invocation
-      .map((p, i) => `<p class="reveal" style="--d:${i * 0.08}s">${dress(p)}</p>`)
+      .map((p, i) => `<p class="reveal" style="--d:${i * 0.08}s">${prose(p)}</p>`)
       .join("");
   })();
 
@@ -101,7 +162,7 @@
     el.innerHTML = C.sections
       .map((sec) => {
         const paras = sec.paragraphs
-          .map((p, i) => `<p class="reveal" style="--d:${i * 0.05}s">${dress(p)}</p>`)
+          .map((p, i) => `<p class="reveal" style="--d:${i * 0.05}s">${prose(p)}</p>`)
           .join("");
         return `<div class="preface-block">
           <h2 class="reveal">${esc(sec.heading)}</h2>
@@ -142,7 +203,7 @@
             <img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="">
             <div class="play-btn" aria-hidden="true"></div>
             <div class="video-caption">
-              <span class="vc-title">${esc(v.text)}</span>
+              <span class="vc-title">${markNames(esc(v.text))}</span>
               <span class="vc-source">${esc(sourceLabel(v))}</span>
             </div>
           </div>
@@ -158,7 +219,7 @@
           (l) => `
         <a class="link-scroll" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">
           ${SCROLL_ICON}
-          <span><span class="ls-text">${esc(l.text)}</span><span class="ls-source">${esc(sourceLabel(l))}</span></span>
+          <span><span class="ls-text">${markNames(esc(l.text))}</span><span class="ls-source">${esc(sourceLabel(l))}</span></span>
           <span class="ls-arrow" aria-hidden="true">&#8599;&#xFE0E;</span>
         </a>`
         )
@@ -189,7 +250,7 @@
           <p class="age-kicker reveal">${esc(age.age)}</p>
           <h2 class="age-title reveal" style="--d:.1s">${esc(age.name)}</h2>
           <p class="age-range reveal" style="--d:.2s">${esc(age.range)}</p>
-          ${age.temper.map((t, i) => `<p class="age-temper reveal" style="--d:${0.3 + i * 0.1}s">${dress(t)}</p>`).join("")}
+          ${age.temper.map((t, i) => `<p class="age-temper reveal" style="--d:${0.3 + i * 0.1}s">${prose(t)}</p>`).join("")}
         </div>
       </section>
       <div class="timeline" style="--age-tint:${tint}" data-age="${id}">

@@ -17,6 +17,7 @@
   --gold-faint: rgba(201, 168, 106, 0.14);
   --blood: #9c2b22;
   --blood-bright: #c94b3d;
+  --name-guild: #d17a5f;
   --serif: "EB Garamond", Georgia, serif;
   --display: "Marcellus SC", "Marcellus", serif;
   --display-lc: "Marcellus", serif;
@@ -664,6 +665,18 @@ main, footer { position: relative; z-index: 2; }
 .entry-body { color: rgba(217, 210, 194, 0.87); max-width: 66ch; }
 .entry-body + .entry-body { margin-top: 0.9em; }
 .entry-body em { color: var(--bone); }
+
+/* ── the names of Nave: players in gold, guilds in crimson ── */
+.n-p {
+  font-weight: 600;
+  color: var(--gold);
+}
+.n-g {
+  font-weight: 600;
+  color: var(--name-guild);
+}
+/* keep the treatment legible against the tinted quote italics */
+em .n-p, em .n-g { font-style: italic; }
 
 /* ── landmark tier: the moments the whole chronicle turns on ── */
 .entry.landmark { max-width: 860px; }

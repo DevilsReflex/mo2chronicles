@@ -417,6 +417,15 @@
   const dividers = Array.from(document.querySelectorAll(".age-divider"));
   const entries = Array.from(document.querySelectorAll(".entry[data-year]"));
 
+  // a short, word-safe lead-in to an entry's body, for tick tooltips
+  function leadIn(text, max) {
+    if (!text) return "";
+    if (text.length <= max) return text;
+    const cut = text.slice(0, max);
+    const lastSpace = cut.lastIndexOf(" ");
+    return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trim() + "…";
+  }
+
   // real keep/outpost sieges, curated — open-field battles, patch notes,
   // and community drama (e.g. "Odin's Field", "The Relic Wars") are
   // deliberately excluded even though some share language like "battle"
@@ -449,11 +458,14 @@
     ageStartIdx.push(flatEntries.length);
     age.entries.forEach((e, ei) => {
       const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+      const firstVideo = (e.links || []).find((l) => !l.noembed && youtubeId(l.url));
       flatEntries.push({
         id: `entry-${ai}-${ei}`,
         tint,
         title: e.title,
         dateLabel: e.date || e.era || "Undated",
+        excerpt: leadIn(e.body, 150),
+        thumbId: firstVideo ? youtubeId(firstVideo.url) : null,
         isLandmark,
         isSiege: SIEGE_TITLES.has(e.title),
       });
@@ -464,8 +476,15 @@
       .map((fe, i) => {
         const pct = (i / (flatEntries.length - 1)) * 100;
         const cls = ["sp-tick-hit", fe.isLandmark ? "sp-tick-hit-landmark" : "", fe.isSiege ? "sp-tick-hit-siege" : ""].filter(Boolean).join(" ");
+        const edgeCls = i < 3 ? " sp-edge-start" : i > flatEntries.length - 4 ? " sp-edge-end" : "";
         return `<a href="#${fe.id}" class="${cls}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}${fe.isSiege ? " (keep siege)" : ""}">
           <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}${fe.isSiege ? " sp-siege" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
+          <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
+            ${fe.thumbId ? `<img class="sp-tick-tip-thumb" loading="lazy" src="https://i.ytimg.com/vi/${esc(fe.thumbId)}/mqdefault.jpg" alt="">` : ""}
+            <span class="sp-tick-tip-date">${esc(fe.dateLabel)}</span>
+            <span class="sp-tick-tip-title">${esc(fe.title)}</span>
+            ${fe.excerpt ? `<span class="sp-tick-tip-excerpt">${prose(fe.excerpt)}</span>` : ""}
+          </span>
         </a>`;
       })
       .join("");

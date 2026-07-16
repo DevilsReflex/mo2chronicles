@@ -60,8 +60,8 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
 
-/* ─────────────── atmosphere: aura, dust, torchlight ───────────────
-   Stack: aura (0) < dust canvas (1) < content (2) < grain (3) < torch (4) */
+/* ─────────────── atmosphere: aura, dust ───────────────
+   Stack: aura (0) < dust canvas (1) < content (2) < grain (3) */
 @property --chrome-tint {
   syntax: "<color>";
   inherits: true;
@@ -84,34 +84,6 @@ body::after {
   z-index: 1;
 }
 main, footer { position: relative; z-index: 2; }
-#torch {
-  position: fixed;
-  left: 0; top: 0;
-  width: 760px; height: 760px;
-  margin: -380px 0 0 -380px;
-  pointer-events: none;
-  z-index: 4;
-  mix-blend-mode: screen;
-  background: radial-gradient(circle,
-    rgba(216, 178, 112, 0.075) 0%,
-    rgba(216, 178, 112, 0.032) 32%,
-    transparent 62%);
-  /* era-tinted flame where color-mix is supported; the line above is the fallback */
-  background: radial-gradient(circle,
-    color-mix(in srgb, var(--chrome-tint) 8%, transparent) 0%,
-    color-mix(in srgb, var(--chrome-tint) 3.4%, transparent) 32%,
-    transparent 62%);
-  opacity: 0;
-  transition: opacity 1.2s ease, --chrome-tint 1.8s ease;
-  will-change: transform;
-  animation: torch-breathe 3.4s ease-in-out infinite;
-}
-body.torch-on #torch { opacity: 1; }
-@keyframes torch-breathe {
-  0%, 100% { filter: brightness(1); }
-  47% { filter: brightness(0.86); }
-  73% { filter: brightness(1.07); }
-}
 
 /* ─────────────── veil (first paint) ─────────────── */
 #veil {
@@ -429,7 +401,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
 
 .hero-sub {
   font-family: var(--serif);
-  font-style: italic;
   font-size: clamp(16px, 2vw, 21px);
   color: var(--bone-dim);
   max-width: 780px;
@@ -448,7 +419,9 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   position: absolute;
   bottom: 34px;
   left: 50%;
-  transform: translateX(-50%);
+  /* independent `translate` (not `transform`) so the .reveal-hero entrance
+     animation — which finishes on `transform: none` — can't clobber centering */
+  translate: -50% 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -531,7 +504,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
 }
 #invocation p {
   font-size: clamp(19px, 2.2vw, 24px);
-  font-style: italic;
   line-height: 1.85;
   color: var(--bone);
   text-align: center;
@@ -596,7 +568,7 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   color: var(--gold);
   font-size: 17px;
 }
-.thread-callout p { margin: 0; font-style: italic; }
+.thread-callout p { margin: 0; }
 .thread-callout p::first-letter { all: unset; }
 
 /* ─────────────── age dividers ─────────────── */
@@ -657,7 +629,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
 .age-temper {
   margin: clamp(28px, 5vh, 46px) auto 0;
   max-width: 720px;
-  font-style: italic;
   font-size: clamp(17px, 2vw, 20.5px);
   line-height: 1.8;
   color: var(--bone-dim);
@@ -749,7 +720,7 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   box-shadow: 0 18px 50px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(201, 168, 106, 0.06);
 }
 /* pointer-tracked sheen + 3D tilt (fine pointers only; JS sets the vars).
-   The sheen answers in the ERA's color, not the torch's — the parchment
+   The sheen answers in the ERA's color — the parchment
    replies cold-blue in Age I, blood-red in Age II, desert gold in Age V. */
 .entry-card::after {
   content: "";
@@ -771,7 +742,7 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
   .entry-card:hover { --lift: -2px; }
 }
 /* coarse pointers get a one-shot light pass as each card arrives —
-   the torch walks the page even where no cursor exists */
+   the era-light walks the page even where no cursor exists */
 @media (pointer: coarse) {
   .entry-card::after {
     background: linear-gradient(115deg, transparent 30%, rgba(236, 208, 150, 0.055) 48%, transparent 66%);
@@ -1114,7 +1085,6 @@ body.thread-mode #thread-nav { opacity: 1; transform: none; pointer-events: auto
 .epilogue-inner { position: relative; z-index: 2; max-width: 760px; }
 .epilogue-inner p {
   font-size: clamp(17px, 2vw, 20px);
-  font-style: italic;
   color: var(--bone-dim);
   margin: 1.4em 0;
   line-height: 1.85;
@@ -1170,7 +1140,7 @@ footer p {
   .reveal, .reveal-hero { opacity: 1 !important; transform: none !important; filter: none !important; animation: none !important; transition: none !important; }
   .cue-chevron { animation: none; }
   #veil { animation-duration: 0.2s; }
-  #atmosphere, #torch { display: none; }
+  #atmosphere { display: none; }
   .entry-card, .hero-inner, .age-roman-bg { transform: none !important; }
   .entry.odinseed.reveal.in .entry-card { animation: none; }
   .entry.landmark .entry-card::before { transition: none; transform: scaleX(1); }

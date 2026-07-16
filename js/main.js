@@ -571,24 +571,6 @@
   }
   setEra(-1);
 
-  /* ── torchlight cursor ── */
-  if (finePointer && !reducedMotion) {
-    const torch = document.getElementById("torch");
-    let tx = 0, ty = 0, torchRaf = null;
-    document.addEventListener("pointermove", (ev) => {
-      tx = ev.clientX;
-      ty = ev.clientY;
-      if (!document.body.classList.contains("torch-on")) document.body.classList.add("torch-on");
-      if (!torchRaf) {
-        torchRaf = requestAnimationFrame(() => {
-          torchRaf = null;
-          torch.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
-        });
-      }
-    });
-    document.documentElement.addEventListener("pointerleave", () => document.body.classList.remove("torch-on"));
-  }
-
   /* ── hero parallax ── */
   if (finePointer && !reducedMotion) {
     const hero = document.getElementById("hero");

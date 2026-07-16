@@ -155,6 +155,21 @@ main, footer { position: relative; z-index: 2; }
    to a flyout. Stretching closes that gap completely. */
 .age-nav { display: flex; align-self: stretch; gap: 4px; }
 .age-nav-item { position: relative; display: flex; align-items: center; }
+/* the flyout (380px) is far wider than its trigger (~200px) — moving
+   the mouse diagonally from the label down into the list can cross a
+   triangular dead zone that belongs to neither box. This invisible
+   bridge widens the trigger's own hoverable row to match the flyout's
+   full footprint, so the union of the two is a gap-free rectangle. */
+.age-nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(380px, 92vw);
+  height: 100%;
+  z-index: -1;
+}
 .age-nav-link {
   font-family: var(--display);
   font-weight: 700;
@@ -207,7 +222,7 @@ main, footer { position: relative; z-index: 2; }
   transition: transform 0.3s ease;
   margin-top: -3px;
 }
-.age-nav-item.open .caret-chevron, .age-nav-item:hover .caret-chevron { transform: rotate(225deg); margin-top: 3px; }
+.age-nav-item.open .caret-chevron, .age-nav-item:hover .caret-chevron, .age-nav-item.hover-open .caret-chevron { transform: rotate(225deg); margin-top: 3px; }
 
 /* the flyout: the age's whole roll of dated deeds, at a glance.
    top:100% with NO gap — the interactive box touches the trigger row
@@ -244,7 +259,8 @@ main, footer { position: relative; z-index: 2; }
 }
 .age-nav-item:hover .age-flyout,
 .age-nav-item:focus-within .age-flyout,
-.age-nav-item.open .age-flyout {
+.age-nav-item.open .age-flyout,
+.age-nav-item.hover-open .age-flyout {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
@@ -1230,6 +1246,7 @@ footer p {
   .age-nav-link { padding: 8px 4px; }
   .age-nav-caret { width: 16px; margin-right: 2px; }
   .age-flyout { width: min(320px, 88vw); left: 0; transform: translateX(0) translateY(-6px); }
+  .age-nav-item::before { width: min(320px, 88vw); left: 0; transform: translateX(0); }
   .age-nav-item:hover .age-flyout,
   .age-nav-item:focus-within .age-flyout,
   .age-nav-item.open .age-flyout { transform: translateX(0) translateY(0); }

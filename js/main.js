@@ -330,10 +330,25 @@
     function closeAllFlyouts(except) {
       navItems.forEach((item) => {
         if (item === except) return;
-        item.classList.remove("open");
+        item.classList.remove("open", "hover-open");
         item.querySelector(".age-nav-caret")?.setAttribute("aria-expanded", "false");
       });
     }
+    // hover-intent grace period: plain CSS :hover drops the instant the
+    // cursor leaves the trigger's box, which is an unforgivingly small
+    // target once the flyout fans out much wider below it. Holding the
+    // open state open for a beat after mouseleave means a slightly
+    // wayward path from label to list item doesn't slam the panel shut.
+    navItems.forEach((item) => {
+      let closeTimer = null;
+      item.addEventListener("mouseenter", () => {
+        clearTimeout(closeTimer);
+        item.classList.add("hover-open");
+      });
+      item.addEventListener("mouseleave", () => {
+        closeTimer = setTimeout(() => item.classList.remove("hover-open"), 300);
+      });
+    });
     navEl.addEventListener("click", (ev) => {
       const caret = ev.target.closest(".age-nav-caret");
       if (!caret) return;

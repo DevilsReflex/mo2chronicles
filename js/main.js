@@ -335,6 +335,9 @@
       let closeTimer = null;
       item.addEventListener("mouseenter", () => {
         clearTimeout(closeTimer);
+        // only one Age's flyout is ever open at a time — entering this
+        // one closes any other still open, whether by hover or by pin
+        closeAllFlyouts(item);
         item.classList.add("hover-open");
       });
       item.addEventListener("mouseleave", () => {
@@ -414,11 +417,36 @@
   const dividers = Array.from(document.querySelectorAll(".age-divider"));
   const entries = Array.from(document.querySelectorAll(".entry[data-year]"));
 
+  // real keep/outpost sieges, curated — open-field battles, patch notes,
+  // and community drama (e.g. "Odin's Field", "The Relic Wars") are
+  // deliberately excluded even though some share language like "battle"
+  const SIEGE_TITLES = new Set([
+    "The Siege of Tindrem",
+    "The First Siege",
+    "The March of the ACT Pickaxe Host",
+    "Odinseed Raids MKRG",
+    "THE FIRST KEEP FALLS",
+    "The Battle of Kranesh Keep",
+    "The Battle for Minotaur Mountain",
+    "The Battle for Odinpost",
+    "The Liberation of Tephra",
+    "The Siege of Granum Pass",
+    "The Siege of Nightfall",
+    "The Battle for Sausage Lake Keep",
+    "A Hundred and Fifty Blades",
+    "The Siege of Ursa Stronghold",
+    "The War over a Small House",
+    "The Lament of the Hollow Sieges",
+    "The Fall of Odinpost",
+  ]);
+
   // flat entry list mirrors `entries` 1:1 in document order — used to
   // paint the progress-bar ticks and drive the "nearby entries" popover
   const flatEntries = [];
+  const ageStartIdx = []; // index into flatEntries where each age begins
   C.ages.forEach((age, ai) => {
     const tint = AGE_TINTS[ai] || AGE_TINTS[2];
+    ageStartIdx.push(flatEntries.length);
     age.entries.forEach((e, ei) => {
       const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
       flatEntries.push({
@@ -427,6 +455,7 @@
         title: e.title,
         dateLabel: e.date || e.era || "Undated",
         isLandmark,
+        isSiege: SIEGE_TITLES.has(e.title),
       });
     });
   });
@@ -434,9 +463,20 @@
     progressTicks.innerHTML = flatEntries
       .map((fe, i) => {
         const pct = (i / (flatEntries.length - 1)) * 100;
-        return `<a href="#${fe.id}" class="sp-tick-hit${fe.isLandmark ? " sp-tick-hit-landmark" : ""}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}">
-          <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
+        const cls = ["sp-tick-hit", fe.isLandmark ? "sp-tick-hit-landmark" : "", fe.isSiege ? "sp-tick-hit-siege" : ""].filter(Boolean).join(" ");
+        return `<a href="#${fe.id}" class="${cls}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}${fe.isSiege ? " (keep siege)" : ""}">
+          <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}${fe.isSiege ? " sp-siege" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
         </a>`;
+      })
+      .join("");
+    // era-change markers: a full-height divider at the first entry of
+    // every age after the first, tinted to the age it opens
+    progressTicks.innerHTML += ageStartIdx
+      .slice(1)
+      .map((startI, i) => {
+        const pct = (startI / (flatEntries.length - 1)) * 100;
+        const ai = i + 1;
+        return `<span class="sp-era-mark" style="left:${pct.toFixed(3)}%;--tick-tint:${AGE_TINTS[ai] || AGE_TINTS[2]}" aria-hidden="true"></span>`;
       })
       .join("");
     // roving arrow-key navigation — 120 individual tab stops is tedious,

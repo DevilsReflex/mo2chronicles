@@ -209,9 +209,9 @@ window.CHRONICLE = {
        "source": "official forums"
       },
       {
-       "text": "The old craft itself — thieving in the elder world",
-       "url": "https://www.youtube.com/watch?v=qX_OIuJ-cAE",
-       "source": "Lashaniqua Jackson"
+       "text": "Five years on, the question answered — a lockpicking tutorial for the world that finally got its thief skills",
+       "url": "https://www.youtube.com/watch?v=vHZq_85jCH8",
+       "source": "EmptySpace"
       }
      ],
      "marker": null,

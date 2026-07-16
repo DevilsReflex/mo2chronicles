@@ -382,21 +382,21 @@ main, footer { position: relative; z-index: 2; }
 .scroll-progress {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 18px;
+  height: 22px;
   display: flex;
   align-items: flex-end;
 }
 .scroll-progress-track {
   position: relative;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: rgba(255, 255, 255, 0.07);
   cursor: pointer;
   transition: height 0.2s ease;
 }
 .scroll-progress:hover .scroll-progress-track,
 .scroll-progress:focus-within .scroll-progress-track {
-  height: 4px;
+  height: 5px;
 }
 .scroll-progress-ticks {
   position: absolute;
@@ -412,7 +412,7 @@ main, footer { position: relative; z-index: 2; }
   top: 50%;
   left: 0;
   width: 12px;
-  height: 20px;
+  height: 24px;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
@@ -432,12 +432,46 @@ main, footer { position: relative; z-index: 2; }
   border-radius: 1px;
   opacity: 0.8;
 }
+/* keep sieges get their own mark: a small blood-tinted diamond, so the
+   war-turning moments read at a glance against the plain gold dots */
+.sp-tick.sp-siege {
+  width: 5px; height: 5px;
+  border-radius: 1px;
+  background: var(--blood-bright);
+  opacity: 0.85;
+  transform: rotate(45deg);
+}
 .sp-tick-hit:focus-visible .sp-tick {
   opacity: 1;
   width: 5px; height: 5px;
 }
 .sp-tick-hit:focus-visible .sp-tick.sp-landmark {
   width: 4px; height: 8px;
+}
+.sp-tick-hit:focus-visible .sp-tick.sp-siege {
+  width: 7px; height: 7px;
+}
+/* era-change dividers: a full-height hairline where one Age gives way
+   to the next, capped with a small diamond in the new age's tint */
+.sp-era-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: linear-gradient(180deg, var(--tick-tint, var(--gold)), transparent);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.sp-era-mark::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: var(--tick-tint, var(--gold));
+  transform: translateX(-50%) rotate(45deg);
 }
 @media (hover: hover) and (pointer: fine) {
   .sp-tick-hit:hover .sp-tick {
@@ -446,6 +480,9 @@ main, footer { position: relative; z-index: 2; }
   }
   .sp-tick-hit:hover .sp-tick.sp-landmark {
     width: 4px; height: 8px;
+  }
+  .sp-tick-hit:hover .sp-tick.sp-siege {
+    width: 7px; height: 7px;
   }
 }
 .scroll-progress-fill {
@@ -1343,7 +1380,7 @@ footer p {
      tap accurately — thin to an evenly-sampled subset plus every
      landmark, so mobile keeps real coverage instead of 4 sparse points */
   .sp-tick-hit { display: none; }
-  .sp-tick-hit:nth-of-type(6n), .sp-tick-hit-landmark { display: flex; width: 16px; height: 22px; }
+  .sp-tick-hit:nth-of-type(6n), .sp-tick-hit-landmark, .sp-tick-hit-siege { display: flex; width: 16px; height: 22px; }
   .timeline { padding-left: calc(var(--spine-x) + 18px); padding-right: 16px; }
   .entry::before { left: -18px; width: 18px; }
   .entry-node { left: -18px; }

@@ -409,8 +409,6 @@
   const progressTrack = document.querySelector(".scroll-progress-track");
   const progressMarker = document.getElementById("progress-marker");
   const progressTicks = document.getElementById("progress-ticks");
-  const progressPopover = document.getElementById("progress-popover");
-  const progressPopoverList = document.getElementById("progress-popover-list");
   const anno = document.getElementById("anno");
   const annoYear = document.getElementById("anno-year");
   const navLinks = Array.from(document.querySelectorAll(".age-nav-link"));
@@ -548,25 +546,6 @@
     });
   }
 
-  let activePopoverIdx = -1;
-  function updateProgressPopover(idx) {
-    if (!progressPopoverList || idx < 0 || idx === activePopoverIdx || !flatEntries[idx]) return;
-    activePopoverIdx = idx;
-    const start = Math.max(0, idx - 1);
-    const end = Math.min(flatEntries.length, idx + 5);
-    let html = "";
-    for (let i = start; i < end; i++) {
-      const it = flatEntries[i];
-      const rel = i < idx ? "sp-past" : i === idx ? "sp-current" : "sp-next";
-      html += `<a href="#${it.id}" class="fy-item sp-item ${rel}${it.isLandmark ? " fy-landmark" : ""}" role="menuitem">
-        <span class="fy-date">${esc(it.dateLabel)}</span>
-        <span class="fy-title">${esc(it.title)}</span>
-      </a>`;
-    }
-    progressPopoverList.innerHTML = html;
-  }
-  updateProgressPopover(0); // seed with the opening entries before any scroll happens
-
   let currentYear = null;
   let ticking = false;
 
@@ -583,12 +562,6 @@
       const pct = max > 0 ? y / max : 0;
       fill.style.width = pct * 100 + "%";
       if (progressMarker) progressMarker.style.left = pct * 100 + "%";
-      if (progressPopover && scrollProgressEl) {
-        const barW = scrollProgressEl.offsetWidth;
-        const half = (progressPopover.offsetWidth || 340) / 2 + 8;
-        const x = Math.min(Math.max(pct * barW, half), Math.max(barW - half, half));
-        progressPopover.style.setProperty("--sp-x", x + "px");
-      }
 
       // anno visibility: only within the chronicle proper
       const chron = document.getElementById("chronicle");
@@ -599,13 +572,11 @@
       // current year/entry = last entry whose top is above mid-viewport
       if (inChron) {
         let yr = null;
-        let idx = -1;
         for (let i = 0; i < entries.length; i++) {
           const r = entries[i].getBoundingClientRect();
-          if (r.top < window.innerHeight * 0.6) { yr = entries[i].getAttribute("data-year"); idx = i; }
+          if (r.top < window.innerHeight * 0.6) yr = entries[i].getAttribute("data-year");
           else break;
         }
-        updateProgressPopover(idx);
         if (yr && yr !== currentYear) {
           currentYear = yr;
           annoYear.textContent = yr;

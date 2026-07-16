@@ -2158,6 +2158,16 @@ window.CHRONICLE = {
        "text": "Tephra Crater — Endless Cycle of Conflict, the Northern Wars",
        "url": "https://www.youtube.com/watch?v=9Pgwkc-iexI",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Can he beat the best? — a chronicler puts RunKarni to the test",
+       "url": "https://www.youtube.com/watch?v=iGxVV1jCZO0",
+       "source": "mortal 2 fan"
+      },
+      {
+       "text": "KarniMata dominates the lawman, for once — even legends have bad days",
+       "url": "https://www.youtube.com/watch?v=_1R4dxLEWtc",
+       "source": "Pannrickard"
       }
      ],
      "marker": null,

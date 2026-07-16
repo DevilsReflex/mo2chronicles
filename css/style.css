@@ -60,14 +60,42 @@ body::after {
   opacity: 0.05;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
+/* vignette: a fixed, edge-darkening frame around the whole viewport —
+   never scrolls, so it reads as depth of field rather than a page effect */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  background:
+    radial-gradient(ellipse 80% 70% at 50% 50%, transparent 55%, rgba(2, 2, 3, 0.55) 100%),
+    linear-gradient(rgba(2, 2, 3, 0.4), transparent 14%, transparent 86%, rgba(2, 2, 3, 0.5));
+}
 
-/* ─────────────── atmosphere: aura, dust ───────────────
-   Stack: aura (0) < dust canvas (1) < content (2) < grain (3) */
+/* ─────────────── atmosphere: backdrop, aura, dust ───────────────
+   Stack: backdrop (0) < aura (0) < dust canvas (1) < content (2)
+          < grain (3) < vignette (4) */
 @property --chrome-tint {
   syntax: "<color>";
   inherits: true;
   initial-value: #c9a86a;
 }
+/* the far horizon: two static silhouette layers, fixed to the viewport
+   so they never scroll — the content passes in front of them, which is
+   the actual depth cue (nothing here moves or glows) */
+#backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bd-layer { position: absolute; bottom: 0; left: 0; width: 100%; display: block; }
+.bd-far { height: 22vh; opacity: 0.5; }
+.bd-far path { fill: color-mix(in srgb, var(--chrome-tint, #c9a86a) 20%, #050507); transition: fill 1.8s ease; }
+.bd-near { height: 30vh; opacity: 0.7; }
+.bd-near path { fill: color-mix(in srgb, var(--chrome-tint, #c9a86a) 36%, #050507); transition: fill 1.8s ease; }
 .aura-layer {
   position: fixed;
   inset: 0;
@@ -85,6 +113,27 @@ body::after {
   z-index: 1;
 }
 main, footer { position: relative; z-index: 2; }
+
+/* ─────────────── corner flourishes ───────────────
+   a fixed-size, non-stretching bracket-and-diamond mark at each corner
+   of a major section — echoes the crest's own diamond/compass motif */
+.corner-framed { position: relative; }
+.corner-framed::after,
+.age-divider::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  pointer-events: none;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 34px 34px;
+  background-position: top left, top right, bottom left, bottom right;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M4 22 L4 4 L22 4' fill='none' stroke='%23c9a86a' stroke-width='1' opacity='0.5'/%3E%3Crect x='1.5' y='1.5' width='5' height='5' fill='%23c9a86a' opacity='0.6' transform='rotate(45 4 4)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M32 22 L32 4 L14 4' fill='none' stroke='%23c9a86a' stroke-width='1' opacity='0.5'/%3E%3Crect x='29.5' y='1.5' width='5' height='5' fill='%23c9a86a' opacity='0.6' transform='rotate(45 32 4)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M4 14 L4 32 L22 32' fill='none' stroke='%23c9a86a' stroke-width='1' opacity='0.5'/%3E%3Crect x='1.5' y='29.5' width='5' height='5' fill='%23c9a86a' opacity='0.6' transform='rotate(45 4 32)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M32 14 L32 32 L14 32' fill='none' stroke='%23c9a86a' stroke-width='1' opacity='0.5'/%3E%3Crect x='29.5' y='29.5' width='5' height='5' fill='%23c9a86a' opacity='0.6' transform='rotate(45 32 32)'/%3E%3C/svg%3E");
+}
 
 /* ─────────────── veil (first paint) ─────────────── */
 #veil {
@@ -852,6 +901,20 @@ main, footer { position: relative; z-index: 2; }
   inset: 0;
   background: radial-gradient(ellipse 72% 58% at 50% 46%, var(--age-glow, rgba(201,168,106,0.10)), transparent 72%);
 }
+/* a low silhouette of ruined heights specific to this age, tinted to
+   its own era colour — sits behind the roman numeral, ahead of the glow */
+.age-motif {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.age-motif path {
+  fill: color-mix(in srgb, var(--age-tint, #c9a86a) 32%, #050507);
+}
 .age-roman-bg {
   position: absolute;
   top: 50%; left: 50%;
@@ -931,22 +994,37 @@ main, footer { position: relative; z-index: 2; }
    divider — keep it close so the section reads as one fixture */
 .timeline > .spine + .year-break,
 .timeline > .spine + .entry { margin-top: clamp(16px, 2.4vh, 30px); }
+/* the spine reads as a carved channel, not a flat line: a wider groove
+   with its own left/right bevel plus a faint repeating notch, like a
+   chain or a measured rod rather than a ruled hairline */
 .spine {
   position: absolute;
   left: var(--spine-x);
   top: 0;
   bottom: 0;
-  width: 1px;
-  background: rgba(201, 168, 106, 0.13);
+  width: 3px;
+  background: rgba(201, 168, 106, 0.1);
+  box-shadow:
+    inset 1px 0 0 rgba(0, 0, 0, 0.5),
+    inset -1px 0 0 rgba(255, 255, 255, 0.03);
+}
+.spine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0 1px, transparent 1px 28px);
 }
 .spine-fill {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1px;
+  width: 3px;
   height: 0;
   background: linear-gradient(180deg, var(--gold-dim), var(--gold));
-  box-shadow: 0 0 10px rgba(201, 168, 106, 0.5);
+  box-shadow:
+    0 0 12px rgba(201, 168, 106, 0.55),
+    inset 1px 0 0 rgba(255, 255, 255, 0.25),
+    inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .entry {
@@ -986,17 +1064,27 @@ main, footer { position: relative; z-index: 2; }
   box-shadow: 0 0 12px rgba(201, 168, 106, 0.5);
 }
 
-/* card */
+/* card — a carved tablet at rest, not a flat rectangle: an outer drop
+   shadow for lift off the page, plus inset bevel lines top/bottom for
+   a faint engraved edge */
 .entry-card {
   background: linear-gradient(160deg, var(--card), var(--card-2));
   border: 1px solid rgba(201, 168, 106, 0.14);
   padding: clamp(22px, 3.4vw, 38px) clamp(22px, 3.6vw, 42px);
   position: relative;
+  box-shadow:
+    0 14px 34px -22px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
   transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 .entry-card:hover {
   border-color: rgba(201, 168, 106, 0.32);
-  box-shadow: 0 18px 50px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(201, 168, 106, 0.06);
+  box-shadow:
+    0 22px 54px -20px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(201, 168, 106, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.45);
 }
 
 .entry-date {

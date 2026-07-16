@@ -242,11 +242,6 @@ window.CHRONICLE = {
        "text": "An insanely ambitious PvP MMORPG, weighed in a great Q&A",
        "url": "https://www.youtube.com/watch?v=Wg7aMlT1HP4",
        "source": "Ser Medieval"
-      },
-      {
-       "text": "Future king of the PvP sandboxes? — an introduction to the world",
-       "url": "https://www.youtube.com/watch?v=FgBMs8tRBZs",
-       "source": "Ser Medieval"
       }
      ],
      "marker": null,
@@ -271,11 +266,6 @@ window.CHRONICLE = {
       {
        "text": "Asmongold reacts to the question everyone was asking",
        "url": "https://www.youtube.com/watch?v=YNTOjByECy0",
-       "source": "Asmongold TV  "
-      },
-      {
-       "text": "Asmongold plays Nave and finds an MMO of great potential",
-       "url": "https://www.youtube.com/watch?v=LG9PhpRah1Y",
        "source": "Asmongold TV  "
       },
       {
@@ -379,16 +369,6 @@ window.CHRONICLE = {
        "text": "The basic art of magic — how to cast one's first spell",
        "url": "https://www.youtube.com/watch?v=IO6XUiLZAUI",
        "source": "Wolfszeit"
-      },
-      {
-       "text": "The ultimate beginner's guide to the mage's craft",
-       "url": "https://www.youtube.com/watch?v=psIdnUOVdus",
-       "source": "Medieval Marty"
-      },
-      {
-       "text": "Should you play the sandbox? — a newcomer's reckoning",
-       "url": "https://www.youtube.com/watch?v=rllrSdbQ0KU",
-       "source": "Medieval Marty"
       },
       {
        "text": "What is Mortal Online 2? — the hardcore full-loot MMO explained",
@@ -530,11 +510,6 @@ window.CHRONICLE = {
       {
        "text": "The 'Apex' tamer build — the pet-master's art refined",
        "url": "https://www.youtube.com/watch?v=_nlcnsAf0mI",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The Ranger — a beginner's tamer build and tier list",
-       "url": "https://www.youtube.com/watch?v=Vg4tYuFKauo",
        "source": "DemoMan0351"
       },
       {
@@ -810,11 +785,6 @@ window.CHRONICLE = {
       {
        "text": "The whole character-creator laid bare — the infamous full creation",
        "url": "https://www.youtube.com/watch?v=P6ltxsYddMY",
-       "source": "Tales of Lumin - Character Creation & More!"
-      },
-      {
-       "text": "Every race, male and female, in full character-creation",
-       "url": "https://www.youtube.com/watch?v=pE6APqh-NZw",
        "source": "Tales of Lumin - Character Creation & More!"
       },
       {
@@ -1847,29 +1817,9 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       },
       {
-       "text": "Taming and domestication — the herding of beasts",
-       "url": "https://www.youtube.com/watch?v=pAnqt_SbKgM",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Bow-crafting — how the archer's weapon is made",
-       "url": "https://www.youtube.com/watch?v=_0UHXAxpuNE",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Spiritism — how to hunt spirits and resurrect the dead",
-       "url": "https://www.youtube.com/watch?v=DEbPxG3NWDY",
-       "source": "Wolfszeit"
-      },
-      {
        "text": "Weapon-crafting — the making of swords, axes, and hammers",
        "url": "https://www.youtube.com/watch?v=qeOoo7BkGWc",
        "source": "Kibbles Gaming"
-      },
-      {
-       "text": "The basics of armour-crafting — the smith's first lesson",
-       "url": "https://www.youtube.com/watch?v=Sll4MBcFxZw",
-       "source": "Wolfszeit"
       }
      ]
     },
@@ -1949,11 +1899,6 @@ window.CHRONICLE = {
        "source": "Wolfszeit"
       },
       {
-       "text": "The Necromancer 'Illithid' — a dex-mage of the dark art",
-       "url": "https://www.youtube.com/watch?v=Yf1fJGBi_l0",
-       "source": "DemoMan0351"
-      },
-      {
        "text": "Every spell in Nave, ranked in a tier-list",
        "url": "https://www.youtube.com/watch?v=8OqIDbJ8oy0",
        "source": "DemoMan0351"
@@ -1989,44 +1934,9 @@ window.CHRONICLE = {
        "source": "Medieval Marty"
       },
       {
-       "text": "The Oghmir footie — 'the Meta' of the shield-wall",
-       "url": "https://www.youtube.com/watch?v=RQEwqnV5ymU",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The 'Mando' death-knight — a bounty-hunter's build",
-       "url": "https://www.youtube.com/watch?v=nv3cezH1vGs",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The dex-mage — a build guide and tier-list",
-       "url": "https://www.youtube.com/watch?v=FUkQF8AWP20",
-       "source": "DemoMan0351"
-      },
-      {
        "text": "The foot-archer — the fast Veela bow-master",
        "url": "https://www.youtube.com/watch?v=3HsVVWZwWUU",
        "source": "Wolfszeit"
-      },
-      {
-       "text": "The Alvarin Veela — a hybrid and mage build",
-       "url": "https://www.youtube.com/watch?v=g8Y_OlNhaco",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The hybrid warrior-mage — skills and clades explained",
-       "url": "https://www.youtube.com/watch?v=oI1Yye4AJnk",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The elementalist 'Zeus' — the fat-mage of storms",
-       "url": "https://www.youtube.com/watch?v=kSlNadEPIHY",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The Paladin — a beginner's build",
-       "url": "https://www.youtube.com/watch?v=I4mcGnxOkIY",
-       "source": "DemoMan0351"
       },
       {
        "text": "Tatsuya's own build — four thousand hours, four thousand murders",
@@ -2256,21 +2166,6 @@ window.CHRONICLE = {
        "source": "Rhias15"
       },
       {
-       "text": "A solo foot-archer's first attempt at the roads",
-       "url": "https://www.youtube.com/watch?v=pwSexaNpQCc",
-       "source": "Rhias15"
-      },
-      {
-       "text": "A KotO tamer tries to bully the wrong Veela — Tatsuya answers",
-       "url": "https://www.youtube.com/watch?v=s4cpbaNfYgw",
-       "source": "j45k"
-      },
-      {
-       "text": "Fifty gold ganked from the saddle in a single minute",
-       "url": "https://www.youtube.com/watch?v=S0RAIG8unkw",
-       "source": "Rhias15"
-      },
-      {
        "text": "A swordplay symphony, fought alone",
        "url": "https://www.youtube.com/watch?v=crDGw_v7u0M",
        "source": "Pablo"
@@ -2289,16 +2184,6 @@ window.CHRONICLE = {
        "text": "One against three — an Oghmir among the Alvarins",
        "url": "https://www.youtube.com/watch?v=PMqTgQqE9h4",
        "source": "RazerMortalOnline"
-      },
-      {
-       "text": "Tatsuya meets Lord Zaxaman upon the field",
-       "url": "https://www.youtube.com/watch?v=fbBSKGDWJC0",
-       "source": "j45k"
-      },
-      {
-       "text": "Three hundred ping against thirty — a Veela's uphill duel",
-       "url": "https://www.youtube.com/watch?v=rbxczC7u9T0",
-       "source": "j45k"
       }
      ]
     },
@@ -2770,11 +2655,6 @@ window.CHRONICLE = {
       {
        "text": "The realm debates the bridge and the colonists' terms",
        "url": "https://www.youtube.com/watch?v=eYTugSq7LzY",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "News of the Sarducaa launch — the east server, housing, and voting",
-       "url": "https://www.youtube.com/watch?v=sDi0qoT5_vQ",
        "source": "Wolfszeit"
       }
      ],

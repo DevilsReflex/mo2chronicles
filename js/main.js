@@ -249,8 +249,9 @@
         <div class="age-inner">
           <p class="age-kicker reveal">${esc(age.age)}</p>
           <h2 class="age-title reveal" style="--d:.1s">${esc(age.name)}</h2>
-          <p class="age-range reveal" style="--d:.2s">${esc(age.range)}</p>
-          ${age.temper.map((t, i) => `<p class="age-temper reveal" style="--d:${0.3 + i * 0.1}s">${prose(t)}</p>`).join("")}
+          <div class="age-ornament reveal" style="--d:.18s" aria-hidden="true"><span class="orn-line"></span><span class="orn-diamond">&#10022;</span><span class="orn-line"></span></div>
+          <p class="age-range reveal" style="--d:.26s">${esc(age.range)}</p>
+          ${age.temper.map((t, i) => `<p class="age-temper reveal" style="--d:${0.34 + i * 0.1}s">${prose(t)}</p>`).join("")}
         </div>
       </section>
       <div class="timeline" style="--age-tint:${tint}" data-age="${id}">

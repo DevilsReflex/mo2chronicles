@@ -467,64 +467,86 @@ main, footer { position: relative; z-index: 2; }
 /* ─────────────── age dividers ─────────────── */
 .age-divider {
   position: relative;
-  min-height: 88vh;
+  min-height: clamp(440px, 70vh, 820px);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 110px 24px;
+  padding: clamp(72px, 10vh, 120px) 24px clamp(26px, 3.4vh, 44px);
   overflow: hidden;
 }
 .age-divider::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 75% 60% at 50% 50%, var(--age-glow, rgba(201,168,106,0.10)), transparent 70%);
+  background: radial-gradient(ellipse 72% 58% at 50% 46%, var(--age-glow, rgba(201,168,106,0.10)), transparent 72%);
 }
 .age-roman-bg {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -52%) scale(var(--zoom, 1));
   font-family: var(--display);
-  font-size: clamp(210px, 44vw, 560px);
+  font-size: clamp(260px, 50vw, 680px);
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(201, 168, 106, 0.13);
+  -webkit-text-stroke: 1.5px color-mix(in srgb, var(--age-tint, #c9a86a) 24%, transparent);
+  text-shadow: 0 0 90px var(--age-glow, rgba(201, 168, 106, 0.18));
   pointer-events: none;
   user-select: none;
   will-change: transform;
 }
-.age-inner { position: relative; max-width: 880px; }
+.age-inner { position: relative; max-width: 940px; }
 .age-kicker {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.5em;
+  font-weight: 500;
+  font-size: clamp(12px, 1.4vw, 14px);
+  letter-spacing: 0.62em;
   text-transform: uppercase;
   color: var(--age-tint);
-  margin-bottom: 20px;
+  margin-bottom: clamp(18px, 2.6vh, 30px);
+  padding-left: 0.62em;
 }
 .age-title {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(32px, 5.6vw, 62px);
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  color: var(--bone);
-  text-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  font-size: clamp(46px, 8.4vw, 104px);
+  line-height: 1.02;
+  letter-spacing: 0.055em;
+  background: linear-gradient(178deg, #f9f1da 4%, #ecd39b 34%, var(--gold) 66%, #93753f 96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* text-shadow (not filter) — the reveal system controls .age-title's filter */
+  text-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.5),
+    0 0 44px color-mix(in srgb, var(--age-tint, #c9a86a) 42%, transparent);
 }
+.age-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: clamp(22px, 3.4vh, 34px) auto clamp(18px, 2.6vh, 26px);
+}
+.age-ornament .orn-line {
+  width: clamp(70px, 15vw, 200px);
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--age-tint, #c9a86a) 55%, transparent));
+}
+.age-ornament .orn-diamond { color: var(--age-tint); font-size: 16px; }
 .age-range {
-  margin-top: 18px;
   font-family: var(--display);
-  font-size: clamp(15px, 1.9vw, 19px);
-  letter-spacing: 0.3em;
+  font-size: clamp(17px, 2.1vw, 24px);
+  letter-spacing: 0.36em;
   color: var(--age-tint);
+  padding-left: 0.36em;
+  text-shadow: 0 0 24px var(--age-glow, rgba(201, 168, 106, 0.2));
 }
 .age-temper {
-  margin: clamp(28px, 5vh, 46px) auto 0;
-  max-width: 720px;
-  font-size: clamp(17px, 2vw, 20.5px);
-  line-height: 1.8;
-  color: var(--bone-dim);
+  margin: clamp(30px, 4.6vh, 52px) auto 0;
+  max-width: 780px;
+  font-size: clamp(18px, 2.15vw, 23px);
+  line-height: 1.82;
+  color: #c3bba7;
 }
 
 /* ─────────────── timeline ─────────────── */
@@ -532,8 +554,12 @@ main, footer { position: relative; z-index: 2; }
   position: relative;
   max-width: 1060px;
   margin: 0 auto;
-  padding: 40px 24px 120px calc(var(--spine-x) + 24px);
+  padding: 8px 24px 120px calc(var(--spine-x) + 24px);
 }
+/* the first year-milestone (right after the spine) sits under its age
+   divider — keep it close so the section reads as one fixture */
+.timeline > .spine + .year-break,
+.timeline > .spine + .entry { margin-top: clamp(16px, 2.4vh, 30px); }
 .spine {
   position: absolute;
   left: var(--spine-x);

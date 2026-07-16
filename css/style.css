@@ -344,20 +344,105 @@ main, footer { position: relative; z-index: 2; }
 .scroll-progress {
   position: absolute;
   bottom: 0; left: 0; right: 0;
+  height: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+.scroll-progress-track {
+  position: relative;
+  width: 100%;
   height: 2px;
   background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: height 0.2s ease;
+}
+.scroll-progress:hover .scroll-progress-track,
+.scroll-progress:focus-within .scroll-progress-track {
+  height: 4px;
+}
+.scroll-progress-ticks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.sp-tick {
+  position: absolute;
+  top: 50%; left: 0;
+  width: 2px; height: 2px;
+  border-radius: 50%;
+  background: var(--tick-tint, var(--bone-dim));
+  opacity: 0.45;
+  transform: translate(-50%, -50%);
+}
+.sp-tick.sp-landmark {
+  width: 3px; height: 6px;
+  border-radius: 1px;
+  opacity: 0.8;
 }
 .scroll-progress-fill {
+  position: absolute;
+  inset: 0;
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #7d6337, var(--gold), var(--gold-bright));
   background: linear-gradient(90deg,
     color-mix(in srgb, var(--chrome-tint) 60%, #201a10),
     var(--chrome-tint),
     color-mix(in srgb, var(--chrome-tint) 65%, #fff));
   box-shadow: 0 0 8px rgba(201, 168, 106, 0.55);
   transition: width 0.1s linear, --chrome-tint 1.8s ease;
+  pointer-events: none;
 }
+.scroll-progress-marker {
+  position: absolute;
+  top: 50%; left: 0%;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--chrome-tint, var(--gold));
+  box-shadow: 0 0 8px var(--chrome-tint, var(--gold)), 0 0 0 2px rgba(5, 5, 7, 0.85);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.scroll-progress:hover .scroll-progress-marker,
+.scroll-progress:focus-within .scroll-progress-marker {
+  opacity: 1;
+}
+
+/* the macro-view popover: a compact "you are here" strip of the last
+   couple entries and the next few, anchored above the marker so a
+   glance at the bar gives scroll context without leaving the page */
+.scroll-progress-popover {
+  position: absolute;
+  bottom: 100%;
+  left: var(--sp-x, 50%);
+  transform: translateX(-50%) translateY(6px);
+  padding-bottom: 10px;
+  width: min(340px, 88vw);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.scroll-progress:hover .scroll-progress-popover,
+.scroll-progress:focus-within .scroll-progress-popover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.scroll-progress-popover .sp-panel {
+  background: linear-gradient(160deg, var(--card), var(--card-2));
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(201, 168, 106, 0.06);
+  max-height: min(50vh, 420px);
+  overflow-y: auto;
+  padding: 6px 0;
+}
+.sp-item.sp-past { opacity: 0.5; }
+.sp-item.sp-current {
+  background: rgba(201, 168, 106, 0.1);
+  border-left-color: var(--gold-bright);
+}
+.sp-item.sp-current .fy-title { color: var(--gold-bright); font-weight: 600; }
 
 /* ─────────────── anno (year) indicator ─────────────── */
 #anno {

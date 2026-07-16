@@ -395,12 +395,61 @@
   /* ── nav state + progress + anno + spine fill ────────── */
   const nav = document.getElementById("topnav");
   const fill = document.getElementById("progress-fill");
+  const scrollProgressEl = document.getElementById("scroll-progress");
+  const progressMarker = document.getElementById("progress-marker");
+  const progressTicks = document.getElementById("progress-ticks");
+  const progressPopover = document.getElementById("progress-popover");
+  const progressPopoverList = document.getElementById("progress-popover-list");
   const anno = document.getElementById("anno");
   const annoYear = document.getElementById("anno-year");
   const navLinks = Array.from(document.querySelectorAll(".age-nav-link"));
   const timelines = Array.from(document.querySelectorAll(".timeline"));
   const dividers = Array.from(document.querySelectorAll(".age-divider"));
   const entries = Array.from(document.querySelectorAll(".entry[data-year]"));
+
+  // flat entry list mirrors `entries` 1:1 in document order — used to
+  // paint the progress-bar ticks and drive the "nearby entries" popover
+  const flatEntries = [];
+  C.ages.forEach((age, ai) => {
+    const tint = AGE_TINTS[ai] || AGE_TINTS[2];
+    age.entries.forEach((e, ei) => {
+      const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+      flatEntries.push({
+        id: `entry-${ai}-${ei}`,
+        tint,
+        title: e.title,
+        dateLabel: e.date || e.era || "Undated",
+        isLandmark,
+      });
+    });
+  });
+  if (progressTicks && flatEntries.length > 1) {
+    progressTicks.innerHTML = flatEntries
+      .map((fe, i) => {
+        const pct = (i / (flatEntries.length - 1)) * 100;
+        return `<span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="left:${pct.toFixed(3)}%;--tick-tint:${fe.tint}"></span>`;
+      })
+      .join("");
+  }
+
+  let activePopoverIdx = -1;
+  function updateProgressPopover(idx) {
+    if (!progressPopoverList || idx < 0 || idx === activePopoverIdx || !flatEntries[idx]) return;
+    activePopoverIdx = idx;
+    const start = Math.max(0, idx - 1);
+    const end = Math.min(flatEntries.length, idx + 5);
+    let html = "";
+    for (let i = start; i < end; i++) {
+      const it = flatEntries[i];
+      const rel = i < idx ? "sp-past" : i === idx ? "sp-current" : "sp-next";
+      html += `<a href="#${it.id}" class="fy-item sp-item ${rel}${it.isLandmark ? " fy-landmark" : ""}" role="menuitem">
+        <span class="fy-date">${esc(it.dateLabel)}</span>
+        <span class="fy-title">${esc(it.title)}</span>
+      </a>`;
+    }
+    progressPopoverList.innerHTML = html;
+  }
+  updateProgressPopover(0); // seed with the opening entries before any scroll happens
 
   let currentYear = null;
   let ticking = false;
@@ -415,7 +464,15 @@
       const max = doc.scrollHeight - window.innerHeight;
 
       nav.classList.toggle("scrolled", y > 40);
-      fill.style.width = (max > 0 ? (y / max) * 100 : 0) + "%";
+      const pct = max > 0 ? y / max : 0;
+      fill.style.width = pct * 100 + "%";
+      if (progressMarker) progressMarker.style.left = pct * 100 + "%";
+      if (progressPopover && scrollProgressEl) {
+        const barW = scrollProgressEl.offsetWidth;
+        const half = (progressPopover.offsetWidth || 340) / 2 + 8;
+        const x = Math.min(Math.max(pct * barW, half), Math.max(barW - half, half));
+        progressPopover.style.setProperty("--sp-x", x + "px");
+      }
 
       // anno visibility: only within the chronicle proper
       const chron = document.getElementById("chronicle");
@@ -423,14 +480,16 @@
       const inChron = cr.top < window.innerHeight * 0.5 && cr.bottom > window.innerHeight * 0.5;
       anno.classList.toggle("visible", inChron);
 
-      // current year = last entry whose top is above mid-viewport
+      // current year/entry = last entry whose top is above mid-viewport
       if (inChron) {
         let yr = null;
-        for (const e of entries) {
-          const r = e.getBoundingClientRect();
-          if (r.top < window.innerHeight * 0.6) yr = e.getAttribute("data-year");
+        let idx = -1;
+        for (let i = 0; i < entries.length; i++) {
+          const r = entries[i].getBoundingClientRect();
+          if (r.top < window.innerHeight * 0.6) { yr = entries[i].getAttribute("data-year"); idx = i; }
           else break;
         }
+        updateProgressPopover(idx);
         if (yr && yr !== currentYear) {
           currentYear = yr;
           annoYear.textContent = yr;

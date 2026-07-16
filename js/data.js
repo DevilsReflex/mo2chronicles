@@ -467,11 +467,6 @@ window.CHRONICLE = {
        "text": "Fabernum Risar Spawn Event — elder-world event footage",
        "url": "https://www.youtube.com/watch?v=bEEKl2r9wFY",
        "source": "Wolfszeit"
-      },
-      {
-       "text": "Malturn himself, caught on film in the elder world",
-       "url": "https://www.youtube.com/watch?v=31i_1pDZMig",
-       "source": "Novareconify"
       }
      ],
      "marker": null,

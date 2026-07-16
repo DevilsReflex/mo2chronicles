@@ -1453,26 +1453,6 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2023
-    },
-    {
-     "date": "",
-     "title": "The Great Server War",
-     "body": "So the chroniclers named this whole age, looking back in the retrospective of 19 January 2024: the Great Server War, the Zerg Empire, and the Rise of the Rebellion. It is the eternal shape of Nave — a great power swells until the whole world bands together to break it; the band shatters; a new power swells. It had happened in the elder world; it happened here; it would happen again.",
-     "links": [
-      {
-       "text": "Mortal Online 2 — Official Trailer, the world as it stood in 2022",
-       "url": "https://www.youtube.com/watch?v=Tv3IJEO3QPY",
-       "source": "IGN"
-      },
-      {
-       "text": "A decade's veteran looks back on the guilds of Nave",
-       "url": "https://www.youtube.com/watch?v=Kt3SlilpFZE",
-       "source": "Wolfszeit"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2023
     }
    ]
   },

@@ -42,6 +42,11 @@ window.CHRONICLE = {
        "text": "Houses, Deeds and Keeps — the veterans debate the design, Phen among them",
        "url": "https://mortalonline2.com/forums/threads/houses-deeds-and-keeps-website-update.454/",
        "source": "official forums"
+      },
+      {
+       "text": "The CEO's own stream on housing and Territory Control, summarized",
+       "url": "https://www.youtube.com/watch?v=xmIceE94nZw",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -102,6 +107,11 @@ window.CHRONICLE = {
        "text": "The Guild List of the elder world",
        "url": "https://mowiki.fandom.com/wiki/Guild_List",
        "source": "Mortal Online Wiki"
+      },
+      {
+       "text": "The Lament of KotO — one of the elder houses, mourned in the old world",
+       "url": "https://www.youtube.com/watch?v=vA0EZGKKbRk",
+       "source": "Vstia Doe"
       }
      ],
      "marker": null,
@@ -691,6 +701,11 @@ window.CHRONICLE = {
        "text": "First Keep Siege 4K Destruction — with hammers",
        "url": "https://www.youtube.com/watch?v=yWsymP_XDVU",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Lost files recovered — the first successful keep siege, unearthed",
+       "url": "https://www.youtube.com/watch?v=blY647pPZMA",
+       "source": "Gryph"
       }
      ],
      "marker": null,
@@ -1008,6 +1023,11 @@ window.CHRONICLE = {
        "text": "Sheevra Cave — Location and What's In There",
        "url": "https://www.youtube.com/watch?v=yXRT7KI48gA",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A dungeoneer's field guide to the deep places of Nave",
+       "url": "https://www.youtube.com/watch?v=V0B9dbl3I0A",
+       "source": "JustKyle"
       }
      ],
      "marker": null,
@@ -1248,6 +1268,11 @@ window.CHRONICLE = {
        "text": "Getting Started with Territory Control & Sieging — the craft of empire",
        "url": "https://www.mortalonline2.com/help-center/gameplay-help/getting-started-with-territory-control-and-sieging-manual/",
        "source": "Star Vault"
+      },
+      {
+       "text": "A guide to Integrity itself — social harmony among the empire-builders",
+       "url": "https://www.youtube.com/watch?v=RC9p2RYKrl0",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -1353,6 +1378,11 @@ window.CHRONICLE = {
        "text": "Eternal Wars — Emdash's declaration thread, opened this very day",
        "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/",
        "source": "Emdash, official forums"
+      },
+      {
+       "text": "The zerg debate, aired plainly — the quarrel Emdash's banner answered",
+       "url": "https://www.youtube.com/watch?v=Yu6pfP85E2c",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -1433,6 +1463,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 — Official Trailer, the world as it stood in 2022",
        "url": "https://www.youtube.com/watch?v=Tv3IJEO3QPY",
        "source": "IGN"
+      },
+      {
+       "text": "A decade's veteran looks back on the guilds of Nave",
+       "url": "https://www.youtube.com/watch?v=Kt3SlilpFZE",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -1593,6 +1628,11 @@ window.CHRONICLE = {
        "text": "New Boss Is Deadly",
        "url": "https://www.youtube.com/watch?v=oPu6vhUoQUs",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "Hunters descend into the UnderCroft, where the new terror was said to wait",
+       "url": "https://www.youtube.com/watch?v=c7Of3mACePU",
+       "source": "Lost Chapters"
       }
      ],
      "marker": null,
@@ -1714,6 +1754,11 @@ window.CHRONICLE = {
        "text": "Tephra Liberation Day — both sides fought honorable and hard",
        "url": "https://www.youtube.com/watch?v=QR5hExGD6tM",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The Rat Alliance against Nightmare, from a second camera",
+       "url": "https://www.youtube.com/watch?v=qNOS0TkG_q4",
+       "source": "iMP"
       }
      ],
      "marker": null,
@@ -1999,6 +2044,11 @@ window.CHRONICLE = {
        "text": "Eastern Civil War — Unbroken",
        "url": "https://www.youtube.com/watch?v=5NU8G1vN-3c",
        "source": "Noob3rt"
+      },
+      {
+       "text": "Morin Khur, heart of the east the guilds fought over",
+       "url": "https://www.youtube.com/watch?v=h-SBAdmgsd8",
+       "source": "IL Morto Online"
       }
      ],
      "marker": null,
@@ -2056,6 +2106,11 @@ window.CHRONICLE = {
        "text": "Patch Notes 2.0 — the great UE5 patch of that troubled season",
        "url": "https://www.mortalonline2.com/patch-notes-2-0-ue5-update/",
        "source": "Star Vault"
+      },
+      {
+       "text": "The GM's account seized, and the DDOS that followed",
+       "url": "https://www.youtube.com/watch?v=ZcpKEh7A8K8",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2196,6 +2251,11 @@ window.CHRONICLE = {
        "text": "Patch Notes 2.1.0.32 — the beasts re-forged to earn their strength",
        "url": "https://www.mortalonline2.com/patch-notes-2-1-0-32",
        "source": "Star Vault"
+      },
+      {
+       "text": "The progress of the Unreal Engine 5 migration, tracked in full",
+       "url": "https://www.youtube.com/watch?v=VnGtwEo9HxI",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2266,6 +2326,11 @@ window.CHRONICLE = {
        "text": "MAGE COUNTER? — Odinseed vs KarniMata by the Minotaur Dungeon",
        "url": "https://www.youtube.com/watch?v=94SmQ1UzgCM",
        "source": "Nausk"
+      },
+      {
+       "text": "Odinseed against Scorn, another day at the Minotaur Dungeon",
+       "url": "https://www.youtube.com/watch?v=_p0dVpBFkUg",
+       "source": "nizwald"
       }
      ],
      "marker": null,
@@ -2281,6 +2346,11 @@ window.CHRONICLE = {
        "text": "The Official Mortal Online Channel — the elder world's monument",
        "url": "https://www.youtube.com/mortalonline",
        "source": "Star Vault"
+      },
+      {
+       "text": "The last login — twelve years of the elder world, said goodbye",
+       "url": "https://www.youtube.com/watch?v=xpzUsRReqqA",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2296,6 +2366,11 @@ window.CHRONICLE = {
        "text": "150+ Player Siege Battle — Mortal Online 2 PvP",
        "url": "https://www.youtube.com/watch?v=KowWOcEKa08",
        "source": "Venomous War Gaming"
+      },
+      {
+       "text": "Two hundred strong, battling for the south — a cinematic siege",
+       "url": "https://www.youtube.com/watch?v=zhltstzCQwE",
+       "source": "SCUM MONA PvP"
       }
      ],
      "marker": null,
@@ -2366,6 +2441,11 @@ window.CHRONICLE = {
        "text": "URSA / BC Stronghold and Village Siege — Summary in 4K",
        "url": "https://www.youtube.com/watch?v=ftLFJgOHHdc",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A mage's-eye view of the fight for Bad Company's stronghold",
+       "url": "https://www.youtube.com/watch?v=LQfGtju0kN0",
+       "source": "Aesir"
       }
      ],
      "marker": "Stronghold assaulted",
@@ -2381,6 +2461,11 @@ window.CHRONICLE = {
        "text": "Massive Fight Over Small House — Server War, Siege Defense",
        "url": "https://www.youtube.com/watch?v=-KIrXJEqTds",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The same war, fifty against seventy — Odinseed and the Coalition",
+       "url": "https://www.youtube.com/watch?v=09nLLMStPPM",
+       "source": "Disrupter"
       }
      ],
      "marker": null,
@@ -2481,6 +2566,11 @@ window.CHRONICLE = {
        "text": "The outpost-siege design the hollow sieges abused",
        "url": "https://massivelyop.com/2025/05/15/mortal-online-2-discusses-territory-control-overhauls-coming-in-the-reckoning-update/",
        "source": "Massively Overpowered"
+      },
+      {
+       "text": "Wasting players' time — the fake sieges named as a real problem",
+       "url": "https://www.youtube.com/watch?v=VDOMOeFwArw",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,

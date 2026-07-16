@@ -422,6 +422,15 @@
   const dividers = Array.from(document.querySelectorAll(".age-divider"));
   const entries = Array.from(document.querySelectorAll(".entry[data-year]"));
 
+  // a short, word-safe lead-in to an entry's body, for tick tooltips
+  function leadIn(text, max) {
+    if (!text) return "";
+    if (text.length <= max) return text;
+    const cut = text.slice(0, max);
+    const lastSpace = cut.lastIndexOf(" ");
+    return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trim() + "…";
+  }
+
   // flat entry list mirrors `entries` 1:1 in document order — used to
   // paint the progress-bar ticks and drive the "nearby entries" popover
   const flatEntries = [];
@@ -434,6 +443,7 @@
         tint,
         title: e.title,
         dateLabel: e.date || e.era || "Undated",
+        excerpt: leadIn(e.body, 150),
         isLandmark,
       });
     });
@@ -448,6 +458,7 @@
           <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
             <span class="sp-tick-tip-date">${esc(fe.dateLabel)}</span>
             <span class="sp-tick-tip-title">${esc(fe.title)}</span>
+            ${fe.excerpt ? `<span class="sp-tick-tip-excerpt">${prose(fe.excerpt)}</span>` : ""}
           </span>
         </a>`;
       })

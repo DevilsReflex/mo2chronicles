@@ -396,14 +396,9 @@ main, footer { position: relative; z-index: 2; }
 .scroll-progress-track {
   position: relative;
   width: 100%;
-  height: 5px;
+  height: 6px;
   background: rgba(255, 255, 255, 0.07);
   cursor: pointer;
-  transition: height 0.2s ease;
-}
-.scroll-progress:hover .scroll-progress-track,
-.scroll-progress:focus-within .scroll-progress-track {
-  height: 8px;
 }
 .scroll-progress-ticks {
   position: absolute;
@@ -434,11 +429,6 @@ main, footer { position: relative; z-index: 2; }
   opacity: 0.6;
   transition: opacity 0.15s ease, width 0.15s ease, height 0.15s ease;
 }
-.sp-tick.sp-landmark {
-  width: 4px; height: 9px;
-  border-radius: 1px;
-  opacity: 0.85;
-}
 /* keep sieges get their own mark: a small blood-tinted diamond, so the
    war-turning moments read at a glance against the plain gold dots */
 .sp-tick.sp-siege {
@@ -448,15 +438,24 @@ main, footer { position: relative; z-index: 2; }
   opacity: 0.9;
   transform: rotate(45deg);
 }
+/* open-field musters of 100+ that never became a siege — a bright gold
+   disc, distinct from both the plain dots and the blood diamonds */
+.sp-tick.sp-bigfight {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold-bright);
+  opacity: 0.9;
+  box-shadow: 0 0 4px rgba(236, 208, 150, 0.6);
+}
 .sp-tick-hit:focus-visible .sp-tick {
   opacity: 1;
   width: 7px; height: 7px;
 }
-.sp-tick-hit:focus-visible .sp-tick.sp-landmark {
-  width: 5px; height: 11px;
-}
 .sp-tick-hit:focus-visible .sp-tick.sp-siege {
   width: 9px; height: 9px;
+}
+.sp-tick-hit:focus-visible .sp-tick.sp-bigfight {
+  width: 8px; height: 8px;
 }
 .sp-tick-tip {
   position: absolute;
@@ -548,11 +547,11 @@ main, footer { position: relative; z-index: 2; }
     opacity: 1;
     width: 7px; height: 7px;
   }
-  .sp-tick-hit:hover .sp-tick.sp-landmark {
-    width: 5px; height: 11px;
-  }
   .sp-tick-hit:hover .sp-tick.sp-siege {
     width: 9px; height: 9px;
+  }
+  .sp-tick-hit:hover .sp-tick.sp-bigfight {
+    width: 8px; height: 8px;
   }
   .sp-tick-hit:hover .sp-tick-tip {
     opacity: 1;
@@ -1456,7 +1455,7 @@ footer p {
      tap accurately — thin to an evenly-sampled subset plus every
      landmark, so mobile keeps real coverage instead of 4 sparse points */
   .sp-tick-hit { display: none; }
-  .sp-tick-hit:nth-of-type(6n), .sp-tick-hit-landmark, .sp-tick-hit-siege { display: flex; width: 18px; height: 30px; }
+  .sp-tick-hit:nth-of-type(6n), .sp-tick-hit-siege { display: flex; width: 18px; height: 30px; }
   .timeline { padding-left: calc(var(--spine-x) + 18px); padding-right: 16px; }
   .entry::before { left: -18px; width: 18px; }
   .entry-node { left: -18px; }

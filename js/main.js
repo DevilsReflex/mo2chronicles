@@ -449,6 +449,20 @@
     "The Lament of the Hollow Sieges",
     "The Fall of Odinpost",
   ]);
+  // battles the chronicle itself puts at 100+ combined participants —
+  // read straight from each entry's own body text ("near four hundred
+  // souls," "150 against 150," "sixty blades a side," etc). Overlaps
+  // heavily with sieges (most of Nave's big fights ARE sieges); the two
+  // that stand apart as open-field musters are Meduli and Odin's Field
+  const BIG_FIGHT_TITLES = new Set([
+    "The Muster at Meduli",
+    "The Siege of Tindrem",
+    "The March of the ACT Pickaxe Host",
+    "The Battle of Kranesh Keep",
+    "The Battle for Odinpost",
+    "A Hundred and Fifty Blades",
+    "The Battle for Odin's Field",
+  ]);
 
   // flat entry list mirrors `entries` 1:1 in document order — used to
   // paint the progress-bar ticks and drive the "nearby entries" popover
@@ -469,6 +483,7 @@
         thumbId: firstVideo ? youtubeId(firstVideo.url) : null,
         isLandmark,
         isSiege: SIEGE_TITLES.has(e.title),
+        isBigFight: BIG_FIGHT_TITLES.has(e.title),
       });
     });
   });
@@ -489,10 +504,12 @@
     progressTicks.innerHTML = flatEntries
       .map((fe, i) => {
         const pct = (i / (flatEntries.length - 1)) * 100;
-        const cls = ["sp-tick-hit", fe.isLandmark ? "sp-tick-hit-landmark" : "", fe.isSiege ? "sp-tick-hit-siege" : ""].filter(Boolean).join(" ");
+        const cls = ["sp-tick-hit", fe.isSiege || fe.isBigFight ? "sp-tick-hit-siege" : ""].filter(Boolean).join(" ");
         const edgeCls = i < 3 ? " sp-edge-start" : i > flatEntries.length - 4 ? " sp-edge-end" : "";
-        return `<a href="#${fe.id}" class="${cls}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}${fe.isSiege ? " (keep siege)" : ""}">
-          <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}${fe.isSiege ? " sp-siege" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
+        const tagLabel = fe.isSiege ? " (keep siege)" : fe.isBigFight ? " (100+ battle)" : "";
+        const dotCls = ["sp-tick", fe.isSiege ? "sp-siege" : fe.isBigFight ? "sp-bigfight" : ""].filter(Boolean).join(" ");
+        return `<a href="#${fe.id}" class="${cls}" role="menuitem" data-idx="${i}" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}${tagLabel}">
+          <span class="${dotCls}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
           <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
             ${fe.thumbId ? `<img class="sp-tick-tip-thumb" loading="lazy" src="https://i.ytimg.com/vi/${esc(fe.thumbId)}/mqdefault.jpg" alt="">` : ""}
             <span class="sp-tick-tip-date">${esc(fe.dateLabel)}</span>

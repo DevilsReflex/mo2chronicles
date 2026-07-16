@@ -606,7 +606,7 @@
         vx: (Math.random() - 0.5) * 0.22,
         drift: Math.random() * Math.PI * 2,
         a: 0.08 + Math.random() * 0.5,
-        gold: Math.random() > 0.35,
+        shade: Math.random(),
       };
     }
     function reset() {
@@ -635,9 +635,11 @@
         const flicker = 0.75 + Math.sin(p.drift * 3) * 0.25;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = p.gold
-          ? `rgba(224, 180, 108, ${p.a * flicker})`
-          : `rgba(150, 140, 120, ${p.a * flicker * 0.6})`;
+        // embers run from smoldering maroon to bright ember-red, never gold
+        const red = Math.round(70 + p.shade * 150);
+        const green = Math.round(12 + p.shade * 34);
+        const blue = Math.round(10 + p.shade * 26);
+        ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, ${p.a * flicker})`;
         ctx.fill();
       }
       raf = requestAnimationFrame(tick);

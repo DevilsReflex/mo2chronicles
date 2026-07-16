@@ -199,6 +199,11 @@ window.CHRONICLE = {
      "body": "In the closed beta was fought one of the first large-scale clashes of the new world — KotO and Legion upon the field — filmed by an archer as a foretaste of the wars to come.",
      "links": [
       {
+       "text": "First Massive Guild Battle — KotO & Legion upon the field",
+       "url": "https://www.youtube.com/watch?v=98BhPG1LUKs",
+       "source": "GnarlyVR"
+      },
+      {
        "text": "MMO Stress Test and First Look",
        "url": "https://www.youtube.com/watch?v=8exEBYRtTUU",
        "source": "My Usual Me"

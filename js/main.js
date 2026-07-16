@@ -262,8 +262,6 @@
       entries.forEach((en) => {
         if (en.isIntersecting) {
           en.target.classList.add("in");
-          if (en.target.classList.contains("age-title") || (en.target.tagName === "H2" && en.target.closest("#epilogue")))
-            scramble(en.target, 950);
           revealObs.unobserve(en.target);
         }
       });
@@ -271,39 +269,6 @@
     { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
   );
   document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
-
-  /* ── rune-forge text scramble (letters settle into place) ── */
-  const FORGE_CHARS = "ANVMERTOSIXLCDH";
-  const FORGE_NARROW = "ILTEISNC"; // late-stage churn: narrow glyphs, less shimmy
-  function scramble(el, duration) {
-    if (reducedMotion) return;
-    const nodes = [];
-    el.childNodes.forEach((n) => {
-      if (n.nodeType === 3 && n.textContent.trim()) nodes.push({ node: n, final: n.textContent });
-    });
-    if (!nodes.length) return;
-    el.setAttribute("aria-label", nodes.map((n) => n.final).join(" ").trim());
-    el.style.minHeight = el.offsetHeight + "px"; // lock line count against width churn
-    const t0 = performance.now();
-    (function frame(now) {
-      const p = Math.min((now - t0) / duration, 1);
-      const charset = p > 0.7 ? FORGE_NARROW : FORGE_CHARS;
-      for (const { node, final } of nodes) {
-        const settled = Math.floor(final.length * p);
-        let out = final.slice(0, settled);
-        for (let i = settled; i < final.length; i++) {
-          const c = final[i];
-          out += /\s/.test(c) ? c : charset[(Math.random() * charset.length) | 0];
-        }
-        node.textContent = out;
-      }
-      if (p < 1) requestAnimationFrame(frame);
-      else {
-        nodes.forEach(({ node, final }) => { node.textContent = final; });
-        el.style.minHeight = "";
-      }
-    })(t0);
-  }
 
   /* ── nav state + progress + anno + spine fill ────────── */
   const nav = document.getElementById("topnav");
@@ -640,10 +605,6 @@
       inner.style.setProperty("--py", "0px");
     });
   }
-
-  /* ── hero title forges itself once the veil lifts ── */
-  const heroTitle = document.getElementById("hero-title");
-  if (heroTitle) setTimeout(() => scramble(heroTitle, 1100), 1000);
 
   /* ── card tilt + pointer sheen ── */
   if (finePointer && !reducedMotion) {

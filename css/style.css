@@ -261,8 +261,6 @@ main, footer { position: relative; z-index: 2; }
   position: relative;
   z-index: 2;
   max-width: 1050px;
-  transform: translate3d(var(--px, 0px), var(--py, 0px), 0);
-  transition: transform 0.35s cubic-bezier(0.15, 0.6, 0.3, 1);
 }
 
 .hero-eyebrow {
@@ -600,50 +598,11 @@ main, footer { position: relative; z-index: 2; }
   border: 1px solid rgba(201, 168, 106, 0.14);
   padding: clamp(22px, 3.4vw, 38px) clamp(22px, 3.6vw, 42px);
   position: relative;
-  transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 0.18s ease-out;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 .entry-card:hover {
   border-color: rgba(201, 168, 106, 0.32);
   box-shadow: 0 18px 50px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(201, 168, 106, 0.06);
-}
-/* pointer-tracked sheen + 3D tilt (fine pointers only; JS sets the vars).
-   The sheen answers in the ERA's color — the parchment
-   replies cold-blue in Age I, blood-red in Age II, desert gold in Age V. */
-.entry-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(236, 208, 150, 0.065), transparent 62%);
-  background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%),
-    color-mix(in srgb, var(--age-tint, #c9a86a) 8%, transparent), transparent 62%);
-}
-.entry-card:hover::after { opacity: 1; }
-@media (pointer: fine) {
-  .entry-card {
-    transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px));
-  }
-  .entry-card:hover { --lift: -2px; }
-}
-/* coarse pointers get a one-shot light pass as each card arrives —
-   the era-light walks the page even where no cursor exists */
-@media (pointer: coarse) {
-  .entry-card::after {
-    background: linear-gradient(115deg, transparent 30%, rgba(236, 208, 150, 0.055) 48%, transparent 66%);
-    background: linear-gradient(115deg, transparent 30%,
-      color-mix(in srgb, var(--age-tint, #c9a86a) 7%, transparent) 48%, transparent 66%);
-    background-size: 100% 340%;
-    background-position: 50% 130%;
-  }
-  .entry.in .entry-card::after { animation: card-pass 1.6s ease 0.35s 1; }
-  @keyframes card-pass {
-    0% { opacity: 0; background-position: 50% 130%; }
-    35% { opacity: 1; }
-    100% { opacity: 0; background-position: 50% -30%; }
-  }
 }
 
 .entry-date {
@@ -1021,7 +980,6 @@ footer p {
   .cue-chevron { animation: none; }
   #veil { animation-duration: 0.2s; }
   #atmosphere { display: none; }
-  .entry-card, .hero-inner, .age-roman-bg { transform: none !important; }
+  .age-roman-bg { transform: none !important; }
   .entry.landmark .entry-card::before { transition: none; transform: scaleX(1); }
-  .entry.in .entry-card::after { animation: none; }
 }

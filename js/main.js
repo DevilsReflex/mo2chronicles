@@ -502,7 +502,7 @@
     });
     reset();
   }
-  embers("embers", 9000, true);
+  embers("embers", 9000, false);
   embers("embers-end", 14000, false);
 
   /* ═══════════════════════════════════════════════════════
@@ -619,61 +619,6 @@
     }
   }
   setEra(-1);
-
-  /* ── hero parallax ── */
-  if (finePointer && !reducedMotion) {
-    const hero = document.getElementById("hero");
-    const inner = hero.querySelector(".hero-inner");
-    hero.addEventListener("pointermove", (ev) => {
-      const r = hero.getBoundingClientRect();
-      const px = (ev.clientX - r.left) / r.width - 0.5;
-      const py = (ev.clientY - r.top) / r.height - 0.5;
-      inner.style.setProperty("--px", (px * -14).toFixed(1) + "px");
-      inner.style.setProperty("--py", (py * -9).toFixed(1) + "px");
-    });
-    hero.addEventListener("pointerleave", () => {
-      inner.style.setProperty("--px", "0px");
-      inner.style.setProperty("--py", "0px");
-    });
-  }
-
-  /* ── card tilt + pointer sheen ── */
-  if (finePointer && !reducedMotion) {
-    let tiltEv = null, tiltRaf = null, tiltCard = null;
-    const untilt = () => {
-      if (tiltCard) {
-        tiltCard.style.setProperty("--rx", "0deg");
-        tiltCard.style.setProperty("--ry", "0deg");
-        tiltCard = null;
-      }
-    };
-    document.addEventListener("pointermove", (ev) => {
-      tiltEv = ev;
-      if (tiltRaf) return;
-      tiltRaf = requestAnimationFrame(() => {
-        tiltRaf = null;
-        const t = tiltEv.target;
-        const card = t instanceof Element ? t.closest(".entry-card") : null;
-        if (tiltCard && tiltCard !== card) {
-          tiltCard.style.setProperty("--rx", "0deg");
-          tiltCard.style.setProperty("--ry", "0deg");
-        }
-        tiltCard = card;
-        if (!card) return;
-        const r = card.getBoundingClientRect();
-        const px = (tiltEv.clientX - r.left) / r.width;
-        const py = (tiltEv.clientY - r.top) / r.height;
-        card.style.setProperty("--mx", (px * 100).toFixed(1) + "%");
-        card.style.setProperty("--my", (py * 100).toFixed(1) + "%");
-        card.style.setProperty("--rx", ((py - 0.5) * -2.4).toFixed(2) + "deg");
-        card.style.setProperty("--ry", ((px - 0.5) * 2.4).toFixed(2) + "deg");
-      });
-    });
-    // pointer over an iframe or out of the window stops delivering moves — untilt
-    document.documentElement.addEventListener("pointerleave", untilt);
-    window.addEventListener("blur", untilt);
-    window.addEventListener("scroll", untilt, { passive: true });
-  }
 
   /* ── keyboard walking ── */
   function jumpList(list, dir) {

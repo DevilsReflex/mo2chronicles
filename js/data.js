@@ -1483,6 +1483,11 @@ window.CHRONICLE = {
        "text": "The decree itself — the Territory Control trailer",
        "url": "https://www.youtube.com/watch?v=kiFvruIULBk",
        "source": "Mortal Online"
+      },
+      {
+       "text": "The first day of the PTR — Territory Control seen for the very first time",
+       "url": "https://www.youtube.com/watch?v=BE6478ZJYgE",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -1678,6 +1683,11 @@ window.CHRONICLE = {
        "text": "The northern rivals meet in open battle",
        "url": "https://www.youtube.com/watch?v=Ugu__BM4Aic",
        "source": "Alumneye"
+      },
+      {
+       "text": "Week four of the siege — fifty Odinseed slay fifty of Mythic",
+       "url": "https://www.youtube.com/watch?v=k8oQ13m9Z2c",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -1698,6 +1708,11 @@ window.CHRONICLE = {
        "text": "BruceLeeRob on Twitch — where the Odinpost wars were streamed live",
        "url": "https://www.twitch.tv/BRUCELEEROB",
        "source": "Twitch"
+      },
+      {
+       "text": "The Mino Mountain gang war — Odinseed against Winx and Grimside",
+       "url": "https://www.youtube.com/watch?v=py-KtVq-q_Q",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -1869,6 +1884,27 @@ window.CHRONICLE = {
        "source": "iMP"
       }
      ],
+     "marker": null,
+     "kind": "event",
+     "year": 2024
+    },
+    {
+     "date": "15 June 2024",
+     "title": "The Battle for Odin's Field",
+     "body": "In the same restless season, Odinseed's field-host — a company its own men called, half in jest, the Pillows — met a coalition remembered as the Crimson Beasts and their friends upon open ground the chroniclers named Odin's Field. Sixty blades a side met in the old way, without walls or siege-engines between them: proof that for all the keeps Territory Control had raised across Nave, the open-field muster had lost none of its savagery.",
+     "links": [
+      {
+       "text": "Sixty against sixty — the field battle, from the front line",
+       "url": "https://www.youtube.com/watch?v=yL7gzAEl1cw",
+       "source": "Pox"
+      },
+      {
+       "text": "The same field, seen through a mage's eye",
+       "url": "https://www.youtube.com/watch?v=glvBhFoKVPI",
+       "source": "Aesir"
+      }
+     ],
+     "odinseed": false,
      "marker": null,
      "kind": "event",
      "year": 2024
@@ -2416,6 +2452,11 @@ window.CHRONICLE = {
        "text": "Eternal Wars — guild-politics thread",
        "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/page-2",
        "source": "Emdash, official forums"
+      },
+      {
+       "text": "Fifty against fifty for five relics — Odinseed against the Bad Company-KotO alliance",
+       "url": "https://www.youtube.com/watch?v=IlP_2uqdmfA",
+       "source": "Pox"
       }
      ],
      "marker": null,

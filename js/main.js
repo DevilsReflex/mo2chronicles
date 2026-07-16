@@ -148,14 +148,6 @@
     }
   })();
 
-  /* ── invocation ──────────────────────────────────────── */
-  (function renderInvocation() {
-    const el = document.getElementById("invocation");
-    el.innerHTML = C.invocation
-      .map((p, i) => `<p class="reveal" style="--d:${i * 0.08}s">${prose(p)}</p>`)
-      .join("");
-  })();
-
   /* ── prefaces ────────────────────────────────────────── */
   (function renderPrefaces() {
     const el = document.getElementById("prefaces");

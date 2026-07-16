@@ -167,6 +167,11 @@ window.CHRONICLE = {
        "text": "First impressions from the March muster",
        "url": "https://www.youtube.com/watch?v=xFL0FYh9Gxg",
        "source": "Jungo Whey"
+      },
+      {
+       "text": "A warrior returns to Myrland for the 2021 stress test",
+       "url": "https://www.youtube.com/watch?v=rj-u2MYsTOk",
+       "source": "Ser Medieval"
       }
      ],
      "marker": null,
@@ -227,11 +232,103 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 First Impressions — Is It Worth Playing?",
        "url": "https://www.youtube.com/watch?v=6V7DMvBOYFM",
        "source": "TheLazyPeon"
+      },
+      {
+       "text": "A verdict on the eve of launch — is it worth playing in 2021?",
+       "url": "https://www.youtube.com/watch?v=mRKoy-dPt-Y",
+       "source": "SwoleBenji"
+      },
+      {
+       "text": "An insanely ambitious PvP MMORPG, weighed in a great Q&A",
+       "url": "https://www.youtube.com/watch?v=Wg7aMlT1HP4",
+       "source": "Ser Medieval"
+      },
+      {
+       "text": "Future king of the PvP sandboxes? — an introduction to the world",
+       "url": "https://www.youtube.com/watch?v=FgBMs8tRBZs",
+       "source": "Ser Medieval"
       }
      ],
      "marker": null,
      "kind": "event",
      "year": 2021
+    },
+    {
+     "date": "",
+     "title": "The World Weighs Nave",
+     "body": "No hard world is judged only from within. Year upon year the wandering critics of the wider web came to render their verdicts upon Nave — some to praise, some to warn, some merely to survive a week and report the bruises. The great reviewer ESO asked why no one was talking about it; Asmongold played it and reacted to those who did; and a hundred thousand strangers learned the name of the world from a single stinging title — Mortal Online 2 is Traumatizing. Their audiences dwarfed the playerbase they described: proof that the legend of the cruel sandbox travelled far beyond the souls who actually dwelt in it.",
+     "era": "2021–2026",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2021,
+     "links": [
+      {
+       "text": "ESO asks why nobody is talking about this new MMO",
+       "url": "https://www.youtube.com/watch?v=TBbTU7P4G5Q",
+       "source": "ESO"
+      },
+      {
+       "text": "Asmongold reacts to the question everyone was asking",
+       "url": "https://www.youtube.com/watch?v=YNTOjByECy0",
+       "source": "Asmongold TV  "
+      },
+      {
+       "text": "Asmongold plays Nave and finds an MMO of great potential",
+       "url": "https://www.youtube.com/watch?v=LG9PhpRah1Y",
+       "source": "Asmongold TV  "
+      },
+      {
+       "text": "A hundred thousand learn the name from one word: Traumatizing",
+       "url": "https://www.youtube.com/watch?v=gRbffjEffvA",
+       "source": "MitchManix"
+      },
+      {
+       "text": "Fextralife's hands-on impressions — is it worth it?",
+       "url": "https://www.youtube.com/watch?v=ISPe6QUL_7U",
+       "source": "Fextralife"
+      },
+      {
+       "text": "Yes, still playing in 2022 — a returning verdict",
+       "url": "https://www.youtube.com/watch?v=HhCUOe9ZCBM",
+       "source": "Cathey"
+      },
+      {
+       "text": "Best MMO ever; don't buy it — the paradox stated plainly",
+       "url": "https://www.youtube.com/watch?v=q0S9hbGZnX8",
+       "source": "Stouty"
+      },
+      {
+       "text": "The most underrated MMORPG — its pros and its cons",
+       "url": "https://www.youtube.com/watch?v=2Se51N0bXeI",
+       "source": "GohaMedia"
+      },
+      {
+       "text": "What is Mortal Online 2? — the best sandbox of 2022?",
+       "url": "https://www.youtube.com/watch?v=2mrbIh4kPoM",
+       "source": "BullCashish"
+      },
+      {
+       "text": "The most underrated MMO of 2022, argued in earnest",
+       "url": "https://www.youtube.com/watch?v=6J5Ih78H4Tg",
+       "source": "sawmanUK"
+      },
+      {
+       "text": "The MMO you were waiting for is already here",
+       "url": "https://www.youtube.com/watch?v=fNYUU9H5gFY",
+       "source": "Deep Cheek Dweller"
+      },
+      {
+       "text": "An MMORPG worth playing? — Nave weighed anew in 2025",
+       "url": "https://www.youtube.com/watch?v=KIpwRMm06mM",
+       "source": "Indie P"
+      },
+      {
+       "text": "A newcomer checks out the full-loot survival world",
+       "url": "https://www.youtube.com/watch?v=z6Ec0mE5R8M",
+       "source": "Myth"
+      }
+     ]
     },
     {
      "date": "17 April 2021",
@@ -252,6 +349,53 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2021
+    },
+    {
+     "date": "",
+     "title": "The Schoolbooks of Nave",
+     "body": "A world with no tutorial worth the name breeds its own teachers. Beyond the in-game Field Guides rose a whole shelf of newcomer schoolbooks upon the wider web — starter guides that carried more viewers than the servers ever held. ESO’s beta primer and the patient walkthroughs of Medieval Marty, Dilbo Dabbgins, and Wolfszeit taught a generation of the newborn how to leave Haven, cast a first spell, and survive the sewers. Half the souls who ever tried Nave arrived clutching one of these.",
+     "era": "2021–2024",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2021,
+     "links": [
+      {
+       "text": "ESO's starter guide to the beta — a primer for the newborn",
+       "url": "https://www.youtube.com/watch?v=jbiGlDRXesg",
+       "source": "ESO"
+      },
+      {
+       "text": "A starter guide of tips, character-creation, skills, and stats",
+       "url": "https://www.youtube.com/watch?v=rG3rDJU4xHE",
+       "source": "Dilbo Dabbgins"
+      },
+      {
+       "text": "Everything a new player needs to know — the 2023 primer",
+       "url": "https://www.youtube.com/watch?v=xM26RRJMC7Q",
+       "source": "Medieval Marty"
+      },
+      {
+       "text": "The basic art of magic — how to cast one's first spell",
+       "url": "https://www.youtube.com/watch?v=IO6XUiLZAUI",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The ultimate beginner's guide to the mage's craft",
+       "url": "https://www.youtube.com/watch?v=psIdnUOVdus",
+       "source": "Medieval Marty"
+      },
+      {
+       "text": "Should you play the sandbox? — a newcomer's reckoning",
+       "url": "https://www.youtube.com/watch?v=rllrSdbQ0KU",
+       "source": "Medieval Marty"
+      },
+      {
+       "text": "What is Mortal Online 2? — the hardcore full-loot MMO explained",
+       "url": "https://www.youtube.com/watch?v=xUqk8irQ38U",
+       "source": "BullCashish"
+      }
+     ]
     },
     {
      "date": "8 May 2021",
@@ -292,6 +436,11 @@ window.CHRONICLE = {
        "text": "A beta festival bracket, hosted by the crafters",
        "url": "https://www.youtube.com/watch?v=YXrLLx6yEDQ",
        "source": "Bratwire"
+      },
+      {
+       "text": "Star Vault's own teaser for a beta patch of that summer",
+       "url": "https://www.youtube.com/watch?v=JSe7rzVt4bo",
+       "source": "Mortal Online"
       }
      ],
      "marker": null,
@@ -377,6 +526,21 @@ window.CHRONICLE = {
        "text": "Where the tyrants slept — the white-bear cave at Fabernum",
        "url": "https://www.youtube.com/watch?v=BeWevz1pqvM",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The 'Apex' tamer build — the pet-master's art refined",
+       "url": "https://www.youtube.com/watch?v=_nlcnsAf0mI",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The Ranger — a beginner's tamer build and tier list",
+       "url": "https://www.youtube.com/watch?v=Vg4tYuFKauo",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The Battlemage Tamer — a build for the beast-keeper",
+       "url": "https://www.youtube.com/watch?v=CQAhAeiPtmM",
+       "source": "BasedBellagio Gaming"
       }
      ],
      "marker": null,
@@ -447,6 +611,11 @@ window.CHRONICLE = {
        "text": "A wanderer walks through the gates on the very first day",
        "url": "https://www.youtube.com/watch?v=MlS3sHbU3lg",
        "source": "Vandevious Twitch"
+      },
+      {
+       "text": "The teaser that heralded the coming of Mortal Online 2",
+       "url": "https://www.youtube.com/watch?v=cwBIfg4FZQ0",
+       "source": "Mortal Online"
       }
      ],
      "marker": null,
@@ -562,6 +731,11 @@ window.CHRONICLE = {
        "text": "Another chronicler sits the guilds down to speak for themselves",
        "url": "https://www.youtube.com/watch?v=0crcjnN__F8",
        "source": "Bratwire"
+      },
+      {
+       "text": "A tier-list of the guilds for small- and mid-scale war",
+       "url": "https://www.youtube.com/watch?v=qCbblWE_IeQ",
+       "source": "Ziggurat"
       }
      ],
      "marker": null,
@@ -657,6 +831,33 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2022
+    },
+    {
+     "date": "",
+     "title": "The Making of a Soul",
+     "body": "Before any war, a soul must be made. The character-creator of Nave — its clades and bloodlines, its sliders of flesh down to the infamous full nudity that scandalised and delighted the newcomers alike — was a rite of passage filmed hundreds of thousands of times. To make a Veela or a Thursar, an Oghmir or an Alvarin, was to choose one’s whole fate in a world where the body cannot be respecced away.",
+     "era": "2021–2024",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2022,
+     "links": [
+      {
+       "text": "The whole character-creator laid bare — the infamous full creation",
+       "url": "https://www.youtube.com/watch?v=P6ltxsYddMY",
+       "source": "Tales of Lumin - Character Creation & More!"
+      },
+      {
+       "text": "Every race, male and female, in full character-creation",
+       "url": "https://www.youtube.com/watch?v=pE6APqh-NZw",
+       "source": "Tales of Lumin - Character Creation & More!"
+      },
+      {
+       "text": "A 2024 guide to the making of a soul — race features and choices",
+       "url": "https://www.youtube.com/watch?v=1CDGfUlkhsw",
+       "source": "Барс Games"
+      }
+     ]
     },
     {
      "date": "20 February 2022",
@@ -812,6 +1013,26 @@ window.CHRONICLE = {
        "text": "A roleplay story, lived in the young world",
        "url": "https://www.youtube.com/watch?v=9__c45OfiBE",
        "source": "Battlex"
+      },
+      {
+       "text": "The Portuguese tongue asks — Mortal Online 2, é bom?",
+       "url": "https://www.youtube.com/watch?v=kbQ2x79XK6E",
+       "source": "Valkios RPG"
+      },
+      {
+       "text": "The German tongue weighs the first-person sandbox",
+       "url": "https://www.youtube.com/watch?v=nds56m5lHow",
+       "source": "Megxx Gaming Channel"
+      },
+      {
+       "text": "The French tongue asks — yet another failed MMORPG, or not?",
+       "url": "https://www.youtube.com/watch?v=fM7XBFcX6xU",
+       "source": "ChoopChoop"
+      },
+      {
+       "text": "The Spanish tongue calls it the MMORPG everyone should play",
+       "url": "https://www.youtube.com/watch?v=4-Wz1XGFntw",
+       "source": "Kronista"
       }
      ],
      "marker": null,
@@ -1177,6 +1398,11 @@ window.CHRONICLE = {
        "text": "The realm united against KotO — the war the declaration joined",
        "url": "https://www.youtube.com/watch?v=Azo5VBgzBIg",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A rival crows that KotO .5 flopped — the old enemy mocked",
+       "url": "https://www.youtube.com/watch?v=J3Lz0y7FqUI",
+       "source": "Miscreants Rule"
       }
      ],
      "marker": null,
@@ -1472,6 +1698,11 @@ window.CHRONICLE = {
        "text": "The Dreadlords' arts, exposed by their victims",
        "url": "https://www.youtube.com/watch?v=cGso8zfFcu4",
        "source": "iwi"
+      },
+      {
+       "text": "The disaster of a Gaul'Kor raid, set down for all to see",
+       "url": "https://www.youtube.com/watch?v=ex10FgzluWI",
+       "source": "cardinal"
       }
      ],
      "marker": null,
@@ -1636,6 +1867,48 @@ window.CHRONICLE = {
      "year": 2024
     },
     {
+     "date": "",
+     "title": "The Crafters’ Manuals",
+     "body": "The war was fed by the forge. For every blade in the shield-wall there was a crafter who made it, and a manual that taught the making. Wolfszeit’s tutorials — extraction and refining, bow-craft and armour, taming and spiritism — and the guides of Kibbles and their kind formed the trade-schools of Nave, where the quiet majority learned the peaceable arts that armed the loud minority.",
+     "era": "2021–2025",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2024,
+     "links": [
+      {
+       "text": "The Granum extraction guide — everything the refiner needs",
+       "url": "https://www.youtube.com/watch?v=Znd70ys79M8",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Taming and domestication — the herding of beasts",
+       "url": "https://www.youtube.com/watch?v=pAnqt_SbKgM",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Bow-crafting — how the archer's weapon is made",
+       "url": "https://www.youtube.com/watch?v=_0UHXAxpuNE",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Spiritism — how to hunt spirits and resurrect the dead",
+       "url": "https://www.youtube.com/watch?v=DEbPxG3NWDY",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "Weapon-crafting — the making of swords, axes, and hammers",
+       "url": "https://www.youtube.com/watch?v=qeOoo7BkGWc",
+       "source": "Kibbles Gaming"
+      },
+      {
+       "text": "The basics of armour-crafting — the smith's first lesson",
+       "url": "https://www.youtube.com/watch?v=Sll4MBcFxZw",
+       "source": "Wolfszeit"
+      }
+     ]
+    },
+    {
      "date": "6 May 2024",
      "title": "The KarniMata War Ignites",
      "body": "Now began Odinseed's defining feud of the later age, against the vast host of KarniMata. The two were the great \"zergs\" of the world — it was said one could run the deep places only by marching thirty-strong \"as Odinseed or KarniMata,\" else die in the sewers. The feud was cried aloud across the airwaves — \"Odinseed Losing It… Reveal Truth About KarniMata\" — and the Odin-host did not march alone: Venomous's southern Jungle Alliance came north to make common cause, the two falling upon KarniMata together in a joint assault (\"OS and JA attack Karni\") that Bayard preserved, binding the jungle-south to the northern war.",
@@ -1674,6 +1947,11 @@ window.CHRONICLE = {
        "text": "The same pass, seen from the mercenaries' line",
        "url": "https://www.youtube.com/watch?v=itBU6B1iC1I",
        "source": "Vetian"
+      },
+      {
+       "text": "A mounted archer's 2-versus-4 at Granum Pass",
+       "url": "https://www.youtube.com/watch?v=exJxS3Zm_Q0",
+       "source": "TronLive"
       }
      ],
      "marker": null,
@@ -1699,11 +1977,98 @@ window.CHRONICLE = {
        "text": "The official herald of the Mastery decree",
        "url": "https://www.youtube.com/watch?v=R4ogF2oQF4Q",
        "source": "Mortal Online"
+      },
+      {
+       "text": "The Mage-and-Dominator of Sheevra — fighting with pets",
+       "url": "https://www.youtube.com/watch?v=xKQ4r-GORSw",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The Necromancer 'Illithid' — a dex-mage of the dark art",
+       "url": "https://www.youtube.com/watch?v=Yf1fJGBi_l0",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "Every spell in Nave, ranked in a tier-list",
+       "url": "https://www.youtube.com/watch?v=8OqIDbJ8oy0",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The best builds of 2024 — mage and foot-fighter",
+       "url": "https://www.youtube.com/watch?v=k53jELRtsKw",
+       "source": "Medieval Marty"
       }
      ],
      "marker": null,
      "kind": "event",
      "year": 2024
+    },
+    {
+     "date": "",
+     "title": "The Schools of the Build",
+     "body": "In a world where a single character is a whole season’s labour, the choice of build is a life’s work — and the theorists who mapped those choices earned followings of their own. DemoMan0351 catalogued the archetypes one by one — the Solo King footfighter, the Oghmir ‘meta,’ the Mando death-knight, the Zeus elementalist, the Paladin — and ranked every spell in Nave. Wolfszeit and Medieval Marty drew up their own clade-guides and tier-lists. Between them they wrote the closest thing Nave has to a canon of the character.",
+     "era": "2022–2025",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2024,
+     "links": [
+      {
+       "text": "The Alvarin dex-footie — the 'Solo King' build",
+       "url": "https://www.youtube.com/watch?v=LwqeV3AqKqQ",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The five best builds for success in Nave",
+       "url": "https://www.youtube.com/watch?v=U1_JPUs_JnA",
+       "source": "Medieval Marty"
+      },
+      {
+       "text": "The Oghmir footie — 'the Meta' of the shield-wall",
+       "url": "https://www.youtube.com/watch?v=RQEwqnV5ymU",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The 'Mando' death-knight — a bounty-hunter's build",
+       "url": "https://www.youtube.com/watch?v=nv3cezH1vGs",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The dex-mage — a build guide and tier-list",
+       "url": "https://www.youtube.com/watch?v=FUkQF8AWP20",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The foot-archer — the fast Veela bow-master",
+       "url": "https://www.youtube.com/watch?v=3HsVVWZwWUU",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The Alvarin Veela — a hybrid and mage build",
+       "url": "https://www.youtube.com/watch?v=g8Y_OlNhaco",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The hybrid warrior-mage — skills and clades explained",
+       "url": "https://www.youtube.com/watch?v=oI1Yye4AJnk",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The elementalist 'Zeus' — the fat-mage of storms",
+       "url": "https://www.youtube.com/watch?v=kSlNadEPIHY",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "The Paladin — a beginner's build",
+       "url": "https://www.youtube.com/watch?v=I4mcGnxOkIY",
+       "source": "DemoMan0351"
+      },
+      {
+       "text": "Tatsuya's own build — four thousand hours, four thousand murders",
+       "url": "https://www.youtube.com/watch?v=hKDkjsoJ3Fk",
+       "source": "j45k"
+      }
+     ]
     },
     {
      "date": "September 2024",
@@ -1891,6 +2256,88 @@ window.CHRONICLE = {
      "year": 2024
     },
     {
+     "date": "",
+     "title": "The Solo Blades",
+     "body": "Nave’s grandest wars were fought by hundreds, but its most-watched fights were often fought by one. A whole tradition of solo and small-scale PvP grew up alongside the sieges — the naked archer on the Meduli road, the dagger-mage who prized the joy of playing alone, the mounted ganker taking fifty gold in a minute. Chief among them rode Tatsuya, the Veela blade of four thousand hours and four thousand murders, whose duels j45k set down again and again; and the clip of two travellers robbed upon the road carried the sandbox’s cruelty to two hundred thousand strangers.",
+     "era": "2021–2025",
+     "kind": "tale",
+     "odinseed": false,
+     "marker": null,
+     "year": 2024,
+     "links": [
+      {
+       "text": "A robbery on the road, carried to two hundred thousand strangers",
+       "url": "https://www.youtube.com/watch?v=qStZvKguRAs",
+       "source": "Mad Highlights"
+      },
+      {
+       "text": "The solo dagger-mage — and the joy of playing alone",
+       "url": "https://www.youtube.com/watch?v=Jz84fKW8-rk",
+       "source": "Raged"
+      },
+      {
+       "text": "DNSL and the Angry Samurai Leader upon the field",
+       "url": "https://www.youtube.com/watch?v=YT0gTTuT9Tw",
+       "source": "Summber"
+      },
+      {
+       "text": "Tatsuya ganked one-against-two, and answering it solo",
+       "url": "https://www.youtube.com/watch?v=I84Rh2dk1eE",
+       "source": "j45k"
+      },
+      {
+       "text": "Solo against all — a bloody trip to Meduli",
+       "url": "https://www.youtube.com/watch?v=Ig_fGbsgKmo",
+       "source": "Rhias15"
+      },
+      {
+       "text": "A solo foot-archer's first attempt at the roads",
+       "url": "https://www.youtube.com/watch?v=pwSexaNpQCc",
+       "source": "Rhias15"
+      },
+      {
+       "text": "A KotO tamer tries to bully the wrong Veela — Tatsuya answers",
+       "url": "https://www.youtube.com/watch?v=s4cpbaNfYgw",
+       "source": "j45k"
+      },
+      {
+       "text": "Fifty gold ganked from the saddle in a single minute",
+       "url": "https://www.youtube.com/watch?v=S0RAIG8unkw",
+       "source": "Rhias15"
+      },
+      {
+       "text": "A swordplay symphony, fought alone",
+       "url": "https://www.youtube.com/watch?v=crDGw_v7u0M",
+       "source": "Pablo"
+      },
+      {
+       "text": "Two thousand hours of hard-won experience, in one fight",
+       "url": "https://www.youtube.com/watch?v=sJcifv8miuU",
+       "source": "Sergey"
+      },
+      {
+       "text": "Solo PvP and random clips from the roads of Nave",
+       "url": "https://www.youtube.com/watch?v=JS1eHlG3kfk",
+       "source": "Willoughby"
+      },
+      {
+       "text": "One against three — an Oghmir among the Alvarins",
+       "url": "https://www.youtube.com/watch?v=PMqTgQqE9h4",
+       "source": "RazerMortalOnline"
+      },
+      {
+       "text": "Tatsuya meets Lord Zaxaman upon the field",
+       "url": "https://www.youtube.com/watch?v=fbBSKGDWJC0",
+       "source": "j45k"
+      },
+      {
+       "text": "Three hundred ping against thirty — a Veela's uphill duel",
+       "url": "https://www.youtube.com/watch?v=rbxczC7u9T0",
+       "source": "j45k"
+      }
+     ]
+    },
+    {
      "date": "Autumn 2024",
      "title": "The Engine Reforged",
      "body": "The whole world was migrated to Unreal Engine 5.4 — a labor unseen by the eye but felt in every frame. With it, the tamers' beasts were overhauled to earn their strength through battle as their masters did; a Fledgling Flag was raised over every newcomer, that veterans might know and aid them; and the deep places were warded against the crashes that had cost so many their hard-won characters.",
@@ -1919,6 +2366,11 @@ window.CHRONICLE = {
        "text": "The ladder finds its hall — ranked duels open",
        "url": "https://www.youtube.com/watch?v=Jid5szUuDRg",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A one-versus-one tournament of the ranked age",
+       "url": "https://www.youtube.com/watch?v=SsFa87Bb2gI",
+       "source": "Ogladam"
       }
      ],
      "marker": null,
@@ -2354,6 +2806,11 @@ window.CHRONICLE = {
        "text": "The realm debates the bridge and the colonists' terms",
        "url": "https://www.youtube.com/watch?v=eYTugSq7LzY",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "News of the Sarducaa launch — the east server, housing, and voting",
+       "url": "https://www.youtube.com/watch?v=sDi0qoT5_vQ",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2399,6 +2856,11 @@ window.CHRONICLE = {
        "text": "The Vessel brought low by a single blade",
        "url": "https://www.youtube.com/watch?v=ektuJ2p9NFA",
        "source": "SesArses"
+      },
+      {
+       "text": "A hotfix of the new world — Ashir priests, Auer guards, and fixes",
+       "url": "https://www.youtube.com/watch?v=tUPSbxBhYo4",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,

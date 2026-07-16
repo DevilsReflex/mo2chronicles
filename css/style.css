@@ -420,12 +420,10 @@ main, footer { position: relative; z-index: 2; }
   border-radius: 1px;
   opacity: 0.8;
 }
-.sp-tick-hit:hover .sp-tick,
 .sp-tick-hit:focus-visible .sp-tick {
   opacity: 1;
   width: 5px; height: 5px;
 }
-.sp-tick-hit:hover .sp-tick.sp-landmark,
 .sp-tick-hit:focus-visible .sp-tick.sp-landmark {
   width: 4px; height: 8px;
 }
@@ -441,7 +439,7 @@ main, footer { position: relative; z-index: 2; }
   gap: 4px;
   padding: 12px 16px;
   width: max-content;
-  max-width: 280px;
+  max-width: 300px;
   background: linear-gradient(160deg, var(--card), var(--card-2));
   border: 1px solid var(--gold-dim);
   box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.85);
@@ -450,17 +448,40 @@ main, footer { position: relative; z-index: 2; }
   transition: opacity 0.15s ease, transform 0.15s ease;
   z-index: 6;
 }
-.sp-tick-hit:hover .sp-tick-tip,
 .sp-tick-hit:focus-visible .sp-tick-tip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 .sp-tick-tip.sp-edge-start { left: 0; transform: translateX(0) translateY(-6px); }
-.sp-tick-hit:hover .sp-tick-tip.sp-edge-start,
 .sp-tick-hit:focus-visible .sp-tick-tip.sp-edge-start { transform: translateX(0) translateY(0); }
 .sp-tick-tip.sp-edge-end { left: auto; right: 0; transform: translateX(0) translateY(-6px); }
-.sp-tick-hit:hover .sp-tick-tip.sp-edge-end,
 .sp-tick-hit:focus-visible .sp-tick-tip.sp-edge-end { transform: translateX(0) translateY(0); }
+/* hover-revealed state is scoped to real, precise pointers — on touch
+   devices a tap leaves CSS :hover "stuck" on with no mouseleave to
+   clear it, so the tooltip would linger open with no way to dismiss */
+@media (hover: hover) and (pointer: fine) {
+  .sp-tick-hit:hover .sp-tick {
+    opacity: 1;
+    width: 5px; height: 5px;
+  }
+  .sp-tick-hit:hover .sp-tick.sp-landmark {
+    width: 4px; height: 8px;
+  }
+  .sp-tick-hit:hover .sp-tick-tip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .sp-tick-hit:hover .sp-tick-tip.sp-edge-start { transform: translateX(0) translateY(0); }
+  .sp-tick-hit:hover .sp-tick-tip.sp-edge-end { transform: translateX(0) translateY(0); }
+}
+.sp-tick-tip-thumb {
+  width: calc(100% + 32px);
+  margin: -12px -16px 2px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--gold-dim);
+  background: var(--coal);
+}
 .sp-tick-tip-date {
   font-family: var(--sans);
   font-size: 10px;

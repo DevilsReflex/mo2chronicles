@@ -438,12 +438,14 @@
     const tint = AGE_TINTS[ai] || AGE_TINTS[2];
     age.entries.forEach((e, ei) => {
       const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+      const firstVideo = (e.links || []).find((l) => !l.noembed && youtubeId(l.url));
       flatEntries.push({
         id: `entry-${ai}-${ei}`,
         tint,
         title: e.title,
         dateLabel: e.date || e.era || "Undated",
         excerpt: leadIn(e.body, 150),
+        thumbId: firstVideo ? youtubeId(firstVideo.url) : null,
         isLandmark,
       });
     });
@@ -456,6 +458,7 @@
         return `<a href="#${fe.id}" class="sp-tick-hit" role="menuitem" style="left:${pct.toFixed(3)}%" aria-label="${esc(fe.dateLabel)}: ${esc(fe.title)}">
           <span class="sp-tick${fe.isLandmark ? " sp-landmark" : ""}" style="--tick-tint:${fe.tint}" aria-hidden="true"></span>
           <span class="sp-tick-tip${fe.isLandmark ? " sp-landmark" : ""}${edgeCls}" role="tooltip">
+            ${fe.thumbId ? `<img class="sp-tick-tip-thumb" loading="lazy" src="https://i.ytimg.com/vi/${esc(fe.thumbId)}/mqdefault.jpg" alt="">` : ""}
             <span class="sp-tick-tip-date">${esc(fe.dateLabel)}</span>
             <span class="sp-tick-tip-title">${esc(fe.title)}</span>
             ${fe.excerpt ? `<span class="sp-tick-tip-excerpt">${prose(fe.excerpt)}</span>` : ""}

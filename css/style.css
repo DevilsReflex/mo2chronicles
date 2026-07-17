@@ -343,7 +343,8 @@ main, footer { position: relative; z-index: 2; }
   text-transform: uppercase;
   color: var(--age-tint, var(--gold));
   white-space: nowrap;
-  min-width: 80px;
+  width: 132px;
+  text-align: left;
 }
 .fy-title {
   font-family: var(--serif);

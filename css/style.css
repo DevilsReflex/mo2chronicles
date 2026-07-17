@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    THE CHRONICLE OF NAVE — design system
-   Palette and type modeled on mortalonline2.com's own real system:
-   Vollkorn SC display, Catamaran body, near-black ground, antique gold.
+   Cinzel display (monumental, carved-inscription weight), Catamaran
+   body (mortalonline2.com's own body face), near-black, antique gold.
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -19,8 +19,8 @@
   --blood-bright: #c94b3d;
   --name-guild: #d17a5f;
   --serif: "Catamaran", "Work Sans", system-ui, sans-serif;
-  --display: "Vollkorn SC", Georgia, serif;
-  --display-lc: "Vollkorn", Georgia, serif;
+  --display: "Cinzel", Georgia, serif;
+  --display-lc: "Cinzel", Georgia, serif;
   --sans: "Work Sans", system-ui, sans-serif;
   --age-tint: var(--gold);
   --spine-x: clamp(28px, 9vw, 130px);

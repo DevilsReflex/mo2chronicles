@@ -38,6 +38,11 @@ window.CHRONICLE = {
        "text": "The CEO's own stream on housing and Territory Control, summarized",
        "url": "https://www.youtube.com/watch?v=xmIceE94nZw",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Henrik answers the design questions the forums were already at war over",
+       "url": "https://www.youtube.com/watch?v=bgvAnjB7u34",
+       "source": "Rolufe"
       }
      ],
      "marker": null,
@@ -63,6 +68,11 @@ window.CHRONICLE = {
        "text": "The guild interview — Acolytes speak for themselves",
        "url": "https://www.youtube.com/watch?v=ecbEsbF92go",
        "source": "Bratwire"
+      },
+      {
+       "text": "The Acolytes at the Sator boss, filmed by their own captain",
+       "url": "https://www.youtube.com/watch?v=h51sBDhMImo",
+       "source": "Putzin"
       }
      ],
      "marker": null,
@@ -108,6 +118,16 @@ window.CHRONICLE = {
        "text": "The Lament of KotO — one of the elder houses, mourned in the old world",
        "url": "https://www.youtube.com/watch?v=vA0EZGKKbRk",
        "source": "Vstia Doe"
+      },
+      {
+       "text": "KotO at the walls of a Meduli outpost, in the elder world",
+       "url": "https://www.youtube.com/watch?v=Mgr2gxzd24A",
+       "source": "Xhodan Xeus"
+      },
+      {
+       "text": "Mors Omnibus rides in the first world, thirteen years gone",
+       "url": "https://www.youtube.com/watch?v=PR_IfXECjJY",
+       "source": "EggsOvrEz"
       }
      ],
      "marker": null,
@@ -133,6 +153,11 @@ window.CHRONICLE = {
        "text": "A compilation of blades crossed in the combat alpha",
        "url": "https://www.youtube.com/watch?v=dvfeX8GvbpY",
        "source": "DalariusPVP"
+      },
+      {
+       "text": "The combat alpha through the eyes of PoisonArrows' future officer",
+       "url": "https://www.youtube.com/watch?v=h6evSBOuvgM",
+       "source": "Pandah Sykes"
       }
      ],
      "marker": null,
@@ -153,6 +178,16 @@ window.CHRONICLE = {
        "text": "Meduli against Legion — the factions harden in the beta",
        "url": "https://www.youtube.com/watch?v=6F1F-7sFD7U",
        "source": "Diphrael"
+      },
+      {
+       "text": "The fight for Meduli, as the stress test broke over the city",
+       "url": "https://www.youtube.com/watch?v=UFUq8_rvVjM",
+       "source": "MO2 Warfront"
+      },
+      {
+       "text": "Group-fights of February 2021, set down as they happened",
+       "url": "https://www.youtube.com/watch?v=vYkkVatBImc",
+       "source": "Battlex"
       }
      ],
      "marker": null,
@@ -203,6 +238,16 @@ window.CHRONICLE = {
        "text": "Five years on, the question answered — a lockpicking tutorial for the world that finally got its thief skills",
        "url": "https://www.youtube.com/watch?v=vHZq_85jCH8",
        "source": "EmptySpace"
+      },
+      {
+       "text": "The stolen art itself, practised in the elder world",
+       "url": "https://www.youtube.com/watch?v=G0GEEV7sTtw",
+       "source": "Gray Fox"
+      },
+      {
+       "text": "The thief's craft as it survived into the new world",
+       "url": "https://www.youtube.com/watch?v=HTseaswsYMs",
+       "source": "NIKO PUSHO"
       }
      ],
      "marker": null,
@@ -223,6 +268,16 @@ window.CHRONICLE = {
        "text": "MMO Stress Test and First Look",
        "url": "https://www.youtube.com/watch?v=8exEBYRtTUU",
        "source": "My Usual Me"
+      },
+      {
+       "text": "KotO against Legion, the beta's great clash from a third camera",
+       "url": "https://www.youtube.com/watch?v=AuaAEge9pFI",
+       "source": "Hogordin"
+      },
+      {
+       "text": "Legion's own banner, from a chronicler who rode with them",
+       "url": "https://www.youtube.com/watch?v=NAn_uFCzxv8",
+       "source": "r4NGe"
       }
      ],
      "marker": null,
@@ -345,6 +400,16 @@ window.CHRONICLE = {
        "text": "Another schoolmaster of Nave takes up the chalk",
        "url": "https://www.youtube.com/watch?v=-PAg6J7SXfs",
        "source": "finegamingconnoisseur"
+      },
+      {
+       "text": "A third teacher sets down his tips for the newly arrived",
+       "url": "https://www.youtube.com/watch?v=dl0IWS8c47Q",
+       "source": "Thy Floky"
+      },
+      {
+       "text": "Another hand at the beginner's primer, in the same season",
+       "url": "https://www.youtube.com/watch?v=LyMt2akv2U4",
+       "source": "Nazori"
       }
      ],
      "marker": null,
@@ -412,6 +477,11 @@ window.CHRONICLE = {
        "text": "REQ Bakti Bowl 5v5 — Legion vs Levia (Krankids) and VII",
        "url": "https://www.youtube.com/watch?v=haXiobCms2o",
        "source": "r4NGe"
+      },
+      {
+       "text": "The same Legion-and-Levia meeting, from a second camera",
+       "url": "https://www.youtube.com/watch?v=DobYo8BnX2E",
+       "source": "Badman Lasermouse"
       }
      ],
      "marker": null,
@@ -457,6 +527,11 @@ window.CHRONICLE = {
        "text": "The guild-fights and the horse-race, kept in 4K",
        "url": "https://www.youtube.com/watch?v=_4V5Vn_PtK8",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A duel at the festival, filmed the very day the tribes gathered",
+       "url": "https://www.youtube.com/watch?v=A4ziQ0HA0nA",
+       "source": "Baranov Vitaliy"
       }
      ],
      "marker": null,
@@ -477,6 +552,11 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 — Final Stress Test, the official trailer",
        "url": "https://www.youtube.com/watch?v=emM89blKBvk",
        "source": "Mortal Online (Star Vault)"
+      },
+      {
+       "text": "The final day's battle, from an independent witness in the press",
+       "url": "https://www.youtube.com/watch?v=Ftfre5YrE2A",
+       "source": "LMLGamingTV"
       }
      ],
      "marker": null,
@@ -502,6 +582,11 @@ window.CHRONICLE = {
        "text": "To kill a Nitre Queen in three minutes",
        "url": "https://www.youtube.com/watch?v=6ud1zhyY2G8",
        "source": "Arinna"
+      },
+      {
+       "text": "How the Queen was not killed — the failure the guides omit",
+       "url": "https://www.youtube.com/watch?v=UFJd46Rqen0",
+       "source": "Castiel Calmelat"
       }
      ],
      "marker": null,
@@ -562,6 +647,11 @@ window.CHRONICLE = {
        "text": "The mock war for the King's trailer, from inside the host",
        "url": "https://www.youtube.com/watch?v=tXRMtIE4Db4",
        "source": "Kytar"
+      },
+      {
+       "text": "Behind the trailer's battle-line, where the spectacle was staged",
+       "url": "https://www.youtube.com/watch?v=dZSfOry8rjw",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -582,6 +672,16 @@ window.CHRONICLE = {
        "text": "A guide-maker schools the newcomers before the gates open",
        "url": "https://www.youtube.com/watch?v=N6jpyxxL4Gg",
        "source": "finegamingconnoisseur"
+      },
+      {
+       "text": "A warning to be read before setting foot in Nave",
+       "url": "https://www.youtube.com/watch?v=w2rQ41AX124",
+       "source": "Jonah Veil"
+      },
+      {
+       "text": "Starting tips for a world not yet opened, copied hand to hand",
+       "url": "https://www.youtube.com/watch?v=RnwARpWRuWc",
+       "source": "Explodo Games"
       }
      ],
      "marker": null,
@@ -637,6 +737,11 @@ window.CHRONICLE = {
        "text": "The housing patch, played live as it landed",
        "url": "https://www.youtube.com/watch?v=I9-dyi1vmD4",
        "source": "Vandevious Twitch"
+      },
+      {
+       "text": "What the housing decree actually let a man build",
+       "url": "https://www.youtube.com/watch?v=qUb5iDELIuE",
+       "source": "Mafia"
       }
      ],
      "marker": null,
@@ -657,6 +762,16 @@ window.CHRONICLE = {
        "text": "Another hunter tries his luck with the bears of that winter",
        "url": "https://www.youtube.com/watch?v=2V2dp6wSmVo",
        "source": "DorrianX"
+      },
+      {
+       "text": "Set upon by the Artisans — the guild seen from outside its own camera",
+       "url": "https://www.youtube.com/watch?v=p9cnboBtxUo",
+       "source": "BruceleeRob"
+      },
+      {
+       "text": "Riding with the Artisans on a friendlier errand, bandit-camps and scrolls",
+       "url": "https://www.youtube.com/watch?v=3At3YhA2te4",
+       "source": "BasedBellagio Gaming"
       }
      ],
      "marker": null,
@@ -677,6 +792,11 @@ window.CHRONICLE = {
        "text": "The keep itself, walked before the Council claimed it",
        "url": "https://www.youtube.com/watch?v=2mV7qM1KIew",
        "source": "M. T. Clark Jr."
+      },
+      {
+       "text": "A walk through the jungle-gate city the eleven guilds bound themselves to hold",
+       "url": "https://www.youtube.com/watch?v=cwHZ8Jttuxw",
+       "source": "LiamPlaysHS"
       }
      ],
      "marker": null,
@@ -702,6 +822,11 @@ window.CHRONICLE = {
        "text": "A tier-list of the guilds for small- and mid-scale war",
        "url": "https://www.youtube.com/watch?v=qCbblWE_IeQ",
        "source": "Ziggurat"
+      },
+      {
+       "text": "The Harbingers of Judgment, one of the census's names, met in the field",
+       "url": "https://www.youtube.com/watch?v=gwnyfdczekE",
+       "source": "Yimir Mortal"
       }
      ],
      "marker": null,
@@ -722,6 +847,11 @@ window.CHRONICLE = {
        "text": "Lost files recovered — the first successful keep siege, unearthed",
        "url": "https://www.youtube.com/watch?v=blY647pPZMA",
        "source": "Gryph"
+      },
+      {
+       "text": "Bomex filming keep-battles in the elder world, a decade before Nave's first siege",
+       "url": "https://www.youtube.com/watch?v=EY4Dx2TCa_A",
+       "source": "Bomex MO"
       }
      ],
      "marker": null,
@@ -757,6 +887,11 @@ window.CHRONICLE = {
        "text": "The gates thrown open — launch day itself",
        "url": "https://www.youtube.com/watch?v=BqiklYuNphA",
        "source": "Casual_Belligerency"
+      },
+      {
+       "text": "The first hour of the living world, kept by a third chronicler",
+       "url": "https://www.youtube.com/watch?v=7bRNapYEuE4",
+       "source": "Roo"
       }
      ],
      "marker": null,
@@ -777,6 +912,11 @@ window.CHRONICLE = {
        "text": "The last login — twelve years of the elder world, said goodbye",
        "url": "https://www.youtube.com/watch?v=xpzUsRReqqA",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "An outside documentarian's post-mortem of the world that made them",
+       "url": "https://www.youtube.com/watch?v=ECQn6vJtnzc",
+       "source": "nerdSlayer Studios"
       }
      ],
      "marker": null,
@@ -802,6 +942,11 @@ window.CHRONICLE = {
        "text": "The CEO explains the launch problems and the queue system",
        "url": "https://www.youtube.com/watch?v=ZL33C5FGQxA",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The queue as the queued endured it, patience worn through",
+       "url": "https://www.youtube.com/watch?v=2BxCUhd7XHo",
+       "source": "Solar Polar Bear"
       }
      ],
      "marker": null,
@@ -822,6 +967,16 @@ window.CHRONICLE = {
        "text": "The cartographer's craft — reading the maps of Nave",
        "url": "https://www.youtube.com/watch?v=q2s8wdM95ao",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Slyy's own base-map — the Pockets every later chart was drawn upon",
+       "url": "https://www.youtube.com/watch?v=cOevSaGiyF0",
+       "source": "Slyy"
+      },
+      {
+       "text": "The realm's politics charted in the last days before Territory Control",
+       "url": "https://www.youtube.com/watch?v=2BGN9h9X_I8",
+       "source": "Campana Slightly"
       }
      ],
      "marker": null,
@@ -847,6 +1002,16 @@ window.CHRONICLE = {
        "text": "A 2024 guide to the making of a soul — race features and choices",
        "url": "https://www.youtube.com/watch?v=1CDGfUlkhsw",
        "source": "Барс Games"
+      },
+      {
+       "text": "Attributes, races, age and fatness — the sliders of flesh explained",
+       "url": "https://www.youtube.com/watch?v=6RT12qcx5J4",
+       "source": "The Innkeeper"
+      },
+      {
+       "text": "A second pass through the creator, where every soul begins",
+       "url": "https://www.youtube.com/watch?v=VNIIJfVLeqs",
+       "source": "Vyes"
       }
      ]
     },
@@ -864,6 +1029,16 @@ window.CHRONICLE = {
        "text": "Leaving Haven for the mainland — every newcomer's crossing",
        "url": "https://www.youtube.com/watch?v=55Gk7AmPOYA",
        "source": "WalksOnWater"
+      },
+      {
+       "text": "Hauling parcels for coin, the first trade of every landless soul",
+       "url": "https://www.youtube.com/watch?v=UtVB45_5j7M",
+       "source": "Snugglez"
+      },
+      {
+       "text": "The Tagmaton that every mainland diary eventually stumbles into",
+       "url": "https://www.youtube.com/watch?v=p2CsaeCjhMY",
+       "source": "Phaeta"
       }
      ],
      "marker": null,
@@ -884,6 +1059,11 @@ window.CHRONICLE = {
        "text": "Raising a small house — the homesteader's craft",
        "url": "https://www.youtube.com/watch?v=LUlcbGYBE6M",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The homesteader's true enemy: finding a flat piece of ground",
+       "url": "https://www.youtube.com/watch?v=wQ1pwBjNwjE",
+       "source": "Rhias15"
       }
      ],
      "marker": null,
@@ -909,6 +1089,11 @@ window.CHRONICLE = {
        "text": "Kranesh Heathens Return the SEED to ODIN — the chronicle named in the entry itself",
        "url": "https://www.youtube.com/watch?v=GQcWQyCCJ9Y",
        "source": "ShadowOfaManTV"
+      },
+      {
+       "text": "The Odinseed rise seen from Kranesh, who called them dogs",
+       "url": "https://www.youtube.com/watch?v=XRaa-L0aK90",
+       "source": "Chicodi"
       }
      ],
      "marker": null,
@@ -929,6 +1114,11 @@ window.CHRONICLE = {
        "text": "The Wolfpack at Legion's throat again, ten days on",
        "url": "https://www.youtube.com/watch?v=GsGDVHgkg2Q",
        "source": "Nausk"
+      },
+      {
+       "text": "The Wolfpack met from the other side of the shield-line",
+       "url": "https://www.youtube.com/watch?v=GXlDp4SQKuU",
+       "source": "SerpentineX9"
       }
      ],
      "marker": null,
@@ -949,6 +1139,11 @@ window.CHRONICLE = {
        "text": "The angler's art, taught in full",
        "url": "https://www.youtube.com/watch?v=DFmnKDlz4ys",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The fisherman's craft, from a chronicler who kept to the water",
+       "url": "https://www.youtube.com/watch?v=UUDtYxCLOKI",
+       "source": "Squirrelly711"
       }
      ],
      "marker": null,
@@ -969,6 +1164,16 @@ window.CHRONICLE = {
        "text": "Blades crossed with the Saltpack",
        "url": "https://www.youtube.com/watch?v=T1wsfbTeY-A",
        "source": "Göjo"
+      },
+      {
+       "text": "One blade against the Saltpack's many",
+       "url": "https://www.youtube.com/watch?v=AwnY5KeqMxs",
+       "source": "BlastMO2"
+      },
+      {
+       "text": "An adventuring band crosses the Saltpack's road",
+       "url": "https://www.youtube.com/watch?v=Jk1t9whYGts",
+       "source": "AusBarryAllen"
       }
      ],
      "marker": null,
@@ -989,6 +1194,16 @@ window.CHRONICLE = {
        "text": "Henrik explains the bounty decree",
        "url": "https://www.youtube.com/watch?v=sAjslohw7s4",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The BeastMasters' own propaganda, cut by the officer the record names",
+       "url": "https://www.youtube.com/watch?v=vsPvw4bTjDY",
+       "source": "Pandah Sykes"
+      },
+      {
+       "text": "The reworked reputation system itself, laid out plain",
+       "url": "https://www.youtube.com/watch?v=1CMG-pX9-GE",
+       "source": "JustKyle"
       }
      ],
      "marker": null,
@@ -1054,6 +1269,11 @@ window.CHRONICLE = {
        "text": "Every dark spell, shown at the unveiling",
        "url": "https://www.youtube.com/watch?v=qmQ7VmHPYkg",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The press catches its first taste of the necromancers' art",
+       "url": "https://www.youtube.com/watch?v=GW46lmA2Fw4",
+       "source": "MMORPG.com"
       }
      ],
      "marker": null,
@@ -1094,6 +1314,11 @@ window.CHRONICLE = {
        "text": "The finals, kept by the hosts themselves",
        "url": "https://www.youtube.com/watch?v=pjahk-XXA-8",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Death Jester in the field, filmed from the enemy's line",
+       "url": "https://www.youtube.com/watch?v=W91XKBBDCF8",
+       "source": "jiojo"
       }
      ],
      "marker": null,
@@ -1114,6 +1339,16 @@ window.CHRONICLE = {
        "text": "Another host braves Ultumeki the same week",
        "url": "https://www.youtube.com/watch?v=RiMIhLhImD0",
        "source": "NastraMoonlight"
+      },
+      {
+       "text": "The ancient's lair as contested ground, where guilds met over the corpse",
+       "url": "https://www.youtube.com/watch?v=OF9XDKnk3FU",
+       "source": "KAVAX"
+      },
+      {
+       "text": "The same hunt, told in another of Nave's many tongues",
+       "url": "https://www.youtube.com/watch?v=BA2PdpkoWPM",
+       "source": "Fenix play game"
       }
      ],
      "marker": null,
@@ -1159,6 +1394,16 @@ window.CHRONICLE = {
        "text": "The Torch Bearers cross the land by torchlight, in their own words",
        "url": "https://www.youtube.com/watch?v=unZODLQLeLI",
        "source": "TheTorchBearers"
+      },
+      {
+       "text": "Nave given the roleplayer's treatment, in the Torch Bearers' own spirit",
+       "url": "https://www.youtube.com/watch?v=O02JlfKxta8",
+       "source": "MRARMA"
+      },
+      {
+       "text": "A scene played straight — Meati, Kevan, and a bear",
+       "url": "https://www.youtube.com/watch?v=Uli6n9qOte0",
+       "source": "Tom Bones"
       }
      ],
      "marker": null,
@@ -1179,6 +1424,16 @@ window.CHRONICLE = {
        "text": "A bard's tour of Tindrem, in the Thommberry manner",
        "url": "https://www.youtube.com/watch?v=g3gmPkJJdh0",
        "source": "Oldgreg859"
+      },
+      {
+       "text": "One Night in Meduli — the bard's own song, caught by another's camera",
+       "url": "https://www.youtube.com/watch?v=ecuE6Mglx2M",
+       "source": "MMO Shenanigans"
+      },
+      {
+       "text": "What the realm made of bards, once one joined the party",
+       "url": "https://www.youtube.com/watch?v=uCoJFwcgLrU",
+       "source": "Kenztrash"
       }
      ],
      "marker": null,
@@ -1204,6 +1459,11 @@ window.CHRONICLE = {
        "text": "The community reads the charges aloud",
        "url": "https://www.youtube.com/watch?v=eBwuETNZQ9M",
        "source": "BasedBellagio Gaming"
+      },
+      {
+       "text": "The very podcast the banned lord keeps to this day",
+       "url": "https://www.youtube.com/watch?v=OrpRY91K3tY",
+       "source": "Putzin"
       }
      ],
      "marker": null,
@@ -1225,6 +1485,16 @@ window.CHRONICLE = {
        "text": "The King brought down honestly — a world-first by a full band",
        "url": "https://www.youtube.com/watch?v=EWS808_DY2g",
        "source": "turbojet43"
+      },
+      {
+       "text": "How the King is meant to be taken — with a full band, honestly",
+       "url": "https://www.youtube.com/watch?v=IoMb1KwFCWY",
+       "source": "BruceleeRob"
+      },
+      {
+       "text": "Eighteen souls at the King, the honest price of the kill",
+       "url": "https://www.youtube.com/watch?v=js1vtYDsHkE",
+       "source": "Alyona Samoilova"
       }
      ],
      "marker": null,
@@ -1251,6 +1521,11 @@ window.CHRONICLE = {
        "text": "The evidence itself — a Nightfall blade casting through a block",
        "url": "https://www.youtube.com/watch?v=o-X5peCyxMs",
        "source": "Inhuman Perfection"
+      },
+      {
+       "text": "The channel of the honest mage who named the rot and paid for it",
+       "url": "https://www.youtube.com/watch?v=k5iCmLaeE9g",
+       "source": "Diphrael"
       }
      ],
      "marker": null,
@@ -1319,6 +1594,16 @@ window.CHRONICLE = {
        "text": "A guide to Integrity itself — social harmony among the empire-builders",
        "url": "https://www.youtube.com/watch?v=RC9p2RYKrl0",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Draco Silvam interviewed at length, an empire-builder in its own words",
+       "url": "https://www.youtube.com/watch?v=Jsr8UPlb0i0",
+       "source": "Bratwire"
+      },
+      {
+       "text": "Draco Silvam's long fellowship, kept by another hand",
+       "url": "https://www.youtube.com/watch?v=_QYDDQnD-8o",
+       "source": "Unwatchable Trash"
       }
      ],
      "marker": null,
@@ -1339,6 +1624,16 @@ window.CHRONICLE = {
        "text": "The Merry Men met in the field",
        "url": "https://www.youtube.com/watch?v=IUhwYngiQ7c",
        "source": "Gooch"
+      },
+      {
+       "text": "The Merry Men riding out across the Central Steppe",
+       "url": "https://www.youtube.com/watch?v=o5YOCkk--Os",
+       "source": "Margld Apex"
+      },
+      {
+       "text": "Highway robbery on the Vadda road, the band's whole trade",
+       "url": "https://www.youtube.com/watch?v=K6Y-z8BsacM",
+       "source": "Wally Oney"
       }
      ],
      "marker": null,
@@ -1359,6 +1654,11 @@ window.CHRONICLE = {
        "text": "The south grown so strong the world made a pact against it",
        "url": "https://www.youtube.com/watch?v=qX7LDL5vGhY",
        "source": "Tasu"
+      },
+      {
+       "text": "The Undercroft contested — the jungle's lord filming his own war",
+       "url": "https://www.youtube.com/watch?v=J-ijGRZBXsA",
+       "source": "Venomous War Gaming"
       }
      ],
      "marker": null,
@@ -1384,6 +1684,11 @@ window.CHRONICLE = {
        "text": "The pickaxe host united at the walls of Nameless",
        "url": "https://www.youtube.com/watch?v=K1Rg-JeNmrk",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "KotO's leader at single combat — the man the pickaxe-host marched against",
+       "url": "https://www.youtube.com/watch?v=vgEPoGoCAFo",
+       "source": "Kuthara"
       }
      ],
      "marker": null,
@@ -1409,6 +1714,11 @@ window.CHRONICLE = {
        "text": "A rival crows that KotO .5 flopped — the old enemy mocked",
        "url": "https://www.youtube.com/watch?v=J3Lz0y7FqUI",
        "source": "Miscreants Rule"
+      },
+      {
+       "text": "KotO's own channel — the great enemy speaking for itself",
+       "url": "https://www.youtube.com/watch?v=z7epGu04-Nc",
+       "source": "KotO - Mortal Online 2"
       }
      ],
      "marker": null,
@@ -1424,6 +1734,16 @@ window.CHRONICLE = {
        "text": "The zerg debate, aired plainly — the quarrel Emdash's banner answered",
        "url": "https://www.youtube.com/watch?v=Yu6pfP85E2c",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Heartless against the zerg, the banner the age kept raising",
+       "url": "https://www.youtube.com/watch?v=PKSyYX7doxI",
+       "source": "Cracko"
+      },
+      {
+       "text": "A warning against the zerg, learned the hard way",
+       "url": "https://www.youtube.com/watch?v=fsboNkXQuLo",
+       "source": "xGooselordx"
       }
      ],
      "marker": null,
@@ -1449,6 +1769,11 @@ window.CHRONICLE = {
        "text": "The Meduli war of Content and Levia, from the field",
        "url": "https://www.youtube.com/watch?v=0p_zI8cKUbg",
        "source": "Kai Ser"
+      },
+      {
+       "text": "The war from Levia's side, the voice this record was missing",
+       "url": "https://www.youtube.com/watch?v=r8OrwJGTBS4",
+       "source": "Ogladam"
       }
      ],
      "marker": null,
@@ -1474,6 +1799,11 @@ window.CHRONICLE = {
        "text": "Patch 1.0.16 — Elementalism unveiled in full",
        "url": "https://www.youtube.com/watch?v=c_RQfUOYYvA",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "New spells and new mounts together — both halves of the decree",
+       "url": "https://www.youtube.com/watch?v=hvx08ztjhDU",
+       "source": "Ser Arthur"
       }
      ],
      "marker": null,
@@ -1494,6 +1824,16 @@ window.CHRONICLE = {
        "text": "The four-against-four, filmed by the hosts",
        "url": "https://www.youtube.com/watch?v=_wXV-H61HEo",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The developers' own account of the Tindrem tournament and its making",
+       "url": "https://www.youtube.com/watch?v=Wbsv8WX-UvI",
+       "source": "Mortal Online"
+      },
+      {
+       "text": "Tindrem's fight-club culture, kept by a general the chronicle meets again",
+       "url": "https://www.youtube.com/watch?v=6i_nOcmcSeQ",
+       "source": "Lordus"
       }
      ],
      "marker": null,
@@ -1554,6 +1894,11 @@ window.CHRONICLE = {
        "text": "The Royal Guards' own chronicle of the war in the east",
        "url": "https://www.youtube.com/watch?v=1kXZl900bto",
        "source": "ZoomiesTV"
+      },
+      {
+       "text": "MKRG's own answer to the mockery — the underdogs speaking for themselves",
+       "url": "https://www.youtube.com/watch?v=wqnSsBb0yF0",
+       "source": "Dannythenyan :D"
       }
      ],
      "marker": null,
@@ -1579,6 +1924,11 @@ window.CHRONICLE = {
        "text": "The fall of MKRG from a second camera",
        "url": "https://www.youtube.com/watch?v=CMMqR4QzguE",
        "source": "Lucas"
+      },
+      {
+       "text": "The Rat Alliance at MKRG's walls, from a third chronicler's camera",
+       "url": "https://www.youtube.com/watch?v=Z1We0A54wXg",
+       "source": "Teleportr"
       }
      ],
      "marker": null,
@@ -1619,6 +1969,16 @@ window.CHRONICLE = {
        "text": "The King beholds the reforged world",
        "url": "https://www.youtube.com/watch?v=d5iyHqZb5dg",
        "source": "BruceleeRob"
+      },
+      {
+       "text": "Bakti before and after the new engine, set side by side",
+       "url": "https://www.youtube.com/watch?v=UuyJhICnsTc",
+       "source": "Emppubuni"
+      },
+      {
+       "text": "An early look at the reforged world, from the test realm",
+       "url": "https://www.youtube.com/watch?v=M9WXUIqleX0",
+       "source": "Redzon"
       }
      ],
      "marker": null,
@@ -1669,6 +2029,11 @@ window.CHRONICLE = {
        "text": "Hunters descend into the UnderCroft, where the new terror was said to wait",
        "url": "https://www.youtube.com/watch?v=c7Of3mACePU",
        "source": "Lost Chapters"
+      },
+      {
+       "text": "Blood in the Undercroft within days of its opening",
+       "url": "https://www.youtube.com/watch?v=Bpx1IHV2OzI",
+       "source": "Rondark"
       }
      ],
      "marker": null,
@@ -1689,6 +2054,16 @@ window.CHRONICLE = {
        "text": "Rat Alliance PVP — Nightmare Siege, with performance issues from hell",
        "url": "https://youtu.be/l3vGk7wI7_Q",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Abbadon's own camera — the champion who brought a wall of steel behind him",
+       "url": "https://www.youtube.com/watch?v=gAIhWm9K3EY",
+       "source": "Abbadon"
+      },
+      {
+       "text": "Rat against Nightmare, told in the tongue of the Russian night",
+       "url": "https://www.youtube.com/watch?v=yu3z-Rt6eZ4",
+       "source": "Смердящий Толстяк"
       }
      ],
      "marker": null,
@@ -1714,6 +2089,11 @@ window.CHRONICLE = {
        "text": "The disaster of a Gaul'Kor raid, set down for all to see",
        "url": "https://www.youtube.com/watch?v=ex10FgzluWI",
        "source": "cardinal"
+      },
+      {
+       "text": "The griefer's own camera, completing the account against him",
+       "url": "https://www.youtube.com/watch?v=TUw2H5RjTDw",
+       "source": "Dreadlord KilLox"
       }
      ],
      "marker": null,
@@ -1739,6 +2119,11 @@ window.CHRONICLE = {
        "text": "Week four of the siege — fifty Odinseed slay fifty of Mythic",
        "url": "https://www.youtube.com/watch?v=k8oQ13m9Z2c",
        "source": "Pox"
+      },
+      {
+       "text": "The rivalry from a mage's line, filmed by neither house",
+       "url": "https://www.youtube.com/watch?v=r_FWXFoeZdE",
+       "source": "Nausk"
       }
      ],
      "marker": null,
@@ -1759,6 +2144,11 @@ window.CHRONICLE = {
        "text": "BruceLeeRob on Twitch — where the Odinpost wars were streamed live",
        "url": "https://www.twitch.tv/BRUCELEEROB",
        "source": "Twitch"
+      },
+      {
+       "text": "The outpost saved, filmed the very day it was fought",
+       "url": "https://www.youtube.com/watch?v=Ksrts5oooe8",
+       "source": "Oshiruko"
       }
      ],
      "marker": null,
@@ -1779,6 +2169,16 @@ window.CHRONICLE = {
        "text": "The Companions at Icecrown — one of the wars they lost",
        "url": "https://www.youtube.com/watch?v=u6E2WIZGMEk",
        "source": "Lost Chapters"
+      },
+      {
+       "text": "The Companions' own channel — the house that stands here for all who lost",
+       "url": "https://www.youtube.com/watch?v=jbVOb5RK9AM",
+       "source": "Companions"
+      },
+      {
+       "text": "An outside chronicler stops to profile the guild the records pass over",
+       "url": "https://www.youtube.com/watch?v=Yx1Ya6cqjGc",
+       "source": "Longballoon"
       }
      ],
      "marker": null,
@@ -1800,6 +2200,11 @@ window.CHRONICLE = {
        "text": "The Rat Alliance against Nightmare, from a second camera",
        "url": "https://www.youtube.com/watch?v=qNOS0TkG_q4",
        "source": "iMP"
+      },
+      {
+       "text": "A battle-brother's mage-line, two days before Tephra came free",
+       "url": "https://www.youtube.com/watch?v=t1vqa-IqZvo",
+       "source": "May Kel"
       }
      ],
      "marker": null,
@@ -1820,6 +2225,16 @@ window.CHRONICLE = {
        "text": "Into Melisar's Vault — the new deep, plundered",
        "url": "https://www.youtube.com/watch?v=Jldd7RxMRKI",
        "source": "SharkWolf"
+      },
+      {
+       "text": "The decree itself, as Star Vault proclaimed it",
+       "url": "https://www.youtube.com/watch?v=5jreGiFL60g",
+       "source": "Mortal Online"
+      },
+      {
+       "text": "Bear-riding previewed on the test realm, days before the world had it",
+       "url": "https://www.youtube.com/watch?v=BACpcg8bG74",
+       "source": "Ray Fuego Did It"
       }
      ],
      "marker": null,
@@ -1840,6 +2255,16 @@ window.CHRONICLE = {
        "text": "The formal siege in practice — a kingdom in flames",
        "url": "https://www.youtube.com/watch?v=elfobq52K_8",
        "source": "Disrupter"
+      },
+      {
+       "text": "The Sylvan Sanctum walked in Korean — the decree's other gift",
+       "url": "https://www.youtube.com/watch?v=_Yyb03bwUDw",
+       "source": "Brann Goldbeard"
+      },
+      {
+       "text": "Patch 2.0.4 announced from the maker's own hall",
+       "url": "https://www.youtube.com/watch?v=duAJSgeHkFs",
+       "source": "Mortal Online"
       }
      ],
      "marker": null,
@@ -1860,6 +2285,11 @@ window.CHRONICLE = {
        "text": "The recruiters' craft the Finder was built to ease",
        "url": "https://www.youtube.com/watch?v=Sq0ANC1lxhw",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The patch proclaimed by its makers, guild-finder and all",
+       "url": "https://www.youtube.com/watch?v=oBuC-vox1rg",
+       "source": "Mortal Online"
       }
      ],
      "marker": null,
@@ -1881,6 +2311,16 @@ window.CHRONICLE = {
        "text": "Establishing your resource ecosystem — another teacher's chapter on making a living",
        "url": "https://www.youtube.com/watch?v=4xpXfhWc6Yg",
        "source": "finegamingconnoisseur"
+      },
+      {
+       "text": "The science of bows, taught for those who lived by the craft",
+       "url": "https://www.youtube.com/watch?v=8bofsjxaxx0",
+       "source": "BasedBellagio Gaming"
+      },
+      {
+       "text": "Armour-crafting set down for the trades that clothed the wars",
+       "url": "https://www.youtube.com/watch?v=IEgCyssOrvI",
+       "source": "Kibbles Gaming"
       }
      ],
      "marker": null,
@@ -1906,6 +2346,16 @@ window.CHRONICLE = {
        "text": "Weapon-crafting — the making of swords, axes, and hammers",
        "url": "https://www.youtube.com/watch?v=qeOoo7BkGWc",
        "source": "Kibbles Gaming"
+      },
+      {
+       "text": "Spiritism and spirit-farming, one of the manuals' own trades",
+       "url": "https://www.youtube.com/watch?v=A3iTYx_-p9s",
+       "source": "OMI Of SILVER"
+      },
+      {
+       "text": "The taming of beasts, taught plain",
+       "url": "https://www.youtube.com/watch?v=Ku4Q_VXVk8g",
+       "source": "Nazori"
       }
      ]
     },
@@ -1928,6 +2378,11 @@ window.CHRONICLE = {
        "text": "KarniMata's columns turned on every neighbour",
        "url": "https://www.youtube.com/watch?v=xQk7zx2EjzY",
        "source": "iMP"
+      },
+      {
+       "text": "The coalition's side of the Karnimata quarrel, six weeks before it caught",
+       "url": "https://www.youtube.com/watch?v=J08NMmoId6Y",
+       "source": "Ragemaster9999"
       }
      ],
      "marker": null,
@@ -1948,6 +2403,11 @@ window.CHRONICLE = {
        "text": "The same field, seen through a mage's eye",
        "url": "https://www.youtube.com/watch?v=glvBhFoKVPI",
        "source": "Aesir"
+      },
+      {
+       "text": "The Crimson Beasts drilling in French, ten days before Odin's Field",
+       "url": "https://www.youtube.com/watch?v=hAzD1NVKaL0",
+       "source": "Lulu"
       }
      ],
      "odinseed": false,
@@ -2076,6 +2536,11 @@ window.CHRONICLE = {
        "text": "An earlier storm weathered — Nightfall's walls held, once",
        "url": "https://www.youtube.com/watch?v=y3teYmfBnmE",
        "source": "Longballoon"
+      },
+      {
+       "text": "Nine against thirty under Nightfall's banner — the doomed house's own camera",
+       "url": "https://www.youtube.com/watch?v=YoAVvkrNsDA",
+       "source": "x xx"
       }
      ],
      "marker": "Keep destroyed",
@@ -2116,6 +2581,11 @@ window.CHRONICLE = {
        "text": "Morin Khur, heart of the east the guilds fought over",
        "url": "https://www.youtube.com/watch?v=h-SBAdmgsd8",
        "source": "IL Morto Online"
+      },
+      {
+       "text": "The war for Morin Khur, kept by yet another eastern house",
+       "url": "https://www.youtube.com/watch?v=VyC0Q30DKNk",
+       "source": "ZoomiesTV"
       }
      ],
      "marker": null,
@@ -2136,6 +2606,16 @@ window.CHRONICLE = {
        "text": "An exiled king of the snowbound fief tells his tale",
        "url": "https://www.youtube.com/watch?v=KWS2FrWEUUA",
        "source": "Bunup"
+      },
+      {
+       "text": "Hyllspeia taken, the snowbound fief changing hands",
+       "url": "https://www.youtube.com/watch?v=bZiOE_2t9Lk",
+       "source": "j45k"
+      },
+      {
+       "text": "The realm's resentment of Overt, put plainly by one of its victims",
+       "url": "https://www.youtube.com/watch?v=PPn13JAqBqo",
+       "source": "elSOSA"
       }
      ],
      "marker": null,
@@ -2157,6 +2637,16 @@ window.CHRONICLE = {
        "text": "Ten minutes beneath the deadly span",
        "url": "https://www.youtube.com/watch?v=CrkO5eRXB1o",
        "source": "Serukka"
+      },
+      {
+       "text": "The Necro Boss when the deep was new, taken by a pair",
+       "url": "https://www.youtube.com/watch?v=lyOcLCsatMY",
+       "source": "Raged"
+      },
+      {
+       "text": "The deep's boss duoed — the feat BlackPriest's world-first made thinkable",
+       "url": "https://www.youtube.com/watch?v=kjlsIoiLyvs",
+       "source": "SairPL"
       }
      ],
      "marker": null,
@@ -2178,6 +2668,16 @@ window.CHRONICLE = {
        "text": "The GM's account seized, and the DDOS that followed",
        "url": "https://www.youtube.com/watch?v=ZcpKEh7A8K8",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The realm's own inquest into hacks, GMs, and third-party software",
+       "url": "https://www.youtube.com/watch?v=atcsHHb-_AU",
+       "source": "WalksOnWater"
+      },
+      {
+       "text": "A hacker caught on camera, and a rogue GM's justice",
+       "url": "https://www.youtube.com/watch?v=wpzv1kLrnc4",
+       "source": "Oldgreg859"
       }
      ],
      "marker": null,
@@ -2199,6 +2699,16 @@ window.CHRONICLE = {
        "text": "The realm votes on what counts as buying power",
        "url": "https://www.youtube.com/watch?v=Sh1Kq4Io8Hg",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The war on the RMT guild, crediting the documentarian the record names",
+       "url": "https://www.youtube.com/watch?v=YvV2fuj2XrA",
+       "source": "Pannrickard"
+      },
+      {
+       "text": "Unbroken against Tianming in the necro deep — the gold-war fought with steel",
+       "url": "https://www.youtube.com/watch?v=b4RqdtXcFJo",
+       "source": "AkridOnline"
       }
      ],
      "marker": null,
@@ -2219,6 +2729,16 @@ window.CHRONICLE = {
        "text": "Mo2Builds Hall of Fame",
        "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
        "source": "Mo2Builds"
+      },
+      {
+       "text": "The Bounty Hunt Gone Wrong itself — Axe's signature deed, as the record names it",
+       "url": "https://www.youtube.com/watch?v=Lm5YsEjdqTU",
+       "source": "LowTierContent"
+      },
+      {
+       "text": "Cixx's own channel, the bounty-host captain, and the legend of Greebo",
+       "url": "https://www.youtube.com/watch?v=TVzuYJmhJJQ",
+       "source": "Channel Cixx"
       }
      ],
      "marker": null,
@@ -2333,6 +2853,16 @@ window.CHRONICLE = {
        "text": "The progress of the Unreal Engine 5 migration, tracked in full",
        "url": "https://www.youtube.com/watch?v=VnGtwEo9HxI",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The new engine judged after living in it a while",
+       "url": "https://www.youtube.com/watch?v=NcMcjLV4KJY",
+       "source": "Longballoon"
+      },
+      {
+       "text": "The state of the world taken after the beastmaster patch",
+       "url": "https://www.youtube.com/watch?v=0HiM9NT-fvA",
+       "source": "Rhias15"
       }
      ],
      "marker": null,
@@ -2358,6 +2888,11 @@ window.CHRONICLE = {
        "text": "A one-versus-one tournament of the ranked age",
        "url": "https://www.youtube.com/watch?v=SsFa87Bb2gI",
        "source": "Ogladam"
+      },
+      {
+       "text": "RunKarni takes his measure against Slasher, the realm's named best",
+       "url": "https://www.youtube.com/watch?v=I0KRzWGK1hA",
+       "source": "RunKarni Tephra PD"
       }
      ],
      "marker": null,
@@ -2388,6 +2923,16 @@ window.CHRONICLE = {
        "text": "The free weekend weighed by the old archivist",
        "url": "https://www.youtube.com/watch?v=MjL5MQjMuNY",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The year's roadmap read by an independent hand",
+       "url": "https://www.youtube.com/watch?v=3MPzzDJZheA",
+       "source": "MMOKAI"
+      },
+      {
+       "text": "The soldier's daily tasks explained for those newly out of Haven",
+       "url": "https://www.youtube.com/watch?v=awb9U38J-Y4",
+       "source": "Schinzeli"
       }
      ],
      "marker": null,
@@ -2428,6 +2973,16 @@ window.CHRONICLE = {
        "text": "Two hundred strong, battling for the south — a cinematic siege",
        "url": "https://www.youtube.com/watch?v=zhltstzCQwE",
        "source": "SCUM MONA PvP"
+      },
+      {
+       "text": "The same alliance-war from the coalition's mage-line",
+       "url": "https://www.youtube.com/watch?v=Bfyy2e5wZcc",
+       "source": "Aesir"
+      },
+      {
+       "text": "The Anti-Jungle banner's own view of the year's great rivalry",
+       "url": "https://www.youtube.com/watch?v=HHLLi4VR37g",
+       "source": "Ser Arthur"
       }
      ],
      "marker": null,
@@ -2453,6 +3008,11 @@ window.CHRONICLE = {
        "text": "The realm reads the proclamation — biggest patch in its history",
        "url": "https://www.youtube.com/watch?v=u27Pfv3ywro",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The realm's reaction to the overhaul, gathered from the vault's next episode",
+       "url": "https://www.youtube.com/watch?v=AfK2LzQimVI",
+       "source": "Aellerians"
       }
      ],
      "marker": null,
@@ -2503,6 +3063,11 @@ window.CHRONICLE = {
        "text": "A mage's-eye view of the fight for Bad Company's stronghold",
        "url": "https://www.youtube.com/watch?v=LQfGtju0kN0",
        "source": "Aesir"
+      },
+      {
+       "text": "The stronghold's fall from Bad Company's own side, filmed the same day",
+       "url": "https://www.youtube.com/watch?v=wTaXh6lw-os",
+       "source": "elSOSA"
       }
      ],
      "marker": "Stronghold assaulted",
@@ -2523,6 +3088,16 @@ window.CHRONICLE = {
        "text": "The same war, fifty against seventy — Odinseed and the Coalition",
        "url": "https://www.youtube.com/watch?v=09nLLMStPPM",
        "source": "Disrupter"
+      },
+      {
+       "text": "The Odinseed-and-Coalition quarrel from a mage's line",
+       "url": "https://www.youtube.com/watch?v=3HM3A8k_bZ0",
+       "source": "Aesir"
+      },
+      {
+       "text": "Odinseed's own wall of Oghmir, filmed from inside the guild",
+       "url": "https://www.youtube.com/watch?v=mYDCUyV_6JM",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -2548,6 +3123,11 @@ window.CHRONICLE = {
        "text": "The official teaser on the day the thrones shattered",
        "url": "https://www.youtube.com/watch?v=t0ogYqrhKzA",
        "source": "Mortal Online"
+      },
+      {
+       "text": "An independent voice takes the measure of the Reckoning, days in",
+       "url": "https://www.youtube.com/watch?v=DZI2bWsKtHg",
+       "source": "Caldrin PC Gaming"
       }
      ],
      "marker": null,
@@ -2628,6 +3208,11 @@ window.CHRONICLE = {
        "text": "Wasting players' time — the fake sieges named as a real problem",
        "url": "https://www.youtube.com/watch?v=VDOMOeFwArw",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Sieging doesn't work — the grievance already old when the lament was written",
+       "url": "https://www.youtube.com/watch?v=5eP_NJO7Vnw",
+       "source": "Aesir"
       }
      ],
      "marker": null,
@@ -2653,6 +3238,11 @@ window.CHRONICLE = {
        "text": "Capturing an Outpost — the new region system explained",
        "url": "https://www.youtube.com/watch?v=luZOcf4cT_4",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "Mythic against SKS — the new regions contested in earnest",
+       "url": "https://www.youtube.com/watch?v=McmsVs2p_nA",
+       "source": "Gryph"
       }
      ],
      "marker": null,
@@ -2743,6 +3333,16 @@ window.CHRONICLE = {
        "text": "The desert's deep lore, told before the ships sailed",
        "url": "https://www.youtube.com/watch?v=nHlGt-yPqio",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The reveal answered with an honest trailer, four days on",
+       "url": "https://www.youtube.com/watch?v=l1lJs3aeVgs",
+       "source": "Dremlock"
+      },
+      {
+       "text": "One creator answers the reveal by locking himself out of Haven",
+       "url": "https://www.youtube.com/watch?v=etnRbAr90ho",
+       "source": "Deep Cheek Dweller"
       }
      ],
      "marker": null,
@@ -2763,6 +3363,16 @@ window.CHRONICLE = {
        "text": "Another fresh pair of eyes, this very season",
        "url": "https://www.youtube.com/watch?v=iKCToDA9vDY",
        "source": "xGooselordx"
+      },
+      {
+       "text": "A Kenshi chronicler wanders in and finds Nave worth the walking",
+       "url": "https://www.youtube.com/watch?v=lq1yD0xOZyQ",
+       "source": "Scotch Samurai"
+      },
+      {
+       "text": "What a niche world did for one newcomer's audience",
+       "url": "https://www.youtube.com/watch?v=5Iqi6_MpAJo",
+       "source": "Deep Cheek Dweller"
       }
      ],
      "marker": null,
@@ -2813,6 +3423,16 @@ window.CHRONICLE = {
        "text": "The realm debates the bridge and the colonists' terms",
        "url": "https://www.youtube.com/watch?v=eYTugSq7LzY",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "A fan-made welcome to a continent not yet open",
+       "url": "https://www.youtube.com/watch?v=WBUI9WKdi_I",
+       "source": "Kathar"
+      },
+      {
+       "text": "The waiting room for Sarducaa, passed on horseback with a bow",
+       "url": "https://www.youtube.com/watch?v=WTO4GXNjGbU",
+       "source": "Brainpower"
       }
      ],
      "marker": null,
@@ -2838,6 +3458,11 @@ window.CHRONICLE = {
        "text": "The Locks shown by their makers",
        "url": "https://www.youtube.com/watch?v=mya6FC17J60",
        "source": "Mortal Online"
+      },
+      {
+       "text": "The test realm's gates walked the very day they parted",
+       "url": "https://www.youtube.com/watch?v=zTiBdCund4w",
+       "source": "Wolfszeit"
       }
      ],
      "marker": null,
@@ -2888,6 +3513,11 @@ window.CHRONICLE = {
        "text": "A veteran of three thousand hours looks back",
        "url": "https://www.youtube.com/watch?v=bXxD5X8lNU8",
        "source": "Lordus"
+      },
+      {
+       "text": "One man's guild remembered — Abyss, and how nothing lasted",
+       "url": "https://www.youtube.com/watch?v=h_Ve3nzkmpQ",
+       "source": "Malagar"
       }
      ],
      "marker": null,

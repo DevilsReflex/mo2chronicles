@@ -707,6 +707,70 @@
     spacer.setAttribute("aria-hidden", "true");
     document.body.appendChild(spacer);
 
+    // paging arrows: a determined reader can cross a whole Age in a couple
+    // of clicks instead of nudging one entry at a time
+    const PAGE_STEP = 3;
+    const pageEntries = Array.from(document.querySelectorAll(".entry"));
+    function makeArrow(dir) {
+      const a = document.createElement("button");
+      a.type = "button";
+      a.className = "hz-arrow " + (dir < 0 ? "hz-arrow-prev" : "hz-arrow-next");
+      a.setAttribute("aria-label", dir < 0 ? "Jump back several entries" : "Jump forward several entries");
+      a.innerHTML = '<span class="hz-arrow-chevron" aria-hidden="true"></span>';
+      document.body.appendChild(a);
+      return a;
+    }
+    const prevArrow = makeArrow(-1);
+    const nextArrow = makeArrow(1);
+
+    function currentEntryIndex() {
+      const mid = window.innerWidth / 2;
+      let idx = 0;
+      for (let i = 0; i < pageEntries.length; i++) {
+        if (pageEntries[i].getBoundingClientRect().left < mid) idx = i;
+        else break;
+      }
+      return idx;
+    }
+    function updateArrowState() {
+      const idx = currentEntryIndex();
+      prevArrow.disabled = idx <= 0;
+      nextArrow.disabled = idx >= pageEntries.length - 1;
+    }
+    function page(dir) {
+      if (!pageEntries.length) return;
+      const idx = currentEntryIndex();
+      const target = Math.min(pageEntries.length - 1, Math.max(0, idx + dir * PAGE_STEP));
+      const el = pageEntries[target];
+      scrollToEl(el, true);
+      const node = el.querySelector(".entry-node");
+      if (node && !reducedMotion)
+        node.animate(
+          [
+            { boxShadow: "0 0 0 rgba(236,208,150,0)" },
+            { boxShadow: "0 0 26px rgba(236,208,150,0.9)" },
+            { boxShadow: "0 0 0 rgba(236,208,150,0)" },
+          ],
+          { duration: 1100, easing: "ease-out", delay: 350 }
+        );
+      requestAnimationFrame(() => requestAnimationFrame(updateArrowState));
+    }
+    prevArrow.addEventListener("click", () => page(-1));
+    nextArrow.addEventListener("click", () => page(1));
+    let arrowTicking = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!hzMode || arrowTicking) return;
+        arrowTicking = true;
+        requestAnimationFrame(() => {
+          arrowTicking = false;
+          updateArrowState();
+        });
+      },
+      { passive: true }
+    );
+
     function sizeSpacer() {
       if (!hzMode) {
         spacer.style.height = "";
@@ -732,6 +796,7 @@
       sizeSpacer();
       window.scrollTo(0, 0);
       onScroll();
+      if (on) updateArrowState();
       try {
         localStorage.setItem("nave-hz", on ? "1" : "0");
       } catch (e) {}

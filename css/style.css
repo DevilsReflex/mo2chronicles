@@ -1848,6 +1848,59 @@ body.hz .yb-line { display: none; }
 /* the vertical-mode scroll cue points the wrong way here */
 body.hz .scroll-cue { display: none; }
 
+/* horizontal-view paging arrows: fixed at the screen edges, they jump
+   several entries at a stride rather than nudging one at a time */
+.hz-arrow {
+  display: none;
+  position: fixed;
+  top: calc(var(--hz-top, 92px) + (100vh - var(--hz-top, 92px)) / 2);
+  transform: translateY(-50%);
+  z-index: 40;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 9, 7, 0.55);
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: color 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s, opacity 0.25s;
+}
+body.hz .hz-arrow { display: flex; }
+.hz-arrow-prev { left: 16px; }
+.hz-arrow-next { right: 16px; }
+.hz-arrow:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+  background: rgba(10, 9, 7, 0.78);
+  box-shadow: 0 0 18px rgba(201, 168, 106, 0.3);
+}
+.hz-arrow:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.hz-arrow:disabled {
+  opacity: 0.22;
+  cursor: default;
+  box-shadow: none;
+}
+.hz-arrow:disabled:hover {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+  background: rgba(10, 9, 7, 0.55);
+}
+.hz-arrow-chevron {
+  width: 12px; height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+.hz-arrow-prev .hz-arrow-chevron { transform: rotate(135deg) translate(1px, 1px); }
+.hz-arrow-next .hz-arrow-chevron { transform: rotate(-45deg); }
+@media (max-width: 720px) {
+  .hz-arrow { width: 38px; height: 38px; }
+  .hz-arrow-prev { left: 8px; }
+  .hz-arrow-next { right: 8px; }
+  .hz-arrow-chevron { width: 10px; height: 10px; }
+}
+
 /* reveals are driven by intersection, which still fires as the rail slides
    sideways — but the entry transforms are written for a vertical approach,
    so settle everything into its resting state and let the rod do the work */

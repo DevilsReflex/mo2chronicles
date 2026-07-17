@@ -407,7 +407,7 @@ main, footer { position: relative; z-index: 2; }
 .fy-item.fy-landmark .fy-title { color: var(--gold-bright); font-weight: 600; }
 .fy-item.fy-landmark .fy-date { color: var(--gold-bright); }
 
-/* nav action buttons (ambience) */
+/* nav action buttons */
 .nav-actions { display: flex; align-items: center; gap: 4px; }
 .nav-btn {
   display: inline-flex;

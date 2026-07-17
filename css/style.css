@@ -189,6 +189,8 @@ main, footer { position: relative; z-index: 2; }
 }
 .age-nav-link {
   position: relative;
+  display: flex;
+  align-items: baseline;
   font-family: var(--display);
   font-weight: 700;
   font-size: 16.5px;
@@ -197,6 +199,12 @@ main, footer { position: relative; z-index: 2; }
   padding: 4px 4px 4px 12px;
   border-bottom: 1px solid transparent;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  /* the five full Age names need ~1770px laid out in one line — no real
+     window offers that. nowrap is the hard backstop: even if the min-width
+     breakpoint below is ever wrong for someone's zoom level or OS font
+     metrics, this guarantees the label can never wrap into a second line
+     and blow the fixed header out into the hero underneath it. */
+  white-space: nowrap;
   transition: color 0.3s, border-color 0.3s;
 }
 .age-nav-link:hover {
@@ -224,10 +232,29 @@ main, footer { position: relative; z-index: 2; }
   transform: translateY(-50%) rotate(45deg);
   box-shadow: 0 0 6px color-mix(in srgb, var(--age-tint, var(--gold-bright)) 70%, transparent);
 }
-.age-nav .nav-roman { font-size: 18px; }
+.age-nav .nav-roman { font-size: 18px; flex: 0 0 auto; }
 .age-nav .nav-name { display: none; }
-@media (min-width: 1100px) {
-  .age-nav .nav-name { display: inline; margin-left: 6px; font-size: 13.5px; letter-spacing: 0.16em; opacity: 0.78; }
+/* 1780px, not 1100px: the five full names measure ~1770px laid out in one
+   row before the wordmark and the nav buttons even get their share, so
+   1100px was showing names on windows barely a third wide enough — the
+   direct cause of the wrap-into-the-hero bug. Even at 1780px the max-width
+   below still truncates the longest names ("The Coming of Territory and
+   the First Keep to Fall") with an ellipsis, since no single width fits
+   both a short and a very long Age title without either wasting space or
+   overflowing on the long one. */
+@media (min-width: 1780px) {
+  .age-nav .nav-name {
+    display: inline-block;
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 6px;
+    font-size: 13.5px;
+    letter-spacing: 0.16em;
+    opacity: 0.78;
+  }
 }
 
 /* the caret: a small always-present affordance that the age names are

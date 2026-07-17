@@ -548,6 +548,23 @@
 
   let currentYear = null;
   let ticking = false;
+  // horizontal view: the page still scrolls vertically, but that scroll is
+  // re-expressed as a sideways slide of #hz-track (see horizontalView below).
+  // Every measurement in onScroll therefore has an x-axis twin.
+  let hzMode = false;
+  let hzTrack = null;
+
+  // centre an element in the viewport, along whichever axis is in play
+  function scrollToEl(el, smooth) {
+    const behavior = !smooth || reducedMotion ? "auto" : "smooth";
+    if (!hzMode) {
+      el.scrollIntoView({ behavior, block: "center" });
+      return;
+    }
+    const r = el.getBoundingClientRect();
+    const target = window.scrollY + r.left - (window.innerWidth / 2 - r.width / 2);
+    window.scrollTo({ top: Math.max(0, target), behavior });
+  }
 
   function onScroll() {
     if (ticking) return;
@@ -558,6 +575,10 @@
       const doc = document.documentElement;
       const max = doc.scrollHeight - window.innerHeight;
 
+      // slide first, measure after — the rect reads below must see the
+      // track where this frame actually puts it
+      if (hzMode && hzTrack) hzTrack.style.transform = `translate3d(${-y}px,0,0)`;
+
       nav.classList.toggle("scrolled", y > 40);
       const pct = max > 0 ? y / max : 0;
       fill.style.width = pct * 100 + "%";
@@ -566,15 +587,18 @@
       // anno visibility: only within the chronicle proper
       const chron = document.getElementById("chronicle");
       const cr = chron.getBoundingClientRect();
-      const inChron = cr.top < window.innerHeight * 0.5 && cr.bottom > window.innerHeight * 0.5;
+      const inChron = hzMode
+        ? cr.left < window.innerWidth * 0.5 && cr.right > window.innerWidth * 0.5
+        : cr.top < window.innerHeight * 0.5 && cr.bottom > window.innerHeight * 0.5;
       anno.classList.toggle("visible", inChron);
 
-      // current year/entry = last entry whose top is above mid-viewport
+      // current year/entry = last entry whose leading edge is past mid-viewport
       if (inChron) {
         let yr = null;
         for (let i = 0; i < entries.length; i++) {
           const r = entries[i].getBoundingClientRect();
-          if (r.top < window.innerHeight * 0.6) yr = entries[i].getAttribute("data-year");
+          const passed = hzMode ? r.left < window.innerWidth * 0.6 : r.top < window.innerHeight * 0.6;
+          if (passed) yr = entries[i].getAttribute("data-year");
           else break;
         }
         if (yr && yr !== currentYear) {
@@ -588,18 +612,27 @@
         }
       }
 
-      // spine fill per timeline
+      // spine fill per timeline — the rod fills along its own axis
       for (const tl of timelines) {
         const r = tl.getBoundingClientRect();
         const spineFill = tl.querySelector(".spine-fill");
-        const visible = Math.min(Math.max(window.innerHeight * 0.62 - r.top, 0), r.height);
-        spineFill.style.height = visible + "px";
+        if (hzMode) {
+          const visible = Math.min(Math.max(window.innerWidth * 0.5 - r.left, 0), r.width);
+          spineFill.style.height = "";
+          spineFill.style.width = visible + "px";
+        } else {
+          const visible = Math.min(Math.max(window.innerHeight * 0.62 - r.top, 0), r.height);
+          spineFill.style.width = "";
+          spineFill.style.height = visible + "px";
+        }
       }
 
       // active age in nav + era atmosphere
       let active = null;
       for (const d of dividers) {
-        if (d.getBoundingClientRect().top < window.innerHeight * 0.55) active = d.id;
+        const r = d.getBoundingClientRect();
+        const passed = hzMode ? r.left < window.innerWidth * 0.55 : r.top < window.innerHeight * 0.55;
+        if (passed) active = d.id;
       }
       navLinks.forEach((a) => a.classList.toggle("active", a.dataset.age === active));
       setEra(active ? parseInt(active.split("-")[1], 10) - 1 : -1);
@@ -608,8 +641,12 @@
       if (!reducedMotion) {
         for (const d of dividers) {
           const r = d.getBoundingClientRect();
-          if (r.bottom < 0 || r.top > window.innerHeight) continue;
-          const p = Math.min(Math.max((window.innerHeight - r.top) / (window.innerHeight + r.height), 0), 1);
+          const near = hzMode ? r.left : r.top;
+          const far = hzMode ? r.right : r.bottom;
+          const span = hzMode ? window.innerWidth : window.innerHeight;
+          const size = hzMode ? r.width : r.height;
+          if (far < 0 || near > span) continue;
+          const p = Math.min(Math.max((span - near) / (span + size), 0), 1);
           const roman = d.querySelector(".age-roman-bg");
           if (roman) roman.style.setProperty("--zoom", (0.92 + p * 0.18).toFixed(4));
         }
@@ -621,6 +658,93 @@
   window.addEventListener("resize", onScroll);
   // deferred: onScroll touches the era/atmosphere module declared below
   setTimeout(onScroll, 0);
+
+  /* ── the horizontal view ─────────────────────────────────
+     The chronicle on its side: the rod ruled across mid-screen, entries
+     alternating above and below it, the reader travelling left to right.
+     Rather than hijack the wheel, the page keeps its ordinary vertical
+     scrollbar — #hz-spacer supplies the height, and each frame re-spends
+     that scroll distance as a translateX on the rail. Wheel, trackpad,
+     scrollbar, spacebar and Home/End all keep working for free.        */
+  (function horizontalView() {
+    const btn = document.getElementById("hz-toggle");
+    const mainEl = document.getElementById("top");
+    if (!btn || !mainEl) return;
+    const footerEl = document.querySelector("footer");
+
+    const clip = document.createElement("div");
+    clip.id = "hz-clip";
+    const rail = document.createElement("div");
+    rail.id = "hz-rail";
+    mainEl.parentNode.insertBefore(clip, mainEl);
+    clip.appendChild(rail);
+    rail.appendChild(mainEl);
+    if (footerEl) rail.appendChild(footerEl);
+    hzTrack = rail;
+
+    const spacer = document.createElement("div");
+    spacer.id = "hz-spacer";
+    spacer.setAttribute("aria-hidden", "true");
+    document.body.appendChild(spacer);
+
+    function sizeSpacer() {
+      if (!hzMode) {
+        spacer.style.height = "";
+        return;
+      }
+      // travel = everything past the first screenful; the trailing viewport
+      // keeps the last panel reachable at rest
+      const travel = Math.max(0, rail.offsetWidth - window.innerWidth);
+      spacer.style.height = travel + window.innerHeight + "px";
+    }
+
+    function setMode(on) {
+      hzMode = on;
+      document.body.classList.toggle("hz", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      // the rod fills along one axis or the other; clear the stale one so
+      // its inline px value can't fight the incoming mode's CSS
+      const axis = on ? "height" : "width";
+      document.querySelectorAll(".spine-fill").forEach((f) => {
+        f.style[axis] = "";
+      });
+      if (!on) rail.style.transform = "";
+      sizeSpacer();
+      window.scrollTo(0, 0);
+      onScroll();
+      try {
+        localStorage.setItem("nave-hz", on ? "1" : "0");
+      } catch (e) {}
+    }
+
+    btn.addEventListener("click", () => setMode(!hzMode));
+    window.addEventListener("resize", sizeSpacer);
+
+    // a fixed rail cannot be reached by a native #anchor jump, so every
+    // in-page link becomes a horizontal seek. Capture, to pre-empt the
+    // default without disturbing the flyout's own close handlers.
+    document.addEventListener(
+      "click",
+      (ev) => {
+        if (!hzMode) return;
+        const a = ev.target.closest('a[href^="#"]');
+        if (!a) return;
+        const id = a.getAttribute("href").slice(1);
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (!el) return;
+        ev.preventDefault();
+        // #top is the whole rail; centring it would land mid-chronicle
+        if (id === "top") window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
+        else scrollToEl(el, true);
+      },
+      true
+    );
+
+    try {
+      if (localStorage.getItem("nave-hz") === "1") setMode(true);
+    } catch (e) {}
+  })();
 
   /* ── embers (canvas particles) ───────────────────────── */
   function embers(canvasId, density, interactive) {
@@ -841,21 +965,22 @@
 
   /* ── keyboard walking ── */
   function jumpList(list, dir) {
-    const mid = window.innerHeight / 2;
+    const mid = (hzMode ? window.innerWidth : window.innerHeight) / 2;
     let targetEl = null;
+    const near = (el) => (hzMode ? el.getBoundingClientRect().left : el.getBoundingClientRect().top);
+    const far = (el) => (hzMode ? el.getBoundingClientRect().right : el.getBoundingClientRect().bottom);
     if (dir > 0) {
-      targetEl = list.find((el) => el.getBoundingClientRect().top > mid + 30);
+      targetEl = list.find((el) => near(el) > mid + 30);
     } else {
-      // previous = last entry that ends above the midline, so the entry
+      // previous = last entry that ends before the midline, so the entry
       // currently spanning the center is never re-targeted
       for (const el of list) {
-        const r = el.getBoundingClientRect();
-        if (r.bottom < mid - 30) targetEl = el;
+        if (far(el) < mid - 30) targetEl = el;
         else break;
       }
     }
     if (targetEl) {
-      targetEl.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+      scrollToEl(targetEl, true);
       const node = targetEl.querySelector(".entry-node");
       if (node && !reducedMotion)
         node.animate(

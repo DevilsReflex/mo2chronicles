@@ -1,7 +1,7 @@
 // The Chronicle of Nave — structured data (hand-curated; corrections applied).
 window.CHRONICLE = {
  "title": "The Chronicle of Nave",
- "subtitle": "Being a True and Epic History of the Guilds of Mortal Online 2 — of the Five Years in which a World was Won, and Lost, and Won Again · 2021 – 2026 · from the accounts of those who fought its wars and filmed its sieges",
+ "subtitle": "Being a True and Epic History of Mortal Online 2 — of the Five Years in which a World was Won, and Lost, and Won Again · 2021 – 2026 · the whole of it made and remembered by one community: its guilds and its rogues, its builders and its bards, its chroniclers and its kings",
  "invocation": [
   "Of wars beyond number upon the plains of a world but newly made; of the guilds that rose like towers and fell like towers; of the sixteen thrones, and the multitude who broke themselves upon them; of kings anointed in the sewers and empires drowned beneath the union of all against them — of these I sing.",
   "In the land of Nave there is no peace, nor was there ever. Here nothing is given and nothing is safe: a man may lose in an hour what he gathered in a year, and a house may lose in a night the throne it bled a season to raise. Yet out of that cruelty the dwellers of Nave wrought a history as grand and terrible as any sung of the elder kingdoms — five years of siege and betrayal, of banners lifted into the sun and burned into the mud.",

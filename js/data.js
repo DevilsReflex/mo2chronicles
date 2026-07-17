@@ -9,15 +9,6 @@ window.CHRONICLE = {
  ],
  "sections": [
   {
-   "heading": "Preface of the Chronicler",
-   "paragraphs": [
-    "Hear now the history of the guilds of Nave — five years in which the sandbox world of Mortal Online 2 was won, and lost, and won again: a tale of empires raised upon an empty plain and cast into the dust, the same magnificent and exhausting war fought again and again beneath an ever-changing sky.",
-    "Nave keeps no official annal of its heroes, no royal scribe. What is remembered was remembered by the fighters themselves — the chroniclers who carried their cameras into battle. Chief among them stands Speznat of Wolfszeit, whose channel has preserved the great sieges in clear 4K for years. Beside him ride BruceLeeRob, bard of the Odin-worshippers; Azog the Defiler, warlord of the host Content, who filmed the wars he led; and General Lordus, whose voice rode over the largest battles the world has known. Where their record fails, the Hall of Fame at Mo2Builds preserved the names, and the annals of Star Vault preserved the dates.",
-    "Mark well the names that recur, for they are the men and women whose deeds the chroniclers thought worthy to preserve. Among the chroniclers and heralds: Speznat of Wolfszeit; BruceLeeRob, the streamer who is King Barados of Odinseed himself; Azog the Defiler, warlord of Content; General Lordus; Tasu, who set down \"A Game of Keeps\"; and Vellek the podcaster, Gab the songmaker, Axe of the movie-announcer voice, Rivers the streamer, and Diphrael, keeper of the unofficial hall. Among the war-captains: Kuthara of KotO, Abbadon of Nightmare, Slasher the duelist, Cixx of the Headless, Danny of MKRG, Killox of the Dreadlords, PoisonArrows and Pandah Sykes of the BeastMasters, Emdash of Eternal, Putzin and TheMasterStick of Acolytes, and Slyy (called Pockets), who drew the first maps. Among the rogues: RunKarni, Tats, Buda, Oghmir the scammer, Thievery and Cruel of Overt, and the brothers Stinkeye and Pinkeye. Over all presided Henrik Nyström, lord of Star Vault. These names shall recur — watch for them as old friends and old foes.",
-    "Be warned: the victors set down what they wished remembered, and the footage of the defeated was allowed to fade. Political maps of Nave were redrawn \"like one a week,\" and rarely showed who truly held the land. Guilds changed their names and their banners between one season and the next. Treat what follows as the living memory of an age, not a ledger of certainties — and where the trail runs thin, it will be said plainly."
-   ]
-  },
-  {
    "heading": "How to Read This Chronicle",
    "paragraphs": [
     "This history is arranged as a timeline of events: descend through the years as you would descend through the reigns of kings. Each Age opens with a few words on its temper, and then unfolds as a roll of dated deeds."
@@ -1430,11 +1421,6 @@ window.CHRONICLE = {
      "body": "The captain Emdash set down the beginning of a long feud he named the \"Eternal Wars\"; in later days he would raise an openly anti-zerg banner, the guild Eternal.",
      "links": [
       {
-       "text": "Eternal Wars — Emdash's declaration thread, opened this very day",
-       "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/",
-       "source": "Emdash, official forums"
-      },
-      {
        "text": "The zerg debate, aired plainly — the quarrel Emdash's banner answered",
        "url": "https://www.youtube.com/watch?v=Yu6pfP85E2c",
        "source": "Wolfszeit"
@@ -2492,11 +2478,6 @@ window.CHRONICLE = {
        "text": "Relic Thief — a relic lifted from another guild's reliquary",
        "url": "https://www.youtube.com/watch?v=Y2rSc-6qSVA",
        "source": "Roy Zenith +"
-      },
-      {
-       "text": "Eternal Wars — guild-politics thread",
-       "url": "https://mortalonline2.com/forums/threads/eternal-wars.10751/page-2",
-       "source": "Emdash, official forums"
       },
       {
        "text": "Fifty against fifty for five relics — Odinseed against the Bad Company-KotO alliance",

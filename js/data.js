@@ -1972,7 +1972,7 @@ window.CHRONICLE = {
     {
      "date": "20 June 2024",
      "title": "The Siege of Granum Pass",
-     "body": "The chronicles of the Odin-host preserve this battle — the Odinseed Alliance against the Mercenaries at Granum Pass — a frontline record filmed from within the mage-line by the chronicler Aesir. It stands as one of the clearest windows the age has left us into how the Odin-host went to war.",
+     "body": "The chronicles of the Odin-host preserve this battle — the Odinseed Alliance against a company of the Mercenaries at Granum Pass — a frontline record filmed from within the mage-line by the chronicler Aesir. But the siege was only the last page of a shorter, bitterer tale. That spring Odinseed had stood allied with Karnimata, the mercenary company of the self-styled king Run Karni — until the Odin-host reneged on the war-gold it had promised him and broke a sworn peace within a single day of signing it. Run Karni answered with a public oath against \"Odinseed's tyranny and oppression,\" and by June his blades had gone over entirely: Karnimata fought at Granum Pass among the Mercenaries, hired against the very allies who had duped them of their gold and their word. It stands as one of the clearest windows the age has left us into how swiftly the Odin-host could turn a friend into a foe.",
      "links": [
       {
        "text": "Siege of Granum Pass — Odin Seed Alliance vs Mercenaries, Mage PoV",
@@ -1980,7 +1980,7 @@ window.CHRONICLE = {
        "source": "Aesir"
       },
       {
-       "text": "The same pass, seen from the mercenaries' line",
+       "text": "The same pass, seen from Karnimata's mercenary line",
        "url": "https://www.youtube.com/watch?v=itBU6B1iC1I",
        "source": "Vetian"
       },
@@ -1988,6 +1988,11 @@ window.CHRONICLE = {
        "text": "A mounted archer's 2-versus-4 at Granum Pass",
        "url": "https://www.youtube.com/watch?v=exJxS3Zm_Q0",
        "source": "TronLive"
+      },
+      {
+       "text": "Run Karni's rallying speech against \"Odinseed's tyranny,\" weeks before the reckoning at Granum Pass",
+       "url": "https://www.youtube.com/watch?v=ae4dSIgbgNA",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,

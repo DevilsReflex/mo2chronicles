@@ -480,6 +480,7 @@
         excerpt: leadIn(e.body, 150),
         thumbId: firstVideo ? youtubeId(firstVideo.url) : null,
         isLandmark,
+        year: e.year || null,
         isSiege: SIEGE_TITLES.has(e.title),
         isBigFight: BIG_FIGHT_TITLES.has(e.title),
       });
@@ -493,7 +494,7 @@
     ageStartIdx.forEach((startI, ai) => {
       const from = (startI / (flatEntries.length - 1)) * 100;
       const to = ai + 1 < ageStartIdx.length ? (ageStartIdx[ai + 1] / (flatEntries.length - 1)) * 100 : 100;
-      const band = `color-mix(in srgb, ${AGE_TINTS[ai] || AGE_TINTS[2]} 22%, transparent)`;
+      const band = `color-mix(in srgb, ${AGE_TINTS[ai] || AGE_TINTS[2]} 34%, transparent)`;
       stops.push(`${band} ${from.toFixed(3)}%`, `${band} ${to.toFixed(3)}%`);
     });
     progressTrack.style.background = `linear-gradient(90deg, ${stops.join(", ")})`;
@@ -517,14 +518,33 @@
         </a>`;
       })
       .join("");
-    // era-change markers: a full-height divider at the first entry of
-    // every age after the first, tinted to the age it opens
+    // year milestones: a labelled rule at the first entry of each year, so
+    // the strip reads as a calendar as well as a map of the Ages. Rendered
+    // before the era marks so an era's standard paints over its rule.
+    const yearFirst = new Map();
+    flatEntries.forEach((fe, i) => {
+      if (fe.year && !yearFirst.has(fe.year)) yearFirst.set(fe.year, i);
+    });
+    progressTicks.innerHTML += Array.from(yearFirst.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([yr, idx]) => {
+        const pct = (idx / (flatEntries.length - 1)) * 100;
+        // the first and last labels would hang off the bar if centred
+        const edge = pct < 2 ? " sp-year-edge-start" : pct > 98 ? " sp-year-edge-end" : "";
+        return `<span class="sp-year-mark${edge}" style="left:${pct.toFixed(3)}%" data-year="${yr}" aria-hidden="true"></span>`;
+      })
+      .join("");
+
+    // era-change markers: a full-height standard at the first entry of every
+    // age after the first, tinted to the age it opens and named by its numeral.
+    // Three of these fall on the very same entry as a year rule, so the numeral
+    // sits low and off to one side while the year label keeps the top.
     progressTicks.innerHTML += ageStartIdx
       .slice(1)
       .map((startI, i) => {
         const pct = (startI / (flatEntries.length - 1)) * 100;
         const ai = i + 1;
-        return `<span class="sp-era-mark" style="left:${pct.toFixed(3)}%;--tick-tint:${AGE_TINTS[ai] || AGE_TINTS[2]}" aria-hidden="true"></span>`;
+        return `<span class="sp-era-mark" style="left:${pct.toFixed(3)}%;--tick-tint:${AGE_TINTS[ai] || AGE_TINTS[2]}" data-roman="${ROMANS[ai]}" aria-hidden="true"></span>`;
       })
       .join("");
     // roving arrow-key navigation — 120 individual tab stops is tedious,

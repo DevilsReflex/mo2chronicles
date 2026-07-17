@@ -866,40 +866,6 @@ main, footer { position: relative; z-index: 2; }
   color: var(--gold);
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 34px;
-  left: 50%;
-  /* independent `translate` (not `transform`) so the .reveal-hero entrance
-     animation — which finishes on `transform: none` — can't clobber centering */
-  translate: -50% 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  color: var(--bone-dim);
-  transition: color 0.3s;
-}
-.scroll-cue:hover { color: var(--gold-bright); }
-.cue-text {
-  font-family: var(--sans);
-  font-size: 10.5px;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-}
-.cue-chevron {
-  width: 12px; height: 12px;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  transform: rotate(45deg);
-  animation: cue-drift 2.2s ease-in-out infinite;
-}
-@keyframes cue-drift {
-  0%, 100% { transform: rotate(45deg) translate(0, 0); opacity: 0.5; }
-  50% { transform: rotate(45deg) translate(5px, 5px); opacity: 1; }
-}
-
 /* hero entrance */
 .reveal-hero {
   opacity: 0;
@@ -1593,7 +1559,6 @@ footer p {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal, .reveal-hero { opacity: 1 !important; transform: none !important; filter: none !important; animation: none !important; transition: none !important; }
-  .cue-chevron { animation: none; }
   #veil { animation-duration: 0.2s; }
   #atmosphere { display: none; }
   .age-roman-bg { transform: none !important; }
@@ -1847,9 +1812,6 @@ body.hz .yb-text {
   letter-spacing: 0.3em;
 }
 body.hz .yb-line { display: none; }
-
-/* the vertical-mode scroll cue points the wrong way here */
-body.hz .scroll-cue { display: none; }
 
 /* horizontal-view paging arrows: fixed at the screen edges, they jump
    several entries at a stride rather than nudging one at a time */

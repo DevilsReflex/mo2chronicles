@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    THE CHRONICLE OF NAVE — design system
-   Palette and type modeled on mortalonline2.com:
-   Marcellus SC / Marcellus display, near-black ground, antique gold.
+   Palette and type modeled on mortalonline2.com's own real system:
+   Vollkorn SC display, Catamaran body, near-black ground, antique gold.
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -18,11 +18,10 @@
   --blood: #9c2b22;
   --blood-bright: #c94b3d;
   --name-guild: #d17a5f;
-  --serif: "IM Fell English", Georgia, serif;
-  --display: "Marcellus SC", "Marcellus", serif;
-  --display-lc: "Marcellus", serif;
+  --serif: "Catamaran", "Work Sans", system-ui, sans-serif;
+  --display: "Vollkorn SC", Georgia, serif;
+  --display-lc: "Vollkorn", Georgia, serif;
   --sans: "Work Sans", system-ui, sans-serif;
-  --sans-read: "Alegreya Sans", "Work Sans", system-ui, sans-serif;
   --age-tint: var(--gold);
   --spine-x: clamp(28px, 9vw, 130px);
 }
@@ -669,7 +668,7 @@ main, footer { position: relative; z-index: 2; }
 
 .hero-title {
   font-family: var(--display);
-  font-weight: 400;
+  font-weight: 600;
   font-size: clamp(44px, 9.5vw, 118px);
   line-height: 1.04;
   letter-spacing: 0.06em;
@@ -1042,25 +1041,26 @@ main, footer { position: relative; z-index: 2; }
   flex-wrap: wrap;
 }
 .entry-title {
-  font-family: var(--sans-read);
-  font-weight: 600;
+  font-family: var(--display);
+  font-weight: 700;
   font-size: clamp(23px, 3vw, 31px);
-  line-height: 1.22;
+  line-height: 1.24;
   color: var(--bone);
   margin-bottom: 14px;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.03em;
 }
 .entry-body {
-  font-family: var(--sans-read);
+  font-family: var(--serif);
   color: rgba(217, 210, 194, 0.92);
   max-width: 66ch;
-  line-height: 1.8;
-  letter-spacing: 0.01em;
+  line-height: 1.58;
+  letter-spacing: 0;
 }
 .entry-body + .entry-body { margin-top: 1.1em; }
 .entry-body em {
   color: var(--gold-bright);
-  font-style: italic;
+  font-style: normal;
+  font-weight: 600;
 }
 /* a carved-manuscript drop cap on the first paragraph of every entry —
    the same treatment already used in the Preface, extended throughout
@@ -1100,8 +1100,8 @@ em .n-p, em .n-g { font-style: italic; }
   padding-top: clamp(30px, 4.5vw, 48px);
 }
 .entry.landmark .entry-title {
-  font-family: var(--sans-read);
-  font-weight: 700;
+  font-family: var(--display);
+  font-weight: 900;
   font-size: clamp(29px, 4.2vw, 44px);
   letter-spacing: 0.04em;
   color: var(--gold-bright);
@@ -1375,7 +1375,7 @@ em .n-p, em .n-g { font-style: italic; }
   line-height: 1.85;
 }
 .epilogue-mark { color: var(--bone) !important; }
-.epilogue-mark em { color: var(--gold); }
+.epilogue-mark em { color: var(--gold); font-style: normal; font-weight: 600; }
 .back-to-top {
   display: inline-block;
   margin-top: 26px;

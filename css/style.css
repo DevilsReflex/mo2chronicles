@@ -22,6 +22,7 @@
   --display: "Marcellus SC", "Marcellus", serif;
   --display-lc: "Marcellus", serif;
   --sans: "Work Sans", system-ui, sans-serif;
+  --sans-read: "Alegreya Sans", "Work Sans", system-ui, sans-serif;
   --age-tint: var(--gold);
   --spine-x: clamp(28px, 9vw, 130px);
 }
@@ -1041,8 +1042,8 @@ main, footer { position: relative; z-index: 2; }
   flex-wrap: wrap;
 }
 .entry-title {
-  font-family: var(--display-lc);
-  font-weight: 400;
+  font-family: var(--sans-read);
+  font-weight: 600;
   font-size: clamp(23px, 3vw, 31px);
   line-height: 1.22;
   color: var(--bone);
@@ -1050,6 +1051,7 @@ main, footer { position: relative; z-index: 2; }
   letter-spacing: 0.015em;
 }
 .entry-body {
+  font-family: var(--sans-read);
   color: rgba(217, 210, 194, 0.92);
   max-width: 66ch;
   line-height: 1.8;
@@ -1098,9 +1100,10 @@ em .n-p, em .n-g { font-style: italic; }
   padding-top: clamp(30px, 4.5vw, 48px);
 }
 .entry.landmark .entry-title {
-  font-family: var(--display);
+  font-family: var(--sans-read);
+  font-weight: 700;
   font-size: clamp(29px, 4.2vw, 44px);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.04em;
   color: var(--gold-bright);
   text-shadow: 0 0 34px rgba(201, 168, 106, 0.28);
 }

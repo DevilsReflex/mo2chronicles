@@ -432,6 +432,27 @@ main, footer { position: relative; z-index: 2; }
 .nav-btn-text { display: none; }
 @media (min-width: 900px) { .nav-btn-text { display: inline; } }
 
+/* Timeline toggle: the one standing nav action now that ambience is gone,
+   so it gets a lit gold-chip look at rest instead of blending into plain
+   text until hovered — a standing invitation, not a hidden option */
+#hz-toggle {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+  background: var(--gold-faint);
+}
+#hz-toggle:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+  background: rgba(201, 168, 106, 0.18);
+  box-shadow: 0 0 14px rgba(201, 168, 106, 0.28);
+}
+#hz-toggle[aria-pressed="true"] {
+  color: var(--gold-bright);
+  border-color: var(--gold-bright);
+  background: rgba(201, 168, 106, 0.24);
+  box-shadow: 0 0 16px rgba(236, 208, 150, 0.4);
+}
+
 /* the timeline is a real strip built into the header, not a decorative
    underline — a banded track (tinted per Age, so it reads as a map of
    the whole chronicle at a glance) */

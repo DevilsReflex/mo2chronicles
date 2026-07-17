@@ -1658,6 +1658,11 @@ window.CHRONICLE = {
        "text": "The Mino Mountain gang war — Odinseed against Winx and Grimside",
        "url": "https://www.youtube.com/watch?v=py-KtVq-q_Q",
        "source": "Pox"
+      },
+      {
+       "text": "The other side of the mountain — GrimSide against Odinseed",
+       "url": "https://www.youtube.com/watch?v=DTn9mc36_jE",
+       "source": "JedyFFF"
       }
      ],
      "marker": null,

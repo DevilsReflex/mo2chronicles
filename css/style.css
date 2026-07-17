@@ -1202,6 +1202,7 @@ main, footer { position: relative; z-index: 2; }
 }
 .entry-body {
   font-family: var(--serif);
+  font-size: 18.5px;
   color: rgba(217, 210, 194, 0.92);
   max-width: 66ch;
   line-height: 1.58;
@@ -1766,7 +1767,9 @@ body.hz .entry-card {
 }
 body.hz .entry-title { font-size: clamp(20px, 1.7vw, 26px); margin-bottom: 9px; }
 body.hz .entry.landmark .entry-title { font-size: clamp(23px, 2.1vw, 32px); }
-body.hz .entry-body { max-width: none; }
+/* smaller than the vertical read — a shorter card means the video preview
+   at the bottom is more likely to sit in view without scrolling */
+body.hz .entry-body { max-width: none; font-size: 16px; line-height: 1.5; }
 body.hz .watch { margin-top: 12px; }
 
 /* The thumbnails are 16:9, so a wider card makes them TALLER — widening for

@@ -287,7 +287,7 @@ window.CHRONICLE = {
     {
      "date": "April 2021",
      "title": "The World Draws Eyes",
-     "body": "As the beta wore on, the wandering critics of the wider world came to look upon Nave: TheLazyPeon and Josh Strife Hayes each brought their great audiences to the gates with a verdict of \"is it worth playing?\", and the curious began to gather for the launch to come. It was the first turn of a wheel that never stopped: every few years thereafter some stranger with a great following would find Nave, ask the same question anew, and send a fresh generation down into the sewers to learn the answer for themselves.",
+     "body": "As the beta wore on, the wandering critics of the wider world came to look upon Nave: TheLazyPeon and Josh Strife Hayes each brought their great audiences to the gates with a verdict of \"is it worth playing?\"; and the Twitch giant LIRIK brought the greatest crowd of all to the stress-test weekends, some five-and-twenty thousand watching at once, and would return upon the very launch day of 2022 with near twenty-seven thousand souls at his back — the largest audience Nave ever drew to a single stream. And the curious began to gather for the launch to come. It was the first turn of a wheel that never stopped: every few years thereafter some stranger with a great following would find Nave, ask the same question anew, and send a fresh generation down into the sewers to learn the answer for themselves.",
      "links": [
       {
        "text": "A Sandbox PVP MMO Reviewed by Someone Who Hates Sandbox PVP MMOs",
@@ -308,6 +308,11 @@ window.CHRONICLE = {
        "text": "An insanely ambitious PvP MMORPG, weighed in a great Q&A",
        "url": "https://www.youtube.com/watch?v=Wg7aMlT1HP4",
        "source": "Ser Medieval"
+      },
+      {
+       "text": "LIRIK's Mortal Online 2 streams — four in all, peaking at 26,896 on launch day",
+       "url": "https://twitchtracker.com/lirik/games/517282",
+       "source": "TwitchTracker"
       }
      ],
      "marker": null,
@@ -1453,7 +1458,7 @@ window.CHRONICLE = {
     {
      "date": "",
      "title": "The Live Channels — the Streamers of Nave",
-     "body": "Beyond the chroniclers who kept the memory of Nave upon their YouTube archives ran another watch entirely: the live channels, where the cruel world was broadcast as it happened, its ambushes and betrayals unfolding in real time before an audience that could not look away. First among the live-watchers stood JonahVeil, a veteran of the older hardcore worlds who made Nave his home stream — and whose clip of the launch, in which he reads a scathing review aloud even as the game crashes out from under him, remains to this day the single most-watched Twitch moment the world ever gave: the whole Mortal experience in a breath. He was no passing tourist; years on he was still live almost nightly, foremost among the game's own devoted by every count, in the good company of Rivers and Dread Og, who kept their own vigils. And the giants of the wider platform came to look upon Nave as the wandering critics did — even summit1g, one of the greatest names on all of Twitch, took his turn at the sandbox and titled the clip of it, drily, the Mortal Online 2 Experience. The roll those live channels left behind is a comic one: a character deleted mid-stream, a fish that startled a grown man out of his chair, a bad review read aloud straight into a crash — the small daily cruelties of Nave, caught live and kept forever. The sieges were filmed for history; the streams were the history happening, watched as it hurt.",
+     "body": "Beyond the chroniclers who kept the memory of Nave upon their YouTube archives ran another watch entirely: the live channels, where the cruel world was broadcast as it happened, its ambushes and betrayals unfolding in real time before an audience that could not look away. First among the live-watchers stood JonahVeil, a veteran of the older hardcore worlds who made Nave his home stream — and whose clip of the launch, in which he reads a scathing review aloud even as the game crashes out from under him, remains to this day the single most-watched Twitch moment the world ever gave: the whole Mortal experience in a breath. He was no passing tourist; years on he was still live almost nightly, foremost among the game's own devoted by every count, in the good company of Rivers and Dread Og, who kept their own vigils. And the giants of the wider platform came to look upon Nave as the wandering critics did — even summit1g, one of the greatest names on all of Twitch, took his turn at the sandbox in the summer of 2024 and titled the clip of it, drily, the Mortal Online 2 Experience. The roll those live channels left behind is a comic one: a character deleted mid-stream, a fish that startled a grown man out of his chair, a bad review read aloud straight into a crash — the small daily cruelties of Nave, caught live and kept forever. The sieges were filmed for history; the streams were the history happening, watched as it hurt.",
      "era": "2022–2026",
      "kind": "tale",
      "marker": null,
@@ -1810,6 +1815,11 @@ window.CHRONICLE = {
        "text": "The war from Levia's side, the voice this record was missing",
        "url": "https://www.youtube.com/watch?v=r8OrwJGTBS4",
        "source": "Ogladam"
+      },
+      {
+       "text": "CONTENT: 'A Jungle guild' — Azog's own guild-movie of the house he fought for",
+       "url": "https://www.youtube.com/watch?v=EXuhcdcbF1A",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -2045,6 +2055,11 @@ window.CHRONICLE = {
        "text": "The other side of the mountain — GrimSide against Odinseed",
        "url": "https://www.youtube.com/watch?v=DTn9mc36_jE",
        "source": "JedyFFF"
+      },
+      {
+       "text": "Battle for Mino Mountain — the fight for the heights, from the Odin-host's shield",
+       "url": "https://www.youtube.com/watch?v=VMsndr4QaLg",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -2419,6 +2434,11 @@ window.CHRONICLE = {
        "text": "The coalition's side of the Karnimata quarrel, six weeks before it caught",
        "url": "https://www.youtube.com/watch?v=J08NMmoId6Y",
        "source": "Ragemaster9999"
+      },
+      {
+       "text": "KarniMata spend Wicked as cannon-fodder to flee the Mino Dungeon",
+       "url": "https://www.youtube.com/watch?v=J_ki_GrlScc",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -2444,6 +2464,11 @@ window.CHRONICLE = {
        "text": "The Crimson Beasts drilling in French, ten days before Odin's Field",
        "url": "https://www.youtube.com/watch?v=hAzD1NVKaL0",
        "source": "Lulu"
+      },
+      {
+       "text": "The Battle for Central Steppe Field, fifty a side — another open-field muster of the age",
+       "url": "https://www.youtube.com/watch?v=JPlkr-r1oRY",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "odinseed": false,
@@ -3154,6 +3179,11 @@ window.CHRONICLE = {
        "text": "Odinseed's own wall of Oghmir, filmed from inside the guild",
        "url": "https://www.youtube.com/watch?v=mYDCUyV_6JM",
        "source": "Pox"
+      },
+      {
+       "text": "50 Odinseed and militia vs 70 of the Coalition — the very fight, from the Odin-host's chronicler",
+       "url": "https://www.youtube.com/watch?v=ybMT8U3R2cA",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -3379,6 +3409,11 @@ window.CHRONICLE = {
        "text": "The archivist's own year-end reckoning",
        "url": "https://www.youtube.com/watch?v=86uAon1m3Co",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "35 of the Odin-host against 60 of the gathering coalition — the year's war in December",
+       "url": "https://www.youtube.com/watch?v=u3-mZ7II7WE",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -3479,6 +3514,11 @@ window.CHRONICLE = {
        "text": "Odinseed and the Fabernum host against the Coalition, in the war's last turn",
        "url": "https://www.youtube.com/watch?v=GL3aT8auoXY",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "Odinseed against Wanted, Wolfszeit, Bad Company, Miscreants and more — the rebellion massing",
+       "url": "https://www.youtube.com/watch?v=gDVIIQGLu2g",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": "Keep lost",
@@ -3624,6 +3664,11 @@ window.CHRONICLE = {
        "text": "The archivist reads the terms of the new world",
        "url": "https://www.youtube.com/watch?v=ETNW9WH66aM",
        "source": "Wolfszeit"
+      },
+      {
+       "text": "The 'Ban Os' Incident in Sarducaa — the Odin-host's old feuds reach the new continent",
+       "url": "https://www.youtube.com/watch?v=-0GwM1WYXzI",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,

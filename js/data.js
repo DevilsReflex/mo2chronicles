@@ -1452,6 +1452,32 @@ window.CHRONICLE = {
     },
     {
      "date": "",
+     "title": "The Live Channels — the Streamers of Nave",
+     "body": "Beyond the chroniclers who kept the memory of Nave upon their YouTube archives ran another watch entirely: the live channels, where the cruel world was broadcast as it happened, its ambushes and betrayals unfolding in real time before an audience that could not look away. First among the live-watchers stood JonahVeil, a veteran of the older hardcore worlds who made Nave his home stream — and whose clip of the launch, in which he reads a scathing review aloud even as the game crashes out from under him, remains to this day the single most-watched Twitch moment the world ever gave: the whole Mortal experience in a breath. He was no passing tourist; years on he was still live almost nightly, foremost among the game's own devoted by every count, in the good company of Rivers and Dread Og, who kept their own vigils. And the giants of the wider platform came to look upon Nave as the wandering critics did — even summit1g, one of the greatest names on all of Twitch, took his turn at the sandbox and titled the clip of it, drily, the Mortal Online 2 Experience. The roll those live channels left behind is a comic one: a character deleted mid-stream, a fish that startled a grown man out of his chair, a bad review read aloud straight into a crash — the small daily cruelties of Nave, caught live and kept forever. The sieges were filmed for history; the streams were the history happening, watched as it hurt.",
+     "era": "2022–2026",
+     "kind": "tale",
+     "marker": null,
+     "year": 2022,
+     "links": [
+      {
+       "text": "Jonah reads bad review and crashes — the most-watched MO2 Twitch moment ever",
+       "url": "https://clips.twitch.tv/HilariousHealthyBillEleGiggle-B7OSCLfM4pzbtcKs",
+       "source": "JonahVeil"
+      },
+      {
+       "text": "The Mortal Online 2 Experience — a Twitch giant takes his turn at the sandbox",
+       "url": "https://www.twitch.tv/summit1g/clip/StrongOddSalsifyItsBoshyTime-rBbgbuiGT2Ve8Qe5",
+       "source": "summit1g"
+      },
+      {
+       "text": "The all-time roll of the live channels, most-watched first",
+       "url": "https://www.twitchmetrics.net/g/517282-mortal-online-2/clips",
+       "source": "TwitchMetrics"
+      }
+     ]
+    },
+    {
+     "date": "",
      "title": "The Baggening — The Great Purge",
      "body": "Then came the infamy of the bag exploit, by which cunning players multiplied their wealth through a glitch of the inventory — until Star Vault, without public warning, fell upon the offenders in a mass banning the community named \"the Baggening.\" Among those cast out forever was Putzin, once master of Acolytes and lord of the Central Steppe Castle, who keeps his podcast to this day though he may never log in again. Mark the whole of that road: his house had been sworn more than a year before the gates ever opened, vowing to hold one of the sixteen thrones and disdaining the zerg-hordes of lesser games; by the guild-census of 2021 it kept at Morin Khur and insisted on purple, for it had no allies; and here its master was put out of the world for good, before ever the sixteen thrones he had sworn to take were raised. It sowed a lasting distrust between the ruled and their rulers: none could say with certainty, thereafter, what was lawful in Nave and what was not.",
      "links": [

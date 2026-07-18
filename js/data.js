@@ -3326,6 +3326,31 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
+     "date": "August 2025 – February 2026",
+     "title": "The Small Wars of the New Regions",
+     "body": "For all the promise of the Reckoning, the outpost-wars that followed it were rarely the stuff of legend — and that was the truest thing about them. Through the autumn and the winter the five-and-thirty regions changed hands not in a few great sieges but in a hundred small ones: in the last days of August the Jungle Alliance's own chronicler filmed the fight for Canteri Slums, siege engines and all; by the first Saturday of November Wolfszeit stood in the snow against Odinseed and a banner new to this record, WigSplit, hauling a manganon through the drifts to the night's last clash; and by February a defender of the Sands could still only shrug on camera that the fight itself had been good, if the company keeping it had not. No siege of this season was remembered as MKRG's fall was, or Odinpost's — the new law had made the land easy to reach and hard to hold, and Nave answered with a hundred small wars in place of one great one.",
+     "links": [
+      {
+       "text": "The Siege of Canteri Slums — a shotcaller's view of the fight",
+       "url": "https://www.youtube.com/watch?v=IR5ptGE-BQo",
+       "source": "Venomous War Gaming"
+      },
+      {
+       "text": "Wolfszeit against Odinseed and WigSplit — a manganon hauled through the snow",
+       "url": "https://www.youtube.com/watch?v=4EYLDMkeN10",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "The Siege of the Sands — a good fight, six months into the new law",
+       "url": "https://www.youtube.com/watch?v=h1C6yNn-E6Y",
+       "source": "Venomous War Gaming"
+      }
+     ],
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
      "date": "September 2025",
      "title": "The New Regions Contested, and the Next Overhaul Foretold",
      "body": "Now the world learned what the Reckoning had bought it. Across the five-and-thirty open regions the outpost-wars began, and hosts great and small went out to try the new ground — the small ones above all, for the law that had sealed the top table against all but sixteen houses was two months dead, and any twenty souls might now go and take a piece of the earth. The staged Outpost Siege tried every guild's mettle alike, where a host troubled to come at all; and the chroniclers who had spent the summer explaining the new law spent the autumn filming men living under it. And already Star Vault, in its \"Into the Vault\" annals, foretold the next great remaking — the coming banking, travel, and war overhauls that would land before the year was out — for the lords of Nave have never yet let the world finish digesting one age before setting another before it.",

@@ -3176,11 +3176,6 @@ window.CHRONICLE = {
        "source": "Aesir"
       },
       {
-       "text": "Odinseed's own wall of Oghmir, filmed from inside the guild",
-       "url": "https://www.youtube.com/watch?v=mYDCUyV_6JM",
-       "source": "Pox"
-      },
-      {
        "text": "50 Odinseed and militia vs 70 of the Coalition — the very fight, from the Odin-host's chronicler",
        "url": "https://www.youtube.com/watch?v=ybMT8U3R2cA",
        "source": "AZOGTHEDEFILER"

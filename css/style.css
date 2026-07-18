@@ -42,11 +42,34 @@ body {
 
 ::selection { background: var(--gold); color: #14100a; }
 
-/* thin antique scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #060608; }
-::-webkit-scrollbar-thumb { background: #2a2620; border-radius: 5px; border: 2px solid #060608; }
-::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+/* the scrollbar as the site's own spine-rod: a gold gradient thumb in a
+   carved channel, glowing brighter under the hand — the page's timeline
+   rendered in its own chrome */
+::-webkit-scrollbar { width: 13px; }
+::-webkit-scrollbar-track {
+  background: #060608;
+  box-shadow: inset 1px 0 0 rgba(201, 168, 106, 0.12);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8a7040, #c9a86a 40%, #c9a86a 60%, #8a7040);
+  border-radius: 7px;
+  border: 2px solid #060608;
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.22),
+    inset -1px 0 0 rgba(0, 0, 0, 0.35);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c9a86a, #ecd096 40%, #ecd096 60%, #c9a86a);
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ecd096;
+}
+/* Firefox has no ::-webkit-scrollbar; give it the gold two-tone. Gated so
+   it can never override the richer WebKit styling in Chromium (where
+   scrollbar-color would take precedence and flatten the gradient). */
+@supports not selector(::-webkit-scrollbar) {
+  html { scrollbar-color: #c9a86a #060608; }
+}
 
 a { color: var(--gold); text-decoration: none; }
 /* the default mobile tap flash is a stock grey/blue box that clashes

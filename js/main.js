@@ -454,6 +454,7 @@
     "The Battle for Sausage Lake Keep",
     "A Hundred and Fifty Blades",
     "The Siege of Ursa Stronghold",
+    "The Siege of the KotO Keep",
     "The War over a Small House",
     "The Lament of the Hollow Sieges",
     "The Fall of Odinpost",
@@ -471,6 +472,7 @@
     "The Battle for Odinpost",
     "A Hundred and Fifty Blades",
     "The Battle for Odin's Field",
+    "The Battle for the Undercroft",
   ]);
 
   // flat entry list mirrors `entries` 1:1 in document order — used to

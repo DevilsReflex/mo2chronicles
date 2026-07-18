@@ -317,7 +317,7 @@ window.CHRONICLE = {
     {
      "date": "",
      "title": "The World Weighs Nave",
-     "body": "No hard world is judged only from within. Year upon year the wandering critics of the wider web came to render their verdicts upon Nave — some to praise, some to warn, some merely to survive a week and report the bruises. The great reviewer ESO asked why no one was talking about it; Asmongold played it and reacted to those who did; and a hundred thousand strangers learned the name of the world from a single stinging title — Mortal Online 2 is Traumatizing. Their audiences dwarfed the playerbase they described: proof that the legend of the cruel sandbox travelled far beyond the souls who actually dwelt in it.",
+     "body": "No hard world is judged only from within. Year upon year the wandering critics of the wider web came to render their verdicts upon Nave — some to praise, some to warn, some merely to survive a week and report the bruises. The great reviewer ESO asked why no one was talking about it; Asmongold played it and reacted to those who did; and a hundred thousand strangers learned the name of the world from a single stinging title — Mortal Online 2 is Traumatizing. Nor did the cycle ever slow: in 2024 the same TheLazyPeon who had first weighed the beta returned to reckon how Nave fared three years on, and a quarter-million souls came to hear the verdict. Their audiences dwarfed the playerbase they described: proof that the legend of the cruel sandbox travelled far beyond the souls who actually dwelt in it.",
      "era": "2021–2026",
      "kind": "tale",
      "odinseed": false,
@@ -383,6 +383,11 @@ window.CHRONICLE = {
        "text": "A newcomer checks out the full-loot survival world",
        "url": "https://www.youtube.com/watch?v=z6Ec0mE5R8M",
        "source": "Myth"
+      },
+      {
+       "text": "Mortal Online 2 In 2024 — the beta's old critic returns, and a quarter-million follow",
+       "url": "https://www.youtube.com/watch?v=ugRR3g8EzeY",
+       "source": "TheLazyPeon"
       }
      ]
     },
@@ -516,7 +521,7 @@ window.CHRONICLE = {
     {
      "date": "August 2021",
      "title": "The Third Flame Festival",
-     "body": "In the waning of the beta the people gathered for games and a horse-race, and the chroniclers filmed it — the first great gathering of the tribes.",
+     "body": "In the waning of the beta the people gathered for games and a horse-race, and the chroniclers filmed it — the first great gathering of the tribes. And the sport of single combat found its first scorekeeper: from the duels of the Flame Festival and the Festival of Nave, a statistician named Nisse drew up the realm's earliest 1v1 duelist rankings — a ladder of wins and losses that set a blade named Horizon second only to its champion, and numbered among its ranks men this chronicle knows in other guises: Putzin of the Acolytes, Suttner the festival-maker of Events, even Kuthara of the Keepers of the Oath. Before ever the world had keeps to fight over, it was already keeping the score of its swordsmen — the same impulse to write it all down that would raise the great guild-census that winter, and this chronicle years on.",
      "links": [
       {
        "text": "End of Stress Test — the Boss Hunt Event",
@@ -532,6 +537,11 @@ window.CHRONICLE = {
        "text": "A duel at the festival, filmed the very day the tribes gathered",
        "url": "https://www.youtube.com/watch?v=A4ziQ0HA0nA",
        "source": "Baranov Vitaliy"
+      },
+      {
+       "text": "BTC 1v1 Duelist Rankings — Nisse's ladder of the beta's blades",
+       "url": "https://www.mortalonline2.com/forums/threads/btc-1v1-duelist-rankings.2899/",
+       "source": "official forums"
       }
      ],
      "marker": null,
@@ -3075,6 +3085,26 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
+     "date": "23 May 2025",
+     "title": "The Battle for the Undercroft",
+     "body": "The day after the north stormed Ursa, the tangled wars of the spring found their shape at last, and the realm woke to two banners it had not had the day before. Near three hundred souls — six score and more to a side — met in the deep of the Undercroft, and the chronicler of the southern Jungle Alliance, Venomous War Gaming, filmed the press from within and named the two hosts the year's wars had forged: the Coalition, and the Anti-Coalition Treaty sworn against it. So the alliance-war of 2025 hardened into a pair of leagues, as the lawless years had hardened long before into the Rebellion of Barados against the Empire of Kuthara. It was the same Coalition that five weeks on would stand seventy-strong against the Odin-host over a single small house, and would still be ganking horses a hundred-to-a-hundred when the leaves turned — the dominant bloc of the very year the sixteen thrones came down.",
+     "links": [
+      {
+       "text": "The MASSIVE Battle for the Undercroft — nearly 300 souls, six score a side",
+       "url": "https://www.youtube.com/watch?v=J-ijGRZBXsA",
+       "source": "Venomous War Gaming"
+      },
+      {
+       "text": "The Coalition still at large in the autumn — a hundred to a hundred over horses",
+       "url": "https://www.youtube.com/watch?v=bXhLRgmKqRw",
+       "source": "Venomous War Gaming"
+      }
+     ],
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
      "date": "29 June 2025",
      "title": "The War over a Small House",
      "body": "A single small house kindled a server-wide war: fifty of the Odin-host stood against seventy of the Coalition, and a quarrel over four walls ended in a great siege-defense — proof that in Nave any spark could set the whole world ablaze. Mark the name of the enemy: in 2023 the chroniclers had hailed Azog \"a primary shot caller in the victorious fights against the Coalition,\" and Azog had ridden then in the Rebellion at Odinseed's side. Whether the name had changed hands or the Odin-host had changed places the chronicles do not trouble to say; but by this summer the Coalition meant whoever had come for Barados.",
@@ -3098,6 +3128,26 @@ window.CHRONICLE = {
        "text": "Odinseed's own wall of Oghmir, filmed from inside the guild",
        "url": "https://www.youtube.com/watch?v=mYDCUyV_6JM",
        "source": "Pox"
+      }
+     ],
+     "marker": null,
+     "kind": "event",
+     "year": 2025
+    },
+    {
+     "date": "15 July 2025",
+     "title": "The Siege of the KotO Keep",
+     "body": "On the very eve of the Reckoning — the day before the sixteen thrones were shattered — the realm made one last great war under the old law, and made it against the oldest enemy of all. Wolfszeit bound its banner to King Barados's Odinseed and to countless other guilds, and the whole host fell upon the desert keep that KotO held near Meduli: the empire of Kuthara, established in 2004, that in both this world and the elder one was ever the power against which the rest at last united. Wolfszeit called it one of the most ambitious sieges the world had yet seen, and owned plainly that the numbers were past counting and the end past clear reckoning, for the fight was all chaos. Two years before, the Company had declared the Empire of Kuthara finished, and been proven wrong; and here, upon the last day of the sixteen-throne age, KotO's desert throne still stood to be stormed. On the morrow the Law of Territory that had made keeps worth besieging would be torn up, and the manner of every siege changed forever — so this assault stands as the last of its kind, the final storming of a keep under the law of the sixteen.",
+     "links": [
+      {
+       "text": "Koto Siege Attempt — Wolfszeit, Odinseed and countless guilds at the desert keep",
+       "url": "https://www.youtube.com/watch?v=IMfw6QrA2Q4",
+       "source": "Wolfszeit"
+      },
+      {
+       "text": "A Game of Keeps — the guild-history that sets the KotO saga in its place",
+       "url": "https://www.youtube.com/watch?v=loUGVq7KTug",
+       "source": "Tasu"
       }
      ],
      "marker": null,
@@ -3322,7 +3372,7 @@ window.CHRONICLE = {
     {
      "date": "February 2026",
      "title": "Sarducaa Revealed",
-     "body": "The lords of the world unveiled a new continent, the desert land of Sarducaa — the ancient realm of the immortal Empress Labbah Madar and the Magi of Yesil, known until now only from the old lore — to be raised upon a far server across the western sea. Star Vault heralded it with a \"New Lands Reveal\" teaser, and the whole realm turned its eyes south to the coming frontier.",
+     "body": "The lords of the world unveiled a new continent, the desert land of Sarducaa — the ancient realm of the immortal Empress Labbah Madar, styled the Padishahbanu, and the Magi of Yesil, known until now only from the old lore — to be raised upon a far server across the western sea. Out of that lore the realm learned the names of the drowned south: Beth Jeddah the fallen capital, Yesil the Magi's impregnable bastion, the coastal port of Kwar Migdal, and Pash whose people fled beneath the sand, while the northern village of Aur perished utterly — a whole country of Yequedah sorcerers and Sepat soldiery, undone once already by the same insect-Irruption that had founded Nave. Star Vault heralded it with a \"New Lands Reveal\" teaser, and the whole realm turned its eyes south to the coming frontier.",
      "links": [
       {
        "text": "Mortal Online 2 — New Lands Reveal Teaser",
@@ -3472,7 +3522,7 @@ window.CHRONICLE = {
     {
      "date": "2026",
      "title": "Of the Vessel and the Fatalities",
-     "body": "The world kept growing stranger beneath the headlines: a new boss, The Vessel, behind its portal of orbs; Fatalities, with titles for those who mastered them; Tagmaton brood-eggs hatched into Fallowborn pets by the patient — the plague loosed upon the guilds at the Reckoning now cradled and fed by them; and a chat reforged so a man might at last link his wares and whisper his enemies by name. The chronicle of patches is the chronicle of daily life — and daily life in Nave was never once dull.",
+     "body": "The world kept growing stranger beneath the headlines: a new boss, The Vessel, behind its portal of orbs; Fatalities, with titles for those who mastered them; Tagmaton brood-eggs hatched into Fallowborn pets by the patient — the plague loosed upon the guilds at the Reckoning now cradled and fed by them; and a chat reforged so a man might at last link his wares and whisper his enemies by name. And a quiet blow was struck at the oldest land-baron's trick, when the lords decreed that only a house's own owner might henceforth pay its upkeep — so that no lord might squat a hoard of homes he did not truly hold. The chronicle of patches is the chronicle of daily life — and daily life in Nave was never once dull.",
      "links": [
       {
        "text": "The living patch-record of 2026 — the Vessel, Fatalities, and Fallowborn",

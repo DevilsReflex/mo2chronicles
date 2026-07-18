@@ -3351,26 +3351,6 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
-     "date": "30 October 2025",
-     "title": "The Hundred Days",
-     "body": "The many tongues of Nave kept their own epics. Years before, the chroniclers had set it down plainly — the realm was no single people — and named the German host Wolfszeit, the Polish SLAV, the French houses, and the war-bands of the Russian night; now a Spanish-speaking creator survived one hundred days in hardcore with his community at his back and gave the ordeal its verdict: \"esto fue una locura total.\" So the challenge-saga tradition came to Nave, and the old truth held: the realm's story was being told in every language its people spoke, and no one tongue had ever owned it.",
-     "links": [
-      {
-       "text": "Sobreviví 100 Días en Modo Hardcore con la Comunidad",
-       "url": "https://www.youtube.com/watch?v=eqdFbFtklfI",
-       "source": "G-SAM"
-      },
-      {
-       "text": "Another zero-to-hero saga of the same season",
-       "url": "https://www.youtube.com/watch?v=7MxjnKQZxLM",
-       "source": "Deep Cheek Dweller"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
      "date": "November 2025",
      "title": "The Ether Wayshrines and the Banking Overhaul (Patch 2.2.2.58)",
      "body": "The year's last great patch was the one the annals had foretold in September, and it came for the tedium of the dead and the merchant alike. Ether Wayshrines rose across the land — spirit-gates by which a slain soul might travel the Etherworld from shrine to shrine rather than wander the grey roads for an age — while the Banking Overhaul brought order to the vaults, with auto-sorting and search where before was clutter. Caravan Campsites rose outside the dungeons, where soloers and small bands might gather, resurrect, and ready their delving. And war itself was re-lawed: a guild must stand at open war to lay a siege, and war was made costly and finite, ending of itself after fourteen days. Whether the lords intended it so or not, the empty summons of August had been given a price at last — one more turn of Star Vault's long labor to make the fighting for land worthy and true.",

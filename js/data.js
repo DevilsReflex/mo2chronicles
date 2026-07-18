@@ -3486,11 +3486,6 @@ window.CHRONICLE = {
        "source": "Wadimus"
       },
       {
-       "text": "Odinseed and the Fabernum host against the Coalition, in the war's last turn",
-       "url": "https://www.youtube.com/watch?v=GL3aT8auoXY",
-       "source": "BruceLeeRob"
-      },
-      {
        "text": "Odinseed against Wanted, Wolfszeit, Bad Company, Miscreants and more — the rebellion massing",
        "url": "https://www.youtube.com/watch?v=gDVIIQGLu2g",
        "source": "AZOGTHEDEFILER"

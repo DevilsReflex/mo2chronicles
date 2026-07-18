@@ -1654,7 +1654,7 @@ window.CHRONICLE = {
     {
      "date": "",
      "title": "The Merry Men of the Greenwood — Talut's band",
-     "body": "In the forests and upon the roads rode a band apart: the Merry Men, led by Talut — outlaws in the old greenwood fashion, the highways their hunting-ground and the wilds their hall. Where the BeastMasters killed for infamy and the villains of Hyllspeia for dominion, the Merry Men played the highwayman with style — waylaying the rich on the trade-roads, a thorn in every caravan's side and a legend among those who love a rogue. Theirs is the truest expression of the game's promise: that any soul might take up the highwayman's part and write a chapter of Nave in stolen gold. Nor was the part ever retired: two years on the Tephra Crater would answer the same call in the opposite voice, when RunKarni took a shortbow and no armour at all and made himself the law of his own lands — outlaw and lawman, the one figure the sandbox will always find someone to play.",
+     "body": "In the forests and upon the roads rode a band apart: the Merry Men, led by Talut — outlaws in the old greenwood fashion, the highways their hunting-ground and the wilds their hall. The name was no idle borrowing: they called their own country Sherwood Forest, and mustered in real numbers upon the Central Steppe. Where the BeastMasters killed for infamy and the villains of Hyllspeia for dominion, the Merry Men played the highwayman with style — waylaying the rich on the trade-roads, a thorn in every caravan's side and a legend among those who love a rogue. Yet robbery was never the whole of their trade: they went down into the Sator camps and the Minotaur deeps, tamed and rode an Arctic Molva, and kept a long roll of enemies — Taarenhal and GGP, BlackPriest and North Order and xESx, and the Guerrilas, who seized their forest while the band kept Christmas. In the first days of 2023 the Merry Men came back off that holiday and took Sherwood again upon the very day of their return. Theirs is the truest expression of the game's promise: that any soul might take up the highwayman's part and write a chapter of Nave in stolen gold.",
      "links": [
       {
        "text": "The bandit-country of the living map — Two Lakes",
@@ -1672,9 +1672,14 @@ window.CHRONICLE = {
        "source": "Margld Apex"
       },
       {
-       "text": "Highway robbery on the Vadda road, the band's whole trade",
+       "text": "Roadside robbery outside Vadda — the highwayman's trade as Nave still practised it",
        "url": "https://www.youtube.com/watch?v=K6Y-z8BsacM",
        "source": "Wally Oney"
+      },
+      {
+       "text": "MerryMen beating the Guerrilas — the winter fight for Sherwood, from inside the band",
+       "url": "https://www.youtube.com/watch?v=exbnLHhfGm4",
+       "source": "Skrag"
       }
      ],
      "marker": null,

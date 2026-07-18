@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#050507"/>
-  <g fill="none" stroke="#c9a86a" stroke-width="2">
-    <path d="M32 6 L38 26 L58 32 L38 38 L32 58 L26 38 L6 32 L26 26 Z" fill="#c9a86a" fill-opacity="0.15"/>
-  </g>
-  <path d="M32 12 L36.5 27.5 L52 32 L36.5 36.5 L32 52 L27.5 36.5 L12 32 L27.5 27.5 Z" fill="#e8c987"/>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#211a0f"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#g)"/>
+  <!-- single ring, thick enough to survive 16-32px tab rendering -->
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#c9a86a" stroke-opacity="0.6" stroke-width="4.5"/>
+  <!-- crest-nave compass diamond, enlarged for punch at small sizes -->
+  <path d="M32 9 L38.1 25.9 L55 32 L38.1 38.1 L32 55 L25.9 38.1 L9 32 L25.9 25.9 Z" fill="#ecd096"/>
 </svg>

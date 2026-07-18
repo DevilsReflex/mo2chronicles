@@ -17,6 +17,10 @@
     "rgba(214, 186, 120, 0.12)",
   ];
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // touch devices get lighter per-frame work; hover-capable devices keep
+  // every effect exactly as designed
+  const coarsePtr = window.matchMedia("(pointer: coarse)").matches;
+  const hoverCapable = window.matchMedia("(hover: hover)").matches;
 
   /* ── helpers ─────────────────────────────────────────── */
   const esc = (s) =>
@@ -342,19 +346,24 @@
     // target once the flyout fans out much wider below it. Holding the
     // open state open for a beat after mouseleave means a slightly
     // wayward path from label to list item doesn't slam the panel shut.
-    navItems.forEach((item) => {
-      let closeTimer = null;
-      item.addEventListener("mouseenter", () => {
-        clearTimeout(closeTimer);
-        // only one Age's flyout is ever open at a time — entering this
-        // one closes any other still open, whether by hover or by pin
-        closeAllFlyouts(item);
-        item.classList.add("hover-open");
+    // hover-intent only exists where hover does: on touch, a tap fires a
+    // synthetic mouseenter but never mouseleave, which wedged the flyout
+    // open over the page with no way to dismiss it from the panel itself
+    if (hoverCapable) {
+      navItems.forEach((item) => {
+        let closeTimer = null;
+        item.addEventListener("mouseenter", () => {
+          clearTimeout(closeTimer);
+          // only one Age's flyout is ever open at a time — entering this
+          // one closes any other still open, whether by hover or by pin
+          closeAllFlyouts(item);
+          item.classList.add("hover-open");
+        });
+        item.addEventListener("mouseleave", () => {
+          closeTimer = setTimeout(() => item.classList.remove("hover-open"), 300);
+        });
       });
-      item.addEventListener("mouseleave", () => {
-        closeTimer = setTimeout(() => item.classList.remove("hover-open"), 300);
-      });
-    });
+    }
     navEl.addEventListener("click", (ev) => {
       const caret = ev.target.closest(".age-nav-caret");
       if (!caret) return;
@@ -396,7 +405,7 @@
     card.removeAttribute("data-yt");
     card.removeAttribute("role");
     card.removeAttribute("tabindex");
-    card.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="Chronicle video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    card.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1" title="Chronicle video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
   }
 
   /* ── scroll reveals ──────────────────────────────────── */
@@ -577,6 +586,29 @@
         hits[next].focus();
       }
     });
+    // on phones the visible ticks overlap their neighbours' hit boxes, so a
+    // tap can land on the wrong entry (topmost-in-DOM wins). Retarget every
+    // touch tap to whichever tick's CENTER is actually nearest the finger.
+    if (!hoverCapable) {
+      progressTicks.addEventListener("click", (ev) => {
+        const tapped = ev.target.closest(".sp-tick-hit");
+        if (!tapped) return;
+        const hits = Array.from(progressTicks.querySelectorAll(".sp-tick-hit"))
+          .filter((h) => getComputedStyle(h).display !== "none");
+        let best = tapped, bestDx = Infinity;
+        for (const h of hits) {
+          const r = h.getBoundingClientRect();
+          const dx = Math.abs(ev.clientX - (r.left + r.width / 2));
+          if (dx < bestDx) { bestDx = dx; best = h; }
+        }
+        if (best !== tapped) {
+          ev.preventDefault();
+          const id = (best.getAttribute("href") || "").slice(1);
+          const el = id && document.getElementById(id);
+          if (el) scrollToEl(el, true);
+        }
+      });
+    }
   }
 
   let currentYear = null;
@@ -599,6 +631,12 @@
     window.scrollTo({ top: Math.max(0, target), behavior });
   }
 
+  // static per-timeline / per-divider lookups, resolved once — the scroll
+  // handler must never query the DOM per frame
+  const spineFills = timelines.map((tl) => tl.querySelector(".spine-fill"));
+  const romanBgs = dividers.map((d) => d.querySelector(".age-roman-bg"));
+  const chron = document.getElementById("chronicle");
+
   function onScroll() {
     if (ticking) return;
     ticking = true;
@@ -607,54 +645,64 @@
       const y = window.scrollY;
       const doc = document.documentElement;
       const max = doc.scrollHeight - window.innerHeight;
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
 
       // slide first, measure after — the rect reads below must see the
       // track where this frame actually puts it
       if (hzMode && hzTrack) hzTrack.style.transform = `translate3d(${-y}px,0,0)`;
 
-      nav.classList.toggle("scrolled", y > 40);
-      const pct = max > 0 ? y / max : 0;
-      fill.style.width = pct * 100 + "%";
-      if (progressMarker) progressMarker.style.left = pct * 100 + "%";
-
-      // anno visibility: only within the chronicle proper
-      const chron = document.getElementById("chronicle");
+      /* ── read phase: every getBoundingClientRect up front, so the frame
+         forces a single layout instead of one per interleaved write ── */
       const cr = chron.getBoundingClientRect();
       const inChron = hzMode
-        ? cr.left < window.innerWidth * 0.5 && cr.right > window.innerWidth * 0.5
-        : cr.top < window.innerHeight * 0.5 && cr.bottom > window.innerHeight * 0.5;
-      anno.classList.toggle("visible", inChron);
+        ? cr.left < vw * 0.5 && cr.right > vw * 0.5
+        : cr.top < vh * 0.5 && cr.bottom > vh * 0.5;
 
-      // current year/entry = last entry whose leading edge is past mid-viewport
+      let yr = null;
       if (inChron) {
-        let yr = null;
         for (let i = 0; i < entries.length; i++) {
           const r = entries[i].getBoundingClientRect();
-          const passed = hzMode ? r.left < window.innerWidth * 0.6 : r.top < window.innerHeight * 0.6;
+          const passed = hzMode ? r.left < vw * 0.6 : r.top < vh * 0.6;
           if (passed) yr = entries[i].getAttribute("data-year");
           else break;
         }
-        if (yr && yr !== currentYear) {
-          currentYear = yr;
-          annoYear.textContent = yr;
-          if (!reducedMotion)
-            annoYear.animate(
-              [{ opacity: 0.2, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }],
-              { duration: 420, easing: "cubic-bezier(0.19,1,0.22,1)" }
-            );
-        }
+      }
+
+      const tlRects = timelines.map((tl) => tl.getBoundingClientRect());
+      const dRects = dividers.map((d) => d.getBoundingClientRect());
+
+      /* ── write phase ── */
+      nav.classList.toggle("scrolled", y > 40);
+      const pct = max > 0 ? y / max : 0;
+      // coarse pointers animate the fill by transform (composite-only);
+      // a mobile-scoped CSS rule pre-sizes it to 100% with scaleX(0)
+      if (coarsePtr) fill.style.transform = `scaleX(${pct})`;
+      else fill.style.width = pct * 100 + "%";
+      if (progressMarker) progressMarker.style.left = pct * 100 + "%";
+      anno.classList.toggle("visible", inChron);
+
+      if (yr && yr !== currentYear) {
+        currentYear = yr;
+        annoYear.textContent = yr;
+        if (!reducedMotion)
+          annoYear.animate(
+            [{ opacity: 0.2, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }],
+            { duration: 420, easing: "cubic-bezier(0.19,1,0.22,1)" }
+          );
       }
 
       // spine fill per timeline — the rod fills along its own axis
-      for (const tl of timelines) {
-        const r = tl.getBoundingClientRect();
-        const spineFill = tl.querySelector(".spine-fill");
+      for (let i = 0; i < timelines.length; i++) {
+        const r = tlRects[i];
+        const spineFill = spineFills[i];
+        if (!spineFill) continue;
         if (hzMode) {
-          const visible = Math.min(Math.max(window.innerWidth * 0.5 - r.left, 0), r.width);
+          const visible = Math.min(Math.max(vw * 0.5 - r.left, 0), r.width);
           spineFill.style.height = "";
           spineFill.style.width = visible + "px";
         } else {
-          const visible = Math.min(Math.max(window.innerHeight * 0.62 - r.top, 0), r.height);
+          const visible = Math.min(Math.max(vh * 0.62 - r.top, 0), r.height);
           spineFill.style.width = "";
           spineFill.style.height = visible + "px";
         }
@@ -662,26 +710,27 @@
 
       // active age in nav + era atmosphere
       let active = null;
-      for (const d of dividers) {
-        const r = d.getBoundingClientRect();
-        const passed = hzMode ? r.left < window.innerWidth * 0.55 : r.top < window.innerHeight * 0.55;
-        if (passed) active = d.id;
+      for (let i = 0; i < dividers.length; i++) {
+        const r = dRects[i];
+        const passed = hzMode ? r.left < vw * 0.55 : r.top < vh * 0.55;
+        if (passed) active = dividers[i].id;
       }
       navLinks.forEach((a) => a.classList.toggle("active", a.dataset.age === active));
       setEra(active ? parseInt(active.split("-")[1], 10) - 1 : -1);
 
-      // roman numerals swell as their divider crosses the viewport
-      if (!reducedMotion) {
-        for (const d of dividers) {
-          const r = d.getBoundingClientRect();
+      // roman numerals swell as their divider crosses the viewport — skipped
+      // on coarse pointers, where the swell is imperceptible and the per-frame
+      // style writes on five viewport-scale glyphs cost real battery
+      if (!reducedMotion && !coarsePtr) {
+        for (let i = 0; i < dividers.length; i++) {
+          const r = dRects[i];
           const near = hzMode ? r.left : r.top;
           const far = hzMode ? r.right : r.bottom;
-          const span = hzMode ? window.innerWidth : window.innerHeight;
+          const span = hzMode ? vw : vh;
           const size = hzMode ? r.width : r.height;
           if (far < 0 || near > span) continue;
           const p = Math.min(Math.max((span - near) / (span + size), 0), 1);
-          const roman = d.querySelector(".age-roman-bg");
-          if (roman) roman.style.setProperty("--zoom", (0.92 + p * 0.18).toFixed(4));
+          if (romanBgs[i]) romanBgs[i].style.setProperty("--zoom", (0.92 + p * 0.18).toFixed(4));
         }
       }
 
@@ -714,6 +763,31 @@
     rail.appendChild(mainEl);
     if (footerEl) rail.appendChild(footerEl);
     hzTrack = rail;
+
+    // touch: horizontal pans on the rail map to scroll distance, so the
+    // sideways layout answers the sideways gesture it visually invites.
+    // Axis-locked so ordinary vertical scrolling is untouched.
+    if (!hoverCapable) {
+      let sx = 0, sy = 0, lastX = 0, axis = null;
+      clip.addEventListener("touchstart", (e) => {
+        sx = lastX = e.touches[0].clientX;
+        sy = e.touches[0].clientY;
+        axis = null;
+      }, { passive: true });
+      clip.addEventListener("touchmove", (e) => {
+        if (!hzMode) return;
+        const x = e.touches[0].clientX, yv = e.touches[0].clientY;
+        if (axis === null) {
+          const dx = Math.abs(x - sx), dy = Math.abs(yv - sy);
+          if (dx < 8 && dy < 8) return;
+          axis = dx > dy ? "x" : "y";
+        }
+        if (axis === "x") {
+          window.scrollBy(0, lastX - x);
+        }
+        lastX = x;
+      }, { passive: true });
+    }
 
     const spacer = document.createElement("div");
     spacer.id = "hz-spacer";
@@ -768,8 +842,10 @@
         );
       requestAnimationFrame(() => requestAnimationFrame(updateArrowState));
     }
-    prevArrow.addEventListener("click", () => page(-1));
-    nextArrow.addEventListener("click", () => page(1));
+    // on touch the arrows also serve vertical mode (the j/k keys' only
+    // equivalent there), stepping entry by entry instead of paging by 3
+    prevArrow.addEventListener("click", () => (hzMode ? page(-1) : jumpList(allEntries, -1)));
+    nextArrow.addEventListener("click", () => (hzMode ? page(1) : jumpList(allEntries, 1)));
     let arrowTicking = false;
     window.addEventListener(
       "scroll",
@@ -810,6 +886,7 @@
       window.scrollTo(0, 0);
       onScroll();
       if (on) updateArrowState();
+      else { prevArrow.disabled = false; nextArrow.disabled = false; }
       try {
         localStorage.setItem("nave-hz", on ? "1" : "0");
       } catch (e) {}
@@ -863,7 +940,7 @@
 
     function resize() {
       const r = canvas.parentElement.getBoundingClientRect();
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const dpr = coarsePtr ? 1 : Math.min(window.devicePixelRatio || 1, 2);
       w = Math.floor(r.width);
       h = Math.floor(r.height);
       canvas.width = Math.floor(r.width * dpr);
@@ -968,7 +1045,7 @@
     const cur = hexRGB(DEFAULT_TINT);
     const target = hexRGB(DEFAULT_TINT);
     function resize() {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const dpr = coarsePtr ? 1 : Math.min(window.devicePixelRatio || 1, 2);
       w = window.innerWidth;
       h = window.innerHeight;
       canvas.width = Math.floor(w * dpr);
@@ -988,7 +1065,7 @@
     }
     function reset() {
       resize();
-      parts = Array.from({ length: Math.min(Math.floor((w * h) / 22000), 72) }, () => spawn(true));
+      parts = Array.from({ length: Math.min(Math.floor((w * h) / (coarsePtr ? 44000 : 22000)), 72) }, () => spawn(true));
     }
     function tick() {
       cur.r += (target.r - cur.r) * 0.02;
@@ -1056,7 +1133,7 @@
     auraEl = el;
     if (prev) {
       prev.style.opacity = "0";
-      setTimeout(() => prev.remove(), 2700);
+      setTimeout(() => prev.remove(), coarsePtr ? 1000 : 2700);
     }
   }
   setEra(-1);

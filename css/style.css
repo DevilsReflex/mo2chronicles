@@ -28,7 +28,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 body {
   background: var(--ink);
@@ -1631,7 +1631,28 @@ footer p {
   .age-nav-item.hover-open .age-flyout {
     transform: translateX(-50%) translateY(0);
   }
-  .fy-item { padding: 12px 14px 12px 18px; }
+  .fy-item { padding: 12px 14px 12px 18px; gap: 10px; }
+  /* the fixed 132px date column left titles only ~154px in the 340px panel —
+     3-4 line wraps on the long Age names; narrower dates give titles the room */
+  .fy-date { width: 92px; font-size: 10px; }
+  /* the strip's year labels need ~28px each and the phone-width bar gives
+     adjacent years as little as 16px — they collide into noise. The tick
+     rules stay; the labels go. Era diamonds + Age bands still map the strip. */
+  .sp-year-mark::after { display: none; }
+  /* thumb-sized hit areas without visual change: the five numeral links
+     measured 19px wide, the wordmark crest 23px, the Timeline chip 33px tall */
+  .age-nav-link::before {
+    content: "";
+    position: absolute;
+    inset: -8px -6px;
+  }
+  .wordmark { padding: 10px; margin: -10px; }
+  #hz-toggle::after {
+    content: "";
+    position: absolute;
+    inset: -5px -4px;
+  }
+  #hz-toggle { position: relative; }
   /* every tick packed into a phone-width bar is too small a target to
      tap accurately — thin to an evenly-sampled subset plus every
      landmark, so mobile keeps real coverage instead of 4 sparse points */
@@ -1659,6 +1680,105 @@ footer p {
     background: rgba(201, 168, 106, 0.24);
   }
   .back-to-top:active { color: var(--gold-bright); }
+  .link-scroll:active {
+    border-color: rgba(201, 168, 106, 0.45);
+    background: linear-gradient(90deg, rgba(201, 168, 106, 0.1), transparent 70%);
+  }
+  .link-scroll:active .ls-arrow { color: var(--gold-bright); }
+  .video-card { -webkit-tap-highlight-color: transparent; }
+
+  /* the flyout on touch: taps emulate :hover and it STICKS — a tapped-open
+     panel wedged over the page with no way to close it from itself (and on
+     Android, :focus-within kept it open even after the caret said close).
+     On touch, only the caret's explicitly pinned .open state may show it. */
+  .age-nav-item:hover .age-flyout,
+  .age-nav-item:focus-within .age-flyout,
+  .age-nav-item.hover-open .age-flyout {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .age-nav-item.open .age-flyout {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* double-tap zoom must not fire on rapid-tap controls */
+  .hz-arrow,
+  .age-nav-caret,
+  .age-nav-link,
+  .sp-tick-hit,
+  #hz-toggle {
+    touch-action: manipulation;
+  }
+
+  /* inner scrollers must not chain into the page at their ends — in hz
+     mode a chained overscroll yanks the whole rail sideways */
+  .fy-list,
+  body.hz #prefaces,
+  body.hz #epilogue,
+  body.hz .age-inner {
+    overscroll-behavior: contain;
+  }
+
+  /* the tick tooltips are hover-furniture: they can never show on touch,
+     but their lazy thumbnails were still being fetched — remove them */
+  .sp-tick-tip { display: none; }
+
+  /* live backdrop blur re-filters the animating canvas behind the header
+     every frame; a deeper tint reads the same and costs nothing */
+  #topnav.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(6, 6, 9, 0.93);
+  }
+  .play-btn {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(5, 5, 7, 0.72);
+  }
+
+  /* reveal transitions keep their compositor-friendly rise-and-fade but
+     drop the blur component — filter animation over full prose cards and
+     giant gradient titles drops frames on phones */
+  .reveal-hero { filter: none; }
+  .age-divider .reveal:not(.in) { filter: none; }
+  .entry.landmark.reveal:not(.in) { filter: none; }
+
+  /* era crossfades finish quickly so fast scrolling can never stack
+     several live full-screen aura layers */
+  .aura-layer { transition-duration: 0.9s; }
+}
+/* coarse-pointer render savings (paired with JS gates in main.js) */
+@media (pointer: coarse) {
+  /* the roman-swell loop is skipped on touch, so the glyph layers need no
+     standing GPU promotion */
+  .age-roman-bg { will-change: auto; }
+  /* the progress fill animates by transform on touch (composite-only);
+     JS writes scaleX instead of width */
+  .scroll-progress-fill {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.1s linear, --chrome-tint 1.8s ease;
+  }
+}
+/* touch phones: the paging arrows serve vertical mode too, as the only
+   touch equivalent of the j/k entry stepper */
+@media (hover: none) and (pointer: coarse) {
+  body:not(.hz) .hz-arrow {
+    display: flex;
+    top: auto;
+    bottom: 18px;
+  }
+}
+/* very narrow phones (<=344px): the header row was clipping the Timeline
+   chip off the right edge — reclaim the padding it needs */
+@media (max-width: 344px) {
+  #topnav { padding: 0 10px; }
+  .age-nav { gap: 0; }
+  .age-nav-link { padding: 10px 3px; }
+  .age-nav-caret { margin-right: 0; }
+  .nav-btn { padding: 8px 7px; }
 }
 
 /* ─────────────── reduced motion ─────────────── */
@@ -1695,7 +1815,15 @@ footer p {
    above the rod. Everything here is measured from below the header instead. */
 body.hz {
   --hz-top: 92px;
-  --hz-h: calc(100vh - var(--hz-top));
+  /* dvh where supported: on iOS Safari 100vh includes the collapsed URL-bar
+     zone, which pushed the rail's bottom edge (and the paging arrows) behind
+     the browser chrome. dvh tracks the *visible* viewport; on desktop the two
+     units are identical, so this changes nothing there. */
+  --hz-vh: 100vh;
+  --hz-h: calc(var(--hz-vh) - var(--hz-top));
+}
+@supports (height: 100dvh) {
+  body.hz { --hz-vh: 100dvh; }
 }
 body.hz #hz-spacer { display: block; }
 /* the clip is a fixed window onto the rail; it owns the overflow, so an
@@ -1932,7 +2060,7 @@ body.hz .yb-line { display: none; }
 .hz-arrow {
   display: none;
   position: fixed;
-  top: calc(var(--hz-top, 92px) + (100vh - var(--hz-top, 92px)) / 2);
+  top: calc(var(--hz-top, 92px) + var(--hz-h, calc(100vh - 92px)) / 2);
   transform: translateY(-50%);
   z-index: 40;
   width: 46px;
@@ -1978,6 +2106,12 @@ body.hz .hz-arrow { display: flex; }
   .hz-arrow-prev { left: 8px; }
   .hz-arrow-next { right: 8px; }
   .hz-arrow-chevron { width: 10px; height: 10px; }
+  /* visual size stays 38px; the tap target grows to ~54px */
+  .hz-arrow::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+  }
 }
 
 /* reveals are driven by intersection, which still fires as the rail slides
@@ -2005,6 +2139,8 @@ body.hz .entry::before { opacity: 1; }
 
 @media (max-width: 720px) {
   body.hz .entry { flex-basis: 78vw; }
-  body.hz .entry-card { max-height: 38vh; }
+  /* dvh where supported: with the URL bar expanded, 38vh overshot the
+     visible half-column and above-rod cards clipped under the header */
+  body.hz .entry-card { max-height: 38vh; max-height: 38dvh; }
   body.hz .age-divider { flex-basis: 88vw; }
 }

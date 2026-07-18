@@ -2180,6 +2180,11 @@ window.CHRONICLE = {
        "text": "The rivalry from a mage's line, filmed by neither house",
        "url": "https://www.youtube.com/watch?v=r_FWXFoeZdE",
        "source": "Nausk"
+      },
+      {
+       "text": "The Battle for Central Steppe Field, fifty a side — the Mythic war in the open, from the shot-caller's POV",
+       "url": "https://www.youtube.com/watch?v=JPlkr-r1oRY",
+       "source": "AZOGTHEDEFILER"
       }
      ],
      "marker": null,
@@ -2469,11 +2474,6 @@ window.CHRONICLE = {
        "text": "The Crimson Beasts drilling in French, ten days before Odin's Field",
        "url": "https://www.youtube.com/watch?v=hAzD1NVKaL0",
        "source": "Lulu"
-      },
-      {
-       "text": "The Battle for Central Steppe Field, fifty a side — another open-field muster of the age",
-       "url": "https://www.youtube.com/watch?v=JPlkr-r1oRY",
-       "source": "AZOGTHEDEFILER"
       }
      ],
      "odinseed": false,

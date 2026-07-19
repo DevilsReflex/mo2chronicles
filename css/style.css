@@ -1602,7 +1602,10 @@ em .n-p, em .n-g { font-style: italic; }
 
   body:not(.hz) article.entry {
     max-width: none;
-    margin-bottom: clamp(28px, 4vh, 46px);
+    margin-bottom: clamp(14px, 2vh, 22px);
+  }
+  body:not(.hz) .entry-card {
+    padding: clamp(14px, 2vw, 20px) clamp(16px, 2.2vw, 24px);
   }
   body:not(.hz) article.entry::before { width: 36px; left: -36px; }
   body:not(.hz) article.entry .entry-node { left: -36px; }

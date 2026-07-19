@@ -1553,6 +1553,52 @@ em .n-p, em .n-g { font-style: italic; }
 }
 .link-scroll:hover .ls-arrow { transform: translate(3px, -3px); color: var(--gold-bright); }
 
+/* ─────────────── centered timeline (wide screens) ───────────────
+   Below this width the spine runs down the left edge and entries stack
+   one to a row, full width — the layout the site has always had. Above
+   it, there's finally room to do what a timeline should: the spine
+   moves to the true center of the page, and entries alternate left and
+   right of it, so two can sit at the same scroll position instead of
+   one entry owning the whole screen height at a time. Landmarks and
+   tales stay in the alternating flow (their own styling still marks
+   them out); year-breaks widen into a full-width rule crossing the
+   spine, same as they already read as a chapter mark. */
+@media (min-width: 1100px) {
+  body:not(.hz) .timeline {
+    max-width: 1200px;
+    padding: 8px 24px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 72px;
+    align-items: start;
+  }
+  body:not(.hz) .spine { left: 50%; }
+  body:not(.hz) .timeline > .spine + .year-break,
+  body:not(.hz) .timeline > .spine + article.entry { margin-top: clamp(16px, 2.4vh, 30px); }
+
+  body:not(.hz) article.entry {
+    max-width: none;
+    margin-bottom: clamp(28px, 4vh, 46px);
+  }
+  body:not(.hz) article.entry::before { width: 36px; left: -36px; }
+  body:not(.hz) article.entry .entry-node { left: -36px; }
+  body:not(.hz) article.entry:nth-of-type(odd) { grid-column: 1; }
+  body:not(.hz) article.entry:nth-of-type(even) { grid-column: 2; }
+
+  /* left-column entries mirror the connector to their right edge, where
+     the spine actually is — same reach, reversed glow direction so the
+     tick still brightens toward the spine rather than away from it */
+  body:not(.hz) article.entry:nth-of-type(odd)::before {
+    left: 100%;
+    background: linear-gradient(90deg, transparent, var(--gold-dim));
+  }
+  body:not(.hz) article.entry:nth-of-type(odd) .entry-node { left: calc(100% + 36px); }
+
+  /* the year rule now crosses the spine instead of sitting beside it */
+  body:not(.hz) .year-break { grid-column: 1 / -1; max-width: none; }
+  body:not(.hz) .year-break::before { left: 50%; }
+}
+
 /* ─────────────── epilogue ─────────────── */
 #epilogue {
   position: relative;

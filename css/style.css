@@ -1479,26 +1479,6 @@ em .n-p, em .n-g { font-style: italic; }
   border-style: dashed;
   border-color: rgba(201, 168, 106, 0.18);
 }
-/* alternating tilt + offset shadow — a found scrap tucked in the margin.
-   Scoped to .entry-card, not article.entry: .entry-node/.entry-node-date
-   are siblings of .entry-card, positioned relative to the article — tilting
-   the article itself would drag the spine node/connector off the spine. */
-.entry.tale:nth-of-type(odd) .entry-card {
-  transform: rotate(-0.6deg);
-  box-shadow:
-    3px 10px 22px -14px rgba(0, 0, 0, 0.7),
-    -2px -2px 0 rgba(0, 0, 0, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-}
-.entry.tale:nth-of-type(even) .entry-card {
-  transform: rotate(0.55deg);
-  box-shadow:
-    -3px 10px 22px -14px rgba(0, 0, 0, 0.7),
-    2px -2px 0 rgba(0, 0, 0, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-}
 .tale-kicker {
   font-family: var(--sans);
   font-size: 10px;

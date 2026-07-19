@@ -34,6 +34,23 @@
   // Runs after esc(), so straight quotes arrive as &quot; entities.
   const dress = (s) => esc(s).replace(/&quot;([\s\S]{2,220}?)&quot;/g, (m, a) => `<em>“${a}”</em>`);
 
+  // a short tag for the spine marker itself — the card already carries the
+  // full date, this just needs enough to tell two nearby nodes apart at a
+  // glance: "31 MAR" for a dated entry, "MAR"/"SPR" for a month/season-only
+  // one, the bare year as a last resort. Ranges and qualifiers ("Late…")
+  // collapse to their start.
+  const spineDate = (dateStr) => {
+    if (!dateStr) return "";
+    const start = dateStr.split(/[–-]/)[0].trim().replace(/^(Late|Early|Mid)\s+/i, "");
+    let m = start.match(/^(\d{1,2})\s+([A-Za-z]+)\s+\d{4}$/);
+    if (m) return `${m[1]} ${m[2].slice(0, 3).toUpperCase()}`;
+    m = start.match(/^([A-Za-z]+)\s+\d{4}$/);
+    if (m) return m[1].slice(0, 3).toUpperCase();
+    m = start.match(/^\d{4}$/);
+    if (m) return start;
+    return start.slice(0, 3).toUpperCase();
+  };
+
   /* ── the names of Nave ──────────────────────────────────────────
      Player names take the bold gold treatment; guild/house/alliance
      names take the bold crimson treatment. Multi-word names are
@@ -277,6 +294,7 @@
         html += `
         <article class="${cls}" id="${entryId}" data-year="${e.year}">
           <span class="entry-node" aria-hidden="true"></span>
+          ${e.date ? `<span class="entry-node-date" aria-hidden="true">${esc(spineDate(e.date))}</span>` : ""}
           <div class="entry-card">
             ${dateLine}
             <h3 class="entry-title">${esc(e.title)}</h3>

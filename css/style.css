@@ -1223,6 +1223,11 @@ main, footer { position: relative; z-index: 2; }
   box-shadow: 0 0 12px rgba(201, 168, 106, 0.5);
 }
 
+/* short date tag beside the spine marker — only meaningful once the
+   centered two-column timeline gives the connector enough room; hidden
+   everywhere else by default */
+.entry-node-date { display: none; }
+
 /* card — a carved tablet at rest, not a flat rectangle: an outer drop
    shadow for lift off the page, plus inset bevel lines top/bottom for
    a faint engraved edge */
@@ -1593,7 +1598,7 @@ em .n-p, em .n-g { font-style: italic; }
     padding: 8px 24px 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 72px;
+    column-gap: 108px;
     align-items: start;
   }
   body:not(.hz) .spine { left: 50%; }
@@ -1607,8 +1612,8 @@ em .n-p, em .n-g { font-style: italic; }
   body:not(.hz) .entry-card {
     padding: clamp(14px, 2vw, 20px) clamp(16px, 2.2vw, 24px);
   }
-  body:not(.hz) article.entry::before { width: 36px; left: -36px; }
-  body:not(.hz) article.entry .entry-node { left: -36px; }
+  body:not(.hz) article.entry::before { width: 54px; left: -54px; }
+  body:not(.hz) article.entry .entry-node { left: -54px; }
   body:not(.hz) article.entry:nth-of-type(odd) { grid-column: 1; }
   /* entries render in strict date order, so the right-column entry of
      every pair is always the chronologically later one — a small drop
@@ -1623,7 +1628,33 @@ em .n-p, em .n-g { font-style: italic; }
     left: 100%;
     background: linear-gradient(90deg, transparent, var(--gold-dim));
   }
-  body:not(.hz) article.entry:nth-of-type(odd) .entry-node { left: calc(100% + 36px); }
+  body:not(.hz) article.entry:nth-of-type(odd) .entry-node { left: calc(100% + 54px); }
+
+  /* short date tag riding the connector, hugging the node's card-facing
+     edge and never crossing onto the spine itself — that keeps a paired
+     row's two tags (mirrored left/right) from ever meeting in the middle,
+     even when the two entries fall days apart and their nodes sit almost
+     level */
+  body:not(.hz) .entry-node-date {
+    display: block;
+    position: absolute;
+    top: 26px;
+    transform: translateY(-50%);
+    width: 42px;
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 9.5px;
+    letter-spacing: 0.02em;
+    color: var(--age-tint);
+    opacity: 0;
+    transition: opacity 0.8s ease 0.25s;
+    white-space: nowrap;
+  }
+  body:not(.hz) .entry.in .entry-node-date { opacity: 0.85; }
+  /* anchored from the node-facing edge in each case, so the wider box
+     grows toward the card, never toward the diamond */
+  body:not(.hz) article.entry .entry-node-date { left: -44px; text-align: left; }
+  body:not(.hz) article.entry:nth-of-type(odd) .entry-node-date { left: calc(100% + 2px); text-align: right; }
 
   /* the year rule now crosses the spine instead of sitting beside it */
   body:not(.hz) .year-break { grid-column: 1 / -1; max-width: none; }

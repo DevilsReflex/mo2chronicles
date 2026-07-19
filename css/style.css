@@ -1188,7 +1188,7 @@ main, footer { position: relative; z-index: 2; }
 
 .entry {
   position: relative;
-  margin: 0 0 clamp(20px, 3vh, 34px);
+  margin: 0 0 clamp(26px, 3.8vh, 42px);
   max-width: 780px;
   scroll-margin-top: 112px; /* clears the fixed header when jumped to from the nav flyout */
 }
@@ -1713,10 +1713,10 @@ em .n-p, em .n-g { font-style: italic; }
 
   body:not(.hz) article.entry {
     max-width: none;
-    margin-bottom: clamp(14px, 2vh, 22px);
+    margin-bottom: clamp(32px, 4.4vh, 50px);
   }
   body:not(.hz) .entry-card {
-    padding: clamp(14px, 2vw, 20px) clamp(16px, 2.2vw, 24px);
+    padding: clamp(18px, 2.6vw, 30px) clamp(20px, 2.8vw, 34px);
   }
   body:not(.hz) article.entry::before { width: 54px; left: -54px; }
   body:not(.hz) article.entry .entry-node { left: -54px; }

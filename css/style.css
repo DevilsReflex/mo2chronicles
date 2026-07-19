@@ -1301,6 +1301,36 @@ main, footer { position: relative; z-index: 2; }
   padding: 5px 9px 0 0;
 }
 
+/* editorial pull-quote: unmistakably distinct from the small inline gold
+   dress()-quote — large italic serif, age-tinted, its own left rule and
+   oversized quotation mark, generous margin so it reads as a real break
+   in the column rather than a rendering accident */
+.pull-quote {
+  position: relative;
+  margin: 1.3em 0 1.4em;
+  padding: 0.15em 0 0.15em 1.3em;
+  max-width: 58ch;
+  border-left: 2px solid var(--age-tint, var(--gold-dim));
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(19px, 2.1vw, 23px);
+  line-height: 1.42;
+  color: var(--age-tint, var(--gold-bright));
+}
+.pull-quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0.08em;
+  top: -0.18em;
+  font-family: var(--display);
+  font-size: 2.4em;
+  line-height: 1;
+  color: var(--age-tint, var(--gold-dim));
+  opacity: 0.55;
+}
+.pull-quote .n-p, .pull-quote .n-g { font-style: normal; }
+
 /* ── the names of Nave: players in gold, guilds in crimson ── */
 .n-p {
   font-weight: 600;
@@ -1353,6 +1383,62 @@ em .n-p, em .n-g { font-style: italic; }
 }
 .entry.landmark.in .entry-card::before { transform: scaleX(1); }
 
+/* ── siege tier: real keep/outpost sieges get a blood-marked left edge.
+   :not(.landmark) scopes the background layer only — every current
+   landmark IS a siege, and landmark already owns the card's background
+   (the two-layer gold glow above); stacking a second one there would
+   just erase it. The left edge + badge are safe to add unconditionally.
+   This block must stay after .entry.landmark's above so border-left
+   wins on that one edge for the 4 siege+landmark entries. */
+.entry.siege .entry-card { border-left: 3px solid var(--blood-bright); }
+.entry.siege:not(.landmark) .entry-card {
+  background:
+    radial-gradient(ellipse 70% 45% at 0% 100%, rgba(156, 43, 34, 0.10), transparent 60%),
+    linear-gradient(160deg, var(--card), var(--card-2));
+}
+.siege-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blood-bright);
+}
+.siege-badge::before { content: "\2694\FE0E"; font-size: 11px; }
+
+/* ── bigfight tier: open-field musters the chronicle itself sizes at
+   100+ combined participants, that never became a siege. Mutually
+   exclusive with .siege and .landmark by construction (main.js), so
+   this is a fully self-contained treatment — no property fights. Uses
+   gold to match the sp-tick.sp-bigfight convention already established
+   on the progress bar, rather than a new color. */
+.entry.bigfight .entry-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22%;
+  right: 22%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+  box-shadow: 0 0 12px rgba(236, 208, 150, 0.5);
+  transform: scaleX(0);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1) 0.45s;
+}
+.entry.bigfight.in .entry-card::before { transform: scaleX(1); }
+.bigfight-kicker {
+  display: block;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 6px;
+}
+
 /* ── year milestones on the spine ── */
 .year-break {
   position: relative;
@@ -1392,6 +1478,26 @@ em .n-p, em .n-g { font-style: italic; }
   background: linear-gradient(160deg, #0d0c09, #090807);
   border-style: dashed;
   border-color: rgba(201, 168, 106, 0.18);
+}
+/* alternating tilt + offset shadow — a found scrap tucked in the margin.
+   Scoped to .entry-card, not article.entry: .entry-node/.entry-node-date
+   are siblings of .entry-card, positioned relative to the article — tilting
+   the article itself would drag the spine node/connector off the spine. */
+.entry.tale:nth-of-type(odd) .entry-card {
+  transform: rotate(-0.6deg);
+  box-shadow:
+    3px 10px 22px -14px rgba(0, 0, 0, 0.7),
+    -2px -2px 0 rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+.entry.tale:nth-of-type(even) .entry-card {
+  transform: rotate(0.55deg);
+  box-shadow:
+    -3px 10px 22px -14px rgba(0, 0, 0, 0.7),
+    2px -2px 0 rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 .tale-kicker {
   font-family: var(--sans);

@@ -112,6 +112,12 @@
   // full prose pipeline: escape → curly-quote → name-highlight
   const prose = (s) => markNames(dress(s));
 
+  // a substantial quoted passage worth pulling out as its own visual break
+  // (dress()'s inline gold-quote floor is 2 chars — this is deliberately
+  // higher so only a real pull-quote-sized span qualifies); duplicated from
+  // the surrounding prose rather than removed, the standard convention
+  const PULL_QUOTE_RE = /"([^"]{40,220})"/;
+
   // split long bodies into readable paragraphs at sentence boundaries,
   // never splitting inside a quoted passage (even count of " so far)
   function bodyHTML(body) {
@@ -128,7 +134,10 @@
       }
     }
     if (cur.trim()) chunks.push(cur.trim());
-    return chunks.map((c) => `<p class="entry-body">${prose(c)}</p>`).join("");
+    const pieces = chunks.map((c) => `<p class="entry-body">${prose(c)}</p>`);
+    const qm = body.match(PULL_QUOTE_RE);
+    if (qm) pieces.splice(1, 0, `<blockquote class="pull-quote">${markNames(esc(qm[1]))}</blockquote>`);
+    return pieces.join("");
   }
 
   function youtubeId(url) {
@@ -237,6 +246,46 @@
     return html;
   }
 
+  // real keep/outpost sieges, curated — open-field battles, patch notes,
+  // and community drama (e.g. "Odin's Field", "The Relic Wars") are
+  // deliberately excluded even though some share language like "battle"
+  const SIEGE_TITLES = new Set([
+    "The Siege of Tindrem",
+    "The First Siege",
+    "The March of the ACT Pickaxe Host",
+    "Odinseed Raids MKRG",
+    "THE FIRST KEEP FALLS",
+    "The Battle of Kranesh Keep",
+    "The Battle for Minotaur Mountain",
+    "The Battle for Odinpost",
+    "The Liberation of Tephra",
+    "The Siege of Granum Pass",
+    "The Siege of Nightfall",
+    "The Battle for Sausage Lake Keep",
+    "A Hundred and Fifty Blades",
+    "The Siege of Ursa Stronghold",
+    "The Siege of the KotO Keep",
+    "The War over a Small House",
+    "The Lament of the Hollow Sieges",
+    "The Small Wars of the New Regions",
+    "The Fall of Odinpost",
+  ]);
+  // battles the chronicle itself puts at 100+ combined participants —
+  // read straight from each entry's own body text ("near four hundred
+  // souls," "150 against 150," "sixty blades a side," etc). Overlaps
+  // heavily with sieges (most of Nave's big fights ARE sieges); the two
+  // that stand apart as open-field musters are Meduli and Odin's Field
+  const BIG_FIGHT_TITLES = new Set([
+    "The Muster at Meduli",
+    "The Siege of Tindrem",
+    "The March of the ACT Pickaxe Host",
+    "The Battle of Kranesh Keep",
+    "The Battle for Odinpost",
+    "A Hundred and Fifty Blades",
+    "The Battle for Odin's Field",
+    "The Battle for the Undercroft",
+  ]);
+
   /* ── the chronicle timeline ──────────────────────────── */
   (function renderChronicle() {
     const root = document.getElementById("chronicle");
@@ -280,6 +329,8 @@
       age.entries.forEach((e, ei) => {
         const isTale = e.kind === "tale";
         const isLandmark = (e.title.length > 6 && e.title === e.title.toUpperCase()) || !!e.marker;
+        const isSiege = SIEGE_TITLES.has(e.title);
+        const isBigFight = !isSiege && BIG_FIGHT_TITLES.has(e.title);
         const entryId = `entry-${ai}-${ei}`;
         // year milestone on the spine whenever the chronicle turns a year —
         // only on dated entries (tales carry approximate era-years) and only forward
@@ -287,9 +338,16 @@
           html += `<div class="year-break reveal" aria-hidden="true"><span class="yb-text">Anno ${e.year}</span><span class="yb-line"></span></div>`;
           prevYear = e.year;
         }
-        const cls = ["entry", "reveal", isTale ? "tale" : "", isLandmark ? "landmark" : ""].filter(Boolean).join(" ");
+        const cls = [
+          "entry",
+          "reveal",
+          isTale ? "tale" : "",
+          isLandmark ? "landmark" : "",
+          isSiege ? "siege" : "",
+          isBigFight ? "bigfight" : "",
+        ].filter(Boolean).join(" ");
         const dateLine = e.date
-          ? `<div class="entry-date">${esc(e.date)}</div>`
+          ? `<div class="entry-date">${esc(e.date)}${isSiege ? `<span class="siege-badge">Siege</span>` : ""}</div>`
           : `<div class="tale-kicker">From the margins of the chronicle${e.era ? ` &mdash; ${esc(e.era)}` : ""}</div>`;
         html += `
         <article class="${cls}" id="${entryId}" data-year="${e.year}">
@@ -297,6 +355,7 @@
           ${e.date ? `<span class="entry-node-date" aria-hidden="true">${esc(spineDate(e.date))}</span>` : ""}
           <div class="entry-card">
             ${dateLine}
+            ${isBigFight ? `<div class="bigfight-kicker">A Great Battle</div>` : ""}
             <h3 class="entry-title">${esc(e.title)}</h3>
             ${bodyHTML(e.body)}
             ${e.marker ? `<div class="fate-seal">${esc(e.marker)}</div>` : ""}
@@ -463,46 +522,6 @@
     const lastSpace = cut.lastIndexOf(" ");
     return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trim() + "…";
   }
-
-  // real keep/outpost sieges, curated — open-field battles, patch notes,
-  // and community drama (e.g. "Odin's Field", "The Relic Wars") are
-  // deliberately excluded even though some share language like "battle"
-  const SIEGE_TITLES = new Set([
-    "The Siege of Tindrem",
-    "The First Siege",
-    "The March of the ACT Pickaxe Host",
-    "Odinseed Raids MKRG",
-    "THE FIRST KEEP FALLS",
-    "The Battle of Kranesh Keep",
-    "The Battle for Minotaur Mountain",
-    "The Battle for Odinpost",
-    "The Liberation of Tephra",
-    "The Siege of Granum Pass",
-    "The Siege of Nightfall",
-    "The Battle for Sausage Lake Keep",
-    "A Hundred and Fifty Blades",
-    "The Siege of Ursa Stronghold",
-    "The Siege of the KotO Keep",
-    "The War over a Small House",
-    "The Lament of the Hollow Sieges",
-    "The Small Wars of the New Regions",
-    "The Fall of Odinpost",
-  ]);
-  // battles the chronicle itself puts at 100+ combined participants —
-  // read straight from each entry's own body text ("near four hundred
-  // souls," "150 against 150," "sixty blades a side," etc). Overlaps
-  // heavily with sieges (most of Nave's big fights ARE sieges); the two
-  // that stand apart as open-field musters are Meduli and Odin's Field
-  const BIG_FIGHT_TITLES = new Set([
-    "The Muster at Meduli",
-    "The Siege of Tindrem",
-    "The March of the ACT Pickaxe Host",
-    "The Battle of Kranesh Keep",
-    "The Battle for Odinpost",
-    "A Hundred and Fifty Blades",
-    "The Battle for Odin's Field",
-    "The Battle for the Undercroft",
-  ]);
 
   // flat entry list mirrors `entries` 1:1 in document order — used to
   // paint the progress-bar ticks and drive the "nearby entries" popover

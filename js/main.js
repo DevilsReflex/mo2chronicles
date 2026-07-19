@@ -428,6 +428,7 @@
   const scrollProgressEl = document.getElementById("scroll-progress");
   const progressTrack = document.querySelector(".scroll-progress-track");
   const progressMarker = document.getElementById("progress-marker");
+  const progressMarkerLabel = document.getElementById("progress-marker-label");
   const progressTicks = document.getElementById("progress-ticks");
   const anno = document.getElementById("anno");
   const annoYear = document.getElementById("anno-year");
@@ -613,6 +614,7 @@
   }
 
   let currentYear = null;
+  let currentMarkerLabel = null;
   let ticking = false;
   // horizontal view: the page still scrolls vertically, but that scroll is
   // re-expressed as a sideways slide of #hz-track (see horizontalView below).
@@ -661,11 +663,12 @@
         : cr.top < vh * 0.5 && cr.bottom > vh * 0.5;
 
       let yr = null;
+      let activeIdx = -1;
       if (inChron) {
         for (let i = 0; i < entries.length; i++) {
           const r = entries[i].getBoundingClientRect();
           const passed = hzMode ? r.left < vw * 0.6 : r.top < vh * 0.6;
-          if (passed) yr = entries[i].getAttribute("data-year");
+          if (passed) { yr = entries[i].getAttribute("data-year"); activeIdx = i; }
           else break;
         }
       }
@@ -680,7 +683,25 @@
       // a mobile-scoped CSS rule pre-sizes it to 100% with scaleX(0)
       if (coarsePtr) fill.style.transform = `scaleX(${pct})`;
       else fill.style.width = pct * 100 + "%";
-      if (progressMarker) progressMarker.style.left = pct * 100 + "%";
+      if (progressMarker) {
+        progressMarker.style.left = pct * 100 + "%";
+        // a standing "you are here" indicator, not just a hover reveal —
+        // visible for as long as the reader is inside the dated chronicle
+        progressMarker.classList.toggle("visible", inChron);
+      }
+      if (progressMarkerLabel) {
+        // the label is centered on the marker, which runs off the track's
+        // own ends near 0%/100% — pin it inward there instead of letting
+        // it hang off the header, the same edge treatment the tick
+        // tooltips and year labels already use
+        progressMarkerLabel.classList.toggle("sp-edge-start", pct < 0.04);
+        progressMarkerLabel.classList.toggle("sp-edge-end", pct > 0.96);
+        const label = activeIdx >= 0 ? flatEntries[activeIdx].dateLabel : "";
+        if (label !== currentMarkerLabel) {
+          currentMarkerLabel = label;
+          progressMarkerLabel.textContent = label;
+        }
+      }
       anno.classList.toggle("visible", inChron);
 
       if (yr && yr !== currentYear) {

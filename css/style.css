@@ -1607,7 +1607,11 @@ em .n-p, em .n-g { font-style: italic; }
   body:not(.hz) article.entry::before { width: 36px; left: -36px; }
   body:not(.hz) article.entry .entry-node { left: -36px; }
   body:not(.hz) article.entry:nth-of-type(odd) { grid-column: 1; }
-  body:not(.hz) article.entry:nth-of-type(even) { grid-column: 2; }
+  /* entries render in strict date order, so the right-column entry of
+     every pair is always the chronologically later one — a small drop
+     keeps that true on the page too, instead of two dates a month apart
+     reading as simultaneous just because they share a grid row */
+  body:not(.hz) article.entry:nth-of-type(even) { grid-column: 2; margin-top: 56px; }
 
   /* left-column entries mirror the connector to their right edge, where
      the spine actually is — same reach, reversed glow direction so the

@@ -572,36 +572,6 @@ window.CHRONICLE = {
      "year": 2021
     },
     {
-     "date": "19 December 2021",
-     "title": "The Artisans Ride Out",
-     "body": "When Brat lost his goods in the wilds, Bratwire and the Artisans — the realm's crafting-house, sworn to prove a guild might matter without a keep — rode out on stream to recover them, taming and killing bears. The smallest war in this chronicle, and one of the truest: most of Nave's history is not sieges, but friends going back for what was lost.",
-     "links": [
-      {
-       "text": "Recovery of Lost Items and Bear Taming — Bratwire and the Artisans in action",
-       "url": "https://www.youtube.com/watch?v=Oe5qt07KYlk",
-       "source": "Bratwire"
-      },
-      {
-       "text": "Another hunter tries his luck with the bears of that winter",
-       "url": "https://www.youtube.com/watch?v=2V2dp6wSmVo",
-       "source": "DorrianX"
-      },
-      {
-       "text": "Set upon by the Artisans — the guild seen from outside its own camera",
-       "url": "https://www.youtube.com/watch?v=p9cnboBtxUo",
-       "source": "BruceleeRob"
-      },
-      {
-       "text": "Riding with the Artisans on a friendlier errand, bandit-camps and scrolls",
-       "url": "https://www.youtube.com/watch?v=3At3YhA2te4",
-       "source": "BasedBellagio Gaming"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2021
-    },
-    {
      "date": "December 2021",
      "title": "The Bakti Council and the Keep of Bakti",
      "body": "In the jungle-gate city of Bakti — a neutral trade-hub since the elder world — eleven guilds bound into the Bakti Council to secure the Bakti Keep and keep peace. But peace bred its own war. When the Council voted to strip his control over its Discord server, Azaad of the Darkblood Coven cried \"democracy is dead,\" deleted it, and led his guild out — the new world's first political schism, proof a keep held for peace could sunder its holders. The first oath broken by the men who swore it, and far from the last. Yet the Council's dream outlived the Council: the jungle-gate passed to Venomous's Jungle Alliance, and the green south kept its banner while the north tore itself apart over thrones.",
@@ -723,31 +693,6 @@ window.CHRONICLE = {
     },
     {
      "date": "Late January 2022",
-     "title": "The Elder World Ends",
-     "body": "That same week, the servers of the first Mortal Online shut down forever; its veterans, many now lords of Nave, mourned the world that made them even as they carried its banners into the new one. Wolfszeit had been forged there in 2009, Mors Omnibus sworn in 2012, and Kuthara's Keepers of the Oath established in 2004 — the one house that ever held four towns and a third of that elder map. That world was shut down in a night; the grudges it bred went on breathing, and within the year they had their war.",
-     "links": [
-      {
-       "text": "The Official Mortal Online Channel — the elder world's monument",
-       "url": "https://www.youtube.com/mortalonline",
-       "source": "Star Vault"
-      },
-      {
-       "text": "The last login — twelve years of the elder world, said goodbye",
-       "url": "https://www.youtube.com/watch?v=xpzUsRReqqA",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "An outside documentarian's post-mortem of the world that made them",
-       "url": "https://www.youtube.com/watch?v=ECQn6vJtnzc",
-       "source": "nerdSlayer Studios"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2022
-    },
-    {
-     "date": "Late January 2022",
      "title": "The Great Queue",
      "body": "No sooner was the world permanent than it near drowned in its own success: the population surged past nine thousand souls — a two-fifths leap in one month — and Myrland choked on login-queues and crashes. On the forums some cried for a wipe of the whole continent; others begged newcomers to bide in Haven. The world's popularity became its first crisis, and the Steam-scrolls filled with warnings.",
      "links": [
@@ -795,11 +740,6 @@ window.CHRONICLE = {
        "text": "Slyy's own base-map — the Pockets every later chart was drawn upon",
        "url": "https://www.youtube.com/watch?v=cOevSaGiyF0",
        "source": "Slyy"
-      },
-      {
-       "text": "The realm's politics charted in the last days before Territory Control",
-       "url": "https://www.youtube.com/watch?v=2BGN9h9X_I8",
-       "source": "Campana Slightly"
       }
      ],
      "marker": null,

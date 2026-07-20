@@ -1626,26 +1626,6 @@ window.CHRONICLE = {
    ],
    "entries": [
     {
-     "date": "10 March 2025",
-     "title": "Skirmish at the Minotaur's Mouth",
-     "body": "Between the great sieges, the war beside the Minotaur's mouth ground on in smaller clashes — Odinseed against KarniMata east of the Minotaur Dungeon, caught on film by the mage Nausk, who three years earlier had filmed the Wolfpack at Legion's throat. This was the war Odinpost had bought: the north had come to test the Odin-host's keep in the winter of 2024 and never gone home, and the KarniMata feud kindled that spring had settled into the weather of the place. The map-keepers logged such fights weekly; this one survives as a window into the daily grind of the age's longest war.",
-     "links": [
-      {
-       "text": "MAGE COUNTER? — Odinseed vs KarniMata by the Minotaur Dungeon",
-       "url": "https://www.youtube.com/watch?v=94SmQ1UzgCM",
-       "source": "Nausk"
-      },
-      {
-       "text": "Odinseed against Scorn, another day at the Minotaur Dungeon",
-       "url": "https://www.youtube.com/watch?v=_p0dVpBFkUg",
-       "source": "nizwald"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
      "date": "Spring 2025",
      "title": "A Hundred and Fifty Blades",
      "body": "The wars of the Odin-host drew every kind of soul to the field — among them the fighters of the southern jungle, who had joined arms with Odinseed against KarniMata the year before and rode with its wars still. Venomous War Gaming, of the Jungle Alliance, preserved one of the age's great musters from inside the press: more than a hundred and fifty souls at a single siege, shield-walls meeting beneath the towers, a season's strength spent in one afternoon. Nave has counted its own heads since Henrik Nyström called four hundred to the field outside Meduli to learn what the world could bear; records like this one measure what the keep-wars of 2025 had become — and how far a house sworn to trade and green shadow would ride for a war begun far from its own jungle.",

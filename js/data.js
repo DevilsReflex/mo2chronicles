@@ -105,36 +105,6 @@ window.CHRONICLE = {
      "year": 2020
     },
     {
-     "date": "",
-     "title": "Of the elder houses",
-     "body": "So too came Wolfszeit, forged in the first Mortal Online in 2009, fighting the wars it filmed and filming them still five years on; Requiem, whose blood ran back to Dogma out of Darkfall, its herald Hayasa calling the old veterans to the new war; Mors Omnibus, sworn since 2012; and Keepers of the Oath (KotO), established 2004 under captain Kuthara — in the elder world the only guild to hold four towns and a third of the map. These were no strangers on empty ground, but old rivals who already knew whom they hated. They brought their old shapes with them: KotO was in this world what it had been in the last, the great power all the rest at last united against — until the pickaxe-hosts of a later age rose upon it, and the war took its name, the Rebellion of Barados against the Empire of Kuthara.",
-     "links": [
-      {
-       "text": "The Guild List of the elder world",
-       "url": "https://mowiki.fandom.com/wiki/Guild_List",
-       "source": "Mortal Online Wiki"
-      },
-      {
-       "text": "The Lament of KotO — one of the elder houses, mourned in the old world",
-       "url": "https://www.youtube.com/watch?v=vA0EZGKKbRk",
-       "source": "Vstia Doe"
-      },
-      {
-       "text": "KotO at the walls of a Meduli outpost, in the elder world",
-       "url": "https://www.youtube.com/watch?v=Mgr2gxzd24A",
-       "source": "Xhodan Xeus"
-      },
-      {
-       "text": "Mors Omnibus rides in the first world, thirteen years gone",
-       "url": "https://www.youtube.com/watch?v=PR_IfXECjJY",
-       "source": "EggsOvrEz"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2020
-    },
-    {
      "date": "December 2020",
      "title": "The Alpha Proving",
      "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers, and the elder houses came to prove their blades against its raw servers — combat-tests and stress-tests in which the feel of the coming war was first taken. Nothing yet was permanent; every death and duel was but a rehearsal for the age to come.",

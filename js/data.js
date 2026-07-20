@@ -579,36 +579,6 @@ window.CHRONICLE = {
      "year": 2021
     },
     {
-     "date": "15 September 2021",
-     "title": "The Nitre Queen",
-     "body": "Days after the muster, the world met its first instanced boss: the Nitre Queen, deep in her nest, with special loot for those who dared her. The boss-hunters' craft — the guides, the group-compositions, the loot-tables passed hand to hand — begins here.",
-     "links": [
-      {
-       "text": "So You Want to Kill the New Boss? — the Nitre Queen",
-       "url": "https://www.youtube.com/watch?v=qwR6jBoweB0",
-       "source": "ShadowOfaManTV"
-      },
-      {
-       "text": "The hunters compare notes — how to bring the Queen down",
-       "url": "https://www.youtube.com/watch?v=DyAvyRYFJSc",
-       "source": "Nazori"
-      },
-      {
-       "text": "To kill a Nitre Queen in three minutes",
-       "url": "https://www.youtube.com/watch?v=6ud1zhyY2G8",
-       "source": "Arinna"
-      },
-      {
-       "text": "How the Queen was not killed — the failure the guides omit",
-       "url": "https://www.youtube.com/watch?v=UFJd46Rqen0",
-       "source": "Castiel Calmelat"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2021
-    },
-    {
      "date": "16 September 2021",
      "title": "The Tyranny of the White Bears",
      "body": "In the same season the beta found its first broken meta: the north's white bears — \"incredibly powerful, incredibly tanky and incredibly fast\" — tameable solo and levelled while masters slept, until half the realm fought with one button — in the pet menu. Every age of Nave has its tyrant-build. The white bear was first, and the tamers — Pepper's trade — never lived it down, though she kept at it for years, giving a courteous \"GG\" to whoever killed her, long after Nave found new tyrants to curse.",
@@ -1031,36 +1001,6 @@ window.CHRONICLE = {
      ]
     },
     {
-     "date": "20 February 2022",
-     "title": "The Mainland Saga",
-     "body": "The launch generation began writing its own diaries: one newcomer's running chronicle of the mainland — hauling parcels for coin, stumbling into Tagmatons, ambushed at a Sator camp — the ordinary epic of every soul who left Haven with nothing.",
-     "links": [
-      {
-       "text": "Mainland Saga — Parcels, Tagmatons, and Ambushed at Sator Camp",
-       "url": "https://www.youtube.com/watch?v=BaM517CXi5U",
-       "source": "BasedBellagio Gaming"
-      },
-      {
-       "text": "Leaving Haven for the mainland — every newcomer's crossing",
-       "url": "https://www.youtube.com/watch?v=55Gk7AmPOYA",
-       "source": "WalksOnWater"
-      },
-      {
-       "text": "Hauling parcels for coin, the first trade of every landless soul",
-       "url": "https://www.youtube.com/watch?v=UtVB45_5j7M",
-       "source": "Snugglez"
-      },
-      {
-       "text": "The Tagmaton that every mainland diary eventually stumbles into",
-       "url": "https://www.youtube.com/watch?v=p2CsaeCjhMY",
-       "source": "Phaeta"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2022
-    },
-    {
      "date": "23 February 2022",
      "title": "The Homesteaders",
      "body": "With housing came the homesteaders' eternal war — not against guilds, but against geography. \"The biggest pain,\" the settlers counselled one another, \"is trying to find a flat piece of ground.\" Fifty-five thousand wood, sixty thousand stone, and a level patch of Nave: the modest empire of the small householder.",
@@ -1138,61 +1078,6 @@ window.CHRONICLE = {
      ],
      "marker": null,
      "kind": "event",
-     "year": 2022
-    },
-    {
-     "date": "19 March 2022",
-     "title": "The Quiet Fishermen",
-     "body": "Beneath the wars ran the off series — the fishermen of Nave, who took their rods into the Sheevra cave and fished its still waters among the golden ruins. No chronicle of a murder-world is honest without them: the people who logged in to be left alone, and mostly were.",
-     "links": [
-      {
-       "text": "Sheevra Cave Fishing — the off series",
-       "url": "https://www.youtube.com/watch?v=JNohV7xz3-o",
-       "source": "Roo"
-      },
-      {
-       "text": "The angler's art, taught in full",
-       "url": "https://www.youtube.com/watch?v=DFmnKDlz4ys",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The fisherman's craft, from a chronicler who kept to the water",
-       "url": "https://www.youtube.com/watch?v=UUDtYxCLOKI",
-       "source": "Squirrelly711"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2022
-    },
-    {
-     "date": "",
-     "title": "The Saltpack",
-     "body": "Beside the Wolfpack in the world's memory runs the Saltpack, a warband of the same roving kind, spoken of by the veterans in the same breath — the two packs standing together for that whole restless species of guild that owned nothing, held nothing, and was feared everywhere.",
-     "links": [
-      {
-       "text": "PVP — Murder of Bakti",
-       "url": "https://www.youtube.com/watch?v=k-uEhpQc6XY",
-       "source": "Mr. AmazingXD"
-      },
-      {
-       "text": "Blades crossed with the Saltpack",
-       "url": "https://www.youtube.com/watch?v=T1wsfbTeY-A",
-       "source": "Göjo"
-      },
-      {
-       "text": "One blade against the Saltpack's many",
-       "url": "https://www.youtube.com/watch?v=AwnY5KeqMxs",
-       "source": "BlastMO2"
-      },
-      {
-       "text": "An adventuring band crosses the Saltpack's road",
-       "url": "https://www.youtube.com/watch?v=Jk1t9whYGts",
-       "source": "AusBarryAllen"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
      "year": 2022
     },
     {
@@ -1289,26 +1174,6 @@ window.CHRONICLE = {
        "text": "The press catches its first taste of the necromancers' art",
        "url": "https://www.youtube.com/watch?v=GW46lmA2Fw4",
        "source": "MMORPG.com"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2022
-    },
-    {
-     "date": "13 July 2022",
-     "title": "The Sheevra Cave",
-     "body": "The explorers mapped one of the world's strangest places: the Sheevra cave, a drowned complex of golden pyramids and dark water — the ruin of the Alvarin's elder kin, standing exactly as the lore had promised. In Nave the deepest history is not written; it is visited.",
-     "links": [
-      {
-       "text": "Sheevra Cave — Location and What's In There",
-       "url": "https://www.youtube.com/watch?v=yXRT7KI48gA",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "A dungeoneer's field guide to the deep places of Nave",
-       "url": "https://www.youtube.com/watch?v=V0B9dbl3I0A",
-       "source": "JustKyle"
       }
      ],
      "marker": null,
@@ -1427,36 +1292,6 @@ window.CHRONICLE = {
     },
     {
      "date": "",
-     "title": "The Bard of Nave — Thommberry",
-     "body": "Of all the ways to live in a murder-world, none was stranger or more admirable than the one Thommberry chose: he went about it as a bard. In a land where every stranger is a threat and every silence a prelude to ambush, he made his part music — playing where he was not asked, appearing where no fighter would think to go, making of the sandbox a stage. It is easy to record the men who killed most; it is worth recording that somebody brought a song to a world of full loot, and that the world let him. A history of Nave that held only its wars would lie about what people did there.",
-     "links": [
-      {
-       "text": "Roleplay — the Bard Profession, and busking on a Toxai street corner",
-       "url": "https://mortalonline2.com/forums/threads/roleplay-bard-profession.6356/",
-       "source": "official forums"
-      },
-      {
-       "text": "A bard's tour of Tindrem, in the Thommberry manner",
-       "url": "https://www.youtube.com/watch?v=g3gmPkJJdh0",
-       "source": "Oldgreg859"
-      },
-      {
-       "text": "One Night in Meduli — the bard's own song, caught by another's camera",
-       "url": "https://www.youtube.com/watch?v=ecuE6Mglx2M",
-       "source": "MMO Shenanigans"
-      },
-      {
-       "text": "What the realm made of bards, once one joined the party",
-       "url": "https://www.youtube.com/watch?v=uCoJFwcgLrU",
-       "source": "Kenztrash"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2022
-    },
-    {
-     "date": "",
      "title": "The Live Channels — the Streamers of Nave",
      "body": "Beyond the chroniclers who kept Nave's memory on YouTube ran another watch entirely: the live channels, where the cruel world was broadcast as it happened, its ambushes and betrayals unfolding in real time before an audience that could not look away. First among the live-watchers stood JonahVeil, a veteran of the older hardcore worlds who made Nave his home stream — and whose clip of the launch, in which he reads a scathing review aloud as the game crashes out from under him, remains the single most-watched Twitch moment the world ever gave: the whole Mortal experience in a breath. He was no passing tourist; years on he was still live almost nightly, foremost among the game's devoted by every count, alongside Rivers and Dread Og, who kept their own vigils. The giants of the wider platform came to look upon Nave too — even summit1g, one of Twitch's greatest names, took his turn at the sandbox in summer 2024 and titled the clip, drily, the Mortal Online 2 Experience. The roll those live channels left behind is comic: a character deleted mid-stream, a fish that startled a grown man out of his chair, a bad review read straight into a crash — the small daily cruelties of Nave, caught live and kept forever. The sieges were filmed for history; the streams were the history happening, watched as it hurt.",
      "era": "2022–2026",
@@ -1505,37 +1340,6 @@ window.CHRONICLE = {
        "text": "The very podcast the banned lord keeps to this day",
        "url": "https://www.youtube.com/watch?v=OrpRY91K3tY",
        "source": "Putzin"
-      }
-     ],
-     "marker": null,
-     "era": "2022–2023",
-     "kind": "tale",
-     "year": 2022
-    },
-    {
-     "date": "",
-     "title": "The Cheat of the Minotaur King",
-     "body": "In the same uncertain years fell the most cinematic cheat the world ever saw. The Minotaur King was a boss reckoned to need thirty men; Buda slew him alone, by a portal-trick of spiritism that let him strike what could not strike back — magnificent theatre, and plainly an abuse. Buda did what few would: he confessed openly. Star Vault gave muddled word, some praising the ingenuity, some condemning the deed; in the end he was cast out regardless. His tale is the Baggening's lesson told as comedy: where the law was never written down, a man could not know if his cleverness would make him famous or exile him — and it might do both.",
-     "links": [
-      {
-       "text": "Mo2Builds Hall of Fame",
-       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
-       "source": "Mo2Builds"
-      },
-      {
-       "text": "The King brought down honestly — a world-first by a full band",
-       "url": "https://www.youtube.com/watch?v=EWS808_DY2g",
-       "source": "turbojet43"
-      },
-      {
-       "text": "How the King is meant to be taken — with a full band, honestly",
-       "url": "https://www.youtube.com/watch?v=IoMb1KwFCWY",
-       "source": "BruceleeRob"
-      },
-      {
-       "text": "Eighteen souls at the King, the honest price of the kill",
-       "url": "https://www.youtube.com/watch?v=js1vtYDsHkE",
-       "source": "Alyona Samoilova"
       }
      ],
      "marker": null,
@@ -1602,27 +1406,6 @@ window.CHRONICLE = {
     },
     {
      "date": "",
-     "title": "Oghmir the Scammer, and the Long Arm of Discord",
-     "body": "Where there is a market there is a swindler, and the age's most notorious was Oghmir, who went beyond the honest swindle: he built a fake overlay in Photoshop and used it to trick prolific traders out of great sums of gold while he streamed. Coming so soon after the Baggening, and in the same season the slayer of the Minotaur King confessed and was exiled regardless, it fell upon a realm that had lost confidence in the drawing of lines. Yet here the community understood the distinction exactly — scamming is permitted in Nave; third-party tools are not — and it took a literal riot before the lead game-master, Discord, reined him in, punishing Oghmir and refunding his victims only once the uproar made it impossible to ignore. The chroniclers set it down as another black stain on the game-masters' record. Oghmir threw a tantrum on stream and swore he would never play Mortal again — a promise broken several times since. It was a telling moment: even in a world that boasts of having no law, there is a line — the players found it before their rulers did — and behind the sandbox's cruelty sat, in the end, a man with power to say enough.",
-     "links": [
-      {
-       "text": "Mo2Builds Hall of Fame",
-       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
-       "source": "Mo2Builds"
-      },
-      {
-       "text": "The honest swindle, caught in the act",
-       "url": "https://www.youtube.com/watch?v=K7Ti1xPRJx4",
-       "source": "Splinter"
-      }
-     ],
-     "marker": null,
-     "era": "2022–2023",
-     "kind": "tale",
-     "year": 2022
-    },
-    {
-     "date": "",
      "title": "Of the empire-builders",
      "body": "Not all houses were murderers or zergs. The structured empire-guilds Integrity and DracoSilvam built, crafted, and held their ground by logistics and discipline, arming their members from the guild's own stores — the quiet backbone of the realm's economy of war, without which no siege could be supplied. Both had been quarry in their season — the Wolfpack fell upon the pair in March 2022 and thought the hunt worth filming — yet the patient house outlasts the hungry one: Integrity's discipline would carry it, years on, into open war upon the gold-selling guild Tianming, from prey to crusader without changing its nature.",
      "links": [
@@ -1645,41 +1428,6 @@ window.CHRONICLE = {
        "text": "Draco Silvam's long fellowship, kept by another hand",
        "url": "https://www.youtube.com/watch?v=_QYDDQnD-8o",
        "source": "Unwatchable Trash"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2022
-    },
-    {
-     "date": "",
-     "title": "The Merry Men of the Greenwood — Talut's band",
-     "body": "In the forests and upon the roads rode a band apart: the Merry Men, led by Talut — outlaws in the old greenwood fashion, the highways their hunting-ground and the wilds their hall. The name was no idle borrowing: they called their own country Sherwood Forest, and mustered in real numbers on the Central Steppe. Where the BeastMasters killed for infamy and the villains of Hyllspeia for dominion, the Merry Men played the highwayman with style — waylaying the rich on the trade-roads, a thorn in every caravan's side and a legend among lovers of a rogue. Yet robbery was never their whole trade: they went down into the Sator camps and the Minotaur deeps, tamed and rode an Arctic Molva, and kept a long roll of enemies — Taarenhal, GGP, BlackPriest, North Order, xESx, and the Guerrilas, who seized their forest while the band kept Christmas. In the first days of 2023 the Merry Men came back from that holiday and took Sherwood again the very day of their return. Theirs is the truest expression of the game's promise: that any soul might take up the highwayman's part and write a chapter of Nave in stolen gold.",
-     "links": [
-      {
-       "text": "The bandit-country of the living map — Two Lakes",
-       "url": "https://www.mortalonlinemap.info/300/two-lakes/bandit-camp",
-       "source": "MortalOnlineMap.info"
-      },
-      {
-       "text": "The Merry Men met in the field",
-       "url": "https://www.youtube.com/watch?v=IUhwYngiQ7c",
-       "source": "Gooch"
-      },
-      {
-       "text": "The Merry Men riding out across the Central Steppe",
-       "url": "https://www.youtube.com/watch?v=o5YOCkk--Os",
-       "source": "Margld Apex"
-      },
-      {
-       "text": "Roadside robbery outside Vadda — the highwayman's trade as Nave still practised it",
-       "url": "https://www.youtube.com/watch?v=K6Y-z8BsacM",
-       "source": "Wally Oney"
-      },
-      {
-       "text": "MerryMen beating the Guerrilas — the winter fight for Sherwood, from inside the band",
-       "url": "https://www.youtube.com/watch?v=exbnLHhfGm4",
-       "source": "Skrag"
       }
      ],
      "marker": null,
@@ -1825,36 +1573,6 @@ window.CHRONICLE = {
        "text": "CONTENT: 'A Jungle guild' — Azog's own guild-movie of the house he fought for",
        "url": "https://www.youtube.com/watch?v=EXuhcdcbF1A",
        "source": "AZOGTHEDEFILER"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2023
-    },
-    {
-     "date": "May 2023",
-     "title": "Elementalism and the Riding of Beasts (Patch 1.0.16)",
-     "body": "That spring the sorcerers gained a new art: Elementalism, weather-magic that could call the storms of a region — some spells demanding a certain sky to be cast at all. In the same season the wilds were tamed to the saddle: wolves, direwolves, terrorbirds, even swine could be ridden, and for the first time two riders might share one beast, so a warband might move as fast as it was fierce.",
-     "links": [
-      {
-       "text": "Mortal Online 2 in 2023 and Beyond — Recent + Upcoming Changes",
-       "url": "https://www.youtube.com/watch?v=wrdcq_q6FEc",
-       "source": "BullCashish"
-      },
-      {
-       "text": "The storms unveiled — the official showcase",
-       "url": "https://www.youtube.com/watch?v=1zbBT20YeGc",
-       "source": "Mortal Online"
-      },
-      {
-       "text": "Patch 1.0.16 — Elementalism unveiled in full",
-       "url": "https://www.youtube.com/watch?v=c_RQfUOYYvA",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "New spells and new mounts together — both halves of the decree",
-       "url": "https://www.youtube.com/watch?v=hvx08ztjhDU",
-       "source": "Ser Arthur"
       }
      ],
      "marker": null,
@@ -2127,36 +1845,6 @@ window.CHRONICLE = {
      "year": 2024
     },
     {
-     "date": "",
-     "title": "The Griefers of Gaul'Kor — Killox and Nerion",
-     "body": "In the lawless marches of Gaul'Kor kept the Dreadlords, the griefer-guild that had run since the elder world, led by the silver-tongued Killox with Nerion at his side. Sharing the outlaw-country with the Nightmare host, they made a sport of misery and a fortress of their stronghold — until the Rat Alliance brought its siege-engines against them, an assault Wolfszeit's camera preserved. Yet like the humanoid Dreadlords whose name they bore, Killox and Nerion proved near impossible to drive out, outlasting every effort to unmake them.",
-     "links": [
-      {
-       "text": "Stronghold Siege — WZ and Rat Alliance vs the Dreadlords",
-       "url": "https://www.youtube.com/watch?v=DPZljKnSrFg",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The Dreadlords' arts, exposed by their victims",
-       "url": "https://www.youtube.com/watch?v=cGso8zfFcu4",
-       "source": "iwi"
-      },
-      {
-       "text": "The disaster of a Gaul'Kor raid, set down for all to see",
-       "url": "https://www.youtube.com/watch?v=ex10FgzluWI",
-       "source": "cardinal"
-      },
-      {
-       "text": "The griefer's own camera, completing the account against him",
-       "url": "https://www.youtube.com/watch?v=TUw2H5RjTDw",
-       "source": "Dreadlord KilLox"
-      }
-     ],
-     "marker": null,
-     "kind": "tale",
-     "year": 2024
-    },
-    {
      "date": "2 February 2024",
      "title": "Odinseed against Mythic",
      "body": "King Barados led the militia of Fabernum into the UnderCroft Dungeon to face the guild Mythic and its lord Chip Chip — one of many foes the Odin-host met in the deeps in the year its wars multiplied. Mark the name: Chip Chip's Mythic would not stay a dungeon rival, but take its turn at the walls of Odinpost and stand among the houses that at last brought the Odin-throne down.",
@@ -2273,36 +1961,6 @@ window.CHRONICLE = {
      "year": 2024
     },
     {
-     "date": "March 2024",
-     "title": "Of Bears, Dismemberment, and Melisar's Vault (Patch 2.0.2.6)",
-     "body": "One of the age's most impactful patches reshaped road and battlefield alike. The great bears could now be ridden, and an overhaul of mount-stamina made crossing the world seamless. War grew more terrible: humanoids now lost limbs when they died — true dismemberment come to Nave — with remade blood, executions of the fallen, and lingering corpses. A warrior might bear a second weapon-set to quick-swap mid-fight, a new light armor was forged, and a new deep — Melisar's Vault — opened somewhere in Myrland for the bold.",
-     "links": [
-      {
-       "text": "ODINSEED in the New Melisar's Vault",
-       "url": "https://www.youtube.com/watch?v=6BFXaysQ4Fo",
-       "source": "BruceLeeRob"
-      },
-      {
-       "text": "Into Melisar's Vault — the new deep, plundered",
-       "url": "https://www.youtube.com/watch?v=Jldd7RxMRKI",
-       "source": "SharkWolf"
-      },
-      {
-       "text": "The decree itself, as Star Vault proclaimed it",
-       "url": "https://www.youtube.com/watch?v=5jreGiFL60g",
-       "source": "Mortal Online"
-      },
-      {
-       "text": "Bear-riding previewed on the test realm, days before the world had it",
-       "url": "https://www.youtube.com/watch?v=BACpcg8bG74",
-       "source": "Ray Fuego Did It"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2024
-    },
-    {
      "date": "April 2024",
      "title": "The Decree of the Siege Challenge",
      "body": "Seeing that few would fight the sieges as they stood, the lords of Star Vault decreed the Siege Challenge: no more the thief's-siege struck at the sleeping hours, but a formal summons, a window of vulnerability, and safety outside it. Phen had foretold that exact grievance upon the forums in September 2020 — waking as a criminal in a keep broken and rebuilt while its lord slept — three years before the Law of Territory gave it a body, and the world bore it eight months before the lords legislated the night-siege out of Nave. The old hands had been right; they had only been early. In the same season came a second character-slot, a new deep (the Sylvan Sanctum), and new beasts to ride.",
@@ -2331,94 +1989,6 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2024
-    },
-    {
-     "date": "May 2024",
-     "title": "The Guild Finder and the Newcomer's Welcome (Patch 2.0.5)",
-     "body": "A great re-forging of a newcomer's first days: a Guild Finder to help the lost find a banner to follow — a quiet admission of how hard it had become to join a fellowship — together with a gentler passage through the tutorial-isle, the peaceable crafts of fishing and foraging for those weary of war, build-presets for the bewildered, and a new mount, the Lykiator, to carry them into the world.",
-     "links": [
-      {
-       "text": "Beginners Guide 2024 — How to Progress",
-       "url": "https://m.youtube.com/watch?v=u5tjTvPl694",
-       "source": "Medieval Marty"
-      },
-      {
-       "text": "The recruiters' craft the Finder was built to ease",
-       "url": "https://www.youtube.com/watch?v=Sq0ANC1lxhw",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The patch proclaimed by its makers, guild-finder and all",
-       "url": "https://www.youtube.com/watch?v=oBuC-vox1rg",
-       "source": "Mortal Online"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2024
-    },
-    {
-     "date": "12 May 2024",
-     "title": "The Field Guide to a Living",
-     "body": "The Field Guide tradition, begun with the Risars of 2021, was still teaching three years on — now a chapter on construction, \"a different way to earn your living\": the guide-writers quietly insisting, through every age of war, that there was more than one way to matter in Nave.",
-     "links": [
-      {
-       "text": "Field Guide — Construction",
-       "url": "https://www.youtube.com/watch?v=toXMenABNvc",
-       "source": "JustKyle",
-       "noembed": true
-      },
-      {
-       "text": "Establishing your resource ecosystem — another teacher's chapter on making a living",
-       "url": "https://www.youtube.com/watch?v=4xpXfhWc6Yg",
-       "source": "finegamingconnoisseur"
-      },
-      {
-       "text": "The science of bows, taught for those who lived by the craft",
-       "url": "https://www.youtube.com/watch?v=8bofsjxaxx0",
-       "source": "BasedBellagio Gaming"
-      },
-      {
-       "text": "Armour-crafting set down for the trades that clothed the wars",
-       "url": "https://www.youtube.com/watch?v=IEgCyssOrvI",
-       "source": "Kibbles Gaming"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2024
-    },
-    {
-     "date": "",
-     "title": "The Crafters’ Manuals",
-     "body": "The war was fed by the forge. For every blade in the shield-wall there was a crafter who made it, and a manual that taught the making. Wolfszeit’s tutorials — extraction and refining, bow-craft and armour, taming and spiritism — and Kibbles’s guides formed the trade-schools of Nave, where the quiet majority learned the peaceable arts that armed the loud minority.",
-     "era": "2021–2025",
-     "kind": "tale",
-     "odinseed": false,
-     "marker": null,
-     "year": 2024,
-     "links": [
-      {
-       "text": "The Granum extraction guide — everything the refiner needs",
-       "url": "https://www.youtube.com/watch?v=Znd70ys79M8",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Weapon-crafting — the making of swords, axes, and hammers",
-       "url": "https://www.youtube.com/watch?v=qeOoo7BkGWc",
-       "source": "Kibbles Gaming"
-      },
-      {
-       "text": "Spiritism and spirit-farming, one of the manuals' own trades",
-       "url": "https://www.youtube.com/watch?v=A3iTYx_-p9s",
-       "source": "OMI Of SILVER"
-      },
-      {
-       "text": "The taming of beasts, taught plain",
-       "url": "https://www.youtube.com/watch?v=Ku4Q_VXVk8g",
-       "source": "Nazori"
-      }
-     ]
     },
     {
      "date": "6 May 2024",
@@ -2510,78 +2080,6 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2024
-    },
-    {
-     "date": "July 2024",
-     "title": "The Mastery Tree",
-     "body": "Star Vault loosed a great re-forging of the arts of war: the Mastery system, by which every fighter and crafter might specialize anew, alongside a new wilderness dungeon and fresh craft — reshaping the builds of the whole realm.",
-     "links": [
-      {
-       "text": "Patch Notes 2.0.6 — the Mastery System",
-       "url": "https://www.mortalonline2.com/patch-notes-2-0-6",
-       "source": "Star Vault"
-      },
-      {
-       "text": "Mortal Online 2 Releases Its Mastery Tree System",
-       "url": "https://massivelyop.com/2024/07/03/mortal-online-2-releases-its-mastery-tree-system-adds-a-new-dungeon-and-introduces-more-items/",
-       "source": "Massively Overpowered"
-      },
-      {
-       "text": "The official herald of the Mastery decree",
-       "url": "https://www.youtube.com/watch?v=R4ogF2oQF4Q",
-       "source": "Mortal Online"
-      },
-      {
-       "text": "The Mage-and-Dominator of Sheevra — fighting with pets",
-       "url": "https://www.youtube.com/watch?v=xKQ4r-GORSw",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Every spell in Nave, ranked in a tier-list",
-       "url": "https://www.youtube.com/watch?v=8OqIDbJ8oy0",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The best builds of 2024 — mage and foot-fighter",
-       "url": "https://www.youtube.com/watch?v=k53jELRtsKw",
-       "source": "Medieval Marty"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2024
-    },
-    {
-     "date": "",
-     "title": "The Schools of the Build",
-     "body": "In a world where a single character is a whole season’s labour, the choice of build is a life’s work — and the theorists who mapped them earned followings of their own. DemoMan0351 catalogued the archetypes one by one — the Solo King footfighter, the Oghmir ‘meta,’ the Mando death-knight, the Zeus elementalist, the Paladin — and ranked every spell in Nave. Wolfszeit and Medieval Marty drew up their own clade-guides and tier-lists. Between them they wrote the closest thing Nave has to a canon of the character.",
-     "era": "2022–2025",
-     "kind": "tale",
-     "odinseed": false,
-     "marker": null,
-     "year": 2024,
-     "links": [
-      {
-       "text": "The Alvarin dex-footie — the 'Solo King' build",
-       "url": "https://www.youtube.com/watch?v=LwqeV3AqKqQ",
-       "source": "DemoMan0351"
-      },
-      {
-       "text": "The five best builds for success in Nave",
-       "url": "https://www.youtube.com/watch?v=U1_JPUs_JnA",
-       "source": "Medieval Marty"
-      },
-      {
-       "text": "The foot-archer — the fast Veela bow-master",
-       "url": "https://www.youtube.com/watch?v=3HsVVWZwWUU",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Tatsuya's own build — four thousand hours, four thousand murders",
-       "url": "https://www.youtube.com/watch?v=hKDkjsoJ3Fk",
-       "source": "j45k"
-      }
-     ]
     },
     {
      "date": "September 2024",
@@ -2783,73 +2281,6 @@ window.CHRONICLE = {
     },
     {
      "date": "",
-     "title": "The Faces of the Middle Years",
-     "body": "As the game's fame grew, the community teemed with characters the chroniclers set down. Krank (Krankone Hsler), the mad dual-boxer who rode two terrorbirds at once, alt-tabbing to set both pets on one foe — and banned from his stream any soul who joined chat after he died. Pepper, among Nave's most prolific beast-tamers, keeper of a pet-emporium, gracious even in defeat with a \"GG\" for her killers. Blitz and Bigbadwolff, roamers and recruiters, ever calling wandering blades to a banner. The hunters of men: Cixx, captain of the bounty-host Headless, an \"Expert Bounty Hunter\" of two hundred contracts, famed for outwitting his quarry before he drew steel; and Axe, among Nave's most charismatic blades, known for his \"movie-announcer\" voice, his deeds — the Bounty Hunt Gone Wrong chief among them — preserved upon the LowTierContent annal. The con-men: AnthonyHD, deviser of the \"Easy Money\" swindle, and newcomer CeeJ, whom that con fattened on Blood Kua. The brothers Stinkeye and Pinkeye, the \"Dumb and Dumber\" of Nave and beloved for it. Late but lasting came Rivers (called Riley), sewer-born like every soul in Nave, who rose among the most constant chroniclers of the modern age. Over the growing world watched the community-keeper Nebulous, shepherd of the creators who kept the chronicle alive. These were the faces of Nave in its middle years.",
-     "links": [
-      {
-       "text": "Mortal Online 2 In 2024",
-       "url": "https://www.youtube.com/watch?v=ugRR3g8EzeY",
-       "source": "TheLazyPeon"
-      },
-      {
-       "text": "Mo2Builds Hall of Fame",
-       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
-       "source": "Mo2Builds"
-      },
-      {
-       "text": "The Bounty Hunt Gone Wrong itself — Axe's signature deed, as the record names it",
-       "url": "https://www.youtube.com/watch?v=Lm5YsEjdqTU",
-       "source": "LowTierContent"
-      },
-      {
-       "text": "Cixx's own channel, the bounty-host captain, and the legend of Greebo",
-       "url": "https://www.youtube.com/watch?v=TVzuYJmhJJQ",
-       "source": "Channel Cixx"
-      }
-     ],
-     "marker": null,
-     "era": "2024–2025",
-     "kind": "tale",
-     "year": 2024
-    },
-    {
-     "date": "",
-     "title": "The Lawman of Tephra — RunKarni",
-     "body": "Chief among the solo-legends of these years rode RunKarni, the naked-shortbow terror of the Tephra Crater and one of the sandbox's truest folk-heroes. His very name was a taunt hurled at the mega-host KarniMata — \"Run, Karni!\" — for he harried that great zerg across the volcanic wastes, a single gadfly tormenting an empire. He did it all but naked: no armor, no fortune on his back, a humble shortbow and his own cunning — living proof that skill and knowledge, not gear and gold, rule in Nave. He styled himself the law of his lands under the banner of the \"Tephra PD\" — dealing rough justice to trespassers and, in the detail that made him immortal, broadcasting it from the front seat of his car between shifts of his real-world work as a night-watchman: a security guard in life, and in Nave. He turns up in the dungeon-wars too, down in the UnderCroft in the summer of 2024. When the Odin-host reneged upon the war-gold it had promised him, breaking a sworn peace within a day of signing it, it was his voice that answered — a public oath against \"Odinseed's tyranny and oppression\" that carried his blades to Granum Pass that June, to fight among the Mercenaries against the Odin-host itself. His deeds were legend and his commentary endless — the same tongue that could raise a war against a king; until, as the chroniclers gently record, \"his tongue undid him,\" and the fearless mouth that made him such a joy to watch talked him into trouble he could not shoot his way out of.",
-     "links": [
-      {
-       "text": "3 Insidius vs 1 RunKarni — the King of Tephra at work",
-       "url": "https://www.youtube.com/watch?v=8rmAhJ4Vg80",
-       "source": "RunKarni Tephra PD"
-      },
-      {
-       "text": "Mo2Builds Hall of Fame",
-       "url": "https://web.archive.org/web/20250325223545/https://www.mo2builds.com/hall-of-fame",
-       "source": "Mo2Builds"
-      },
-      {
-       "text": "Tephra Crater — Endless Cycle of Conflict, the Northern Wars",
-       "url": "https://www.youtube.com/watch?v=9Pgwkc-iexI",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Can he beat the best? — a chronicler puts RunKarni to the test",
-       "url": "https://www.youtube.com/watch?v=iGxVV1jCZO0",
-       "source": "mortal 2 fan"
-      },
-      {
-       "text": "KarniMata dominates the lawman, for once — even legends have bad days",
-       "url": "https://www.youtube.com/watch?v=_1R4dxLEWtc",
-       "source": "Pannrickard"
-      }
-     ],
-     "marker": null,
-     "era": "2024–2025",
-     "kind": "tale",
-     "year": 2024
-    },
-    {
-     "date": "",
      "title": "The Solo Blades",
      "body": "Nave’s grandest wars were fought by hundreds, but its most-watched fights were often fought by one. A whole tradition of solo and small-scale PvP grew up alongside the sieges — the naked archer on the Meduli road, the dagger-mage who prized playing alone, the mounted ganker taking fifty gold in a minute. Chief among them rode Tatsuya, the Veela blade of four thousand hours and four thousand murders, whose duels j45k set down again and again; and a clip of two travellers robbed upon the road carried the sandbox’s cruelty to two hundred thousand strangers.",
      "era": "2021–2025",
@@ -2975,36 +2406,6 @@ window.CHRONICLE = {
     "Then the lords of the world looked upon the flaw of the sixteen thrones — that the whole earth lay shut to all but sixteen houses — and resolved to shatter it utterly, and to remake the very law of Territory from its foundations. It was to be the greatest unmaking and remaking the world had yet endured; and they named it, fittingly, the Reckoning."
    ],
    "entries": [
-    {
-     "date": "January 2025",
-     "title": "The Free Weekend and the Daily Tasks",
-     "body": "With the new year, Star Vault threw open the gates for a free-to-play weekend, that new blood might taste the hard world — even as the daily tasks lately given the faithful kept a restless playerbase through the long lull between the great wars.",
-     "links": [
-      {
-       "text": "Mortal Online 2's First 2025 Roadmap",
-       "url": "https://massivelyop.com/2025/01/23/mortal-online-2s-first-2025-roadmap-promises-optimization-combat-updates-and-overhauled-chat/",
-       "source": "Massively Overpowered"
-      },
-      {
-       "text": "The free weekend weighed by the old archivist",
-       "url": "https://www.youtube.com/watch?v=MjL5MQjMuNY",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "The year's roadmap read by an independent hand",
-       "url": "https://www.youtube.com/watch?v=3MPzzDJZheA",
-       "source": "MMOKAI"
-      },
-      {
-       "text": "The soldier's daily tasks explained for those newly out of Haven",
-       "url": "https://www.youtube.com/watch?v=awb9U38J-Y4",
-       "source": "Schinzeli"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
     {
      "date": "10 March 2025",
      "title": "Skirmish at the Minotaur's Mouth",
@@ -3261,46 +2662,6 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
-     "date": "July 2025",
-     "title": "The Terror Dungeon of Krankone",
-     "body": "The realm's maddest explorer earned his monument: the Sheevra Terror Dungeon, discovered by Krankone — the same dual-boxing Krank who rode two terrorbirds at once — his find set down in the community's own records by the old chronicler Embuscade. Discovery, too, is a deed in Nave; the map itself remembers its finders.",
-     "links": [
-      {
-       "text": "\"Sheevra Terror Dungeon — Discovered by KRANKONE\" — Embuscade's testimony",
-       "url": "https://www.mortalonline2.com/forums/whats-new/",
-       "source": "official forums"
-      },
-      {
-       "text": "The Terror King himself, in his own annal",
-       "url": "https://www.youtube.com/watch?v=bRayftlyPQA",
-       "source": "HSLER TV"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
-     "date": "18 August 2025",
-     "title": "The Loremasters of the Alvarin",
-     "body": "The lore-keepers turned chroniclers of the deep past: a study of the Alvarin clade — the swift Veela and the shadowed Sheevra of Urmothâr — told in the manner of a history, for a community that had begun to treat its world's mythology as seriously as its wars. This chronicle is kin to their work.",
-     "links": [
-      {
-       "text": "Alvarin Culture Explained — Veela and Sheevra and Their Secrets",
-       "url": "https://www.youtube.com/watch?v=g-1qqDLfK0c",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Many Alvarins died to bring us this information",
-       "url": "https://www.youtube.com/watch?v=g703NBA53vE",
-       "source": "Longballoon"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
      "date": "22 August 2025",
      "title": "The Lament of the Hollow Sieges",
      "body": "Five weeks the new law had stood, and already the realm had found its underside. The chroniclers set down the \"Fake Outpost Sieges\" — hosts that declared war upon a region and then did not come, a summons answered by nobody and a defense mustered for nothing. The Reckoning had promised that any twenty souls might contest any land in Nave; it had not thought to ask whether they would trouble to arrive. So the \"no-show\" took its place among the world's grievances beside the exploit and the swindle — for Nave has never been given a law it could not find the crack in.",
@@ -3381,26 +2742,6 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
-     "date": "November 2025",
-     "title": "The Ether Wayshrines and the Banking Overhaul (Patch 2.2.2.58)",
-     "body": "The year's last great patch was the one the annals had foretold in September, and it came for the tedium of the dead and the merchant alike. Ether Wayshrines rose across the land — spirit-gates by which a slain soul might travel the Etherworld from shrine to shrine rather than wander the grey roads for an age — while the Banking Overhaul brought order to the vaults, with auto-sorting and search where before was clutter. Caravan Campsites rose outside the dungeons, where soloers and small bands might gather, resurrect, and ready their delving. And war itself was re-lawed: a guild must stand at open war to lay a siege, and war was made costly and finite, ending after fourteen days. Whether the lords intended it or not, the empty summons of August had been given a price at last — one more turn of Star Vault's long labor to make the fighting for land worthy and true.",
-     "links": [
-      {
-       "text": "Patch Notes 2.2.2.58 — Wayshrines and the Banking Overhaul",
-       "url": "https://www.mortalonline2.com/patch-notes-2-2-2-58",
-       "source": "Star Vault"
-      },
-      {
-       "text": "PTR Soon! Banking Overhaul, Wayshrines & Caravan Campsites",
-       "url": "https://www.youtube.com/watch?v=aoB58gBJ7RI",
-       "source": "Wolfszeit"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
      "date": "December 2025",
      "title": "The Year's Reckoning",
      "body": "At year's end Star Vault counted its own labor and found ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known. Beside the makers' tally the old archivist Wolfszeit, whose annals ran back to the first Mortal Online of 2009, set down a year-end reckoning of his own. Between the two accounts lay the whole argument of Nave: at the Full Launch of 2022 the hands of Henrik Nyström and his lead developer Sebastian had shaped the systems the guilds would spend five years contesting, cursing, and exploiting — and no year had proved it louder. The lords shattered the sixteen thrones; the houses answered with hollow sieges, hoarded relics, and a server-wide war over a single small house. What the makers set down in patch notes, the world rewrote in blood, and neither asked the other's leave.",
@@ -3458,36 +2799,6 @@ window.CHRONICLE = {
       {
        "text": "One creator answers the reveal by locking himself out of Haven",
        "url": "https://www.youtube.com/watch?v=etnRbAr90ho",
-       "source": "Deep Cheek Dweller"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2026
-    },
-    {
-     "date": "3 March 2026",
-     "title": "The New Eyes",
-     "body": "On the eve of the new continent a fresh wave of reviewers found the old world — \"I found the most hardcore MMO ever\" — and the cycle begun by Josh Strife Hayes in 2021 turned again: every few years Nave is discovered anew, and the veterans watch the newborn learn what the sewers teach.",
-     "links": [
-      {
-       "text": "I Found the Most Hardcore MMO EVER — a 2026 review",
-       "url": "https://www.youtube.com/watch?v=icHAeEAhUc8",
-       "source": "Nyce Gaming"
-      },
-      {
-       "text": "Another fresh pair of eyes, this very season",
-       "url": "https://www.youtube.com/watch?v=iKCToDA9vDY",
-       "source": "xGooselordx"
-      },
-      {
-       "text": "A Kenshi chronicler wanders in and finds Nave worth the walking",
-       "url": "https://www.youtube.com/watch?v=lq1yD0xOZyQ",
-       "source": "Scotch Samurai"
-      },
-      {
-       "text": "What a niche world did for one newcomer's audience",
-       "url": "https://www.youtube.com/watch?v=5Iqi6_MpAJo",
        "source": "Deep Cheek Dweller"
       }
      ],
@@ -3578,31 +2889,6 @@ window.CHRONICLE = {
       {
        "text": "The test realm's gates walked the very day they parted",
        "url": "https://www.youtube.com/watch?v=zTiBdCund4w",
-       "source": "Wolfszeit"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2026
-    },
-    {
-     "date": "2026",
-     "title": "Of the Vessel and the Fatalities",
-     "body": "The world kept growing stranger beneath the headlines: a new boss, The Vessel, behind its portal of orbs; Fatalities, with titles for those who mastered them; Tagmaton brood-eggs hatched into Fallowborn pets by the patient — the plague loosed upon the guilds at the Reckoning now cradled and fed by them; and a chat reforged so a man might link his wares and whisper his enemies by name. A quiet blow struck the oldest land-baron's trick: the lords decreed only a house's owner might pay its upkeep, so no lord might squat a hoard of homes he did not hold. The chronicle of patches is the chronicle of daily life — and daily life in Nave was never dull.",
-     "links": [
-      {
-       "text": "The living patch-record of 2026 — the Vessel, Fatalities, and Fallowborn",
-       "url": "https://mo2info.com/index.php?newsCat=All",
-       "source": "MO2Info"
-      },
-      {
-       "text": "The Vessel brought low by a single blade",
-       "url": "https://www.youtube.com/watch?v=ektuJ2p9NFA",
-       "source": "SesArses"
-      },
-      {
-       "text": "A hotfix of the new world — Ashir priests, Auer guards, and fixes",
-       "url": "https://www.youtube.com/watch?v=tUPSbxBhYo4",
        "source": "Wolfszeit"
       }
      ],

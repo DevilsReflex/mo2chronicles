@@ -195,36 +195,6 @@ window.CHRONICLE = {
      "year": 2021
     },
     {
-     "date": "30 March 2021",
-     "title": "The Thief Question",
-     "body": "The forums fought one of the community's oldest wars: should thievery return? Pickpockets testified — \"I always had pilfering, snooping and lockpicking on my fighter... I actually stole the one and only dagger of a hybrid before the fight began\" — others wanted it buried as \"a gimmicky troll skill.\" One voice spoke for master thieves: thievery \"is much more about psychology and understanding the world than snatching purses.\" The question waited five years for its answer — the Locks of 2026.",
-     "links": [
-      {
-       "text": "No Thief in Mortal II — the great thievery debate",
-       "url": "https://mortalonline2.com/forums/threads/no-thief-in-mortal-ii.1455/page-2",
-       "source": "official forums"
-      },
-      {
-       "text": "Five years on, the question answered — a lockpicking tutorial for the world that finally got its thief skills",
-       "url": "https://www.youtube.com/watch?v=vHZq_85jCH8",
-       "source": "EmptySpace"
-      },
-      {
-       "text": "The stolen art itself, practised in the elder world",
-       "url": "https://www.youtube.com/watch?v=G0GEEV7sTtw",
-       "source": "Gray Fox"
-      },
-      {
-       "text": "The thief's craft as it survived into the new world",
-       "url": "https://www.youtube.com/watch?v=HTseaswsYMs",
-       "source": "NIKO PUSHO"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2021
-    },
-    {
      "date": "31 March 2021",
      "title": "The First Great Guild Battle",
      "body": "In the closed beta was fought one of the new world's first great clashes — KotO and Legion — filmed by an archer as a foretaste of wars to come. A fitting pair: Kuthara's Keepers, who would swell into the empire the realm at last united against, and Legion, who would hold Vadda in a stranglehold and be hunted for it. Neither had a keep yet to lose; both fought as though they did.",
@@ -363,78 +333,6 @@ window.CHRONICLE = {
        "text": "Mortal Online 2 In 2024 — the beta's old critic returns, and a quarter-million follow",
        "url": "https://www.youtube.com/watch?v=ugRR3g8EzeY",
        "source": "TheLazyPeon"
-      }
-     ]
-    },
-    {
-     "date": "17 April 2021",
-     "title": "The Field Guides Begin",
-     "body": "A teacher set down the first chapter of a Field Guide to the young world — beginning with the Risars: what they are, what they drop, where they camp. It began a tradition still running years later, chapter by chapter — the schoolbooks of a world with no tutorial worth the name.",
-     "links": [
-      {
-       "text": "Field Guide — Risar Camps, the first chapter",
-       "url": "https://www.youtube.com/watch?v=ABgvBXbCFhA",
-       "source": "JustKyle"
-      },
-      {
-       "text": "Another schoolmaster of Nave takes up the chalk",
-       "url": "https://www.youtube.com/watch?v=-PAg6J7SXfs",
-       "source": "finegamingconnoisseur"
-      },
-      {
-       "text": "A third teacher sets down his tips for the newly arrived",
-       "url": "https://www.youtube.com/watch?v=dl0IWS8c47Q",
-       "source": "Thy Floky"
-      },
-      {
-       "text": "Another hand at the beginner's primer, in the same season",
-       "url": "https://www.youtube.com/watch?v=LyMt2akv2U4",
-       "source": "Nazori"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2021
-    },
-    {
-     "date": "",
-     "title": "The Schoolbooks of Nave",
-     "body": "A world with no tutorial worth the name breeds its own teachers. Beyond the in-game Field Guides rose newcomer schoolbooks on the web — starter guides that carried more viewers than the servers ever held. ESO’s beta primer and the walkthroughs of Medieval Marty, Dilbo Dabbgins, and Wolfszeit taught newborns to leave Haven, cast a spell, and survive the sewers. Half the souls who tried Nave arrived clutching one of these.",
-     "era": "2021–2024",
-     "kind": "tale",
-     "odinseed": false,
-     "marker": null,
-     "year": 2021,
-     "links": [
-      {
-       "text": "ESO's starter guide to the beta — a primer for the newborn",
-       "url": "https://www.youtube.com/watch?v=jbiGlDRXesg",
-       "source": "ESO"
-      },
-      {
-       "text": "A starter guide of tips, character-creation, skills, and stats",
-       "url": "https://www.youtube.com/watch?v=rG3rDJU4xHE",
-       "source": "Dilbo Dabbgins"
-      },
-      {
-       "text": "Everything a new player needs to know — the 2023 primer",
-       "url": "https://www.youtube.com/watch?v=xM26RRJMC7Q",
-       "source": "Medieval Marty"
-      },
-      {
-       "text": "The basic art of magic — how to cast one's first spell",
-       "url": "https://www.youtube.com/watch?v=IO6XUiLZAUI",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "What is Mortal Online 2? — the hardcore full-loot MMO explained",
-       "url": "https://www.youtube.com/watch?v=xUqk8irQ38U",
-       "source": "BullCashish"
-      },
-      {
-       "text": "How to get over gear fear — a newcomer's tip guide",
-       "url": "https://www.youtube.com/watch?v=GFwbDDR7bpo",
-       "source": "BasedBellagio Gaming"
       }
      ]
     },
@@ -607,36 +505,6 @@ window.CHRONICLE = {
        "text": "Behind the trailer's battle-line, where the spectacle was staged",
        "url": "https://www.youtube.com/watch?v=dZSfOry8rjw",
        "source": "Wolfszeit"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2021
-    },
-    {
-     "date": "18 November 2021",
-     "title": "The Book of Everything",
-     "body": "On the eve of the gates, a scholar published on Steam a guide newcomers passed around like scripture — Everything You Need to Know — citing Diphrael's dagger-craft for the light hybrid, warning Vadda is Legion's town (\"ask them, or you will get into trouble\"), prophesying that in launch week the great guilds would besiege bandit camps racing for keep-spots, reckoning newcomers obstacles. Every word came true.",
-     "links": [
-      {
-       "text": "Everything You Need to Know About Mortal Online 2 — the Steam guide",
-       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2657843514",
-       "source": "Steam community"
-      },
-      {
-       "text": "A guide-maker schools the newcomers before the gates open",
-       "url": "https://www.youtube.com/watch?v=N6jpyxxL4Gg",
-       "source": "finegamingconnoisseur"
-      },
-      {
-       "text": "A warning to be read before setting foot in Nave",
-       "url": "https://www.youtube.com/watch?v=w2rQ41AX124",
-       "source": "Jonah Veil"
-      },
-      {
-       "text": "Starting tips for a world not yet opened, copied hand to hand",
-       "url": "https://www.youtube.com/watch?v=RnwARpWRuWc",
-       "source": "Explodo Games"
       }
      ],
      "marker": null,

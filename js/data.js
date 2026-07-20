@@ -750,6 +750,41 @@ window.CHRONICLE = {
      "year": 2022
     },
     {
+     "marker": null,
+     "kind": "event",
+     "date": "April 2022",
+     "title": "The War of Meduli and Fabernum",
+     "body": "The launch year's peace broke in the world's first spring, in the first great war of coalitions: an alliance out of Fabernum led by Odinseed, the Wolfpack riding with them, against the banded guilds of Meduli. Veterans recalled field battles of a hundred souls and more, and the chroniclers named the spark plainly — Odinseed's attack upon KotO that April — with the fuel laid earlier still, when civil war among the Kranesh guilds reshuffled the banners of the north. The filmers called it the biggest fight since the world was opened.",
+     "links": [
+      {
+       "text": "The war filmed — Meduli against Fabernum",
+       "url": "https://www.youtube.com/watch?v=h3FsGLLUgGY",
+       "source": "RazerMortalOnline"
+      },
+      {
+       "text": "The attack on KotO, named as the war's real reason",
+       "url": "https://www.youtube.com/watch?v=tPter1AWyb4",
+       "source": "Vampy KillerClown"
+      }
+     ],
+     "year": 2022
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "28 April 2022",
+     "title": "The Collective Rides on Meduli",
+     "body": "In the same restless month the alliance styled The Collective — Legion, the Brigands, Integrity, and Chimera beneath one banner — rode upon Meduli and taunted the town until KotO came out to answer. Seventy blades and more to a side met upon the main road; then both armies wheeled east and clashed a second time in the valley. Twice in one day, a hundred and forty in the field — the launch year at its warring best.",
+     "links": [
+      {
+       "text": "The two battles of the day, filmed from the ranks",
+       "url": "https://www.youtube.com/watch?v=-pkmaYEfiuk",
+       "source": "Red Wyvern"
+      }
+     ],
+     "year": 2022
+    },
+    {
      "date": "May 2022",
      "title": "The Bounty Edict and the Reputation Protest",
      "body": "The lords of Star Vault decreed the Bounty Hunter and reworked the counting of murders and the declaring of wars. The murderer-host of BeastMasters — under PoisonArrows and his officer Pandah Sykes, a noted blade of the age, with their evil allies the Miscreants — answered in defiance, slaying all the souls they could in a \"Reputation PvP Protest\" to force the decree's makers to heed them. Five months before, PoisonArrows had written to the realm's guild-census demanding his BeastMasters be marked most evil of all in its roll of colours; here he made the boast good, and no man could say he had not been warned. Guild-war had spilled into the making of the world.",
@@ -917,6 +952,36 @@ window.CHRONICLE = {
      ],
      "marker": null,
      "kind": "event",
+     "year": 2023
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "Late January 2023",
+     "title": "The Siege of Oldguard",
+     "body": "The pickaxe war's next round went the other way. ACT chose to attack Oldguard — but Oldguard was prepared, and for six hours and more the walls came down and went up again, the defenders repairing as fast as the massed columns could break. After hours of no progress the assault dissolved into song across the walls, Barados singing the Oldguard song, and the keep held: the first great check upon the host of the age.",
+     "links": [
+      {
+       "text": "The six-hour siege, summarized from the walls",
+       "url": "https://www.youtube.com/watch?v=_kbmLDbVkQg",
+       "source": "Wolfszeit"
+      }
+     ],
+     "year": 2023
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "February 2023",
+     "title": "The Siege of the Legion Keep",
+     "body": "At Kranesh in the north, the hosts of Levia, Content, and Nightmare came against the keep that Legion held — a muster its chronicler styled simply \"versus the server.\" Azog the Defiler filmed the day from inside the press. And the ground at Kranesh was not done: eight months on it would stage the most titanic clash of the Territory age.",
+     "links": [
+      {
+       "text": "Welcome to Kranesh — the Legion keep siege",
+       "url": "https://www.youtube.com/watch?v=B8Vi58IwdYQ",
+       "source": "Azog the Defiler"
+      }
+     ],
      "year": 2023
     },
     {
@@ -1135,6 +1200,21 @@ window.CHRONICLE = {
      "year": 2023
     },
     {
+     "marker": null,
+     "kind": "event",
+     "date": "October 2023",
+     "title": "The Crushing of the Meduli Coalition",
+     "body": "Between the fall of the first keep and the titanic clash at Kranesh, the same October carried the age's greatest field battle. The militia of the free cities — the \"debars\" — with a hired force of northerners met the Meduli Coalition, which had summoned, as its enemies told it, half a server to the field. The lancer who filmed it from the militia's ranks counted over four hundred souls fighting in one place, and wrote it down as the biggest battle in the history of the world so far.",
+     "links": [
+      {
+       "text": "Over 400 in one place — the lancer's own view of the field",
+       "url": "https://www.youtube.com/watch?v=jUA9dhNnvvI",
+       "source": "Albu's Corner"
+      }
+     ],
+     "year": 2023
+    },
+    {
      "date": "30 October 2023",
      "title": "The Battle of Kranesh Keep",
      "body": "Barely three weeks later, far in the north, near three hundred souls met in a titanic clash — 150 against 150 — over Kranesh Keep, reckoned by the chroniclers among the most epic battles in the game's history. Nave had gathered greater hosts before — Henrik had summoned four hundred to Meduli and four hundred more to mock battle at Tindrem, and the pickaxe-columns of ACT had claimed the biggest battle ever seen in an MMORPG — but those were musters made for a record or a banner, and dispersed with the day. This one came for Kranesh, the lawless country Odinseed had warred upon since its first days — three weeks after MKRG: the hosts of Nave now bled for ground that could be unmade forever, and fought accordingly.",
@@ -1185,6 +1265,21 @@ window.CHRONICLE = {
      "year": 2023
     },
     {
+     "marker": null,
+     "kind": "event",
+     "date": "24 December 2023",
+     "title": "The Christmas Eve Siege",
+     "body": "On Christmas Eve the Coalition brought its whole weight against North Order Keep. The defenders' own chronicler set down the verdict with a defender's relish — the only time, he wrote, that their zerg did not auto-win them the fight. The walls saw out the holy night, and the war ground on into the new year.",
+     "links": [
+      {
+       "text": "Big fights at North Order Keep on Christmas Eve",
+       "url": "https://www.youtube.com/watch?v=baxxUmbkq7k",
+       "source": "Tasu"
+      }
+     ],
+     "year": 2023
+    },
+    {
      "date": "29 December 2023",
      "title": "The Battle for Minotaur Mountain",
      "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the height of its power, contending the mountain and the deeps beneath it against GrimSide, Winx, and any who came. Seven weeks later it would raise a keep of its own hard by that same Minotaur Dungeon and name it Odinpost. It fought for the mountain before it owned it; beside that same Minotaur's mouth its longest war would still be grinding two years hence.",
@@ -1218,6 +1313,26 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2023
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "January 2024",
+     "title": "The Battle for Black Widow Ridge",
+     "body": "The server war of that winter came to a head at the wretched place called Black Widow Ridge. The Coalition, Odinseed, and the Rat Alliance — a detachment of the Pillows among them — marched to destroy the Nightmare Alliance where it stood: over three hundred players by the filmer's count, with hundreds of pets, cavalry, and magic in incredible amounts. It was the season the realm spoke of one all-covering zerg empire, and of a rebellion rising against it.",
+     "links": [
+      {
+       "text": "Over 300 players at Black Widow Ridge",
+       "url": "https://www.youtube.com/watch?v=49ZH0x9uCN4",
+       "source": "Venomous War Gaming"
+      },
+      {
+       "text": "The Great Server War — the zerg empire and the rise of the rebellion",
+       "url": "https://www.youtube.com/watch?v=H4ZmBY41zLw",
+       "source": "Mr. AmazingXD"
+      }
+     ],
+     "year": 2024
     },
     {
      "date": "25 January 2024",
@@ -1360,6 +1475,21 @@ window.CHRONICLE = {
      "year": 2024
     },
     {
+     "marker": null,
+     "kind": "event",
+     "date": "April 2024",
+     "title": "The Fall of the Mythic Keep",
+     "body": "Two weeks before the KarniMata feud ignited, the keep of Mythic fell to BlackHand. A chronicler preserved the taking at patient length, catapult-stone by catapult-stone. Chip Chip's house — met in this chronicle as a dungeon rival in the UnderCroft — here learned the price of walls; two years on it would stand among the houses that threw down Odinpost, on the other side of a siege.",
+     "links": [
+      {
+       "text": "The taking of the Mythic keep, filmed at length",
+       "url": "https://www.youtube.com/watch?v=8aafQbRhQWo",
+       "source": "NiceLikeRice"
+      }
+     ],
+     "year": 2024
+    },
+    {
      "date": "6 May 2024",
      "title": "The KarniMata War Ignites",
      "body": "Now began Odinseed's defining feud of the later age, against the vast host of KarniMata — first among the houses that took their turn at Odinpost's walls, and the one that stayed longest. The two were the great \"zergs\" of the world — it was said one could run the deep places only by marching thirty-strong \"as Odinseed or KarniMata,\" else die in the sewers. The feud was cried aloud across the airwaves — \"Odinseed Losing It… Reveal Truth About KarniMata\" — and the Odin-host did not march alone: Venomous's southern Jungle Alliance came north to make common cause, the two falling upon KarniMata together in a joint assault (\"OS and JA attack Karni\") Bayard preserved, binding the jungle-south to the northern war. Ten months on, chroniclers still filmed the same two hosts trading blows beside the Minotaur's mouth, naming it the longest war of the age.",
@@ -1448,6 +1578,21 @@ window.CHRONICLE = {
      ],
      "marker": null,
      "kind": "event",
+     "year": 2024
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "July – August 2024",
+     "title": "The Jungle War",
+     "body": "While the north warred over Odinpost, the steaming south fought for the jungle's strongholds. Purgatory and its allies came against Tribe and the Jungle Alliance — a hundred and fifty allies called in, by their enemies' telling — and still the tier-3 strongholds and houses changed hands against them. It was fought as bitterly in the threads as under the trees: a propaganda war of smear and counter-smear that the chroniclers preserved alongside the battles.",
+     "links": [
+      {
+       "text": "The Jungle Alliance versus the zerg — from the defenders' side",
+       "url": "https://youtu.be/jHSrVRAPvB4",
+       "source": "FatStew"
+      }
+     ],
      "year": 2024
     },
     {
@@ -1614,6 +1759,21 @@ window.CHRONICLE = {
      "marker": null,
      "kind": "event",
      "year": 2024
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "December 2024",
+     "title": "The Siege of Unbroken Keep",
+     "body": "The Jungle Alliance ended the year beneath the walls of Unbroken Keep — an hour and more of war up two supply lines and through the gate, while the game itself fought both sides: boulders phasing through the walls, spells failing, whole companies desyncing away. At the last the attackers gave it up and marched home. Alone among the sieges of this chronicle, this one was defeated by the server — and no filmer ever made the age's grievance against the siege game plainer.",
+     "links": [
+      {
+       "text": "The Unbroken Keep siege — \"sieging doesn't work\"",
+       "url": "https://www.youtube.com/watch?v=5eP_NJO7Vnw",
+       "source": "Aesir"
+      }
+     ],
+     "year": 2024
     }
    ]
   },
@@ -1625,6 +1785,36 @@ window.CHRONICLE = {
     "Then the lords of the world looked upon the flaw of the sixteen thrones — that the whole earth lay shut to all but sixteen houses — and resolved to shatter it utterly, and to remake the very law of Territory from its foundations. It was to be the greatest unmaking and remaking the world had yet endured; and they named it, fittingly, the Reckoning."
    ],
    "entries": [
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "February 2025",
+     "title": "The Battle of the Vatican",
+     "body": "The new year's war announced itself at the place the players called the Vatican. Hundreds fought and hundreds died — \"the cost of glory is high,\" wrote the filmer, framing the day around King Barados — and the chroniclers proclaimed it the start of a new server war. By spring, that war would put a hundred and fifty blades on a single field.",
+     "links": [
+      {
+       "text": "The Battle of the Vatican — the start of a new server war",
+       "url": "https://www.youtube.com/watch?v=LGD9L600CD0",
+       "source": "Mr. AmazingXD"
+      }
+     ],
+     "year": 2025
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "2 March 2025",
+     "title": "The First Defense of the KotO Keep",
+     "body": "Four months before the great July siege, the desert keep of KotO stood its first trial: near a hundred defenders against a host their chronicler counted at three hundred. The walls held. The feud that filled the field — pacts signed against them, accusations of bought gold traded both ways — was the same that would bring the whole realm back to these walls in July, for the last great war under the old law.",
+     "links": [
+      {
+       "text": "The hundred against the three hundred, from the walls",
+       "url": "https://www.youtube.com/watch?v=DfrSJfLS-OU",
+       "source": "Tasu"
+      }
+     ],
+     "year": 2025
+    },
     {
      "date": "Spring 2025",
      "title": "A Hundred and Fifty Blades",
@@ -2018,6 +2208,46 @@ window.CHRONICLE = {
      ],
      "marker": null,
      "kind": "event",
+     "year": 2026
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "Spring 2026",
+     "title": "The Plateau War",
+     "body": "After Odinpost fell the wheel kept turning, and now it was the Odin-host that marched. Through the spring Odinseed and its jungle allies came against Mythic and Bad Company upon the Minotaur plateau — wave upon wave at the dungeon mouth, the old ground of a hundred battles — and then turned upon KarniMata. Of its scale the plainest testimony reached the developers as a complaint: a guild battle that week had \"completely nuked the server.\"",
+     "links": [
+      {
+       "text": "The defense of the plateau — the Mang montage",
+       "url": "https://www.youtube.com/watch?v=-1tQ3c8SiLA",
+       "source": "Tasu"
+      },
+      {
+       "text": "Wave upon wave at the Minotaur Dungeon",
+       "url": "https://www.youtube.com/watch?v=1NaUVnR5V-A",
+       "source": "Tasu"
+      },
+      {
+       "text": "Odinseed and the Jungle Alliance turn upon KarniMata",
+       "url": "https://www.youtube.com/watch?v=AR4mGCPmwjw",
+       "source": "Bayard"
+      }
+     ],
+     "year": 2026
+    },
+    {
+     "marker": null,
+     "kind": "event",
+     "date": "May 2026",
+     "title": "The Battle of the South",
+     "body": "On the eve of Sarducaa the old world proved it had wars left in it: over two hundred players clashed in the south as the Jungle Alliance met the Men of the West for control, pride, territory, and reputation. The battle was filmed by a newcomer who wrote that days like this were why he played at all — the world's oldest recruiting sergeant, still at work five years on.",
+     "links": [
+      {
+       "text": "200+ players battle for the South",
+       "url": "https://www.youtube.com/watch?v=zhltstzCQwE",
+       "source": "SCUM MONA PvP"
+      }
+     ],
      "year": 2026
     },
     {

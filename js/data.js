@@ -1841,51 +1841,6 @@ window.CHRONICLE = {
      "year": 2025
     },
     {
-     "date": "16 July 2025",
-     "title": "Dread Og Radio",
-     "body": "On the day of the Reckoning, while the sixteen thrones were still coming down, the drama-court of the community convened — \"Dread Og Radio\" — and among its voices sat Azog and Kuthara, with Clarence and Nalyd beside them, old warlords and heralds holding forth upon the age. Mark who sat together: Azog the Defiler, once a chief shot-caller of the pickaxe-host in the Rebellion against the Empire of Kuthara, and Kuthara himself, that Empire, whose KotO rode in those seasons with Bad Company against the Odinseed Azog had become the shield of. Two years and more of war between them, a live alliance against each other, and they traded banter like old men at a hearth — for this is Nave's paradox: its houses fight to the last upon the field and are perfectly friendly upon the airwaves.",
-     "links": [
-      {
-       "text": "The realm's live airwaves — Mortal Online 2 on Twitch",
-       "url": "https://www.twitch.tv/directory/category/mortal-online-2",
-       "source": "Twitch"
-      },
-      {
-       "text": "From the court's own archive — the King's ride to Vadda",
-       "url": "https://www.youtube.com/watch?v=ZtTuemZ6pAo",
-       "source": "Dread Og"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
-     "date": "22 August 2025",
-     "title": "The Lament of the Hollow Sieges",
-     "body": "Five weeks the new law had stood, and already the realm had found its underside. The chroniclers set down the \"Fake Outpost Sieges\" — hosts that declared war upon a region and then did not come, a summons answered by nobody and a defense mustered for nothing. The Reckoning had promised that any twenty souls might contest any land in Nave; it had not thought to ask whether they would trouble to arrive. So the \"no-show\" took its place among the world's grievances beside the exploit and the swindle — for Nave has never been given a law it could not find the crack in.",
-     "links": [
-      {
-       "text": "The outpost-siege design the hollow sieges abused",
-       "url": "https://massivelyop.com/2025/05/15/mortal-online-2-discusses-territory-control-overhauls-coming-in-the-reckoning-update/",
-       "source": "Massively Overpowered"
-      },
-      {
-       "text": "Wasting players' time — the fake sieges named as a real problem",
-       "url": "https://www.youtube.com/watch?v=VDOMOeFwArw",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "Sieging doesn't work — the grievance already old when the lament was written",
-       "url": "https://www.youtube.com/watch?v=5eP_NJO7Vnw",
-       "source": "Aesir"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2025
-    },
-    {
      "date": "August 2025 – February 2026",
      "title": "The Small Wars of the New Regions",
      "body": "For all the Reckoning's promise, the outpost-wars that followed were rarely the stuff of legend — and that was the truest thing about them. Through autumn and winter the five-and-thirty regions changed hands not in a few great sieges but in a hundred small ones: in the last days of August the Jungle Alliance's own chronicler filmed the fight for Canteri Slums, siege engines and all; by the first Saturday of November Wolfszeit stood in the snow against Odinseed and a banner new to this record, WigSplit, hauling a manganon through the drifts to the night's last clash; and by February a defender of the Sands could only shrug on camera that the fight had been good, if the company keeping it had not. No siege of this season was remembered as MKRG's fall was, or Odinpost's — the new law had made land easy to reach and hard to hold, and Nave answered with a hundred small wars in place of one great one.",

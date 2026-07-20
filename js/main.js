@@ -266,7 +266,6 @@
     "The Siege of Ursa Stronghold",
     "The Siege of the KotO Keep",
     "The War over a Small House",
-    "The Lament of the Hollow Sieges",
     "The Small Wars of the New Regions",
     "The Fall of Odinpost",
   ]);

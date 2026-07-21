@@ -990,8 +990,72 @@ main, footer { position: relative; z-index: 2; }
   color: var(--gold);
   text-align: center;
   margin-bottom: 14px;
+  /* the same lantern-glow the age plates carry, so every section heading
+     reads as part of one engraved system */
+  text-shadow: 0 0 34px rgba(201, 168, 106, 0.2);
 }
 .preface-block .ornament { margin-top: 6px; margin-bottom: clamp(26px, 5vh, 44px); }
+
+/* ── the marks of the chronicle: reader's key to the timeline's visual
+   language, framed like the entry plates it explains ── */
+.legend {
+  display: block;
+  max-width: 620px;
+  margin: clamp(34px, 6vh, 56px) auto 0;
+  padding: clamp(20px, 3vw, 30px) clamp(20px, 3.4vw, 34px);
+  position: relative;
+  background: linear-gradient(160deg, var(--card), var(--card-2));
+  border: 1px solid rgba(201, 168, 106, 0.16);
+  outline: 1px solid rgba(201, 168, 106, 0.07);
+  outline-offset: 5px;
+}
+.legend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+}
+.legend-title {
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gold);
+  text-shadow: 0 0 22px rgba(201, 168, 106, 0.25);
+  margin-bottom: 18px;
+}
+.legend-items { display: grid; gap: 12px; }
+.legend-item {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--bone-dim);
+}
+.legend-item strong { color: var(--bone); font-weight: 600; }
+.legend-swatch {
+  flex: 0 0 auto;
+  width: 22px;
+  text-align: center;
+  font-size: 13px;
+}
+.legend-landmark { color: var(--gold-bright); text-shadow: 0 0 12px rgba(201, 168, 106, 0.6); }
+.legend-siege { color: var(--blood-bright); }
+.legend-battle { color: var(--gold-bright); }
+.legend-note {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(201, 168, 106, 0.1);
+  font-size: 13.5px;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--bone-dim);
+}
 .preface-block p {
   margin-bottom: 1.5em;
   color: var(--bone);
@@ -1041,6 +1105,14 @@ main, footer { position: relative; z-index: 2; }
   position: absolute;
   inset: 16px;
   border: 1px solid color-mix(in srgb, var(--age-tint, #c9a86a) 9%, transparent);
+  border-radius: 50%;
+}
+/* a third, dashed outer ring — the tooling line around a wax seal */
+.age-seal-ring::after {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border: 1px dashed color-mix(in srgb, var(--age-tint, #c9a86a) 7%, transparent);
   border-radius: 50%;
 }
 .age-roman-bg {
@@ -1136,10 +1208,23 @@ main, footer { position: relative; z-index: 2; }
 /* a closing rule beneath the temper prose, so the whole divider reads as
    a framed plate opened by the crest and closed here */
 .age-frame-bottom {
+  position: relative;
   width: clamp(50px, 8vw, 90px);
   height: 1px;
   margin: clamp(30px, 4.6vh, 52px) auto 0;
   background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--age-tint, #c9a86a) 55%, transparent), transparent);
+}
+/* the closing rule carries the same diamond the ornaments do — the plate
+   is sealed, not merely underlined */
+.age-frame-bottom::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  background: color-mix(in srgb, var(--age-tint, #c9a86a) 60%, transparent);
 }
 
 /* ─────────────── timeline ─────────────── */
@@ -1250,6 +1335,24 @@ main, footer { position: relative; z-index: 2; }
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     inset 0 -1px 0 rgba(0, 0, 0, 0.45);
 }
+/* engraved plate corners: two faint L-brackets at opposite corners, the
+   manuscript-frame mark used across the site's ornaments — static, and
+   faint enough to read as tooling on the card rather than a border */
+.entry-card::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--gold-faint), var(--gold-faint)) top left / 14px 1px,
+    linear-gradient(var(--gold-faint), var(--gold-faint)) top left / 1px 14px,
+    linear-gradient(var(--gold-faint), var(--gold-faint)) bottom right / 14px 1px,
+    linear-gradient(var(--gold-faint), var(--gold-faint)) bottom right / 1px 14px;
+  background-repeat: no-repeat;
+}
+/* hz cards scroll internally — an inset-anchored overlay would pin to the
+   scrolling content box, not the visible frame; skip it there */
+body.hz .entry-card::after { display: none; }
 
 .entry-date {
   font-family: var(--display);
@@ -1462,7 +1565,7 @@ em .n-p, em .n-g { font-style: italic; }
   transform: translate(-50%, -50%) rotate(45deg);
   width: 8px;
   height: 8px;
-  background: var(--gold);
+  background: var(--age-tint, var(--gold));
   box-shadow: 0 0 12px rgba(201, 168, 106, 0.6);
 }
 .yb-text {
@@ -1472,11 +1575,15 @@ em .n-p, em .n-g { font-style: italic; }
   text-transform: uppercase;
   color: var(--gold);
   white-space: nowrap;
+  /* milestones glow in their age's own light, like the age-range plate */
+  text-shadow: 0 0 20px var(--age-glow, rgba(201, 168, 106, 0.2));
 }
 .yb-line {
   flex: 1;
   height: 1px;
   background: linear-gradient(90deg, var(--gold-dim), transparent);
+  /* faint offset echo beneath the rule — an engraved double-line, static */
+  box-shadow: 0 3px 0 rgba(201, 168, 106, 0.07);
 }
 
 /* tale (undated interlude) variant */
@@ -1531,6 +1638,14 @@ em .n-p, em .n-g { font-style: italic; }
   gap: 10px;
 }
 .watch-label::before { content: "\25B6\FE0E"; color: var(--age-tint); font-size: 9px; }
+/* the label's rule runs on to the card edge, closing the section head the
+   way the year-breaks close theirs */
+.watch-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201, 168, 106, 0.16), transparent);
+}
 
 /* the media block is capped to roughly the prose measure (66ch) rather than
    sprawling the full card width — it reads as one column with the text, and
@@ -1716,6 +1831,19 @@ footer {
   padding: 44px 24px 54px;
   text-align: center;
 }
+/* a small diamond riding the footer seam — the same mark that pins every
+   entry to the spine, closing the page in the site's own language */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  background: var(--ink);
+  border: 1px solid rgba(201, 168, 106, 0.35);
+}
 .footer-crest {
   width: 26px;
   height: 26px;
@@ -1806,6 +1934,14 @@ footer p {
   .entry::before { left: -18px; width: 18px; }
   .entry-node { left: -18px; }
   .year-break::before { left: -18px; }
+  /* the enlarged date line: at phone width the full tracking pushed a
+     dated siege entry ("24 December 2023" + the badge) onto two ragged
+     lines — tighter tracking and gap keeps most dates and their badge
+     on one line, and the leftovers wrap on the badge boundary cleanly */
+  .entry-date { font-size: 15px; letter-spacing: 0.09em; gap: 9px; }
+  /* span-dates ("August 2025 – February 2026") are near double the length
+     of a normal date — at full size they broke onto three ragged lines */
+  .entry-date-long { font-size: 13px; letter-spacing: 0.05em; }
 }
 /* touch devices get no :hover at all, so the site's near-total reliance
    on :hover for feedback leaves taps feeling inert — give the primary

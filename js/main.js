@@ -181,32 +181,18 @@
   /* ── prefaces ────────────────────────────────────────── */
   (function renderPrefaces() {
     const el = document.getElementById("prefaces");
-    // the marks of the chronicle: a reader's key to the visual language the
-    // timeline uses (landmark gold, siege blood, great-battle kicker), which
-    // otherwise had to be inferred entry by entry — closes the how-to-read
-    // section with the same plate-framing the entries themselves use
-    const legend = `<aside class="legend reveal" aria-label="The marks of the chronicle">
-      <div class="legend-title">The Marks of the Chronicle</div>
-      <div class="legend-items">
-        <div class="legend-item"><span class="legend-swatch legend-landmark" aria-hidden="true">&#x25C6;</span><span><strong>Landmark</strong> &mdash; a moment the whole history turns on, set in bright gold</span></div>
-        <div class="legend-item"><span class="legend-swatch legend-siege" aria-hidden="true">&#x2694;&#xFE0E;</span><span><strong>Siege</strong> &mdash; a true assault upon a keep or stronghold, marked in blood</span></div>
-        <div class="legend-item"><span class="legend-swatch legend-battle" aria-hidden="true">&#x2726;</span><span><strong>A Great Battle</strong> &mdash; a hundred blades or more upon a single field</span></div>
-      </div>
-      <p class="legend-note">The same marks stud the progress bar at the top of the page &mdash; blood for the sieges, bright gold for the great battles &mdash; and each entry's surviving films are gathered beneath &ldquo;From&nbsp;the&nbsp;Chroniclers.&rdquo;</p>
-    </aside>`;
-    el.innerHTML =
-      C.sections
-        .map((sec) => {
-          const paras = sec.paragraphs
-            .map((p, i) => `<p class="reveal" style="--d:${i * 0.05}s">${prose(p)}</p>`)
-            .join("");
-          return `<div class="preface-block">
+    el.innerHTML = C.sections
+      .map((sec) => {
+        const paras = sec.paragraphs
+          .map((p, i) => `<p class="reveal" style="--d:${i * 0.05}s">${prose(p)}</p>`)
+          .join("");
+        return `<div class="preface-block">
           <h2 class="reveal">${esc(sec.heading)}</h2>
           <div class="ornament reveal" aria-hidden="true"><span class="orn-line"></span><span class="orn-diamond">&#10022;</span><span class="orn-line"></span></div>
           ${paras}
         </div>`;
-        })
-        .join("") + legend;
+      })
+      .join("");
   })();
 
   /* ── watch media ─────────────────────────────────────── */

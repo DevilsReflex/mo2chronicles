@@ -413,7 +413,7 @@
 
       nav += `
       <div class="age-nav-item" style="--age-tint:${tint}">
-        <a href="#${id}" data-age="${id}" class="age-nav-link"><span class="nav-roman">${ROMANS[ai]}</span><span class="nav-name">${esc(age.name)}</span></a>
+        <a href="#${id}" data-age="${id}" class="age-nav-link"><span class="nav-roman"><span class="nav-age-label">Age</span> ${ROMANS[ai]}</span><span class="nav-name">${esc(age.name)}</span></a>
         <button class="age-nav-caret" type="button" aria-expanded="false" aria-controls="${flyoutId}" aria-label="Preview ${esc(age.name)} at a glance">
           <span class="caret-chevron" aria-hidden="true"></span>
         </button>

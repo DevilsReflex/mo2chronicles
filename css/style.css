@@ -259,7 +259,24 @@ main, footer { position: relative; z-index: 2; }
   transform: translateY(-50%) rotate(45deg);
   box-shadow: 0 0 6px color-mix(in srgb, var(--age-tint, var(--gold-bright)) 70%, transparent);
 }
-.age-nav .nav-roman { font-size: 18px; flex: 0 0 auto; }
+/* chunky by design: near-max Cinzel weight and a touch more size than the
+   plain numeral it replaces, so "Age I" reads as a solid label rather than
+   a thin roman digit alone */
+.age-nav .nav-roman {
+  font-size: 19px;
+  font-weight: 900;
+  flex: 0 0 auto;
+  letter-spacing: 0.06em;
+}
+.nav-age-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.72;
+  margin-right: 1px;
+}
 .age-nav .nav-name { display: none; }
 /* 1780px, not 1100px: the five full names measure ~1770px laid out in one
    row before the wordmark and the nav buttons even get their share, so
@@ -1808,6 +1825,11 @@ footer p {
   .wordmark { opacity: 1; transform: none; }
   .age-nav { gap: 2px; }
   .age-nav-link { padding: 10px 5px; }
+  /* "Age " on all five items needs ~200px more than bare numerals do —
+     more than a phone-width header has to spare alongside the wordmark
+     crest and the Timeline button. Numerals stay chunky; the word drops. */
+  .nav-age-label { display: none; }
+  .age-nav .nav-roman { font-size: 18px; letter-spacing: 0; }
   /* the visible caret stays small, but its tap target grows to a proper
      thumb-sized hit area via an invisible expanded hitbox, rather than
      bloating the glyph itself and crowding the row */

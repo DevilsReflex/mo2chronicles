@@ -228,7 +228,10 @@
         .join("");
       html += `</div>`;
     }
-    if (scrolls.length) {
+    // once an entry has video, the non-video links (forum threads, articles)
+    // are redundant clutter beneath the thumbnails — only surface them when
+    // video is the only thing missing
+    if (scrolls.length && !vids.length) {
       html += `<div class="link-scrolls">`;
       html += scrolls
         .map(

@@ -1042,7 +1042,7 @@ window.CHRONICLE = {
     {
      "date": "13 April 2023",
      "title": "The Content vs Levia War",
-     "body": "By these years the host called Content — founded by Gbunny with Azog the Defiler, the age's most celebrated field-commander — was a power in its own right. In the war against the elite guild Levia, the chronicles catch Azog trading an \"ego duel\" with the champion Smasher, General Lordus speaking over the footage. Among Content's blades rode Jonttre, terror of the Meduli shallows, who turned numbered fights by luring his foes into the water, where none could match him. In time Azog left to take arms with Barados's Odinseed, binding the two houses together; but Content was Gbunny's from the first.",
+     "body": "By these years the host called Content — founded and led by Gbunny — was a power in its own right. In the war against the elite guild Levia, the chronicles catch one of Content's soldiers, Azog the Defiler, trading an \"ego duel\" with the champion Smasher, General Lordus speaking over the footage. Among Content's blades rode Jonttre, terror of the Meduli shallows, who turned numbered fights by luring his foes into the water, where none could match him. In time Azog was cast out of Content and took up arms instead with Barados's Odinseed; but Content remained Gbunny's alone.",
      "links": [
       {
        "text": "Smasher vs Azog — Ego Duel, Content v Levia War",
@@ -1397,7 +1397,7 @@ window.CHRONICLE = {
     {
      "date": "16 February 2024",
      "title": "The Battle for Odinpost",
-     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own keep — Odinpost — and now the north came to test it. A hundred and fifty defenders met a hundred and seventy attackers beneath its walls, and Azog the Defiler — the old Content warlord turned Odinseed's shield — filmed the day from inside the melee. Barados's men held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata, Kuthara's KotO, and Mythic each took their turn at the walls — a war that would not end until the keep fell two years on, in spring 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now Kuthara came to his walls, and the wheel had begun turning under him.",
+     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own keep — Odinpost — and now a Russian mafia alliance came to test it. A hundred and fifty defenders — Odinseed's own, with the Rat Alliance and Kuthara's KotO standing beside them — met a hundred and seventy attackers beneath its walls, and Azog the Defiler — once a soldier of Content, by then Odinseed's shield — filmed the day from inside the melee. The defenders held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata and Mythic each took their turn at the walls in the years after — a war that would not end until the keep fell two years on, in spring 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now old allies stood together at his own gates, and the long war beside the Minotaur's mouth had only begun.",
      "links": [
       {
        "text": "The Battle for Odinpost 150v170",

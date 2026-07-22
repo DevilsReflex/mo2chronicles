@@ -370,7 +370,13 @@
           <span class="entry-node" aria-hidden="true"></span>
           ${e.date ? `<span class="entry-node-date" aria-hidden="true">${esc(spineDate(e.date))}</span>` : ""}
           <div class="entry-card">
-            ${dateLine}
+            <div class="entry-meta-row">
+              ${dateLine}
+              <button class="entry-link-btn" type="button" data-entry="${entryId}" aria-label="Copy link to this entry" title="Copy link to this entry">
+                <svg class="elb-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.2l4-4"/><path d="M11.3 8.5l1.2-1.2a3.2 3.2 0 0 1 4.5 4.5l-1.6 1.6"/><path d="M12.7 15.5l-1.2 1.2a3.2 3.2 0 0 1-4.5-4.5l1.6-1.6"/></svg>
+                <span class="elb-tip" aria-hidden="true">Copied</span>
+              </button>
+            </div>
             ${isBigFight ? `<div class="bigfight-kicker">A Great Battle</div>` : ""}
             <h3 class="entry-title">${esc(e.title)}</h3>
             ${bodyHTML(e.body)}
@@ -1254,5 +1260,53 @@
       jumpList(allEntries, k === "j" ? 1 : -1);
     }
   });
+
+  /* ── shareable entry links ── */
+  // old-browser fallback for the Clipboard API — a throwaway, off-screen
+  // textarea is still the only universally-supported way to force a copy
+  function legacyCopy(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      document.execCommand("copy");
+    } catch (e) {}
+    document.body.removeChild(ta);
+  }
+  document.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".entry-link-btn");
+    if (!btn) return;
+    const url = `${location.origin}${location.pathname}#${btn.dataset.entry}`;
+    const flash = () => {
+      btn.classList.add("is-copied");
+      clearTimeout(btn._copiedTimer);
+      btn._copiedTimer = setTimeout(() => btn.classList.remove("is-copied"), 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(flash, () => {
+        legacyCopy(url);
+        flash();
+      });
+    } else {
+      legacyCopy(url);
+      flash();
+    }
+  });
+
+  // a link to #entry-x-y only lands correctly if we jump to it ourselves —
+  // entries are rendered by this script, so the browser's native fragment
+  // scroll (which runs before that render exists, or not at all against
+  // hz mode's fixed rail — see the anchor-click capture above) can't be
+  // relied on to get a shared link to the right place on its own
+  (function landOnSharedEntry() {
+    const id = location.hash.slice(1);
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (el && el.classList.contains("entry")) scrollToEl(el, false);
+  })();
 
 })();

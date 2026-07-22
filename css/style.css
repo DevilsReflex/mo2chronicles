@@ -1329,6 +1329,65 @@ body.hz .entry-card::after { display: none; }
   font-size: 0.65em;
   color: var(--age-tint);
 }
+/* houses the date/kicker plus the share button on one row, so both the
+   dated and undated (tale) kickers get it without duplicating markup */
+.entry-meta-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.entry-meta-row .entry-date,
+.entry-meta-row .tale-kicker {
+  min-width: 0;
+}
+.entry-link-btn {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  margin-top: 1px;
+  color: var(--bone-dim);
+  border: 1px solid rgba(201, 168, 106, 0.18);
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+.entry-link-btn:hover, .entry-link-btn:focus-visible {
+  color: var(--gold-bright);
+  border-color: rgba(201, 168, 106, 0.5);
+  background: rgba(201, 168, 106, 0.07);
+}
+.entry-link-btn.is-copied {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+}
+.elb-tip {
+  position: absolute;
+  bottom: calc(100% + 7px);
+  right: -3px;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  background: var(--coal);
+  border: 1px solid rgba(201, 168, 106, 0.3);
+  padding: 4px 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+.entry-link-btn.is-copied .elb-tip { opacity: 1; transform: translateY(0); }
+@media (hover: none) {
+  .entry-link-btn:active { color: var(--gold-bright); border-color: var(--gold); }
+}
 .entry-title {
   font-family: var(--display);
   font-weight: 700;

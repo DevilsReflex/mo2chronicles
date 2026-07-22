@@ -456,7 +456,16 @@ main, footer { position: relative; z-index: 2; }
 .fy-item.fy-landmark .fy-date { color: var(--gold-bright); }
 
 /* nav action buttons */
-.nav-actions { display: flex; align-items: center; gap: 4px; }
+/* align-self:stretch + flex-start, the same fix already applied to
+   .age-nav-item just below: #topnav centers its children across the
+   full 92px bar by default, which put the Timeline button's own
+   lower edge into the 52-92px band the scroll-progress strip owns —
+   the strip is position:absolute with z-index:auto, so it paints over
+   normal-flow content there regardless of DOM order, clobbering the
+   button. Pinning the button to the top band (matching the age-nav
+   links' own 6px offset) clears it outright rather than patching the
+   symptom with z-index. */
+.nav-actions { display: flex; align-self: stretch; align-items: flex-start; padding-top: 6px; gap: 4px; }
 .nav-btn {
   display: inline-flex;
   align-items: center;

@@ -1369,6 +1369,14 @@ body.hz .entry-card::after { display: none; }
   cursor: pointer;
   transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
+/* visual size stays 27px; the tap target grows to a proper ~45px
+   thumb-sized hit area, matching the same pattern already used for
+   .age-nav-link, #hz-toggle, and .hz-arrow elsewhere on the site */
+.entry-link-btn::before {
+  content: "";
+  position: absolute;
+  inset: -9px;
+}
 .entry-link-btn:hover, .entry-link-btn:focus-visible {
   color: var(--gold-bright);
   border-color: rgba(201, 168, 106, 0.5);

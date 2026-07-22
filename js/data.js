@@ -2339,6 +2339,11 @@ window.CHRONICLE = {
        "text": "The 'Ban Os' Incident in Sarducaa — the Odin-host's old feuds reach the new continent",
        "url": "https://www.youtube.com/watch?v=-0GwM1WYXzI",
        "source": "AZOGTHEDEFILER"
+      },
+      {
+       "text": "An Odinseed soldier's POV — back to his old ways in the new land",
+       "url": "https://www.youtube.com/watch?v=hKwFwj0QKA4",
+       "source": "Pox"
       }
      ],
      "marker": null,

@@ -373,7 +373,7 @@
             <div class="entry-meta-row">
               ${dateLine}
               <button class="entry-link-btn" type="button" data-entry="${entryId}" aria-label="Copy link to this entry" title="Copy link to this entry">
-                <svg class="elb-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.2l4-4"/><path d="M11.3 8.5l1.2-1.2a3.2 3.2 0 0 1 4.5 4.5l-1.6 1.6"/><path d="M12.7 15.5l-1.2 1.2a3.2 3.2 0 0 1-4.5-4.5l1.6-1.6"/></svg>
+                <svg class="elb-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.2l4-4"/><path d="M11.3 8.5l1.2-1.2a3.2 3.2 0 0 1 4.5 4.5l-1.6 1.6"/><path d="M12.7 15.5l-1.2 1.2a3.2 3.2 0 0 1-4.5-4.5l1.6-1.6"/></svg>
                 <span class="elb-tip" aria-hidden="true">Copied</span>
               </button>
             </div>

@@ -7,8 +7,11 @@
   if (!C) return;
 
   const ROMANS = ["I", "II", "III", "IV", "V", "VI", "VII"];
-  // per-age accent tints (cold dawn → blood → bronze → fire → desert gold)
-  const AGE_TINTS = ["#8fa7c9", "#c05a4b", "#c9a86a", "#d98c4a", "#e3c37f"];
+  // per-age accent tints (cold dawn → blood → bronze → fire → desert gold).
+  // The blood tint was #c05a4b originally — only 4.5-4.7:1 against the card
+  // backgrounds it's used as text color on (entry dates, year-breaks); this
+  // clears ~5.7:1+ while staying the same hue.
+  const AGE_TINTS = ["#8fa7c9", "#d66b5a", "#c9a86a", "#d98c4a", "#e3c37f"];
   const AGE_GLOWS = [
     "rgba(90, 118, 160, 0.14)",
     "rgba(156, 60, 46, 0.12)",

@@ -16,7 +16,11 @@
   --gold-dim: rgba(201, 168, 106, 0.35);
   --gold-faint: rgba(201, 168, 106, 0.14);
   --blood: #9c2b22;
-  --blood-bright: #c94b3d;
+  /* lightened from #c94b3d: the original only cleared 4.2-4.4:1 against
+     the card backgrounds — real text (siege badge, fate seal) needs to
+     clear 4.5:1 for WCAG AA at these small sizes. This clears ~5.5:1+
+     everywhere it's used, still reads as the same blood-red */
+  --blood-bright: #e05f4d;
   --name-guild: #d17a5f;
   --serif: "Catamaran", "Work Sans", system-ui, sans-serif;
   --display: "Cinzel", Georgia, serif;
@@ -274,7 +278,7 @@ main, footer { position: relative; z-index: 2; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  opacity: 0.72;
+  color: var(--bone-dim);
   margin-right: 1px;
 }
 .age-nav .nav-name { display: none; }
@@ -297,7 +301,7 @@ main, footer { position: relative; z-index: 2; }
     margin-left: 6px;
     font-size: 13.5px;
     letter-spacing: 0.16em;
-    opacity: 0.78;
+    color: var(--bone-dim);
   }
 }
 
@@ -1400,7 +1404,7 @@ body.hz .entry-card::after { display: none; }
 .entry-body {
   font-family: var(--serif);
   font-size: 16px;
-  color: rgba(217, 210, 194, 0.92);
+  color: var(--bone);
   max-width: 66ch;
   line-height: 1.5;
   letter-spacing: 0;
@@ -1871,7 +1875,9 @@ footer p {
   font-weight: 300;
   font-size: 12.5px;
   letter-spacing: 0.04em;
-  color: #7d7668;
+  /* was #7d7668 (4.3-4.5:1, borderline for 12.5px text) — lightened for
+     a clean AA margin */
+  color: #948d7d;
   max-width: 720px;
   margin: 0 auto 10px;
   line-height: 1.7;

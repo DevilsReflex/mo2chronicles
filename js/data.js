@@ -4,7 +4,7 @@ window.CHRONICLE = {
  "subtitle": "Being a True and Epic History of Mortal Online 2 — of the Five Years in which a World was Won, and Lost, and Won Again · 2021 – 2026 · the whole of it made and remembered by one community: its guilds and its rogues, its builders and its bards, its chroniclers and its kings",
  "invocation": [
   "Of wars beyond number upon the plains of a world but newly made; of the guilds that rose like towers and fell like towers; of the sixteen thrones, and the multitude who broke themselves upon them; of kings anointed in the sewers and empires drowned beneath the union of all against them — of these I sing.",
-  "In the land of Nave there is no peace, nor was there ever. Here nothing is given and nothing is safe: a man may lose in an hour what he gathered in a year, and a house may lose in a night the throne it bled a season to raise. Yet out of that cruelty the dwellers of Nave wrought a history as grand and terrible as any sung of the elder kingdoms — five years of siege and betrayal, of banners lifted into the sun and burned into the mud.",
+  "In the land of Nave there is no peace, nor was there ever. Here nothing is given and nothing is safe: a man may lose in an hour what he gathered in a year, and a house may lose in a night the throne it bled a season to raise. Yet out of that cruelty the dwellers of Nave wrought a history as grand and terrible as any sung of the kingdoms of old — five years of siege and betrayal, of banners lifted into the sun and burned into the mud.",
   "Hear it now, and remember them — the mighty and the fallen, the honoured and the infamous alike — for they carved their names into a world that keeps no scribe but memory; and memory forgets nothing, and forgives less."
  ],
  "sections": [
@@ -12,13 +12,6 @@ window.CHRONICLE = {
    "heading": "How to Read This Chronicle",
    "paragraphs": [
     "This history is arranged as a timeline of events: descend through the years as you would descend through the reigns of kings. Each Age opens with a few words on its temper, and then unfolds as a roll of dated deeds."
-   ]
-  },
-  {
-   "heading": "The Elder World",
-   "paragraphs": [
-    "Before Nave there was an elder world: the first Mortal Online, made by the Swedish house of Star Vault, opened to its testers in 2009 and released in full the summer after. It was a hard land in the same mould as this one — a single seamless world, first-person and full-loot, where a death cost a man everything he carried and no ground was safe. For more than a decade its houses warred over its towns; and when Mortal Online 2 opened its gates in 2022 the old world did not die at once, but lingered on beside the new. So many who came through the gates of Nave came as veterans — carrying a decade of grudges and alliances into a world but newly made.",
-    "Chief among the elder houses was Keepers of the Oath — KotO, the guild of Kuthara — which by its own account had stood since 2004, and in the old world alone had held four towns and a third of the map: the great power the rest of the realm forever united against, in that world and in this. When this chronicle speaks of veterans, of the elder world, of grudges older than Nave, it speaks of these — of men and houses who had already lost keeps and won them back long before this world was made."
    ]
   }
  ],
@@ -28,13 +21,13 @@ window.CHRONICLE = {
    "name": "The Gathering at the Gates",
    "range": "2020 – 2021",
    "temper": [
-    "Before the world was opened, the great houses had already gathered at its gates, bringing with them the grudges of an elder world (the first Mortal Online) and of games older still."
+    "Before the world was opened, the great houses had already gathered at its gates, bringing with them the grudges and alliances of long years spent warring against one another."
    ],
    "entries": [
     {
      "date": "September 2020",
      "title": "The Debates of the Deeds",
-     "body": "Before the gates opened, the veterans of the elder world were already at war on the forums. When Star Vault published its designs for houses, deeds, and keeps, the old hands fell upon them. Phen — who would later lend his voice to the chronicler Tasu's reckoning — foresaw the wars to come: \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He was right, and early: three years passed before the lords of the world decreed the Siege Challenge against the very night-siege he had named. The world's first battles were fought in theory, by men who had already lost keeps.",
+     "body": "Before the gates opened, the veterans were already at war on the forums. When Star Vault published its designs for houses, deeds, and keeps, the old hands fell upon them. Phen — who would later lend his voice to the chronicler Tasu's reckoning — foresaw the wars to come: \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He was right, and early: three years passed before the lords of the world decreed the Siege Challenge against the very night-siege he had named. The world's first battles were fought in theory, by men who had already lost keeps.",
      "links": [
       {
        "text": "Houses, Deeds and Keeps — the veterans debate the design, Phen among them",
@@ -114,7 +107,7 @@ window.CHRONICLE = {
     {
      "date": "December 2020",
      "title": "The Alpha Proving",
-     "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers, and the elder houses came to prove their blades against its raw servers — combat-tests and stress-tests in which the feel of the coming war was first taken. Nothing yet was permanent; every death and duel was but a rehearsal for the age to come.",
+     "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers, and the great houses came to prove their blades against its raw servers — combat-tests and stress-tests in which the feel of the coming war was first taken. Nothing yet was permanent; every death and duel was but a rehearsal for the age to come.",
      "links": [
       {
        "text": "Mortal Online 2 Begins Its Closed Combat Alpha",
@@ -144,7 +137,7 @@ window.CHRONICLE = {
     {
      "date": "February 2021",
      "title": "The Closed Beta Deepens",
-     "body": "As the closed beta widened its gates, more of the faithful were let through, and the world's factions began to harden — old rivalries from the elder world finding fresh ground to fight over, though no blood yet counted toward a keep. The chroniclers were there: the mage Diphrael set down Meduli against the house of Legion on film, the first record of a feud-ground Nave would still be bleeding over years later — and the first appearance in this chronicle of a man whose honesty would one day cost him his house.",
+     "body": "As the closed beta widened its gates, more of the faithful were let through, and the world's factions began to harden — old rivalries finding fresh ground to fight over, though no blood yet counted toward a keep. The chroniclers were there: the mage Diphrael set down Meduli against the house of Legion on film, the first record of a feud-ground Nave would still be bleeding over years later — and the first appearance in this chronicle of a man whose honesty would one day cost him his house.",
      "links": [
       {
        "text": "Mortal Online 2 Writes an FAQ and Lays Out a Development Roadmap",
@@ -504,7 +497,7 @@ window.CHRONICLE = {
     {
      "date": "December 2021",
      "title": "The Bakti Council and the Keep of Bakti",
-     "body": "In the jungle-gate city of Bakti — a neutral trade-hub since the elder world — eleven guilds bound into the Bakti Council to secure the Bakti Keep and keep peace. But peace bred its own war. When the Council voted to strip his control over its Discord server, Azaad of the Darkblood Coven cried \"democracy is dead,\" deleted it, and led his guild out — the new world's first political schism, proof a keep held for peace could sunder its holders. The first oath broken by the men who swore it, and far from the last. Yet the Council's dream outlived the Council: the jungle-gate passed to Venomous's Jungle Alliance, and the green south kept its banner while the north tore itself apart over thrones.",
+     "body": "In the jungle-gate city of Bakti — long a neutral trade-hub — eleven guilds bound into the Bakti Council to secure the Bakti Keep and keep peace. But peace bred its own war. When the Council voted to strip his control over its Discord server, Azaad of the Darkblood Coven cried \"democracy is dead,\" deleted it, and led his guild out — the new world's first political schism, proof a keep held for peace could sunder its holders. The first oath broken by the men who swore it, and far from the last. Yet the Council's dream outlived the Council: the jungle-gate passed to Venomous's Jungle Alliance, and the green south kept its banner while the north tore itself apart over thrones.",
      "links": [
       {
        "text": "Bakti — a tour of the jungle-gate city",
@@ -570,11 +563,6 @@ window.CHRONICLE = {
        "text": "Lost files recovered — the first successful keep siege, unearthed",
        "url": "https://www.youtube.com/watch?v=blY647pPZMA",
        "source": "Gryph"
-      },
-      {
-       "text": "Bomex filming keep-battles in the elder world, a decade before Nave's first siege",
-       "url": "https://www.youtube.com/watch?v=EY4Dx2TCa_A",
-       "source": "Bomex MO"
       }
      ],
      "marker": null,
@@ -917,11 +905,6 @@ window.CHRONICLE = {
        "source": "Favonius Cornelius, official forums"
       },
       {
-       "text": "The original Triumphalis of the elder world — festival footage",
-       "url": "https://www.youtube.com/watch?v=KGVsJxfQ83Y",
-       "source": "TheWiseDwarf"
-      },
-      {
        "text": "The games themselves — Triumphalis II, part the first",
        "url": "https://www.youtube.com/watch?v=l1Kop7EjhZI",
        "source": "Slarti Bartfast"
@@ -934,7 +917,7 @@ window.CHRONICLE = {
     {
      "date": "25 January 2023",
      "title": "The March of the ACT Pickaxe Host",
-     "body": "Greatest of the war-hosts of this age was the alliance remembered as ACT — the Anti-Coalition Treaty, sworn by the lesser houses to break the dominion of the one bloc that overshadowed them all: Kuthara's KotO and the Coalition it led. The pickaxe-host marched under a plain necessity. In these early days the world held no siege engines yet — no manganon, no ballista would come until the Territory law of that August — so to bring a wall down a host had only its own hands, and ACT answered with numbers, vast mingled columns bearing pickaxes to beat the keeps apart by main force. On this day the chroniclers filmed the host march straight from a siege upon the keep of Oldguard onward to storm the keep of Nameless: two foes broken in a single day's march. The host was marshaled by General Lordus, with Azog among its chief shot-callers — \"a primary shot caller in the victorious fights against the Coalition.\" In the wider war the pickaxe-columns turned against the age's great zerg-empire, KotO — the same house established, by its own account, in 2004, that had held four towns and a third of the elder world's map and raised its dominion anew in this one — with King Barados's Odinseed among the coalition of rebels. So the ACT wars became the Rebellion of Barados against the Empire of Kuthara, the defining struggle of the lawless years — a title worth setting down carefully, for three years on it would be Barados who held the empire, and half the world that rose against him. The hosts were reckoned among the largest in the genre: RobberDob preserved the \"ACT vs KotO\" epic fight; Albu's Corner filmed the \"Crushing of the Coalition,\" the biggest fight of its day; and Tatsuya set down a clash he hailed as the \"biggest battle ever seen in an MMORPG.\" Here, if anywhere, Nave earned its boast of four-hundred-strong war.",
+     "body": "Greatest of the war-hosts of this age was the alliance remembered as ACT — the Anti-Coalition Treaty, sworn by the lesser houses to break the dominion of the one bloc that overshadowed them all: Kuthara's KotO and the Coalition it led. The pickaxe-host marched under a plain necessity. In these early days the world held no siege engines yet — no manganon, no ballista would come until the Territory law of that August — so to bring a wall down a host had only its own hands, and ACT answered with numbers, vast mingled columns bearing pickaxes to beat the keeps apart by main force. On this day the chroniclers filmed the host march straight from a siege upon the keep of Oldguard onward to storm the keep of Nameless: two foes broken in a single day's march. The host was marshaled by General Lordus, with Azog among its chief shot-callers — \"a primary shot caller in the victorious fights against the Coalition.\" In the wider war the pickaxe-columns turned against the age's great zerg-empire, KotO — the dominant power the rest of the realm forever united against — with King Barados's Odinseed among the coalition of rebels. So the ACT wars became the Rebellion of Barados against the Empire of Kuthara, the defining struggle of the lawless years — a title worth setting down carefully, for three years on it would be Barados who held the empire, and half the world that rose against him. The hosts were reckoned among the largest in the genre: RobberDob preserved the \"ACT vs KotO\" epic fight; Albu's Corner filmed the \"Crushing of the Coalition,\" the biggest fight of its day; and Tatsuya set down a clash he hailed as the \"biggest battle ever seen in an MMORPG.\" Here, if anywhere, Nave earned its boast of four-hundred-strong war.",
      "links": [
       {
        "text": "BIGGEST BATTLE EVER IN AN MMORPG",
@@ -994,7 +977,7 @@ window.CHRONICLE = {
     {
      "date": "21 February 2023",
      "title": "The Company Declares upon KoTo",
-     "body": "Three weeks after the pickaxe-columns marched, the war found its paper: the guild The Company declared upon KoTo — the old power that, in both this world and the elder one, was ever the great enemy the rest of the realm united against. Two prongs of one campaign, three weeks apart: the host in the field, the declaration on the board — and the rivals already crowing that \"KotO .5 flopped.\" The realm had decided the Empire of Kuthara was finished. The realm was wrong: KotO fought on into the age of relics, and years afterward Kuthara himself was still holding forth on the airwaves, trading easy words with Azog — one of the shot-callers who had marched against him.",
+     "body": "Three weeks after the pickaxe-columns marched, the war found its paper: the guild The Company declared upon KoTo — the old power that was ever the great enemy the rest of the realm united against. Two prongs of one campaign, three weeks apart: the host in the field, the declaration on the board — and the rivals already crowing that \"KotO .5 flopped.\" The realm had decided the Empire of Kuthara was finished. The realm was wrong: KotO fought on into the age of relics, and years afterward Kuthara himself was still holding forth on the airwaves, trading easy words with Azog — one of the shot-callers who had marched against him.",
      "links": [
       {
        "text": "Declaration of War — The Company declare war on KoTo",
@@ -2010,7 +1993,7 @@ window.CHRONICLE = {
     {
      "date": "15 July 2025",
      "title": "The Siege of the KotO Keep",
-     "body": "On the eve of the Reckoning — the day before the sixteen thrones were shattered — the realm made one last great war under the old law, against the oldest enemy of all. Wolfszeit bound its banner to King Barados's Odinseed and countless other guilds, and the whole host fell upon the desert keep KotO held near Meduli: the empire of Kuthara, established in 2004, that in both this world and the elder one was ever the power against which the rest at last united. Wolfszeit called it one of the most ambitious sieges the world had yet seen, and owned plainly that the numbers were past counting and the end past clear reckoning, for the fight was all chaos. Two years before, the Company had declared the Empire of Kuthara finished, and been proven wrong; and here, on the last day of the sixteen-throne age, KotO's desert throne still stood to be stormed. On the morrow the Law of Territory that had made keeps worth besieging would be torn up, and the manner of every siege changed forever — so this assault stands as the last storming of a keep under the law of the sixteen.",
+     "body": "On the eve of the Reckoning — the day before the sixteen thrones were shattered — the realm made one last great war under the old law, against the oldest enemy of all. Wolfszeit bound its banner to King Barados's Odinseed and countless other guilds, and the whole host fell upon the desert keep KotO held near Meduli: the empire of Kuthara, that was ever the power against which the rest of the realm at last united. Wolfszeit called it one of the most ambitious sieges the world had yet seen, and owned plainly that the numbers were past counting and the end past clear reckoning, for the fight was all chaos. Two years before, the Company had declared the Empire of Kuthara finished, and been proven wrong; and here, on the last day of the sixteen-throne age, KotO's desert throne still stood to be stormed. On the morrow the Law of Territory that had made keeps worth besieging would be torn up, and the manner of every siege changed forever — so this assault stands as the last storming of a keep under the law of the sixteen.",
      "links": [
       {
        "text": "Koto Siege Attempt — Wolfszeit, Odinseed and countless guilds at the desert keep",
@@ -2115,7 +2098,7 @@ window.CHRONICLE = {
     {
      "date": "December 2025",
      "title": "The Year's Reckoning",
-     "body": "At year's end Star Vault counted its own labor and found ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known. Beside the makers' tally the old archivist Wolfszeit, whose annals ran back to the first Mortal Online of 2009, set down a year-end reckoning of his own. Between the two accounts lay the whole argument of Nave: at the Full Launch of 2022 the hands of Henrik Nyström and his lead developer Sebastian had shaped the systems the guilds would spend five years contesting, cursing, and exploiting — and no year had proved it louder. The lords shattered the sixteen thrones; the houses answered with hollow sieges, hoarded relics, and a server-wide war over a single small house. What the makers set down in patch notes, the world rewrote in blood, and neither asked the other's leave.",
+     "body": "At year's end Star Vault counted its own labor and found ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known. Beside the makers' tally the old archivist Wolfszeit, whose annals ran back to the realm's very first days, set down a year-end reckoning of his own. Between the two accounts lay the whole argument of Nave: at the Full Launch of 2022 the hands of Henrik Nyström and his lead developer Sebastian had shaped the systems the guilds would spend five years contesting, cursing, and exploiting — and no year had proved it louder. The lords shattered the sixteen thrones; the houses answered with hollow sieges, hoarded relics, and a server-wide war over a single small house. What the makers set down in patch notes, the world rewrote in blood, and neither asked the other's leave.",
      "links": [
       {
        "text": "End of Year Recap — 2025",
@@ -2267,7 +2250,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "May 2026",
      "title": "The Battle of the South",
-     "body": "On the eve of Sarducaa the old world proved it had wars left in it: over two hundred players clashed in the south as the Jungle Alliance met the Men of the West for control, pride, territory, and reputation. The battle was filmed by a newcomer who wrote that days like this were why he played at all — the world's oldest recruiting sergeant, still at work five years on.",
+     "body": "On the eve of Sarducaa, Myrland proved it had wars left in it: over two hundred players clashed in the south as the Jungle Alliance met the Men of the West for control, pride, territory, and reputation. The battle was filmed by a newcomer who wrote that days like this were why he played at all — the world's oldest recruiting sergeant, still at work five years on.",
      "links": [
       {
        "text": "200+ players battle for the South",
@@ -2340,7 +2323,7 @@ window.CHRONICLE = {
     {
      "date": "1 July 2026",
      "title": "Sarducaa Opens",
-     "body": "The new continent was thrown open — and, by a deep law, only the newborn might enter, bearing nothing of their old power. Thus five years after the elder houses first colonized an empty Myrland, an empty land was made once more, that the cycle might begin again upon level ground. Yet only the ground was level. They sailed south stripped of power, not of memory — no strangers meeting on empty ground, but old rivals who already knew whom they hated, exactly as they had come to Myrland's gates five years before, bearing an elder world's grudges.",
+     "body": "The new continent was thrown open — and, by a deep law, only the newborn might enter, bearing nothing of their old power. Thus five years after the first houses colonized an empty Myrland, an empty land was made once more, that the cycle might begin again upon level ground. Yet only the ground was level. They sailed south stripped of power, not of memory — no strangers meeting on empty ground, but old rivals who already knew whom they hated, exactly as they had come to Myrland's gates five years before, bearing grudges older than the ground they stood on.",
      "links": [
       {
        "text": "Mortal Online 2 — Sarducaa Launch Trailer",

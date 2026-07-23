@@ -81,6 +81,9 @@
     "Nausk", "Aesir", "Pox", "Bayard", "Noobert", "Torggaddon", "Tatsuya", "RobberDob",
     "Kidney", "Loud Ziggy", "Ziggy", "HardDriveDump", "Ruthless G", "Wicked", "Clarence",
     "Nalyd", "Embuscade", "Tiglie", "Chip Chip", "TheLazyPeon", "Josh Strife Hayes",
+    // added in the name-coverage pass — chroniclers/streamers and named blades
+    // that appear in the prose (and captions) but were never in the map
+    "Nisse", "Horizon", "Run Karni", "LIRIK", "Albu's Corner", "Venomous War Gaming", "bomex",
   ];
   const GUILDS = [
     "Odinseed", "Wolfszeit", "KarniMata", "Nightmare Alliance", "Nightmare", "Rat Alliance",
@@ -94,6 +97,12 @@
     "Knights of Myrland", "Shadow Consortium", "Noble Ones", "Free Tribes", "Collective",
     "Harbingers of Judgment", "Guardians of Gabaria", "Saint Sépulcre", "L'Empire",
     "Keepers of the Oath",
+    // added in the name-coverage pass — guilds/alliances/companies (and a few
+    // caption casings) that appear in the prose but were never in the map
+    "GrimSide", "WINX", "Purgatory", "Tribe", "Crimson Beasts", "Men of the West",
+    "WigSplit", "BlackHand", "Brigands", "Mercenaries", "Morin Khur Royal Guards",
+    "Royal Guards", "Coalition", "Anti-Coalition Treaty", "Rat-Alliance",
+    "OdinSeed", "Karnimata", "Koto",
   ];
   const NAME_CLASS = {};
   PLAYERS.forEach((n) => (NAME_CLASS[n] = "n-p"));

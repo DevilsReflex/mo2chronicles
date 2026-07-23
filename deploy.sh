@@ -15,6 +15,10 @@ mkdir -p dist
 cp "${PUBLIC_FILES[@]}" dist/
 cp -r "${PUBLIC_DIRS[@]}" dist/
 
+# Pre-render the chronicle text + inject JSON-LD into dist/index.html so
+# search engines and no-JS readers get the full content in the raw HTML.
+node build-seo.js
+
 echo "dist/ built with $(find dist -type f | wc -l) files:"
 find dist -type f | sort | sed 's/^/  /'
 

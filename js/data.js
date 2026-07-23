@@ -1269,10 +1269,10 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "24 December 2023",
      "title": "The Christmas Eve Siege",
-     "body": "On Christmas Eve the Coalition brought its whole weight against North Order Keep. The defenders' own chronicler set down the verdict with a defender's relish: it was the only time, he wrote, that their zerg did not auto-win them the fight. The walls saw out the holy night, and the war ground on into the new year.",
+     "body": "On Christmas Eve the Coalition brought its whole weight against North Order Keep, and it was KotO — the Keepers of the Oath, long the great zerg of the age — who held the walls against them. Their own chronicler set down the verdict with a defender's relish: it was the only time, he wrote, that their zerg did not auto-win them the fight. The walls saw out the holy night, and the war ground on into the new year.",
      "links": [
       {
-       "text": "Big fights at North Order Keep on Christmas Eve",
+       "text": "Tasu sets down KotO's stand at North Order Keep — the one night their zerg did not simply auto-win the fight",
        "url": "https://www.youtube.com/watch?v=baxxUmbkq7k",
        "source": "Tasu"
       }

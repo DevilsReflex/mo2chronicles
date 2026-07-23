@@ -938,6 +938,16 @@ window.CHRONICLE = {
        "text": "KotO's leader at single combat — the man the pickaxe-host marched against",
        "url": "https://www.youtube.com/watch?v=vgEPoGoCAFo",
        "source": "Kuthara"
+      },
+      {
+       "text": "The King's own chronicle — how the Anti-Coalition Treaty was sworn and Barados marched to war",
+       "url": "https://www.youtube.com/watch?v=uX1M6LO2VOA",
+       "source": "BruceLeeRob"
+      },
+      {
+       "text": "The ACT vanquishes the Coalition — KotO's keep thrown down, the great bloc dismantled",
+       "url": "https://www.youtube.com/watch?v=tr3zk7fOFC4",
+       "source": "BruceLeeRob"
       }
      ],
      "marker": null,

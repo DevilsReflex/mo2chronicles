@@ -1309,6 +1309,94 @@
     }
   });
 
+  /* ── submit correction / entry ───────────────────────────
+     A static site can't post mail itself, so this composes the
+     reader's message and hands it to their own mail client via a
+     mailto: link. The address is assembled here rather than sitting
+     as a plain string in the HTML, to keep it off the easy scrapers. */
+  (function submitCorrection() {
+    const openBtn = document.getElementById("submit-correction");
+    const overlay = document.getElementById("submit-overlay");
+    if (!openBtn || !overlay) return;
+    const dialog = overlay.querySelector(".submit-dialog");
+    const msg = document.getElementById("submit-msg");
+    const from = document.getElementById("submit-from");
+    const sendBtn = document.getElementById("submit-send");
+    const cancelBtn = document.getElementById("submit-cancel");
+    const closeBtn = document.getElementById("submit-close");
+    const fallback = document.getElementById("submit-fallback");
+    const TO = ["poxalbion", "gmail.com"].join("@");
+    let lastFocus = null;
+
+    function open() {
+      lastFocus = document.activeElement;
+      overlay.classList.add("open");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      fallback.hidden = true;
+      msg.classList.remove("submit-invalid");
+      document.addEventListener("keydown", onKey, true);
+      setTimeout(() => msg.focus(), 40);
+    }
+    function close() {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      document.removeEventListener("keydown", onKey, true);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    function onKey(e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        close();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      // minimal focus trap so keyboard focus stays within the dialog
+      const f = dialog.querySelectorAll("button, textarea, input, a[href]");
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+    function send() {
+      const text = (msg.value || "").trim();
+      if (!text) {
+        msg.classList.add("submit-invalid");
+        msg.focus();
+        return;
+      }
+      msg.classList.remove("submit-invalid");
+      const who = (from.value || "").trim();
+      const subject = "The Chronicle of Nave — correction / entry";
+      const body = who ? text + "\n\n— " + who : text;
+      const href =
+        "mailto:" + TO +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+      window.location.href = href;
+      // in case no mail client answered the mailto, surface the address
+      // so the reader can still reach the chronicler by hand
+      fallback.innerHTML =
+        "If your email app didn’t open, send it to " +
+        '<a href="' + href + '">' + TO + "</a>.";
+      fallback.hidden = false;
+    }
+
+    openBtn.addEventListener("click", open);
+    cancelBtn.addEventListener("click", close);
+    closeBtn.addEventListener("click", close);
+    sendBtn.addEventListener("click", send);
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) close();
+    });
+  })();
+
   // a link to #entry-x-y only lands correctly if we jump to it ourselves —
   // entries are rendered by this script, so the browser's native fragment
   // scroll (which runs before that render exists, or not at all against

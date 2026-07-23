@@ -476,25 +476,179 @@ main, footer { position: relative; z-index: 2; }
 .nav-btn-text { display: none; }
 @media (min-width: 900px) { .nav-btn-text { display: inline; } }
 
-/* Timeline toggle: the one standing nav action now that ambience is gone,
-   so it gets a lit gold-chip look at rest instead of blending into plain
-   text until hovered — a standing invitation, not a hidden option */
-#hz-toggle {
+/* Submit correction / entry: the one standing nav action, given a lit
+   gold-chip look at rest instead of blending into plain text until
+   hovered — a standing invitation to the reader to add to the record */
+#submit-correction {
   color: var(--gold);
   border-color: var(--gold-dim);
   background: var(--gold-faint);
 }
-#hz-toggle:hover {
+#submit-correction:hover,
+#submit-correction:focus-visible {
   color: var(--gold-bright);
   border-color: var(--gold);
   background: rgba(201, 168, 106, 0.18);
   box-shadow: 0 0 14px rgba(201, 168, 106, 0.28);
+  outline: none;
 }
-#hz-toggle[aria-pressed="true"] {
+
+/* ── submit correction / entry dialog ──────────────────────
+   a mailto composer dressed as a scrap of the chronicle itself */
+.submit-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(3, 3, 6, 0.72);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.32s ease, visibility 0s linear 0.32s;
+}
+.submit-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.32s ease;
+}
+.submit-dialog {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 30px clamp(22px, 4vw, 40px) 28px;
+  background: linear-gradient(165deg, var(--card), var(--card-2));
+  border: 1px solid var(--gold-dim);
+  box-shadow: 0 26px 70px -24px rgba(0, 0, 0, 0.85), 0 0 40px rgba(201, 168, 106, 0.06);
+  transform: translateY(14px) scale(0.985);
+  transition: transform 0.36s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.submit-overlay.open .submit-dialog { transform: none; }
+.submit-dialog .ornament { margin: 0 auto 14px; }
+.submit-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--bone-dim);
+  transition: color 0.25s;
+}
+.submit-close:hover, .submit-close:focus-visible { color: var(--gold-bright); outline: none; }
+.submit-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(21px, 3.2vw, 26px);
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gold-bright);
-  border-color: var(--gold-bright);
-  background: rgba(201, 168, 106, 0.24);
-  box-shadow: 0 0 16px rgba(236, 208, 150, 0.4);
+  margin-bottom: 10px;
+}
+.submit-intro {
+  font-family: var(--serif);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--bone-dim);
+  text-align: center;
+  margin: 0 auto 22px;
+  max-width: 46ch;
+}
+.submit-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 7px;
+}
+.submit-opt {
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--bone-dim);
+}
+.submit-textarea, .submit-input {
+  width: 100%;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--bone);
+  background: rgba(5, 5, 7, 0.6);
+  border: 1px solid var(--gold-dim);
+  border-radius: 2px;
+  padding: 11px 13px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  resize: vertical;
+}
+.submit-textarea { min-height: 116px; margin-bottom: 18px; }
+.submit-input { margin-bottom: 22px; }
+.submit-textarea::placeholder, .submit-input::placeholder { color: rgba(168, 159, 140, 0.55); }
+.submit-textarea:focus, .submit-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 106, 0.12);
+}
+.submit-textarea.submit-invalid {
+  border-color: var(--blood-bright);
+  box-shadow: 0 0 0 3px rgba(224, 95, 77, 0.14);
+}
+.submit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.submit-btn {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  padding: 10px 20px;
+  border: 1px solid var(--gold-dim);
+  background: none;
+  color: var(--bone);
+  cursor: pointer;
+  transition: color 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s;
+}
+.submit-cancel:hover, .submit-cancel:focus-visible { color: var(--bone); border-color: var(--bone-dim); outline: none; }
+.submit-send {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+  background: rgba(201, 168, 106, 0.12);
+}
+.submit-send:hover, .submit-send:focus-visible {
+  background: rgba(201, 168, 106, 0.22);
+  box-shadow: 0 0 16px rgba(236, 208, 150, 0.32);
+  outline: none;
+}
+.submit-fallback {
+  margin: 16px 0 0;
+  font-family: var(--serif);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--bone-dim);
+  text-align: center;
+}
+.submit-fallback a { color: var(--gold); border-bottom: 1px solid var(--gold-dim); }
+.submit-fallback a:hover { color: var(--gold-bright); }
+body.modal-open { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .submit-overlay, .submit-dialog { transition: opacity 0.2s ease, visibility 0s; }
+  .submit-overlay.open .submit-dialog { transform: none; }
+  .submit-dialog { transform: none; }
 }
 
 /* the timeline is a real strip built into the header, not a decorative

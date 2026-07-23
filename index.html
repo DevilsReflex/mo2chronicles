@@ -37,7 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Catamaran:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=128">
+<link rel="stylesheet" href="css/style.css?v=129">
 
 <script type="application/ld+json">
 {
@@ -91,8 +91,8 @@
   </a>
   <nav class="age-nav" id="age-nav" aria-label="Ages"></nav>
   <div class="nav-actions">
-    <button class="nav-btn" id="hz-toggle" aria-pressed="false" aria-label="Toggle the horizontal timeline view" title="Toggle the horizontal timeline view">
-      <svg width="19" height="14.5" viewBox="0 0 20 15" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M1 7.5 H19"/><rect x="2.5" y="1.2" width="5.4" height="3.9"/><rect x="12.1" y="9.9" width="5.4" height="3.9"/><path d="M5.2 5.1 V7.5"/><path d="M14.8 7.5 V9.9"/></svg><span class="nav-btn-text">Timeline</span>
+    <button class="nav-btn" id="submit-correction" aria-haspopup="dialog" aria-label="Submit a correction or a new entry" title="Submit a correction or a new entry">
+      <svg width="16.5" height="16.5" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3c-3.5.6-8 3-10.5 7.5L5 15l4.5-1.5C14 11 16.4 6.5 17 3Z"/><path d="M5 15l-1.6 1.6"/><path d="M8 12.5 12 8.5"/></svg><span class="nav-btn-text">Submit correction / entry</span>
     </button>
   </div>
   <div class="scroll-progress" id="scroll-progress">
@@ -158,7 +158,26 @@
   <p>Mortal Online 2 is a trademark of Star Vault AB. This fan work is not affiliated with or endorsed by Star Vault.</p>
 </footer>
 
-<script src="js/data.js?v=128"></script>
-<script src="js/main.js?v=128"></script>
+<!-- Submit correction / entry — mailto dialog -->
+<div id="submit-overlay" class="submit-overlay" aria-hidden="true">
+  <div class="submit-dialog" role="dialog" aria-modal="true" aria-labelledby="submit-title">
+    <button type="button" class="submit-close" id="submit-close" aria-label="Close">&times;</button>
+    <div class="ornament" aria-hidden="true"><span class="orn-line"></span><span class="orn-diamond">&#10022;</span><span class="orn-line"></span></div>
+    <h2 class="submit-title" id="submit-title">Submit a correction or entry</h2>
+    <p class="submit-intro">Spotted an error, or know of a battle the chronicle has yet to record? Set it down below. On sending, your own mail app opens with the message addressed to the chronicler.</p>
+    <label class="submit-label" for="submit-msg">Your correction or new entry</label>
+    <textarea id="submit-msg" class="submit-textarea" rows="6" placeholder="e.g. On the Christmas Eve siege, KotO held North Order Keep as defender — the Coalition were the attackers…"></textarea>
+    <label class="submit-label" for="submit-from">Name or guild <span class="submit-opt">(optional, so you can be credited)</span></label>
+    <input id="submit-from" class="submit-input" type="text" autocomplete="off" placeholder="Your name or guild">
+    <div class="submit-actions">
+      <button type="button" class="submit-btn submit-cancel" id="submit-cancel">Cancel</button>
+      <button type="button" class="submit-btn submit-send" id="submit-send">Send by email</button>
+    </div>
+    <p class="submit-fallback" id="submit-fallback" hidden></p>
+  </div>
+</div>
+
+<script src="js/data.js?v=129"></script>
+<script src="js/main.js?v=129"></script>
 </body>
 </html>

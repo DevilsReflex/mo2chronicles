@@ -1272,12 +1272,17 @@ window.CHRONICLE = {
     {
      "date": "29 December 2023",
      "title": "The Battle for Minotaur Mountain",
-     "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the height of its power, contending the mountain and the deeps of the Mouth of Gal Barag beneath it against all who came for the same ground. It was a shape of things to come. Hard by that same dungeon the host would raise a keep of its own and name it Odinpost, and beside the Minotaur's mouth its longest wars would grind on for years. The mountain was worth the fighting long before it was ever worth the owning.",
+     "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the height of its power, contending the mountain and the deeps of the Mouth of Gal Barag beneath it against all who came for the same ground. It was a shape of things to come. Hard by that same dungeon the host would raise a stronghold of its own and name it Odinpost, and beside the Minotaur's mouth its longest wars would grind on for years. The mountain was worth the fighting long before it was ever worth the owning.",
      "links": [
       {
        "text": "OdinSeed — Battle for Minotaur Mountain",
        "url": "https://www.youtube.com/watch?v=ID1dRkM7DmE",
        "source": "BruceLeeRob"
+      },
+      {
+       "text": "The Mino village held — Odinseed and Nightfall against the Rat Alliance",
+       "url": "https://www.youtube.com/watch?v=Ox5CI8cDMZk",
+       "source": "Pox"
       }
      ],
      "marker": null,
@@ -1367,7 +1372,7 @@ window.CHRONICLE = {
     {
      "date": "16 February 2024",
      "title": "The Battle for Odinpost",
-     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own keep — Odinpost — and now a Russian mafia alliance came to test it. A hundred and fifty defenders — Odinseed's own, with the Rat Alliance and Kuthara's KotO standing beside them — met a hundred and seventy attackers beneath its walls. Azog the Defiler — once a soldier of Content, by then Odinseed's shield — filmed the day from inside the melee. The defenders held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata and Mythic each took their turn at the walls in the years after — a war that would not end until the keep fell two years on, in the spring of 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now old enemies stood together at his own gates, and the long war beside the Minotaur's mouth had only begun.",
+     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own stronghold — Odinpost — and now a Russian mafia alliance came to test it. A hundred and fifty defenders — Odinseed's own, with the Rat Alliance and Kuthara's KotO standing beside them — met a hundred and seventy attackers beneath its walls. Azog the Defiler — once a soldier of Content, by then Odinseed's shield — filmed the day from inside the melee. The defenders held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata and Mythic each took their turn at the walls in the years after — a war that would not end until the stronghold fell two years on, in the spring of 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now old enemies stood together at his own gates, and the long war beside the Minotaur's mouth had only begun.",
      "links": [
       {
        "text": "The Battle for Odinpost 150v170",
@@ -1753,7 +1758,7 @@ window.CHRONICLE = {
     {
      "date": "November 2024",
      "title": "The Gang-Wars of Gal Barag",
-     "body": "Near a year after Odinseed first fought for the Minotaur heights, the mountain had not gone quiet — it never would. By now the Odin-host held its keep of Odinpost beside the Mouth of Gal Barag, a fortress to sally from; and by now it had fresh rivals for the same slopes, WINX and GrimSide, who came again and again to contest the dungeon-mouth. The war settled into a running series of even matches: five-and-twenty a side upon the same ground, filmed from a dozen eyes at once. But a keep does not win a mountain, and the gang-wars of Gal Barag would outlast the year and grind on into the next.",
+     "body": "Near a year after Odinseed first fought for the Minotaur heights, the mountain had not gone quiet — it never would. By now the Odin-host held its stronghold of Odinpost beside the Mouth of Gal Barag, a fortress to sally from; and by now it had fresh rivals for the same slopes, WINX and GrimSide, who came again and again to contest the dungeon-mouth. The war settled into a running series of even matches: five-and-twenty a side upon the same ground, filmed from a dozen eyes at once. But a stronghold does not win a mountain, and the gang-wars of Gal Barag would outlast the year and grind on into the next.",
      "links": [
       {
        "text": "25 Odinseed against 25 WINX and GrimSide — the mountain gang-war, from many eyes",
@@ -2186,7 +2191,7 @@ window.CHRONICLE = {
        "source": "AZOGTHEDEFILER"
       }
      ],
-     "marker": "Keep lost",
+     "marker": "Stronghold lost",
      "kind": "event",
      "year": 2026
     },

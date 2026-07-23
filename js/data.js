@@ -27,7 +27,7 @@ window.CHRONICLE = {
     {
      "date": "September 2020",
      "title": "The Debates of the Deeds",
-     "body": "Before the gates opened, the veterans were already at war on the forums. When Star Vault published its designs for houses, deeds, and keeps, the old hands fell upon them. Phen — who would later lend his voice to the chronicler Tasu's reckoning — foresaw the wars to come: \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He was right, and early: three years passed before the lords of the world decreed the Siege Challenge against the very night-siege he had named. The world's first battles were fought in theory, by men who had already lost keeps.",
+     "body": "Before the gates opened, the veterans were already at war on the forums. When Star Vault published its designs for houses, deeds, and keeps, the old hands fell upon them. Among them was Phen, one of the forums' veteran voices, who would later lend his voice to the chronicler Tasu's history of the guilds. Phen foresaw the wars to come: \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He was right, and early. Three years passed before the lords of the world decreed the Siege Challenge against the very night-siege he had named. The world's first battles were fought in theory, by men who had already lost keeps.",
      "links": [
       {
        "text": "Houses, Deeds and Keeps — the veterans debate the design, Phen among them",
@@ -52,7 +52,7 @@ window.CHRONICLE = {
     {
      "date": "October 2020",
      "title": "The Acolytes are sworn",
-     "body": "More than a year before the gates opened, the host of Acolytes was founded for the world to come, vowing to hold \"one of the sixteen\" thrones and disdaining the \"zerg\" hordes of lesser games — though the Law of Territory that would seal the top table to sixteen houses was near three years off. Among them rode TheMasterStick, who would become the age's great cartographer. They were as good as their word: the Acolytes raised their keep, and their captain Putzin held the Central Steppe Castle — until the Baggening — the great purge that followed the bag-duplication exploit — cast him from the world, leaving him a podcast and no way back to the land he had sworn upon.",
+     "body": "More than a year before the gates opened, the host of Acolytes was founded for the world to come. They vowed to hold \"one of the sixteen\" thrones and disdained the \"zerg\" hordes of lesser games — though the Law of Territory that would seal the top table to sixteen houses was still near three years off. Among them rode TheMasterStick, who would become the age's great cartographer. The Acolytes were as good as their word: they raised their keep, and their captain Putzin held the Central Steppe Castle. Then came the Baggening — the great purge that followed the bag-duplication exploit — and it cast Putzin from the world, leaving him a podcast and no way back to the land he had sworn upon.",
      "links": [
       {
        "text": "Mortal Online 2 Announced — New Trailer Released",
@@ -82,7 +82,7 @@ window.CHRONICLE = {
     {
      "date": "November 2020",
      "title": "The First World-Record Muster",
-     "body": "Star Vault called the world to a weekend stress test, reaching for a record: most players ever on one un-instanced server. Forty thousand keys went out; the record was not broken, but the servers held, and Henrik owned it plainly — \"the bad part is, we still don't know our cap.\" It set the pattern for the great musters to come: the community summoned as one host, to break the world on purpose before it could break itself.",
+     "body": "Star Vault called the world to a weekend stress test, reaching for a record: the most players ever on one un-instanced server. Forty thousand keys went out. The record was not broken, but the servers held, and Henrik Nyström, the head of Star Vault and the game's maker, owned the result plainly: \"the bad part is, we still don't know our cap.\" The weekend set the pattern for the great musters to come: the community summoned as one host, to break the world on purpose before it could break itself.",
      "links": [
       {
        "text": "Going for World Record! — the official call",
@@ -107,7 +107,7 @@ window.CHRONICLE = {
     {
      "date": "December 2020",
      "title": "The Alpha Proving",
-     "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers, and the great houses came to prove their blades against its raw servers — combat-tests and stress-tests in which the feel of the coming war was first taken. Nothing yet was permanent; every death and duel was but a rehearsal for the age to come.",
+     "body": "Through the alpha winter, Star Vault opened the unfinished world to its first testers. The great houses came to prove their blades against its raw servers, in combat-tests and stress-tests where the feel of the coming war was first taken. Nothing yet was permanent; every death and duel was a rehearsal for the age to come.",
      "links": [
       {
        "text": "Mortal Online 2 Begins Its Closed Combat Alpha",
@@ -137,7 +137,7 @@ window.CHRONICLE = {
     {
      "date": "February 2021",
      "title": "The Closed Beta Deepens",
-     "body": "As the closed beta widened its gates, more of the faithful were let through, and the world's factions began to harden — old rivalries finding fresh ground to fight over, though no blood yet counted toward a keep. The chroniclers were there: the mage Diphrael set down Meduli against the house of Legion on film, the first record of a feud-ground Nave would still be bleeding over years later — and the first appearance in this chronicle of a man whose honesty would one day cost him his house.",
+     "body": "As the closed beta widened its gates, more of the faithful were let through, and the world's factions began to harden — old rivalries finding fresh ground to fight over, though no blood yet counted toward a keep. The chroniclers were already at work. The mage Diphrael filmed Meduli against the house of Legion, the first record of a feud-ground Nave would still be bleeding over years later. It is also the first appearance in this chronicle of Diphrael himself, a man whose honesty would one day cost him his house.",
      "links": [
       {
        "text": "Mortal Online 2 Writes an FAQ and Lays Out a Development Roadmap",
@@ -167,7 +167,7 @@ window.CHRONICLE = {
     {
      "date": "26 March 2021",
      "title": "The Contests of the Stress Test",
-     "body": "The March muster came with prizes: graphics cards, gift cards, and a two-hundred-dollar bounty on a world boss — first blade to land the killing blow took the purse, PvP allowed, \"win by any means necessary.\" It taught the world its own nature: even its gifts had to be fought over.",
+     "body": "The March muster came with prizes: graphics cards, gift cards, and a two-hundred-dollar bounty on a world boss. The first blade to land the killing blow took the purse, PvP allowed, \"win by any means necessary.\" It taught the world its own nature: even its gifts had to be fought over.",
      "links": [
       {
        "text": "How to Join the Free Stress Test — the competitions and the world-boss bounty",
@@ -197,7 +197,7 @@ window.CHRONICLE = {
     {
      "date": "31 March 2021",
      "title": "The First Great Guild Battle",
-     "body": "In the closed beta was fought one of the new world's first great clashes — KotO and Legion — filmed by an archer as a foretaste of wars to come. A fitting pair: Kuthara's Keepers, who would swell into the empire the realm at last united against, and Legion, who would hold Vadda in a stranglehold and be hunted for it. Neither had a keep yet to lose; both fought as though they did.",
+     "body": "In the closed beta was fought one of the new world's first great clashes, between KotO and Legion, filmed by an archer as a foretaste of wars to come. A fitting pair. KotO — the Keepers of the Oath, the host of the warlord Kuthara — would swell into the empire the realm at last united against; Legion would hold the city of Vadda in a stranglehold and be hunted for it. Neither had a keep yet to lose. Both fought as though they did.",
      "links": [
       {
        "text": "First Massive Guild Battle — KotO & Legion upon the field",
@@ -227,7 +227,7 @@ window.CHRONICLE = {
     {
      "date": "April 2021",
      "title": "The World Draws Eyes",
-     "body": "As the beta wore on, the wandering critics of the wider world looked upon Nave: TheLazyPeon and Josh Strife Hayes each brought audiences to the gates asking \"is it worth playing?\"; and Twitch giant LIRIK brought the greatest crowd to the stress-test weekends, some five-and-twenty thousand watching at once, returning on launch day of 2022 with near twenty-seven thousand souls at his back — the largest audience Nave ever drew to a single stream. It was the first turn of a wheel that never stopped: every few years some stranger with a great following found Nave, asked anew, and sent a fresh generation into the sewers to learn the answer themselves.",
+     "body": "As the beta wore on, the wandering critics of the wider world looked upon Nave. The reviewers TheLazyPeon and Josh Strife Hayes each brought audiences to the gates asking \"is it worth playing?\" The Twitch giant LIRIK brought the greatest crowd to the stress-test weekends — some five-and-twenty thousand watching at once — and returned on launch day of 2022 with near twenty-seven thousand souls at his back, the largest audience Nave ever drew to a single stream. It was the first turn of a wheel that never stopped: every few years some stranger with a great following found Nave, asked anew, and sent a fresh generation into the sewers to learn the answer themselves.",
      "links": [
       {
        "text": "A Sandbox PVP MMO Reviewed by Someone Who Hates Sandbox PVP MMOs",
@@ -262,7 +262,7 @@ window.CHRONICLE = {
     {
      "date": "8 May 2021",
      "title": "The Bakti Bowl",
-     "body": "In the beta was founded the realm's first tournament series: the Bakti Bowl, raised by Requiem, held every fortnight, the Bakti Trading Company fattening the victors' purse. Here the young world's blades were measured — duels and five-against-five group-fights, Legion against Levia and the Krankids among them — Wolfszeit filmed the first Bowl, beginning its keeping of the realm's memory. Beside it ran the Ragnarök Festival's games: shield-bashes, one-on-ones, a Veela race. So the sport of arms was born before war.",
+     "body": "In the beta was founded the realm's first tournament series: the Bakti Bowl, raised by the guild Requiem and held every fortnight, with the Bakti Trading Company fattening the victors' purse. Here the young world's blades were measured, in duels and five-against-five group-fights — Legion against Levia and the Krankids among them. The chronicler-guild Wolfszeit, whose films would keep the realm's memory for all the years that followed, recorded the first Bowl; that long work began here. Beside the Bowl ran the Ragnarök Festival's games: shield-bashes, one-on-ones, and a Veela race. So the sport of arms was born before the war.",
      "links": [
       {
        "text": "Bakti Dueling Tournament, 08/05/2021 — the first ever Requiem Bakti Bowl",
@@ -292,7 +292,7 @@ window.CHRONICLE = {
     {
      "date": "July 2021",
      "title": "The Festivals of the Beta",
-     "body": "Through the beta summer the young community made its own revels: the Festival of Nave, with shield-bashes, fashion-shows, and laggy duels, and the Open Air Festival of group-fights — the Bakti Bowls still turning every fortnight. The world was not yet permanent, but its people were already a people.",
+     "body": "Through the beta summer the young community made its own revels: the Festival of Nave, with shield-bashes, fashion-shows, and laggy duels, and the Open Air Festival of group-fights, while the Bakti Bowls still turned every fortnight. The world was not yet permanent, but its people were already a people.",
      "links": [
       {
        "text": "Stress Test Day 1 Report — Henrik among the crowds of Bakti",
@@ -317,7 +317,7 @@ window.CHRONICLE = {
     {
      "date": "August 2021",
      "title": "The Third Flame Festival",
-     "body": "In the beta's waning the people gathered for games and a horse-race, filmed by chroniclers — the tribes' first gathering. Single combat found its first scorekeeper: from the duels of the Flame Festival and the Festival of Nave, a statistician named Nisse drew up the realm's earliest 1v1 duelist rankings — a ladder that set a blade named Horizon second only to its champion, numbering among its ranks men this chronicle knows elsewhere: Putzin of the Acolytes, Suttner the festival-maker of Events, even Kuthara of the Keepers of the Oath. Before the world had keeps to fight over, it kept score of its swordsmen — the same impulse behind the guild-census that winter, and this chronicle years on.",
+     "body": "In the beta's waning the people gathered for games and a horse-race, filmed by the chroniclers — the tribes' first gathering. Single combat also found its first scorekeeper. From the duels of the Flame Festival and the Festival of Nave, a statistician named Nisse drew up the realm's earliest 1v1 duelist rankings. His ladder set a blade named Horizon second only to its champion, and it numbered among its ranks men this chronicle knows elsewhere: Putzin of the Acolytes, Suttner the festival-maker of the guild Events, even Kuthara of the Keepers of the Oath. Before the world had keeps to fight over, it kept score of its swordsmen — the same impulse behind the guild-census that winter, and behind this chronicle years on.",
      "links": [
       {
        "text": "End of Stress Test — the Boss Hunt Event",
@@ -347,7 +347,7 @@ window.CHRONICLE = {
     {
      "date": "12 September 2021",
      "title": "The Muster at Meduli",
-     "body": "Lord Henrik Nyström summoned near four hundred souls to battle outside Meduli — banners against no-banners — hailed as the biggest brawl ever seen upon one server, to test the world against the weight of the wars to come. The ground was apt: Meduli had drawn blood since the beta's first factions hardened there, and would go on drawing it for years. The title was only ever a loan — Nave boasted the biggest battle ever in every age, and broke it in the next.",
+     "body": "Henrik Nyström summoned near four hundred souls to battle outside Meduli — banners against no-banners — in what was hailed as the biggest brawl ever seen upon one server, to test the world against the weight of the wars to come. The ground was apt: Meduli had drawn blood since the beta's first factions hardened there, and it would go on drawing blood for years. The title itself was only ever a loan. Nave boasted the biggest battle ever in every age, and broke the record in the next.",
      "links": [
       {
        "text": "Final Stress Test — World Record & Fun",
@@ -372,7 +372,7 @@ window.CHRONICLE = {
     {
      "date": "16 September 2021",
      "title": "The Tyranny of the White Bears",
-     "body": "In the same season the beta found its first broken meta: the north's white bears — \"incredibly powerful, incredibly tanky and incredibly fast\" — tameable solo and levelled while masters slept, until half the realm fought with one button — in the pet menu. Every age of Nave has its tyrant-build. The white bear was first, and the tamers — Pepper's trade — never lived it down, though she kept at it for years, giving a courteous \"GG\" to whoever killed her, long after Nave found new tyrants to curse.",
+     "body": "In the same season the beta found its first broken meta: the north's white bears — \"incredibly powerful, incredibly tanky and incredibly fast\" — tameable solo and levelled while their masters slept, until half the realm fought with one button in the pet menu. Every age of Nave has its tyrant-build, and the white bear was the first. The tamers never lived it down. Pepper, a tamer famous for her long devotion to the trade, kept at it for years all the same, giving a courteous \"GG\" to whoever killed her, long after Nave found new tyrants to curse.",
      "links": [
       {
        "text": "Using ONE Button to Beat Mortal Online 2 — the white-bear meta",
@@ -407,7 +407,7 @@ window.CHRONICLE = {
     {
      "date": "7 November 2021",
      "title": "The Siege of Tindrem",
-     "body": "At the shining city, Henrik Nyström, lord of Star Vault, summoned over four hundred souls to mock battle to forge the world's launch-banner in real war. Two months before, outside Meduli, he called such a host to learn what his servers could bear; now he called one to show what was coming. It was proof, before the true war, of how many blades Nave could gather.",
+     "body": "At the shining city of Tindrem, Henrik Nyström summoned over four hundred souls to a mock battle, to forge the world's launch-trailer in real war. Two months before, outside Meduli, he had called such a host to learn what his servers could bear; now he called one to show what was coming. Before the true war ever began, it was proof of how many blades Nave could gather.",
      "links": [
       {
        "text": "World Event — Siege of Tindrem, Massive PvP Battle, 400+ soldiers",
@@ -437,7 +437,7 @@ window.CHRONICLE = {
     {
      "date": "23 November 2021",
      "title": "The Gates Open",
-     "body": "Sixteen days after four hundred souls mock-battled at Tindrem, the banner they forged flew over the true one: the world was released into Early Access, and Myrland lay waiting — empty, unclaimed, with no law of Territory upon it. The houses that came through the gates had gathered outside them a year and more, knowing whom they hated. Five days earlier the Steam-guide's scholar foretold that the great guilds would besiege even bandit camps racing for keep-spots and reckon the newborn mere obstacles; and so it fell out — though housing was yet eleven days off, and no foot of Myrland could be owned. Fourteen months of forum war ended: everything the veterans argued over was now just ground, there to be taken.",
+     "body": "Sixteen days after four hundred souls fought the mock battle at Tindrem, the banner they forged flew over a real war: the world was released into Early Access, and Myrland lay waiting — empty, unclaimed, with no law of Territory upon it. The houses that came through the gates had gathered outside them for a year and more, and they knew whom they hated. Five days earlier, the scholar who kept the game's Steam guide had foretold that the great guilds would besiege even bandit camps racing for keep-spots, and would reckon newborn players mere obstacles. So it fell out — though housing was still eleven days off, and no foot of Myrland could yet be owned. Fourteen months of forum war were over. Everything the veterans had argued about was now just ground, there to be taken.",
      "links": [
       {
        "text": "Mortal Online 2 — Official Gameplay Trailer",
@@ -467,7 +467,7 @@ window.CHRONICLE = {
     {
      "date": "4 December 2021",
      "title": "Housing Comes to Nave",
-     "body": "Patch 0.1.11.13 gave the world its ground: houses could be built, and the ruined keeps claimed and raised. Within the month the Bakti Council would bind itself around one such keep — the moment a thing could be owned, the politics of owning it began.",
+     "body": "Patch 0.1.11.13 gave the world its ground: houses could be built, and the ruined keeps claimed and raised. Within the month the Bakti Council would bind itself around one such keep. The moment a thing could be owned, the politics of owning it began.",
      "links": [
       {
        "text": "Mortal Online II Finally Gets Housing",
@@ -497,7 +497,7 @@ window.CHRONICLE = {
     {
      "date": "December 2021",
      "title": "The Bakti Council and the Keep of Bakti",
-     "body": "In the jungle-gate city of Bakti — long a neutral trade-hub — eleven guilds bound into the Bakti Council to secure the Bakti Keep and keep peace. But peace bred its own war. When the Council voted to strip his control over its Discord server, Azaad of the Darkblood Coven cried \"democracy is dead,\" deleted it, and led his guild out — the new world's first political schism, proof a keep held for peace could sunder its holders. The first oath broken by the men who swore it, and far from the last. Yet the Council's dream outlived the Council: the jungle-gate passed to Venomous's Jungle Alliance, and the green south kept its banner while the north tore itself apart over thrones.",
+     "body": "In the jungle-gate city of Bakti — long a neutral trade-hub — eleven guilds bound themselves into the Bakti Council, to secure the Bakti Keep and keep the peace. But peace bred its own war. When the Council voted to strip his control over its Discord server, Azaad of the Darkblood Coven cried \"democracy is dead,\" deleted the server, and led his guild out — the new world's first political schism, and proof that a keep held for peace could sunder its holders. It was the first oath broken by the men who swore it, and far from the last. Yet the Council's dream outlived the Council. The jungle-gate passed in time to the Jungle Alliance of Venomous, the war-captain who would long anchor the south; and the green south kept its banner while the north tore itself apart over thrones.",
      "links": [
       {
        "text": "Bakti — a tour of the jungle-gate city",
@@ -522,7 +522,7 @@ window.CHRONICLE = {
     {
      "date": "23 December 2021",
      "title": "The Catalogue of Guilds",
-     "body": "In the living world's second month, the self-styled Backyard Employee took a census of every guild in Nave — \"guilds which no longer exist, guilds which exist, guilds which yet exist\" — each with captain, city, and morality in colour: yellow pacifists, blue lawmen, gray neutrals, red hostile to all. Above fourscore banners were listed. The young world's society, preserved in amber: Viknuss and Tekk holding Vadda with The Legion; Hayasa's RPK!, \"extremely hated,\" promised a place on every kill-list; Putzin's Acolytes at Morin Khur — sworn against the zerg a year before the gates opened — insisting on purple, with no allies; PoisonArrows demanding BeastMasters be marked most evil — boasting thousands slain and the Reputation Protest — with Pandah Sykes as officer; MolagAmur and Kelzyr of Mors Omnibus, foot-fighters since 2012; Avonis of Requiem; Raknor of Northern Bank at Hyllspeia; DaChieftain of BEAR in Gaul'Kor; Phillywob of the Harbingers of Judgment, taking in newborns; Ferrus and Davis of the Knights of Myrland, sworn to chivalry among backstabbers; Serverus of The Noble Ones with Aquagenix, Qaiten, and Amarria; Malyck and Bratwire of the Artisans, a crafting-house; Suttner of Events, making festivals for others; The Patron of the Shadow Consortium, a network of spies; Apsalar of the Polish SLAV; Luconuti of LaFrance; Vecna of Onikumazoku; Svaar and Hauron of the Russian hosts; Zaras Himotep of the Brazilian Black Panthers, sworn against toxicity; Ghanburi of the Woses, wishing to live wild; Turel, Volos, Mistmaker, ProfessorOh, CoxyMate, Cedarnut, AtruinAugustus, Mahone, and the Chimera captains Waffle Stomper, Papaturro, and Tunalion; and — best of all — bigsb43 of Gordox the Knee Cappers, righteous midgets whose location was, by its leader's word, a bush. Favonius Cornelius wrote to enrol his household. LordMega noted the great houses missing; Nefnate warned no list is official. That is the truest thing in it: Nave has never agreed on what any guild is. But for one December, someone tried to write them all down — and this chronicle is the same impulse, five years on.",
+     "body": "In the living world's second month, a forum scribe styling himself the Backyard Employee took a census of every guild in Nave — \"guilds which no longer exist, guilds which exist, guilds which yet exist\" — each with its captain, its city, and its morality marked in colour: yellow pacifists, blue lawmen, gray neutrals, red hostile to all. Above fourscore banners were listed, and the young world's society was preserved in amber. Viknuss and Tekk held Vadda with The Legion. Hayasa's RPK!, \"extremely hated,\" was promised a place on every kill-list. Putzin's Acolytes sat at Morin Khur — sworn against the zerg a year before the gates opened — insisting on purple, with no allies. The murderer-captain PoisonArrows demanded his BeastMasters be marked most evil of all, boasting thousands slain and the Reputation Protest, with the duelist Pandah Sykes as his officer. The roll ran on: MolagAmur and Kelzyr of Mors Omnibus, foot-fighters since 2012; Avonis of Requiem; Raknor of Northern Bank at Hyllspeia; DaChieftain of BEAR in Gaul'Kor; Phillywob of the Harbingers of Judgment, taking in newborns; Ferrus and Davis of the Knights of Myrland, sworn to chivalry among backstabbers; Serverus of The Noble Ones, with Aquagenix, Qaiten, and Amarria; Malyck and Bratwire of the Artisans, a crafting-house; Suttner of Events, making festivals for others; The Patron of the Shadow Consortium, a network of spies; Apsalar of the Polish SLAV; Luconuti of LaFrance; Vecna of Onikumazoku; Svaar and Hauron of the Russian hosts; Zaras Himotep of the Brazilian Black Panthers, sworn against toxicity; and Ghanburi of the Woses, wishing to live wild. Captains of smaller banners filled out the list — Turel, Volos, Mistmaker, ProfessorOh, CoxyMate, Cedarnut, AtruinAugustus, and Mahone — beside the Chimera captains Waffle Stomper, Papaturro, and Tunalion. Best of all was bigsb43 of Gordox the Knee Cappers, righteous midgets whose location was, by their leader's word, a bush. The Tindremic patrician Favonius Cornelius wrote in to enrol his household. A reader named LordMega noted the great houses missing; another, Nefnate, warned that no list is official. That is the truest thing in it: Nave has never agreed on what any guild is. But for one December, someone tried to write them all down — and this chronicle is the same impulse, five years on.",
      "links": [
       {
        "text": "Unofficial Guild List Catalogue",
@@ -552,7 +552,7 @@ window.CHRONICLE = {
     {
      "date": "December 2021",
      "title": "The First Siege",
-     "body": "In the living world's first weeks, before a keep could be owned, Mortal Online 2's first siege was fought — a stronghold thrown down with sledgehammers, its destruction and defense captured by the player bomex, set down by Wolfszeit. A crude forerunner of sieges to come; the first true keep would not fall under the Law of Territory until October 2023.",
+     "body": "In the living world's first weeks, before a keep could even be owned, Mortal Online 2's first siege was fought: a stronghold thrown down with sledgehammers. A player named bomex captured its destruction and defense, and Wolfszeit set the film down in its archive. It was a crude forerunner of the sieges to come; the first true keep would not fall under the Law of Territory until October 2023.",
      "links": [
       {
        "text": "First Keep Siege 4K Destruction — with hammers",
@@ -582,7 +582,7 @@ window.CHRONICLE = {
     {
      "date": "25 January 2022",
      "title": "The Full Launch",
-     "body": "The world was made permanent. What a guild took now, it kept. Behind the ground stood its makers — Henrik Nyström, lord of Star Vault, and his lead developer Sebastian, whose hands shaped the systems the guilds would spend the next five years contesting, cursing, and exploiting.",
+     "body": "The world was made permanent. What a guild took now, it kept. Behind the ground stood its makers: Henrik Nyström of Star Vault, and his lead developer Sebastian, whose hands shaped the systems the guilds would spend the next five years contesting, cursing, and exploiting.",
      "links": [
       {
        "text": "Mortal Online 2 on Steam",
@@ -612,7 +612,7 @@ window.CHRONICLE = {
     {
      "date": "Late January 2022",
      "title": "The Great Queue",
-     "body": "No sooner was the world permanent than it near drowned in its own success: the population surged past nine thousand souls — a two-fifths leap in one month — and Myrland choked on login-queues and crashes. On the forums some cried for a wipe of the whole continent; others begged newcomers to bide in Haven. The world's popularity became its first crisis, and the Steam-scrolls filled with warnings.",
+     "body": "No sooner was the world permanent than it nearly drowned in its own success. The population surged past nine thousand souls — a two-fifths leap in one month — and Myrland choked on login-queues and crashes. On the forums some cried for a wipe of the whole continent; others begged newcomers to bide in Haven, the tutorial isle. The world's popularity became its first crisis, and the Steam reviews filled with warnings.",
      "links": [
       {
        "text": "Mortal Online 2 Final Review — the launch, the queue, and Odin's blessing",
@@ -642,7 +642,7 @@ window.CHRONICLE = {
     {
      "date": "February 2022",
      "title": "The First Maps",
-     "body": "The cartographers, working from the base-map of Slyy (called Pockets), drew the first political maps. Legion, it was said, held Vadda in a stranglehold — though wiser heads noted Legion was but one blade of the alliance The Collective, and that a map of keeps is not a map of power. In time that ground passed to Viknuss, a war-captain of old infamy who held Vadda by naked force. The Free Tribes contested the wilds.",
+     "body": "The cartographers drew the first political maps, working from the base-map drawn by Slyy, the mapmaker known to the players as Pockets. Legion, it was said, held Vadda in a stranglehold — though wiser heads noted that Legion was only one blade of the alliance called The Collective, and that a map of keeps is not a map of power. In time that ground passed to Viknuss, a war-captain of old infamy who held Vadda by naked force. The Free Tribes contested the wilds.",
      "links": [
       {
        "text": "The living map of Nave",
@@ -692,7 +692,7 @@ window.CHRONICLE = {
     {
      "date": "March 2022",
      "title": "Odinseed rises in the North",
-     "body": "From Fabernum came the Odin-worshippers of Odinseed, led by the mighty King Barados, at war from their first days with the \"heathens\" of lawless Kranesh — the chronicle \"Kranesh Heathens Return the SEED to ODIN\" marks the 25th of that month. Their joining-rite, the SEED, was infamous: a recruit in full armor was summoned \"to the stage,\" and King Barados hewed at him with a sword until he fell — \"You must accept the SEED!\" — the blood-price of Odin's blessing. Here begins the longest road in this chronicle: Barados rose as a rebel against the empires of his day, grew into an empire himself, and fell at last to a rebellion of half the world — and in that final war, four years on, the host of Fabernum still rode out beneath the Odin-banner.",
+     "body": "Out of the city of Fabernum came the Odin-worshippers of Odinseed, led by King Barados, at war from their first days with the \"heathens\" of lawless Kranesh; the chronicle \"Kranesh Heathens Return the SEED to ODIN\" marks the 25th of that month. Their joining-rite, the SEED, was infamous. A recruit in full armor was summoned \"to the stage,\" and King Barados hewed at him with a sword until he fell — \"You must accept the SEED!\" — the blood-price of Odin's blessing. Here begins the longest road in this chronicle. Barados rose as a rebel against the empires of his day, grew into an empire himself, and fell at last to a rebellion of half the world — and in that final war, four years on, the host of Fabernum still rode out beneath the Odin-banner.",
      "links": [
       {
        "text": "Odin's Seed Graveyard Battle — the King's earliest surviving chronicle, 22 March 2022",
@@ -722,7 +722,7 @@ window.CHRONICLE = {
     {
      "date": "4 March 2022",
      "title": "The Wolfpack Descends",
-     "body": "There ran in that season a warband that hunted as its name promised — in a body, and at the throat. The Wolfpack threw itself upon three houses at once: thirty of its own against thirty of Legion (Viknuss's Vadda host), the crafters of DracoSilvam, and the disciplined Integrity, whose logistics supplied half the realm's wars. That one roving pack took on three settled powers, and that the fight was thought worth filming, tells the temper of the lawless years: a warband needed no keep, no throne, no cause — only appetite.",
+     "body": "There ran in that season a warband that hunted as its name promised — in a body, and at the throat. The Wolfpack threw itself upon three houses at once: thirty of its own against thirty drawn from Legion (the Vadda host of Viknuss), the crafters of DracoSilvam, and the disciplined Integrity, whose logistics supplied half the realm's wars. That one roving pack took on three settled powers — and that the fight was thought worth filming — tells the temper of the lawless years. A warband needed no keep, no throne, no cause; only appetite.",
      "links": [
       {
        "text": "Wolfpack vs Legion, Draco & Integrity — 30ish vs 30ish",
@@ -749,7 +749,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "April 2022",
      "title": "The War of Meduli and Fabernum",
-     "body": "The launch year's peace broke in the world's first spring, in the first great war of coalitions: an alliance out of Fabernum led by Odinseed, the Wolfpack riding with them, against the banded guilds of Meduli. Veterans recalled field battles of a hundred souls and more, and the chroniclers named the spark plainly — Odinseed's attack upon KotO that April — with the fuel laid earlier still, when civil war among the Kranesh guilds reshuffled the banners of the north. The filmers called it the biggest fight since the world was opened.",
+     "body": "The launch year's peace broke in the world's first spring, in the first great war of coalitions: an alliance out of Fabernum led by Odinseed, with the Wolfpack riding beside them, against the banded guilds of Meduli. Veterans recalled field battles of a hundred souls and more. The chroniclers named the spark plainly — Odinseed's attack upon KotO that April — with the fuel laid earlier still, when civil war among the Kranesh guilds reshuffled the banners of the north. The filmers called it the biggest fight since the world was opened.",
      "links": [
       {
        "text": "The war filmed — Meduli against Fabernum",
@@ -769,7 +769,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "28 April 2022",
      "title": "The Collective Rides on Meduli",
-     "body": "In the same restless month the alliance styled The Collective — Legion, the Brigands, Integrity, and Chimera beneath one banner — rode upon Meduli and taunted the town until KotO came out to answer. Seventy blades and more to a side met upon the main road; then both armies wheeled east and clashed a second time in the valley. Twice in one day, a hundred and forty in the field — the launch year at its warring best.",
+     "body": "In the same restless month, the alliance styled The Collective — Legion, the Brigands, Integrity, and Chimera beneath one banner — rode upon Meduli and taunted the town until KotO came out to answer. Seventy blades and more to a side met upon the main road; then both armies wheeled east and clashed a second time in the valley. Twice in one day, a hundred and forty in the field: the launch year at its warring best.",
      "links": [
       {
        "text": "The two battles of the day, filmed from the ranks",
@@ -782,7 +782,7 @@ window.CHRONICLE = {
     {
      "date": "May 2022",
      "title": "The Bounty Edict and the Reputation Protest",
-     "body": "The lords of Star Vault decreed the Bounty Hunter and reworked the counting of murders and the declaring of wars. The murderer-host of BeastMasters — under PoisonArrows and his officer Pandah Sykes, a noted blade of the age, with their evil allies the Miscreants — answered in defiance, slaying all the souls they could in a \"Reputation PvP Protest\" to force the decree's makers to heed them. Five months before, PoisonArrows had written to the realm's guild-census demanding his BeastMasters be marked most evil of all in its roll of colours; here he made the boast good, and no man could say he had not been warned. Guild-war had spilled into the making of the world.",
+     "body": "The lords of Star Vault decreed the Bounty Hunter system and reworked the counting of murders and the declaring of wars. The murderer-host of BeastMasters answered in defiance. Under PoisonArrows and his officer Pandah Sykes, a noted blade of the age, and joined by their evil allies the Miscreants, they slew every soul they could in a \"Reputation PvP Protest,\" to force the decree's makers to heed them. Five months before, PoisonArrows had written to the realm's guild-census demanding his BeastMasters be marked most evil of all in its roll of colours. Here he made the boast good, and no man could say he had not been warned. Guild-war had spilled into the making of the world itself.",
      "links": [
       {
        "text": "Mortal Online 2 Adds Bounty Hunting System and a Three-Strike Rule",
@@ -812,7 +812,7 @@ window.CHRONICLE = {
     {
      "date": "July 2022",
      "title": "The Coming of Necromancy",
-     "body": "In the largest patch the young world had yet seen, Star Vault loosed the dark art of Necromancy upon Nave — rituals to raise undead minions and the grisly Tupilak. And in the same hour, somewhere in the wilds of Myrland, a new deep was discovered: a hidden dungeon of necromancers, guarded by a world-boss of its own. So the black arts came to Nave, and with them the realm's long appetite for the deep places — for every dungeon the makers buried, there would soon be a hunting-party to find it, and a war-band to fight for what it held.",
+     "body": "In the largest patch the young world had yet seen, Star Vault loosed the dark art of Necromancy upon Nave: rituals to raise undead minions, and the grisly Tupilak. In the same hour, somewhere in the wilds of Myrland, a new deep was discovered — a hidden dungeon of necromancers, guarded by a world-boss of its own. So the black arts came to Nave, and with them the realm's long appetite for the deep places. For every dungeon the makers buried, there would soon be a hunting-party to find it, and a war-band to fight for what it held.",
      "links": [
       {
        "text": "Patch Notes 1.0.4 — the Necromancy patch",
@@ -842,7 +842,7 @@ window.CHRONICLE = {
     {
      "date": "September 2022",
      "title": "The Tournament of Wolfszeit and Death Jester",
-     "body": "In the early peace, the chronicler-guild Wolfszeit and the guild Death Jester held a great tournament of single combat, its finest bouts preserved on film; among the champions fought Montradamus. It was kin to the Talus PVP Tournament in the mountains and the darkly-named Red Wedding Tournament, which Loud Ziggy set among the \"greatness of Mortal Online 2\" — the peacetime sport that kept the blades of Nave sharp between its wars.",
+     "body": "In the early peace, the chronicler-guild Wolfszeit and the guild Death Jester held a great tournament of single combat, its finest bouts preserved on film; among the champions fought the duelist Montradamus. It was kin to the Talus PVP Tournament in the mountains, and to the darkly-named Red Wedding Tournament, which the filmer Loud Ziggy counted among the \"greatness of Mortal Online 2.\" This was the peacetime sport that kept the blades of Nave sharp between its wars.",
      "links": [
       {
        "text": "Greatness of Mortal Online 2 & the Red Wedding",
@@ -867,7 +867,7 @@ window.CHRONICLE = {
     {
      "date": "28 September 2022",
      "title": "Ultumeki, the Ancient",
-     "body": "The Odin-host went hunting older prey than men: Ultumeki, one of the deep world's great bosses, brought down by an Odinseed expedition — proof the SEED's fellowship was forged in the monster-dark as much as on the battlefield. Mark the brotherhood, not only the kill: years before its great wars found it, the host was already learning to move through the dark as one body, and that hard-won unity would serve it in every siege that came after.",
+     "body": "The Odin-host went hunting older prey than men: Ultumeki, one of the deep world's great bosses, brought down by an Odinseed expedition — proof that the SEED's fellowship was forged in the monster-dark as much as on the battlefield. Mark the brotherhood, not only the kill. Years before its great wars found it, the host was already learning to move through the dark as one body, and that hard-won unity would serve it in every siege that came after.",
      "links": [
       {
        "text": "Ultumeki Boss Fight — an Odinseed expedition",
@@ -897,7 +897,7 @@ window.CHRONICLE = {
     {
      "date": "November 2022",
      "title": "Triumphalis Imperialis et Bestia",
-     "body": "In the imperial fashion of Tindrem, the realm's roleplayers staged a grand arena-spectacle — gladiatorial games and beast-fights, announced on the Guild-Politics board like a decree of the Empire. The herald was Favonius Cornelius, the Tindremic patrician, who eleven months before had written to the guild-census merely to enrol his household among its fourscore banners; now he summoned the whole realm to his games. It proved Nave's story was never only war but pageantry too, that the shining city kept its courtly traditions amid the chaos — and that a man who came to this world only to dwell in it might end by decreeing its festivals.",
+     "body": "In the imperial fashion of Tindrem, the realm's roleplayers staged a grand arena-spectacle — gladiatorial games and beast-fights, announced on the Guild-Politics board like a decree of the Empire. The herald was Favonius Cornelius, the Tindremic patrician who eleven months before had written to the guild-census merely to enrol his household among its fourscore banners; now he summoned the whole realm to his games. It proved that Nave's story was never only war but pageantry too, and that the shining city kept its courtly traditions amid the chaos — and that a man who came to this world only to dwell in it might end by decreeing its festivals.",
      "links": [
       {
        "text": "Event Announcement — Triumphalis Imperialis et Bestia II, November 20th",
@@ -917,7 +917,7 @@ window.CHRONICLE = {
     {
      "date": "25 January 2023",
      "title": "The March of the ACT Pickaxe Host",
-     "body": "Greatest of the war-hosts of this age was the alliance remembered as ACT — the Anti-Coalition Treaty, sworn by the lesser houses to break the dominion of the one bloc that overshadowed them all: Kuthara's KotO and the Coalition it led. The pickaxe-host marched under a plain necessity. In these early days the world held no siege engines yet — no manganon, no ballista would come until the Territory law of that August — so to bring a wall down a host had only its own hands, and ACT answered with numbers, vast mingled columns bearing pickaxes to beat the keeps apart by main force. On this day the chroniclers filmed the host march straight from a siege upon the keep of Oldguard onward to storm the keep of Nameless: two foes broken in a single day's march. The host was marshaled by General Lordus, with Azog among its chief shot-callers — \"a primary shot caller in the victorious fights against the Coalition.\" In the wider war the pickaxe-columns turned against the age's great zerg-empire, KotO — the dominant power the rest of the realm forever united against — with King Barados's Odinseed among the coalition of rebels. So the ACT wars became the Rebellion of Barados against the Empire of Kuthara, the defining struggle of the lawless years — a title worth setting down carefully, for three years on it would be Barados who held the empire, and half the world that rose against him. The hosts were reckoned among the largest in the genre: RobberDob preserved the \"ACT vs KotO\" epic fight; Albu's Corner filmed the \"Crushing of the Coalition,\" the biggest fight of its day; and Tatsuya set down a clash he hailed as the \"biggest battle ever seen in an MMORPG.\" Here, if anywhere, Nave earned its boast of four-hundred-strong war.",
+     "body": "Greatest of the war-hosts of this age was the alliance remembered as ACT — the Anti-Coalition Treaty, sworn by the lesser houses to break the dominion of the one bloc that overshadowed them all: Kuthara's KotO and the Coalition it led. The pickaxe-host marched under a plain necessity. In these early days the world held no siege engines — no manganon or ballista would come until the Territory law of that August — so to bring a wall down, a host had only its own hands. ACT answered with numbers: vast mingled columns bearing pickaxes, to beat the keeps apart by main force. On this day the chroniclers filmed the host march straight from a siege upon the keep of Oldguard onward to storm the keep of Nameless — two foes broken in a single day's march. The host was marshaled by General Lordus, with Azog among its chief shot-callers, \"a primary shot caller in the victorious fights against the Coalition.\" In the wider war the pickaxe-columns turned against the age's great zerg-empire, KotO — the dominant power the rest of the realm forever united against — with King Barados's Odinseed among the coalition of rebels. So the ACT wars became the Rebellion of Barados against the Empire of Kuthara, the defining struggle of the lawless years. The title is worth setting down carefully, for three years on it would be Barados who held the empire, and half the world that rose against him. The hosts were reckoned among the largest in the genre: the chronicler RobberDob preserved the \"ACT vs KotO\" epic fight; Albu's Corner filmed the \"Crushing of the Coalition,\" the biggest fight of its day; and the filmer Tatsuya set down a clash he hailed as the \"biggest battle ever seen in an MMORPG.\" Here, if anywhere, Nave earned its boast of four-hundred-strong war.",
      "links": [
       {
        "text": "BIGGEST BATTLE EVER IN AN MMORPG",
@@ -949,7 +949,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "Late January 2023",
      "title": "The Siege of Oldguard",
-     "body": "The pickaxe war's next round went the other way. ACT chose to attack Oldguard — but Oldguard was prepared, and for six hours and more the walls came down and went up again, the defenders repairing as fast as the massed columns could break. After hours of no progress the assault dissolved into song across the walls, Barados singing the Oldguard song, and the keep held: the first great check upon the host of the age.",
+     "body": "The pickaxe war's next round went the other way. ACT chose to attack the keep of Oldguard — but Oldguard was prepared. For six hours and more the walls came down and went up again, the defenders repairing as fast as the massed columns could break. After hours without progress the assault dissolved into song across the walls, King Barados singing the Oldguard song, and the keep held: the first great check upon the host of the age.",
      "links": [
       {
        "text": "The six-hour siege, summarized from the walls",
@@ -964,7 +964,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "February 2023",
      "title": "The Siege of the Legion Keep",
-     "body": "At Kranesh in the north, the hosts of Levia, Content, and Nightmare came against the keep that Legion held — a muster its chronicler styled simply \"versus the server.\" Azog the Defiler filmed the day from inside the press. And the ground at Kranesh was not done: eight months on it would stage the most titanic clash of the Territory age.",
+     "body": "At Kranesh in the north, the hosts of Levia, Content, and Nightmare came against the keep that Legion held — a muster its chronicler styled simply \"versus the server.\" Azog the Defiler, the shot-caller of the ACT wars, filmed the day from inside the press. And the ground at Kranesh was not done: eight months on, it would stage the most titanic clash of the Territory age.",
      "links": [
       {
        "text": "Welcome to Kranesh — the Legion keep siege",
@@ -977,7 +977,7 @@ window.CHRONICLE = {
     {
      "date": "21 February 2023",
      "title": "The Company Declares upon KoTo",
-     "body": "Three weeks after the pickaxe-columns marched, the war found its paper: the guild The Company declared upon KoTo — the old power that was ever the great enemy the rest of the realm united against. Two prongs of one campaign, three weeks apart: the host in the field, the declaration on the board — and the rivals already crowing that \"KotO .5 flopped.\" The realm had decided the Empire of Kuthara was finished. The realm was wrong: KotO fought on into the age of relics, and years afterward Kuthara himself was still holding forth on the airwaves, trading easy words with Azog — one of the shot-callers who had marched against him.",
+     "body": "Three weeks after the pickaxe-columns marched, the war found its paper: the guild The Company declared war upon KotO — the old power the rest of the realm forever united against. They were two prongs of one campaign, three weeks apart: the host in the field, the declaration on the board — and the rivals already crowing that \"KotO .5 flopped.\" The realm had decided the Empire of Kuthara was finished. The realm was wrong. KotO fought on into the age of relics, and years afterward Kuthara himself was still holding forth on the airwaves, trading easy words with Azog — one of the shot-callers who had marched against him.",
      "links": [
       {
        "text": "Declaration of War — The Company declare war on KoTo",
@@ -1007,7 +1007,7 @@ window.CHRONICLE = {
     {
      "date": "23 February 2023",
      "title": "The Eternal Wars",
-     "body": "The captain Emdash set down the start of a long feud he named the \"Eternal Wars\"; in later days he raised an openly anti-zerg banner, the guild Eternal. He named it better than he knew. The quarrel outlived the age that bore it: two years on, in the scramble for relics, Eternal stripped nineteen hundred gold from the stronghold of Bad Company — who held more relics than any house in Nave — and destroyed all their pitch for good measure.",
+     "body": "A captain named Emdash set down the start of a long feud he named the \"Eternal Wars\"; in later days he raised an openly anti-zerg banner, the guild Eternal. He named it better than he knew. The quarrel outlived the age that bore it: two years on, in the scramble for relics, Eternal stripped nineteen hundred gold from the stronghold of Bad Company — who held more relics than any house in Nave — and destroyed all their pitch for good measure.",
      "links": [
       {
        "text": "The zerg debate, aired plainly — the quarrel Emdash's banner answered",
@@ -1032,7 +1032,7 @@ window.CHRONICLE = {
     {
      "date": "13 April 2023",
      "title": "The Content vs Levia War",
-     "body": "By these years the host called Content — founded and led by Gbunny — was a power in its own right. In the war against the elite guild Levia, the chronicles catch one of Content's soldiers, Azog the Defiler, trading an \"ego duel\" with the champion Smasher, General Lordus speaking over the footage. Among Content's blades rode Jonttre, terror of the Meduli shallows, who turned numbered fights by luring his foes into the water, where none could match him. In time Azog was cast out of Content and took up arms instead with Barados's Odinseed; but Content remained Gbunny's alone.",
+     "body": "By these years the host called Content — founded and led by the captain Gbunny — was a power in its own right. In its war against the elite guild Levia, the chronicles catch one of Content's soldiers, Azog the Defiler, trading an \"ego duel\" with the champion Smasher, while General Lordus speaks over the footage. Among Content's blades rode Jonttre, terror of the Meduli shallows, who turned numbered fights by luring his foes into the water, where none could match him. In time Azog was cast out of Content and took up arms instead with Barados's Odinseed; but Content remained Gbunny's alone.",
      "links": [
       {
        "text": "Smasher vs Azog — Ego Duel, Content v Levia War",
@@ -1067,7 +1067,7 @@ window.CHRONICLE = {
     {
      "date": "Summer 2023",
      "title": "The Team-Fight Tournament",
-     "body": "In the last peace before Territory Control, Wolfszeit held a four-versus-four team tournament — the war-guilds meeting in ordered combat one final time before keeps turned every fight into a war for land. It was the last page of a line begun before the world was even permanent: Requiem's Bakti Bowl turning every fortnight through the beta, then the tournament of single combat Wolfszeit and Death Jester kept the year after, and now this. The sport of arms had come before the war, and had lasted the whole lawless age. That August the Law of Territory would fall upon Nave, and thereafter the ground itself was the prize.",
+     "body": "In the last peace before Territory Control, Wolfszeit held a four-versus-four team tournament — the war-guilds meeting in ordered combat one final time before keeps turned every fight into a war for land. It was the last page of a line begun before the world was even permanent: Requiem's Bakti Bowl turning every fortnight through the beta, then the tournament of single combat that Wolfszeit and Death Jester kept the year after, and now this. The sport of arms had come before the war, and it had lasted the whole lawless age. That August the Law of Territory would fall upon Nave, and thereafter the ground itself was the prize.",
      "links": [
       {
        "text": "The Tournament of Tindrem — the official team contests",
@@ -1107,7 +1107,7 @@ window.CHRONICLE = {
     {
      "date": "15 August 2023",
      "title": "The Law of Territory",
-     "body": "By the decree called Patch 1.0.17, Star Vault gave the world Territory Control and siege-war: guilds might now claim the land itself, raise keeps and settlements, and break them with the Manganon and the Ballista. The old hands had argued its design upon the forums three years before it came, and the Acolytes had sworn to hold \"one of the sixteen\" while the world was still unopened: in Nave the number was prophecy long before it was law. Yet the decree bore the flaw that would shadow the whole age — meaningful land was bound to keeps, of which there were but sixteen thrones. The top table of the world was sealed to sixteen houses, all others shut out; two years would pass before the lords looked upon the flaw they had wrought and resolved upon a Reckoning.",
+     "body": "By the decree called Patch 1.0.17, Star Vault gave the world Territory Control and siege-war. Guilds might now claim the land itself, raise keeps and settlements, and break them with the Manganon and the Ballista. The old hands had argued its design upon the forums three years before it came, and the Acolytes had sworn to hold \"one of the sixteen\" while the world was still unopened: in Nave the number was prophecy long before it was law. Yet the decree bore the flaw that would shadow the whole age. Meaningful land was bound to keeps, of which there were but sixteen thrones — so the top table of the world was sealed to sixteen houses, and all others were shut out. Two years would pass before the lords looked upon the flaw they had wrought and resolved upon a Reckoning.",
      "links": [
       {
        "text": "Territory Control, implemented 15 August 2023 — feature overview",
@@ -1137,7 +1137,7 @@ window.CHRONICLE = {
     {
      "date": "23 August 2023",
      "title": "Odinseed Raids MKRG",
-     "body": "Eight days after the Law of Territory was decreed, King Barados led his Odin-host against the keep of MKRG (the Morin Khur Royal Guards), whose lord was the much-mocked streamer Danny: the north had not waited a fortnight to learn what the new law of keeps was for. BruceLeeRob's chronicle names it \"Odinseed War Season 2.\" MKRG now stood caught between Odinseed in the north and the great northern alliance to come, with six weeks left.",
+     "body": "Eight days after the Law of Territory was decreed, King Barados led his Odin-host against the keep of MKRG — the Morin Khur Royal Guards, whose lord was the much-mocked streamer Danny. The north had not waited a fortnight to learn what the new law of keeps was for. The chronicle of the raid went out on BruceLeeRob, King Barados's own channel, under the title \"Odinseed War Season 2.\" MKRG now stood caught between Odinseed in the north and the great northern alliance to come, with six weeks left.",
      "links": [
       {
        "text": "ODINSEED RAIDS MKRG KEEP — Odinseed War Season 2",
@@ -1162,7 +1162,7 @@ window.CHRONICLE = {
     {
      "date": "6 October 2023",
      "title": "THE FIRST KEEP FALLS",
-     "body": "On this day was written the most historic deed of the age. In the world's first weeks, men had thrown down a stronghold with sledgehammers and called it a siege; now the Rat Alliance — the northern host in which Wolfszeit rode — came with the engines the new law allowed, and stormed and destroyed the keep of MKRG, the Morin Khur Royal Guards, bearing the name of the old conquered Khurite capital — a throne their namesake had lost four centuries before. Six weeks earlier King Barados had raided that same keep; now the great northern alliance closed the other jaw, and the Royal Guards lost a second throne. It was the first time in the living world a keep was brought down by siege, and Speznat's camera preserved it under the title that says all: First Siege in MO2 History where a keep was destroyed. The stakes of war were changed forever — henceforth a guild might lose everything.",
+     "body": "On this day was written the most historic deed of the age. In the world's first weeks, men had thrown down a stronghold with sledgehammers and called it a siege; now the Rat Alliance — the northern host in which Wolfszeit rode — came with the engines the new law allowed, and stormed and destroyed the keep of MKRG, the Morin Khur Royal Guards. Their name was borrowed from the old conquered Khurite capital, a throne their namesake had lost four centuries before. Six weeks earlier King Barados had raided that same keep; now the great northern alliance closed the other jaw, and the Royal Guards lost a second throne. It was the first time in the living world that a keep was brought down by siege, and the filmer Speznat's camera preserved it under a title that says everything: First Siege in MO2 History where a keep was destroyed. The stakes of war were changed forever. Henceforth a guild might lose everything.",
      "links": [
       {
        "text": "First Keep Siege on Live Server — Written History",
@@ -1194,7 +1194,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "October 2023",
      "title": "The Crushing of the Meduli Coalition",
-     "body": "Between the fall of the first keep and the titanic clash at Kranesh, the same October carried the age's greatest field battle. The militia of the free cities — the \"debars\" — with a hired force of northerners met the Meduli Coalition, which had summoned, as its enemies told it, half a server to the field. The lancer who filmed it from the militia's ranks counted over four hundred souls fighting in one place, and wrote it down as the biggest battle in the history of the world so far.",
+     "body": "Between the fall of the first keep and the titanic clash at Kranesh, the same October carried the age's greatest field battle. The militia of the free cities — the \"debars\" — together with a hired force of northerners met the Meduli Coalition, which had summoned, as its enemies told it, half a server to the field. The lancer who filmed it from the militia's ranks counted over four hundred souls fighting in one place, and wrote it down as the biggest battle in the history of the world so far.",
      "links": [
       {
        "text": "Over 400 in one place — the lancer's own view of the field",
@@ -1207,7 +1207,7 @@ window.CHRONICLE = {
     {
      "date": "30 October 2023",
      "title": "The Battle of Kranesh Keep",
-     "body": "Barely three weeks later, far in the north, near three hundred souls met in a titanic clash — 150 against 150 — over Kranesh Keep, reckoned by the chroniclers among the most epic battles in the game's history. Nave had gathered greater hosts before — Henrik had summoned four hundred to Meduli and four hundred more to mock battle at Tindrem, and the pickaxe-columns of ACT had claimed the biggest battle ever seen in an MMORPG — but those were musters made for a record or a banner, and dispersed with the day. This one came for Kranesh, the lawless country Odinseed had warred upon since its first days — three weeks after MKRG: the hosts of Nave now bled for ground that could be unmade forever, and fought accordingly.",
+     "body": "Barely three weeks later, far in the north, near three hundred souls met in a titanic clash — a hundred and fifty against a hundred and fifty — over Kranesh Keep, reckoned by the chroniclers among the most epic battles in the game's history. Nave had gathered greater hosts before: Henrik had summoned four hundred to Meduli and four hundred more to the mock battle at Tindrem, and the pickaxe-columns of ACT had claimed the biggest battle ever seen in an MMORPG. But those were musters made for a record or a trailer, and they dispersed with the day. This one came for Kranesh, the lawless country Odinseed had warred upon since its first days. Three weeks after MKRG, the hosts of Nave now bled for ground that could be unmade forever — and they fought accordingly.",
      "links": [
       {
        "text": "Epic Big Fight 150 vs 150 — Massive PVP and Siege Try",
@@ -1227,7 +1227,7 @@ window.CHRONICLE = {
     {
      "date": "28 November 2023",
      "title": "The Coming of Unreal Engine 5",
-     "body": "On the eve of the world's arrival upon the Epic Games Store, the lords of Star Vault moved all of Nave onto Unreal Engine 5 — proclaiming it, in their own trailer, the eve of a new era. It was the greatest single act of world-smithing since the launch; the deeper re-forging to UE 5.4 would follow within the year.",
+     "body": "On the eve of the world's arrival upon the Epic Games Store, the lords of Star Vault moved all of Nave onto Unreal Engine 5, proclaiming it in their own trailer the eve of a new era. It was the greatest single act of world-smithing since the launch; the deeper re-forging to UE 5.4 would follow within the year.",
      "links": [
       {
        "text": "Mortal Online 2 — Unreal Engine 5 Launch Trailer",
@@ -1259,7 +1259,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "24 December 2023",
      "title": "The Christmas Eve Siege",
-     "body": "On Christmas Eve the Coalition brought its whole weight against North Order Keep. The defenders' own chronicler set down the verdict with a defender's relish — the only time, he wrote, that their zerg did not auto-win them the fight. The walls saw out the holy night, and the war ground on into the new year.",
+     "body": "On Christmas Eve the Coalition brought its whole weight against North Order Keep. The defenders' own chronicler set down the verdict with a defender's relish: it was the only time, he wrote, that their zerg did not auto-win them the fight. The walls saw out the holy night, and the war ground on into the new year.",
      "links": [
       {
        "text": "Big fights at North Order Keep on Christmas Eve",
@@ -1272,7 +1272,7 @@ window.CHRONICLE = {
     {
      "date": "29 December 2023",
      "title": "The Battle for Minotaur Mountain",
-     "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the height of its power, contending the mountain and the deeps of the Mouth of Gal Barag beneath it against all who came for the same ground. It was a shape of things to come: hard by that same dungeon the host would raise a keep of its own and name it Odinpost, and beside the Minotaur's mouth its longest wars would grind on for years. The mountain was worth the fighting long before it was ever worth the owning.",
+     "body": "As the year closed, Odinseed gathered for hours of war upon the Minotaur heights above its northern home — the Odin-host at the height of its power, contending the mountain and the deeps of the Mouth of Gal Barag beneath it against all who came for the same ground. It was a shape of things to come. Hard by that same dungeon the host would raise a keep of its own and name it Odinpost, and beside the Minotaur's mouth its longest wars would grind on for years. The mountain was worth the fighting long before it was ever worth the owning.",
      "links": [
       {
        "text": "OdinSeed — Battle for Minotaur Mountain",
@@ -1289,7 +1289,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "January 2024",
      "title": "The Battle for Black Widow Ridge",
-     "body": "The server war of that winter came to a head at the wretched place called Black Widow Ridge. The Coalition, Odinseed, and the Rat Alliance — a detachment of the Pillows, Odinseed's own field-company, among them — marched to destroy the Nightmare Alliance where it stood: over three hundred players by the filmer's count, with hundreds of pets, cavalry, and magic in incredible amounts. It was the season the realm spoke of one all-covering zerg empire, and of a rebellion rising against it.",
+     "body": "The server war of that winter came to a head at the wretched place called Black Widow Ridge. The Coalition, Odinseed, and the Rat Alliance — with the Pillows, Odinseed's own field-company, riding as a detachment — marched to destroy the Nightmare Alliance where it stood: over three hundred players by the filmer's count, with hundreds of pets, cavalry, and magic in incredible amounts. It was the season the realm spoke of one all-covering zerg empire, and of a rebellion rising against it.",
      "links": [
       {
        "text": "Over 300 players at Black Widow Ridge",
@@ -1307,7 +1307,7 @@ window.CHRONICLE = {
     {
      "date": "25 January 2024",
      "title": "A New Terror in the Deeps",
-     "body": "The lords of the world loosed a new boss upon Nave so savage that the first hunters came back with warnings instead of loot — \"the newest boss is deadly\" — and the boss-hunting guilds began the old dance again: scout, die, learn, return. It was the same craft the Nitre Queen had taught them two years before — guides passed hand to hand, group-compositions argued over, loot-tables written in other men's deaths. The terror was said to wait in the Undercroft, a new deep lately opened in the heart of Myrland; within the fortnight that deep would be contested not by hunters against a monster, but by Odinseed against Mythic.",
+     "body": "The lords of the world loosed a new boss upon Nave so savage that the first hunters came back with warnings instead of loot — \"the newest boss is deadly\" — and the boss-hunting guilds began the old dance again: scout, die, learn, return. It was the same craft the Nitre Queen had taught them two years before — guides passed hand to hand, group-compositions argued over, loot-tables written in other men's deaths. The terror was said to wait in the Undercroft, a new deep lately opened in the heart of Myrland. Within the fortnight, that deep would be contested not by hunters against a monster, but by Odinseed against Mythic.",
      "links": [
       {
        "text": "New Boss Is Deadly",
@@ -1332,7 +1332,7 @@ window.CHRONICLE = {
     {
      "date": "2 February 2024",
      "title": "Odinseed against Mythic",
-     "body": "King Barados led the militia of Fabernum into the Undercroft Dungeon to face the guild Mythic and its lord Chip Chip — one of many foes the Odin-host met in the deeps in the year its wars multiplied. Mark the name: Chip Chip's Mythic would not stay a dungeon rival, but take its turn at the walls of Odinpost and stand among the houses that at last brought the Odin-throne down.",
+     "body": "King Barados led the militia of Fabernum into the Undercroft Dungeon to face the guild Mythic and its lord Chip Chip — one of many foes the Odin-host met in the deeps in the year its wars multiplied. Mark the name. Chip Chip's Mythic would not stay a dungeon rival: it would take its turn at the walls of Odinpost, and stand among the houses that at last brought the Odin-throne down.",
      "links": [
       {
        "text": "OdinSeed Siege Battle",
@@ -1367,7 +1367,7 @@ window.CHRONICLE = {
     {
      "date": "16 February 2024",
      "title": "The Battle for Odinpost",
-     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own keep — Odinpost — and now a Russian mafia alliance came to test it. A hundred and fifty defenders — Odinseed's own, with the Rat Alliance and Kuthara's KotO standing beside them — met a hundred and seventy attackers beneath its walls, and Azog the Defiler — once a soldier of Content, by then Odinseed's shield — filmed the day from inside the melee. The defenders held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata and Mythic each took their turn at the walls in the years after — a war that would not end until the keep fell two years on, in spring 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now old allies stood together at his own gates, and the long war beside the Minotaur's mouth had only begun.",
+     "body": "Hard by the Minotaur Dungeon at the Mouth of Gal Barag, the Odin-host had raised its own keep — Odinpost — and now a Russian mafia alliance came to test it. A hundred and fifty defenders — Odinseed's own, with the Rat Alliance and Kuthara's KotO standing beside them — met a hundred and seventy attackers beneath its walls. Azog the Defiler — once a soldier of Content, by then Odinseed's shield — filmed the day from inside the melee. The defenders held, but the peace of the north was broken for good. From this battle sprang the long Odinpost wars, as KarniMata and Mythic each took their turn at the walls in the years after — a war that would not end until the keep fell two years on, in the spring of 2026, before a rebellion of half the server. A year before, Barados had ridden with the pickaxe-columns in the Rebellion against the Empire of Kuthara; now old allies stood together at his own gates, and the long war beside the Minotaur's mouth had only begun.",
      "links": [
       {
        "text": "The Battle for Odinpost 150v170",
@@ -1392,7 +1392,7 @@ window.CHRONICLE = {
     {
      "date": "27 February 2024",
      "title": "The Liberation of Tephra",
-     "body": "So ended the long war of the north. The Rat Alliance came at last for the Nightmare stronghold at Tephra, and Abbadon's wall of steel chose the manner of its own ending: rather than yield their keep, the Nightmare host deleted their own stronghold, denying the victors the loot and glory of the breaking. Fortune used that proud house hardly — a great rollback had stripped many of its number of their characters, and at the last its walls came down by its own hand. The chronicle names the day \"Tephra Liberation Day\"; yet the crater would know the Rat siege-engines again a year and more on, when the same alliance came for Bad Company's Ursa Stronghold upon the same ground.",
+     "body": "So ended the long war of the north. The Rat Alliance came at last for the Nightmare stronghold at Tephra, and the wall of steel raised by Abbadon, the Nightmare captain, chose the manner of its own ending: rather than yield their keep, the Nightmare host deleted their own stronghold, denying the victors the loot and glory of the breaking. Fortune used that proud house hardly. A great rollback had stripped many of its number of their characters, and at the last its walls came down by its own hand. The chronicle names the day \"Tephra Liberation Day\" — yet the crater would know the Rat siege-engines again, a year and more on, when the same alliance came for Bad Company's Ursa Stronghold upon the same ground.",
      "links": [
       {
        "text": "Tephra Liberation Day — both sides fought honorable and hard",
@@ -1417,7 +1417,7 @@ window.CHRONICLE = {
     {
      "date": "April 2024",
      "title": "The Decree of the Siege Challenge",
-     "body": "Seeing that few would fight the sieges as they stood, the lords of Star Vault decreed the Siege Challenge: no more the thief's-siege struck at the sleeping hours, but a formal summons, a window of vulnerability, and safety outside it. Phen had foretold that exact grievance upon the forums in September 2020 — waking as a criminal in a keep broken and rebuilt while its lord slept — three years before the Law of Territory gave it a body, and the world bore it eight months before the lords legislated the night-siege out of Nave. The old hands had been right; they had only been early. In the same season came a second character-slot, a new deep discovered — the Sylvan Sanctum, and new beasts to ride.",
+     "body": "Seeing that few would fight the sieges as they stood, the lords of Star Vault decreed the Siege Challenge: no more the thief's-siege struck in the sleeping hours, but a formal summons, a window of vulnerability, and safety outside it. Phen had foretold that exact grievance upon the forums in September 2020 — waking as a criminal in a keep broken and rebuilt while its lord slept — three years before the Law of Territory gave it a body; and the world bore the grievance eight months more before the lords legislated the night-siege out of Nave. The old hands had been right; they had only been early. In the same season came a second character-slot, a newly discovered deep — the Sylvan Sanctum — and new beasts to ride.",
      "links": [
       {
        "text": "How to Use Siege Machines — catapults and the craft of assault",
@@ -1449,7 +1449,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "April 2024",
      "title": "The Fall of the Mythic Keep",
-     "body": "Two weeks before the KarniMata feud ignited, the keep of Mythic fell to BlackHand. A chronicler preserved the taking at patient length, catapult-stone by catapult-stone. Chip Chip's house — met in this chronicle as a dungeon rival in the Undercroft — here learned the price of walls; two years on it would stand among the houses that threw down Odinpost, on the other side of a siege.",
+     "body": "Two weeks before the KarniMata feud ignited, the keep of Mythic fell to BlackHand. A chronicler preserved the taking at patient length, catapult-stone by catapult-stone. Chip Chip's house — met in this chronicle as a dungeon rival in the Undercroft — here learned the price of walls. Two years on, it would stand among the houses that threw down Odinpost, on the other side of a siege.",
      "links": [
       {
        "text": "The taking of the Mythic keep, filmed at length",
@@ -1462,7 +1462,7 @@ window.CHRONICLE = {
     {
      "date": "6 May 2024",
      "title": "The KarniMata War Ignites",
-     "body": "Now began Odinseed's defining feud of the later age, against the vast host of KarniMata — first among the houses that took their turn at Odinpost's walls, and the one that stayed longest. The two were the great \"zergs\" of the world — it was said one could run the deep places only by marching thirty-strong \"as Odinseed or KarniMata,\" else die in the sewers. The feud was cried aloud across the airwaves — \"Odinseed Losing It… Reveal Truth About KarniMata\" — and the Odin-host did not march alone: Venomous's southern Jungle Alliance came north to make common cause, the two falling upon KarniMata together in a joint assault (\"OS and JA attack Karni\") Bayard preserved, binding the jungle-south to the northern war. Ten months on, chroniclers still filmed the same two hosts trading blows beside the Minotaur's mouth, naming it the longest war of the age.",
+     "body": "Now began Odinseed's defining feud of the later age, against the vast host of KarniMata — first among the houses that took their turn at Odinpost's walls, and the one that stayed longest. The two were the great \"zergs\" of the world; it was said one could run the deep places only by marching thirty-strong \"as Odinseed or KarniMata,\" or else die in the sewers. The feud was cried aloud across the airwaves — \"Odinseed Losing It… Reveal Truth About KarniMata\" — and the Odin-host did not march alone. Venomous's southern Jungle Alliance came north to make common cause, and the two fell upon KarniMata together in a joint assault (\"OS and JA attack Karni\") that the chronicler Bayard preserved, binding the jungle-south to the northern war. Ten months on, chroniclers still filmed the same two hosts trading blows beside the Minotaur's mouth, naming it the longest war of the age.",
      "links": [
       {
        "text": "ODINSEED LOSING IT… REVEAL TRUTH ABOUT KARNIMATA",
@@ -1497,7 +1497,7 @@ window.CHRONICLE = {
     {
      "date": "15 June 2024",
      "title": "The Battle for Odin's Field",
-     "body": "In the same restless season, Odinseed's field-host — a company its own men called, half in jest, the Pillows — met a coalition remembered as the Crimson Beasts and their friends upon open ground the chroniclers named Odin's Field. Sixty blades a side met in the old way, without walls or siege-engines between them: proof that for all the keeps Territory Control had raised, the open-field muster had lost none of its savagery.",
+     "body": "In the same restless season, Odinseed's field-host — a company its own men called, half in jest, the Pillows — met a coalition remembered as the Crimson Beasts and their friends, upon open ground the chroniclers named Odin's Field. Sixty blades a side met in the old way, without walls or siege-engines between them: proof that for all the keeps Territory Control had raised, the open-field muster had lost none of its savagery.",
      "links": [
       {
        "text": "Sixty against sixty — the field battle, from the front line",
@@ -1523,7 +1523,7 @@ window.CHRONICLE = {
     {
      "date": "20 June 2024",
      "title": "The Siege of Granum Pass",
-     "body": "The chronicles of the Odin-host preserve this battle — the Odinseed Alliance against a company of the Mercenaries at Granum Pass — filmed from within the mage-line by the chronicler Aesir. But the siege was only the last page of a shorter, bitterer tale. That spring Odinseed had stood allied with Karnimata, the mercenary company of the self-styled king Run Karni — until the Odin-host reneged on the war-gold it had promised him, breaking a sworn peace within a day of signing it. Run Karni answered with a public oath against \"Odinseed's tyranny and oppression,\" and by June his blades had gone over entirely: Karnimata fought at Granum Pass among the Mercenaries, hired against the very allies who had duped them of gold and word. It stands among the clearest windows the age has left us into how swiftly the Odin-host could turn a friend into a foe.",
+     "body": "The chronicles of the Odin-host preserve this battle — the Odinseed Alliance against a company of the Mercenaries at Granum Pass — filmed from within the mage-line by the chronicler Aesir. But the siege was only the last page of a shorter, bitterer tale. That spring Odinseed had stood allied with KarniMata, the mercenary company of the self-styled king Run Karni — until the Odin-host reneged on the war-gold it had promised him, breaking a sworn peace within a day of signing it. Run Karni answered with a public oath against \"Odinseed's tyranny and oppression,\" and by June his blades had gone over entirely: KarniMata fought at Granum Pass among the Mercenaries, hired against the very allies who had duped them of gold and word. It stands among the clearest windows the age has left us into how swiftly the Odin-host could turn a friend into a foe.",
      "links": [
       {
        "text": "Siege of Granum Pass — Odin Seed Alliance vs Mercenaries, Mage PoV",
@@ -1553,7 +1553,7 @@ window.CHRONICLE = {
     {
      "date": "Summer 2024",
      "title": "The Deeps Give Up Their Secrets",
-     "body": "All through 2024 the makers hid new dungeons in the wilds of Myrland, and the hunting-parties found them one by one. The Undercroft was opened in the heart of winter; in the spring came Melisar's Vault, whose beasts gave up the paintings that bought a smith his rarest patterns, and the Sylvan Sanctum in the green places; and in high summer the Shinarian Labyrinth, which showed itself on no map until a wanderer had first walked its turnings and written them down. Each was a school as much as a slaughter-ground — for in Nave a deep is never merely fought through but studied: its beasts, its loot, its safe paths learned in other men's deaths and passed hand to hand, until the dark held no more secrets and the hunters went looking for the next.",
+     "body": "All through 2024 the makers hid new dungeons in the wilds of Myrland, and the hunting-parties found them one by one. The Undercroft was opened in the heart of winter. In the spring came Melisar's Vault, whose beasts gave up the paintings that bought a smith his rarest patterns, and the Sylvan Sanctum in the green places; in high summer came the Shinarian Labyrinth, which showed itself on no map until a wanderer had first walked its turnings and written them down. Each was a school as much as a slaughter-ground. In Nave a deep is never merely fought through but studied: its beasts, its loot, and its safe paths learned in other men's deaths and passed hand to hand, until the dark held no more secrets and the hunters went looking for the next.",
      "links": [
       {
        "text": "Melisar's Vault opens — the patch that also made the great bears rideable",
@@ -1575,7 +1575,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "July – August 2024",
      "title": "The Jungle War",
-     "body": "While the north warred over Odinpost, the steaming south fought for the jungle's strongholds. Purgatory and its allies came against Tribe and the Jungle Alliance — a hundred and fifty allies called in, by their enemies' telling — and still the tier-3 strongholds and houses changed hands against them. It was fought as bitterly in the threads as under the trees: a propaganda war of smear and counter-smear that the chroniclers preserved alongside the battles.",
+     "body": "While the north warred over Odinpost, the steaming south fought for the jungle's strongholds. Purgatory and its allies came against Tribe and the Jungle Alliance — a hundred and fifty allies called in, by their enemies' telling — and still the tier-3 strongholds and houses changed hands against them. It was fought as bitterly in the forum threads as under the trees: a propaganda war of smear and counter-smear, which the chroniclers preserved alongside the battles.",
      "links": [
       {
        "text": "The Jungle Alliance versus the zerg — from the defenders' side",
@@ -1588,7 +1588,7 @@ window.CHRONICLE = {
     {
      "date": "September 2024",
      "title": "The Siege of Nightfall",
-     "body": "The rotted house met its end not by the ban-hammer alone, but by the sword. When the whole server came against the keep of Nightfall — already hollowed by its cheating scandal and the exile of the honest mage Diphrael — its defenders made a doomed, famous stand. Foremost stood General Lordus, old marshal of the ACT pickaxe-host, who planted himself in the breach and fought to the end: a last stand worthy of the greatest general the Rebellion ever had. Among the attackers rode Pox the Oghmir of the Odinseed Alliance, whose camera preserved the assault from the shield-line's front. So the fall of Nightfall, begun in the quiet shame of the exploit, was sealed in fire and siege — and filmed for all time.",
+     "body": "The rotted house met its end not by the ban-hammer alone, but by the sword. The whole server came against the keep of Nightfall — already hollowed by its cheating scandal, and by the exile of the honest mage Diphrael — and its defenders made a doomed, famous stand. Foremost stood General Lordus, old marshal of the ACT pickaxe-host, who planted himself in the breach and fought to the end: a last stand worthy of the greatest general the Rebellion ever had. Among the attackers rode Pox, an Oghmir soldier of the Odinseed Alliance, whose camera preserved the assault from the front of the shield-line. So the fall of Nightfall, begun in the quiet shame of the exploit, was sealed in fire and siege — and filmed for all time.",
      "links": [
       {
        "text": "Fall of Nightfall — Server vs Nightfall, an epic history moment",
@@ -1618,7 +1618,7 @@ window.CHRONICLE = {
     {
      "date": "2024",
      "title": "The Battle for Sausage Lake Keep",
-     "body": "In the heart of Myrland, by the great central lake the players had long ago named Sausage Lake, the castle upon its shore was fought over in a siege that Ruthless G preserved — one of the many keeps contested across the map in the years of Territory war, when scarcely a stronghold in the land went un-besieged.",
+     "body": "In the heart of Myrland, by the great central lake the players had long ago named Sausage Lake, the castle upon its shore was fought over in a siege preserved by the chronicler Ruthless G. It was one of many keeps contested across the map in the years of Territory war, when scarcely a stronghold in the land went un-besieged.",
      "links": [
       {
        "text": "Battle for Sausage Lake Keep",
@@ -1638,7 +1638,7 @@ window.CHRONICLE = {
     {
      "date": "2024",
      "title": "The Eastern Civil War",
-     "body": "Far in the eastern steppes, about Morin Khur and Toxai, the guilds of the east fell upon one another in a war the chroniclers named the Eastern Civil War — the guild Unbroken among its combatants, its story set down by Noobert and Torggaddon. The autumn before, the keep of the Royal Guards who bore Morin Khur's name had been thrown down in the age's most historic siege; the east did not stay quiet long. It was proof the wars of Nave were never one war but many, each region breeding its own feuds beneath the great alliances' shadow.",
+     "body": "Far in the eastern steppes, about Morin Khur and Toxai, the guilds of the east fell upon one another in a war the chroniclers named the Eastern Civil War. The guild Unbroken fought among its combatants, and the chroniclers Noobert and Torggaddon set its story down. The autumn before, the keep of the Royal Guards who bore Morin Khur's name had been thrown down in the age's most historic siege; the east did not stay quiet long. It was proof that the wars of Nave were never one war but many, each region breeding its own feuds beneath the great alliances' shadow.",
      "links": [
       {
        "text": "Eastern Civil War — Unbroken",
@@ -1663,7 +1663,7 @@ window.CHRONICLE = {
     {
      "date": "2023–2024",
      "title": "The War Against the Gold-Sellers",
-     "body": "A darker shadow than any exploit lay across the world: RMT, the buying of gold for real coin — the deepest corruption of Nave, for no skill could beat a mediocre foe who outspent you outside the game, and cursed trinkets were the prize most worth buying gold for. The chronicler Tasu became the loudest voice against it, mapping the \"toxic east\" of the playerbase and leveling the gravest charge of all: that the game-masters were corrupt — banning whistleblowers, spiriting gold-buyers to safety, and (he swore) deleting whole guilds like MANA and even KotO \"for the right price.\" The game-master Robmo answered hotly, pointing to the monthly ban-reports and calling it cope. Whatever the truth, a true crusade took the field: Integrity and TEA made open war on the gold-selling guild Tianming, and documentarians like HardDriveDump filmed its humbling. The demand to abolish the trinkets echoed down the years — and was never answered.",
+     "body": "A darker shadow than any exploit lay across the world: RMT, the buying of gold for real coin. It was the deepest corruption of Nave, for no skill could beat a mediocre foe who outspent you outside the game, and the cursed trinkets were the prize most worth buying gold for. The chronicler Tasu became the loudest voice against it. He mapped the \"toxic east\" of the playerbase and leveled the gravest charge of all: that the game-masters themselves were corrupt — banning whistleblowers, spiriting gold-buyers to safety, and (he swore) deleting whole guilds like MANA and even KotO \"for the right price.\" The game-master Robmo answered hotly, pointing to the monthly ban-reports and calling it cope. Whatever the truth, a true crusade took the field: Integrity and TEA made open war on the gold-selling guild Tianming, and documentarians like HardDriveDump filmed its humbling. The demand to abolish the trinkets echoed down the years — and was never answered.",
      "links": [
       {
        "text": "A Game of Keeps — Tasu's forum thread",
@@ -1693,7 +1693,7 @@ window.CHRONICLE = {
     {
      "date": "Autumn 2024",
      "title": "The Engine Reforged",
-     "body": "The whole world was migrated to Unreal Engine 5.4 — the deeper re-forging foretold at the coming of Unreal Engine 5, come within the year as promised: a labor unseen but felt in every frame. With it, the tamers' beasts were overhauled to earn their strength through battle as their masters did — three years after the white bears of the north were levelled while their masters slept, the realm's first tyrant-build was answered at last. A Fledgling Flag was raised over every newcomer, that veterans might know and aid them; and deep places were warded against the crashes that had cost so many their hard-won characters.",
+     "body": "The whole world was migrated to Unreal Engine 5.4 — the deeper re-forging foretold at the coming of Unreal Engine 5, arrived within the year as promised: a labor unseen but felt in every frame. With it, the tamers' beasts were overhauled to earn their strength through battle as their masters did. Three years after the white bears of the north were levelled while their masters slept, the realm's first tyrant-build was answered at last. A Fledgling Flag was raised over every newcomer, that veterans might know and aid them; and the deep places were warded against the crashes that had cost so many their hard-won characters.",
      "links": [
       {
        "text": "Patch Notes 2.1.0.32 — the beasts re-forged to earn their strength",
@@ -1723,7 +1723,7 @@ window.CHRONICLE = {
     {
      "date": "November 2024",
      "title": "The Ranked Duel",
-     "body": "Amid the grumbling over sieges, the lords gave the world a new arena: a ranked dueling ladder with seasons and standings, where champions like Slasher might prove their blades one against one, apart from the politics of keeps. The people had kept that sport themselves since before the war — Requiem's Bakti Bowl turning every fortnight in the beta, Wolfszeit and Death Jester's tournament, the four-versus-four fought in the last peace before Territory Control, when it was written the coming of keeps would turn every fight into a war for land. It had. Sixteen thrones and three years of war later, the lords built a hall for the sport players had been improvising since before there were keeps at all.",
+     "body": "Amid the grumbling over sieges, the lords gave the world a new arena: a ranked dueling ladder with seasons and standings, where champions like Slasher — whom many named the realm's best duelist — might prove their blades one against one, apart from the politics of keeps. The people had kept that sport themselves since before the war: Requiem's Bakti Bowl turning every fortnight in the beta, the tournament of single combat held by Wolfszeit and Death Jester, and the four-versus-four fought in the last peace before Territory Control, when it was written that the coming of keeps would turn every fight into a war for land. It had. Sixteen thrones and three years of war later, the lords built a hall for the sport the players had been improvising since before there were keeps at all.",
      "links": [
       {
        "text": "Hacks, Macros and Bans — Free Razer/Slasher Compilation",
@@ -1753,7 +1753,7 @@ window.CHRONICLE = {
     {
      "date": "November 2024",
      "title": "The Gang-Wars of Gal Barag",
-     "body": "Near a year after Odinseed first fought for the Minotaur heights, the mountain had not gone quiet, for it never would. By now the Odin-host held its keep of Odinpost beside the Mouth of Gal Barag, a fortress to sally from; and by now it had fresh rivals for the same slopes — WINX and GrimSide — who came again and again to contest the dungeon-mouth. The war settled into a running series of even matches: five-and-twenty a side upon the same ground, filmed from a dozen eyes at once. But a keep does not win a mountain, and the gang-wars of Gal Barag would outlast the year and grind on into the next.",
+     "body": "Near a year after Odinseed first fought for the Minotaur heights, the mountain had not gone quiet — it never would. By now the Odin-host held its keep of Odinpost beside the Mouth of Gal Barag, a fortress to sally from; and by now it had fresh rivals for the same slopes, WINX and GrimSide, who came again and again to contest the dungeon-mouth. The war settled into a running series of even matches: five-and-twenty a side upon the same ground, filmed from a dozen eyes at once. But a keep does not win a mountain, and the gang-wars of Gal Barag would outlast the year and grind on into the next.",
      "links": [
       {
        "text": "25 Odinseed against 25 WINX and GrimSide — the mountain gang-war, from many eyes",
@@ -1828,7 +1828,7 @@ window.CHRONICLE = {
     {
      "date": "Spring 2025",
      "title": "A Hundred and Fifty Blades",
-     "body": "The wars of the Odin-host drew every kind of soul to the field — among them the fighters of the southern jungle, who had joined arms with Odinseed against KarniMata the year before and rode with its wars still. Venomous War Gaming, of the Jungle Alliance, preserved one of the age's great musters from inside the press: more than a hundred and fifty souls at a single siege, shield-walls meeting beneath the towers, a season's strength spent in one afternoon. Nave has counted its own heads since Henrik Nyström called four hundred to the field outside Meduli to learn what the world could bear; records like this one measure what the keep-wars of 2025 had become — and how far a house sworn to trade and green shadow would ride for a war begun far from its own jungle.",
+     "body": "The wars of the Odin-host drew every kind of soul to the field — among them the fighters of the southern jungle, who had joined arms with Odinseed against KarniMata the year before and rode with its wars still. Venomous War Gaming, the chronicler of the Jungle Alliance, preserved one of the age's great musters from inside the press: more than a hundred and fifty souls at a single siege, shield-walls meeting beneath the towers, a season's strength spent in one afternoon. Nave has counted its own heads since Henrik Nyström called four hundred to the field outside Meduli to learn what the world could bear. Records like this one measure what the keep-wars of 2025 had become — and how far a house sworn to trade and green shadow would ride for a war begun far from its own jungle.",
      "links": [
       {
        "text": "150+ Player Siege Battle — Mortal Online 2 PvP",
@@ -1858,7 +1858,7 @@ window.CHRONICLE = {
     {
      "date": "15 May 2025",
      "title": "The Reckoning Proclaimed",
-     "body": "At last the lords of the world moved against the flaw in their own law. By the annal Into the Vault #147 and a development stream the same day, Star Vault proclaimed the great remaking of Territory; the realm called it the greatest patch in the game's history. The number to be broken had shadowed the world since Patch 1.0.17 bound meaningful land to sixteen keeps: every season since, hundreds of houses had warred beneath a table set for sixteen. Now the lords said plainly the table would be broken up altogether. Two months stood between proclamation and deed, and the world did not spend them waiting: beneath the Minotaur's mouth and upon the Tephra Crater the wars ground on as though nothing were coming.",
+     "body": "At last the lords of the world moved against the flaw in their own law. By the annal Into the Vault #147, and a development stream the same day, Star Vault proclaimed the great remaking of Territory; the realm called it the greatest patch in the game's history. The number to be broken had shadowed the world since Patch 1.0.17 bound meaningful land to sixteen keeps: every season since, hundreds of houses had warred beneath a table set for sixteen. Now the lords said plainly that the table would be broken up altogether. Two months stood between proclamation and deed, and the world did not spend them waiting — beneath the Minotaur's mouth and upon the Tephra Crater, the wars ground on as though nothing were coming.",
      "links": [
       {
        "text": "Into the Vault #147 — Territory Control Overhaul",
@@ -1888,7 +1888,7 @@ window.CHRONICLE = {
     {
      "date": "2024–2025",
      "title": "The Relic Wars",
-     "body": "At the end of 2024 the lords loosed a new hunger upon Nave: the Relic Wars. Relics fell from the sky — a rumble, a streak of fire, and a prize buried in the earth for any host strong enough to hold the landing until it cracked open. So beside the war for keeps there ran a quieter, greedier war, for these were prizes that could not be crafted, only taken and kept: pure standing, proof of who could hold what all others wanted. The houses hunted, hoarded, and raided one another for them; and by the server's own telling, when the long scramble was reckoned, no house was said to hold more than Bad Company — a strange crown for a roving, jungle-fighting mercenary band famous for warring in Hawaiian shirts, that held no city and joined no coalition. They drew the ire of Emdash's Eternal — the anti-zerg banner Emdash had raised from the feud he named the Eternal Wars in 2023 — who once stripped nineteen hundred gold from their stronghold and destroyed all their pitch besides. Yet the relics stayed theirs; and holding is the only argument Nave has ever recognized.",
+     "body": "At the end of 2024 the lords loosed a new hunger upon Nave: the Relic Wars. Relics fell from the sky — a rumble, a streak of fire, and a prize buried in the earth for any host strong enough to hold the landing until it cracked open. So beside the war for keeps there ran a quieter, greedier war. Relics could not be crafted, only taken and kept: pure standing, proof of who could hold what all others wanted. The houses hunted them, hoarded them, and raided one another for them; and by the server's own telling, when the long scramble was reckoned, no house held more than Bad Company — a strange crown for a roving, jungle-fighting mercenary band famous for warring in Hawaiian shirts, which held no city and joined no coalition. They drew the ire of Emdash's Eternal, the anti-zerg banner raised from the feud Emdash had named the Eternal Wars in 2023; Eternal once stripped nineteen hundred gold from their stronghold and destroyed all their pitch besides. Yet the relics stayed theirs. Holding is the only argument Nave has ever recognized.",
      "links": [
       {
        "text": "Relic Wars Explained in Detail — the system behind the scramble",
@@ -1918,7 +1918,7 @@ window.CHRONICLE = {
     {
      "date": "22 May 2025",
      "title": "The Siege of Ursa Stronghold",
-     "body": "A week after the proclamation, the north answered by ignoring it. Wolfszeit and dozens of Rat-Alliance allies stormed Bad Company's Ursa Stronghold upon the Tephra Crater — the same host that had broken the first keep ever to fall by siege in Nave, upon the same ground where the north's long war had ended two winters before, when the Nightmare host deleted its own stronghold rather than yield it up. Whatever the lords of the world meant to remake in July, the relic-lords learned in May what a hoard truly is: proof of standing, and a place for enemies to find you.",
+     "body": "A week after the proclamation, the north answered by ignoring it. Wolfszeit and dozens of Rat-Alliance allies stormed Bad Company's Ursa Stronghold upon the Tephra Crater. This was the same host that had broken the first keep ever to fall by siege in Nave, and the same ground where the north's long war had ended two winters before, when the Nightmare host deleted its own stronghold rather than yield it up. Whatever the lords of the world meant to remake in July, the relic-lords learned in May what a hoard truly is: proof of standing, and a place for enemies to find you.",
      "links": [
       {
        "text": "URSA / BC Stronghold and Village Siege — Summary in 4K",
@@ -1943,7 +1943,7 @@ window.CHRONICLE = {
     {
      "date": "23 May 2025",
      "title": "The Battle for the Undercroft",
-     "body": "The day after the north stormed Ursa, the tangled wars of spring found their shape, and the realm woke to two banners it lacked the day before. Near three hundred souls — six score and more to a side — met in the deep of the Undercroft, and the chronicler of the southern Jungle Alliance, Venomous War Gaming, filmed the press from within and named the two hosts the year's wars had forged: the Coalition, and the Anti-Coalition Treaty sworn against it. So the alliance-war of 2025 hardened into a pair of leagues, as the lawless years had hardened long before into the Rebellion of Barados against the Empire of Kuthara. The same Coalition would stand seventy-strong against the Odin-host five weeks on over a single small house, and still be ganking horses a hundred-to-a-hundred when the leaves turned — the dominant bloc of the year the sixteen thrones came down.",
+     "body": "The day after the north stormed Ursa, the tangled wars of spring found their shape, and the realm woke to two banners it had lacked the day before. Near three hundred souls — six score and more to a side — met in the deep of the Undercroft. Venomous War Gaming, the chronicler of the southern Jungle Alliance, filmed the press from within, and named the two hosts the year's wars had forged: the Coalition, and the Anti-Coalition Treaty sworn against it. So the alliance-war of 2025 hardened into a pair of leagues, as the lawless years had hardened long before into the Rebellion of Barados against the Empire of Kuthara. The same Coalition would stand seventy-strong against the Odin-host five weeks on, over a single small house, and would still be ganking horses a hundred-to-a-hundred when the leaves turned — the dominant bloc of the year the sixteen thrones came down.",
      "links": [
       {
        "text": "The MASSIVE Battle for the Undercroft — nearly 300 souls, six score a side",
@@ -1963,7 +1963,7 @@ window.CHRONICLE = {
     {
      "date": "29 June 2025",
      "title": "The War over a Small House",
-     "body": "A single small house kindled a server-wide war: fifty of the Odin-host stood against seventy of the Coalition, and a quarrel over four walls ended in a great siege-defense — proof that in Nave any spark could set the world ablaze. Mark the name of the enemy: in 2023 the chroniclers had hailed Azog \"a primary shot caller in the victorious fights against the Coalition,\" and Azog had ridden then in the Rebellion at Odinseed's side. Whether the name had changed hands or the Odin-host had changed places, the chronicles do not say; but by summer the Coalition meant whoever had come for Barados.",
+     "body": "A single small house kindled a server-wide war: fifty of the Odin-host stood against seventy of the Coalition, and a quarrel over four walls ended in a great siege-defense — proof that in Nave any spark could set the world ablaze. Mark the name of the enemy. In 2023 the chroniclers had hailed Azog as \"a primary shot caller in the victorious fights against the Coalition,\" and Azog had ridden then in the Rebellion at Odinseed's side. Whether the name had changed hands or the Odin-host had changed places, the chronicles do not say; but by this summer, the Coalition meant whoever had come for Barados.",
      "links": [
       {
        "text": "Massive Fight Over Small House — Server War, Siege Defense",
@@ -1993,7 +1993,7 @@ window.CHRONICLE = {
     {
      "date": "15 July 2025",
      "title": "The Siege of the KotO Keep",
-     "body": "On the eve of the Reckoning — the day before the sixteen thrones were shattered — the realm made one last great war under the old law, against the oldest enemy of all. Wolfszeit bound its banner to King Barados's Odinseed and countless other guilds, and the whole host fell upon the desert keep KotO held near Meduli: the empire of Kuthara, that was ever the power against which the rest of the realm at last united. Wolfszeit called it one of the most ambitious sieges the world had yet seen, and owned plainly that the numbers were past counting and the end past clear reckoning, for the fight was all chaos. Two years before, the Company had declared the Empire of Kuthara finished, and been proven wrong; and here, on the last day of the sixteen-throne age, KotO's desert throne still stood to be stormed. On the morrow the Law of Territory that had made keeps worth besieging would be torn up, and the manner of every siege changed forever — so this assault stands as the last storming of a keep under the law of the sixteen.",
+     "body": "On the eve of the Reckoning — the day before the sixteen thrones were shattered — the realm made one last great war under the old law, against the oldest enemy of all. Wolfszeit bound its banner to King Barados's Odinseed and countless other guilds, and the whole host fell upon the desert keep KotO held near Meduli: the empire of Kuthara, the power against which the rest of the realm had always united in the end. Wolfszeit called it one of the most ambitious sieges the world had yet seen, and owned plainly that the numbers were past counting and the outcome past clear reckoning, for the fight was all chaos. Two years before, The Company had declared the Empire of Kuthara finished, and been proven wrong; here, on the last day of the sixteen-throne age, KotO's desert throne still stood to be stormed. On the morrow the Law of Territory that had made keeps worth besieging would be torn up, and the manner of every siege changed forever. So this assault stands as the last storming of a keep under the law of the sixteen.",
      "links": [
       {
        "text": "Koto Siege Attempt — Wolfszeit, Odinseed and countless guilds at the desert keep",
@@ -2013,7 +2013,7 @@ window.CHRONICLE = {
     {
      "date": "16 July 2025",
      "title": "The Reckoning Comes",
-     "body": "By the expansion called Reckoning, the sixteen thrones were shattered — and with them the flaw the Law of Territory had carried since 2023, when Patch 1.0.17 bound all meaningful land to keeps and sealed the world's top table against every house but sixteen. Myrland was carved into five-and-thirty named Regions, each with its wooden Outpost, and any host of twenty souls might now contest any region through the staged Outpost Siege — break the outer gate, raise the inner, hold the flag. At last the land bore true reward: buffs of mine and sea, taxes, hourly bounty. With it came the Combat Abilities, the fury of Adrenaline, the stylish deaths called Fatalities, and a plague of insect-horrors — the Tagmaton — the world's founding cataclysm, the Irruption, returned to torment the guilds. Sixteen thrones and hundreds of guilds had been the age's arithmetic; that arithmetic was void, and the world was thrown open to every guild at last. In this age of new sorcery none was more feared than Demra, the finest mage in Nave by reckoning, who knew every dungeon by heart, roamed as the \"ultimate rat,\" and made foot-fighters curse the \"Harry Potter world\" the game had become.",
+     "body": "By the expansion called Reckoning, the sixteen thrones were shattered — and with them the flaw the Law of Territory had carried since 2023, when Patch 1.0.17 bound all meaningful land to keeps and sealed the world's top table against every house but sixteen. Myrland was carved into five-and-thirty named Regions, each with its wooden Outpost, and any host of twenty souls might now contest any region through the staged Outpost Siege: break the outer gate, raise the inner, hold the flag. At last the land bore true reward — buffs of mine and sea, taxes, hourly bounty. With the expansion came the Combat Abilities, the fury of Adrenaline, the stylish deaths called Fatalities, and a plague of insect-horrors, the Tagmaton: the world's founding cataclysm, the Irruption, returned to torment the guilds. Sixteen thrones and hundreds of guilds had been the age's arithmetic; that arithmetic was now void, and the world was thrown open to every guild at last. In this age of new sorcery, none was more feared than Demra — by common reckoning the finest mage in Nave — who knew every dungeon by heart, roamed as the \"ultimate rat,\" and made foot-fighters curse the \"Harry Potter world\" the game had become.",
      "links": [
       {
        "text": "The Reckoning Update Is Live",
@@ -2043,7 +2043,7 @@ window.CHRONICLE = {
     {
      "date": "August 2025 – February 2026",
      "title": "The Small Wars of the New Regions",
-     "body": "For all the Reckoning's promise, the outpost-wars that followed were rarely the stuff of legend — and that was the truest thing about them. Through autumn and winter the five-and-thirty regions changed hands not in a few great sieges but in a hundred small ones: in the last days of August the Jungle Alliance's own chronicler filmed the fight for Canteri Slums, siege engines and all; by the first Saturday of November Wolfszeit stood in the snow against Odinseed and a banner new to this record, WigSplit, hauling a manganon through the drifts to the night's last clash; and by February a defender of the Sands could only shrug on camera that the fight had been good, if the company keeping it had not. No siege of this season was remembered as MKRG's fall was, or Odinpost's — the new law had made land easy to reach and hard to hold, and Nave answered with a hundred small wars in place of one great one.",
+     "body": "For all the Reckoning's promise, the outpost-wars that followed were rarely the stuff of legend — and that was the truest thing about them. Through autumn and winter the five-and-thirty regions changed hands not in a few great sieges but in a hundred small ones. In the last days of August, the Jungle Alliance's own chronicler filmed the fight for Canteri Slums, siege engines and all. By the first Saturday of November, Wolfszeit stood in the snow against Odinseed and a banner new to this record, WigSplit, hauling a manganon through the drifts to the night's last clash. And by February, a defender of the Sands could only shrug on camera that the fight had been good, if the company keeping it had not. No siege of this season was remembered as MKRG's fall was, or Odinpost's. The new law had made land easy to reach and hard to hold, and Nave answered with a hundred small wars in place of one great one.",
      "links": [
       {
        "text": "The Siege of Canteri Slums — a shotcaller's view of the fight",
@@ -2068,7 +2068,7 @@ window.CHRONICLE = {
     {
      "date": "September 2025",
      "title": "The New Regions Contested, and the Next Overhaul Foretold",
-     "body": "Now the world learned what the Reckoning had bought it. Across the five-and-thirty open regions the outpost-wars began, and hosts great and small went out to try the new ground — the small ones above all, for the law sealing the top table against all but sixteen houses was two months dead, and any twenty souls might now go and take a piece of the earth. The staged Outpost Siege tried every guild's mettle alike, where a host troubled to come at all; and the chroniclers who had spent summer explaining the new law spent autumn filming men living under it. And already Star Vault, in its \"Into the Vault\" annals, foretold the next great remaking — the coming banking, travel, and war overhauls that would land before the year was out — for the lords of Nave have never let the world digest one age before setting another before it.",
+     "body": "Now the world learned what the Reckoning had bought it. Across the five-and-thirty open regions the outpost-wars began, and hosts great and small went out to try the new ground — the small ones above all, for the law sealing the top table against all but sixteen houses was two months dead, and any twenty souls might now go and take a piece of the earth. The staged Outpost Siege tried every guild's mettle alike, wherever a host troubled to come at all; and the chroniclers who had spent the summer explaining the new law spent the autumn filming men living under it. Already Star Vault, in its \"Into the Vault\" annals, foretold the next great remaking — the banking, travel, and war overhauls that would land before the year was out — for the lords of Nave have never let the world digest one age before setting another before it.",
      "links": [
       {
        "text": "Reckoning PTR Patch Notes — the 35 Regions and Outpost Sieges",
@@ -2098,7 +2098,7 @@ window.CHRONICLE = {
     {
      "date": "December 2025",
      "title": "The Year's Reckoning",
-     "body": "At year's end Star Vault counted its own labor and found ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known. Beside the makers' tally the old archivist Wolfszeit, whose annals ran back to the realm's very first days, set down a year-end reckoning of his own. Between the two accounts lay the whole argument of Nave: at the Full Launch of 2022 the hands of Henrik Nyström and his lead developer Sebastian had shaped the systems the guilds would spend five years contesting, cursing, and exploiting — and no year had proved it louder. The lords shattered the sixteen thrones; the houses answered with hollow sieges, hoarded relics, and a server-wide war over a single small house. What the makers set down in patch notes, the world rewrote in blood, and neither asked the other's leave.",
+     "body": "At year's end Star Vault counted its own labor and found ten updates loosed in a single year — the Reckoning chief among them — the busiest age of making the world had yet known. Beside the makers' tally, the old archivist Wolfszeit, whose annals ran back to the realm's very first days, set down a year-end reckoning of his own. Between the two accounts lay the whole argument of Nave. At the Full Launch of 2022, the hands of Henrik Nyström and his lead developer Sebastian had shaped the systems the guilds would spend five years contesting, cursing, and exploiting — and no year had proved it louder. The lords shattered the sixteen thrones; the houses answered with hollow sieges, hoarded relics, and a server-wide war over a single small house. What the makers set down in patch notes, the world rewrote in blood, and neither asked the other's leave.",
      "links": [
       {
        "text": "End of Year Recap — 2025",
@@ -2133,7 +2133,7 @@ window.CHRONICLE = {
     {
      "date": "February 2026",
      "title": "Sarducaa Revealed",
-     "body": "The lords of the world unveiled a new continent, the desert land of Sarducaa — realm of the immortal Empress Labbah Madar, styled the Padishahbanu, and the Magi of Yesil, known till now only from old lore — raised upon a far server across the western sea. That lore named the drowned south: Beth Jeddah the fallen capital, Yesil the Magi's impregnable bastion, the coastal port of Kwar Migdal, and Pash whose people fled beneath the sand, while the northern village of Aur perished utterly — a country of Yequedah sorcerers and Sepat soldiery, undone once already by the same insect-Irruption that founded Nave. Star Vault heralded it with a \"New Lands Reveal\" teaser, and the realm turned south toward the coming frontier.",
+     "body": "The lords of the world unveiled a new continent: the desert land of Sarducaa, realm of the immortal Empress Labbah Madar, styled the Padishahbanu, and of the Magi of Yesil — known until now only from old lore — raised upon a far server across the western sea. That lore named the drowned south: Beth Jeddah the fallen capital; Yesil the Magi's impregnable bastion; the coastal port of Kwar Migdal; and Pash, whose people fled beneath the sand, while the northern village of Aur perished utterly. It told of a country of Yequedah sorcerers and Sepat soldiery, undone once already by the same insect-Irruption that founded Nave. Star Vault heralded it with a \"New Lands Reveal\" teaser, and the realm turned south toward the coming frontier.",
      "links": [
       {
        "text": "Mortal Online 2 — New Lands Reveal Teaser",
@@ -2163,7 +2163,7 @@ window.CHRONICLE = {
     {
      "date": "March 2026",
      "title": "The Fall of Odinpost",
-     "body": "At the last, the long war beside the Minotaur's mouth turned against the Odin-host — begun two years before, in February of 2024, when the north first tested the walls at the Mouth of Gal Barag and was thrown back. In two great sieges that spring, the rebellion of half the server came against Odinpost, and the stage of a hundred battles was broken at last; Chip Chip's Mythic — met first as a dungeon rival in the Undercroft — stood among the houses that brought the Odin-throne down. The chroniclers filmed Barados of Odinseed bidding farewell to the stronghold he had built, while Nave's cities rejoiced. Three years before, the chronicles had named his war the Rebellion of Barados against the Empire of Kuthara; now the wheel had turned full circle: the Odin-throne was the empire, half the world the rebellion. The mightiest role-playing house of the north was unthroned — never broken in spirit — and only the massed strength of the world achieved it.",
+     "body": "At the last, the long war beside the Minotaur's mouth turned against the Odin-host. It had begun two years before, in February of 2024, when the north first tested the walls at the Mouth of Gal Barag and was thrown back. Now, in two great sieges that spring, the rebellion of half the server came against Odinpost, and the stage of a hundred battles was broken at last; Chip Chip's Mythic — met first as a dungeon rival in the Undercroft — stood among the houses that brought the Odin-throne down. The chroniclers filmed Barados of Odinseed bidding farewell to the stronghold he had built, while Nave's cities rejoiced. Three years before, the chronicles had named his war the Rebellion of Barados against the Empire of Kuthara; now the wheel had turned full circle, and the Odin-throne was the empire, with half the world as the rebellion. The mightiest role-playing house of the north was unthroned — never broken in spirit — and only the massed strength of the world achieved it.",
      "links": [
       {
        "text": "The Fall of Odinpost",
@@ -2193,7 +2193,7 @@ window.CHRONICLE = {
     {
      "date": "Spring 2026",
      "title": "The Bridge to Sarducaa, and the Old Grievance Rekindled",
-     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the founding cataclysm four centuries past — was declared raised anew, months yet in the building, to link Myrland to the south. On the forums the oldest grievance flared again: the cry to abolish the trinkets that fed the gold-sellers, some naming the very \"realizing of the extent of RMT\" reason to lay the game down. It was no new complaint: the same demand raised against the shadow-economy Bank and John Oldman had all but owned, carried through Tasu's whole crusade against the gold-sellers — echoed down the years, never answered, and not answered now. Even on the eve of a new world, Nave argued its oldest argument.",
+     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the founding cataclysm four centuries past — was declared raised anew, though months yet in the building, to link Myrland to the south. On the forums the oldest grievance flared again: the cry to abolish the trinkets that fed the gold-sellers, with some naming the very \"realizing of the extent of RMT\" as reason to lay the game down. It was no new complaint. The same demand had been raised against the shadow-economy that the gold-barons Bank and John Oldman had all but owned, and it had carried through the chronicler Tasu's whole crusade against the gold-sellers — echoed down the years, never answered, and not answered now. Even on the eve of a new world, Nave argued its oldest argument.",
      "links": [
       {
        "text": "Into the Vault #153 — the Bridge of Tekton",
@@ -2225,7 +2225,7 @@ window.CHRONICLE = {
      "kind": "event",
      "date": "Spring 2026",
      "title": "The Plateau War",
-     "body": "After Odinpost fell the wheel kept turning, and now it was the Odin-host that marched. Through the spring Odinseed and its jungle allies came against Mythic and Bad Company upon the Minotaur plateau — wave upon wave at the dungeon mouth, the old ground of a hundred battles — and then turned upon KarniMata. Of its scale the plainest testimony reached the developers as a complaint: a guild battle that week had \"completely nuked the server.\"",
+     "body": "After Odinpost fell, the wheel kept turning — and now it was the Odin-host that marched. Through the spring, Odinseed and its jungle allies came against Mythic and Bad Company upon the Minotaur plateau, wave upon wave at the dungeon mouth, the old ground of a hundred battles; then they turned upon KarniMata. Of the war's scale, the plainest testimony reached the developers as a complaint: a guild battle that week had \"completely nuked the server.\"",
      "links": [
       {
        "text": "The defense of the plateau — the Mang montage",
@@ -2263,7 +2263,7 @@ window.CHRONICLE = {
     {
      "date": "17 June 2026",
      "title": "The Testing and the Locks",
-     "body": "The new land opened to trial, and with it the new art of Lockpicking — so, five years on, the Thief Question had its answer. In March of 2021 pickpockets had testified upon the forums for the return of pilfering and snooping and locks, while others begged that thievery stay buried as \"a gimmicky troll skill\"; now the locks were made, and the trade came back into the world. It remained for the new continent to judge who had the right of it — the troll's toy its enemies foretold, or, as one voice answered for the master thieves, an art \"much more about psychology and understanding the world than snatching purses.\"",
+     "body": "The new land opened to trial, and with it the new art of Lockpicking — so, five years on, the Thief Question had its answer. In March of 2021, pickpockets had testified upon the forums for the return of pilfering and snooping and locks, while others begged that thievery stay buried as \"a gimmicky troll skill.\" Now the locks were made, and the trade came back into the world. It remained for the new continent to judge who had the right of it: the troll's toy its enemies foretold, or — as one voice answered for the master thieves — an art \"much more about psychology and understanding the world than snatching purses.\"",
      "links": [
       {
        "text": "Sarducaa Heads to PTR June 17",
@@ -2293,7 +2293,7 @@ window.CHRONICLE = {
     {
      "date": "19 June 2026",
      "title": "A Game of Keeps",
-     "body": "The chronicler Tasu — who years before had led the crusade against the gold-sellers — set down \"A Game of Keeps,\" a history of the guilds since the founding, timed to the new world's coming; the community's own looking-back upon five years of war, it drew the old voices — Phen, Tiglie, and Embuscade — into the reckoning of what those years wrought. Mark Phen among them: he who in September of 2020, before the gates opened, had stood upon the forums and foreseen the whole shape of the wars to come — \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He had reckoned the age before it began; now he was called back to reckon what it had become — the first voice this chronicle set down, and among the last it would hear.",
+     "body": "The chronicler Tasu — who years before had led the crusade against the gold-sellers — set down \"A Game of Keeps,\" a history of the guilds since the founding, timed to the new world's coming. It was the community's own looking-back upon five years of war, and it drew the old voices — Phen, and the veterans Tiglie and Embuscade — into the reckoning of what those years had wrought. Mark Phen among them: he who in September of 2020, before the gates opened, had stood upon the forums and foreseen the whole shape of the wars to come — \"I foresee siege in middle of night... now you wake up as a criminal in your old keep that was broken and rebuilt while you slept.\" He had reckoned the age before it began; now he was called back to reckon what it had become. His was the first voice this chronicle set down, and among the last it would hear.",
      "links": [
       {
        "text": "A Game of Keeps — guild history and politics since release",
@@ -2323,7 +2323,7 @@ window.CHRONICLE = {
     {
      "date": "1 July 2026",
      "title": "Sarducaa Opens",
-     "body": "The new continent was thrown open — and, by a deep law, only the newborn might enter, bearing nothing of their old power. Thus five years after the first houses colonized an empty Myrland, an empty land was made once more, that the cycle might begin again upon level ground. Yet only the ground was level. They sailed south stripped of power, not of memory — no strangers meeting on empty ground, but old rivals who already knew whom they hated, exactly as they had come to Myrland's gates five years before, bearing grudges older than the ground they stood on.",
+     "body": "The new continent was thrown open — and, by a deep law, only the newborn might enter, bearing nothing of their old power. Five years after the first houses colonized an empty Myrland, an empty land was made once more, that the cycle might begin again upon level ground. Yet only the ground was level. The colonists sailed south stripped of power, not of memory: no strangers meeting on empty ground, but old rivals who already knew whom they hated — exactly as they had come to Myrland's gates five years before, bearing grudges older than the ground they stood on.",
      "links": [
       {
        "text": "Mortal Online 2 — Sarducaa Launch Trailer",

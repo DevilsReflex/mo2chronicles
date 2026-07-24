@@ -2206,36 +2206,6 @@ window.CHRONICLE = {
      "year": 2026
     },
     {
-     "date": "Spring 2026",
-     "title": "The Bridge to Sarducaa, and the Old Grievance Rekindled",
-     "body": "As the players awaited the new continent, the ancient Bridge of Tecton — cast down in the founding cataclysm four centuries past — was declared raised anew, though months yet in the building, to link Myrland to the south. On the forums the oldest grievance flared again: the cry to abolish the trinkets that fed the gold-sellers, with some naming the very \"realizing of the extent of RMT\" as reason to lay the game down. It was no new complaint. The same demand had been raised against the shadow-economy that the gold-barons Bank and John Oldman had all but owned, and it had carried through the chronicler Tasu's whole crusade against the gold-sellers — echoed down the years, never answered, and not answered now. Even on the eve of a new world, Nave argued its oldest argument.",
-     "links": [
-      {
-       "text": "Into the Vault #153 — the Bridge of Tekton",
-       "url": "https://www.mortalonline2.com/into-the-vault-153-new-lands-revealed-and-next-patch-details",
-       "source": "Star Vault"
-      },
-      {
-       "text": "The realm debates the bridge and the colonists' terms",
-       "url": "https://www.youtube.com/watch?v=eYTugSq7LzY",
-       "source": "Wolfszeit"
-      },
-      {
-       "text": "A fan-made welcome to a continent not yet open",
-       "url": "https://www.youtube.com/watch?v=WBUI9WKdi_I",
-       "source": "Kathar"
-      },
-      {
-       "text": "The waiting room for Sarducaa, passed on horseback with a bow",
-       "url": "https://www.youtube.com/watch?v=WTO4GXNjGbU",
-       "source": "Brainpower"
-      }
-     ],
-     "marker": null,
-     "kind": "event",
-     "year": 2026
-    },
-    {
      "marker": null,
      "kind": "event",
      "date": "Spring 2026",
